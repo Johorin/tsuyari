@@ -17,3 +17,211 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 
 /*メイン*/
+
+/*レスポンシブ（要相談）*/
+//@media (max-width: ){
+
+body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    width: 1400px;
+    //とりあえず文字間2pxとしている
+    letter-spacing: 2px;
+}
+.header-wrapper {
+    height: 80px;
+    &--logo {
+        width: 133px;
+        height: 48px;
+        margin-left: 40px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        display: inline-block;
+    }
+    &--nav {
+        float: right;
+        .list-header-nav {
+            list-style: none;
+            display: flex;
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                color: #64533d;
+                display: block;
+                margin-top: 33px;
+                margin-right: 40px;
+            }
+        }
+    }
+}
+.main__topImage {
+    height: 544px;
+}
+/*見出し*/
+.headline {
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-size: 56px;
+    //とりあえず文字の太さを550としている
+    font-weight: 550;
+    color: #841d08;
+}
+.main-wrapper {
+    height: 5253px;
+    background-image: url(./image/bg.png);
+    &__headline {
+        margin: 0px 448px 72px 459px;
+        padding-top: 100px;
+    }
+    /*共通部分の設計*/
+    .title-wrapper {
+        display: flex;
+        .leftShape {
+            margin-right: 22px;
+            height: 59px;
+        }
+        &--text {
+            height: 59px;
+            //とりあえず8pxとした
+            padding-top: 8px;
+            .titleText {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                font-size: 46px;
+                color: #64533d;
+                //とりあえず文字の太さを550としている
+                font-weight: 550;
+            }
+        }
+        .rightShape {
+            margin-left: 22px;
+            height: 59px;
+        }
+    }
+    .caution {
+        font-size: 14px;
+        color: #64533d;
+        //とりあえず注意書きの文字間は1.5pxとしている
+        letter-spacing: 1.5px;
+    }
+    table {
+        th {
+            color: white;
+            font-size: 20px;
+            background-color: #f19d19;
+            height: 49px;
+            box-sizing: border-box;
+            white-space: nowrap;
+        }
+        td {
+            color: #64533d;
+            font-size: 16px;
+            text-align: center;
+            background-color: #fadfcc;
+            line-height: 24px;
+            box-sizing: border-box;
+        }
+    }
+    /*各講習部分の詳細設計*/
+    .donyu {
+        width: 100%;
+        .title-wrapper {
+            margin-left: 562px;
+        }
+        &__caution {
+            margin-left: 1038px;
+            margin-top: 14px;
+            margin-bottom: 15px;
+        }
+        &__table1 {
+            margin: 0 auto;
+            width: 922px;
+            .head1 {
+                width: 196px;
+                padding: 14px 44px 16px 40px;
+            }
+            .head2 {
+                width: 433px;
+                padding: 15px 193px 15px 196px;
+            }
+            .head3 {
+                width: 291px;
+                padding: 15px 122px 16px 125px;
+            }
+            .data1 {
+                padding-top: 40px;
+                padding-bottom: 63px;
+            }
+            .data2 {
+                padding-top: 40px;
+            }
+            .data3 {
+                .donyu-fee-table {
+                    display: flex;
+                    .donyu-instructors {
+                        margin-left: 39px;
+                        text-align: left;
+                    }
+                    .donyu-fee {
+                        margin-left: 30px;
+                    }
+                }
+            }
+            .head1, .data1, .head2, .data2 {
+                border-right: 2px solid #faefdb;
+            }
+        }
+        &__pattern {
+            width: 724px;
+            margin: 0 auto;
+            margin-top: 41px;
+        }
+        &__table2 {
+            margin-top: 41px;
+            margin-left: 87px;
+            display: flex;
+            &--first {
+                margin-right: 32px;
+                .head1 {
+                    width: 597px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+                .data1 {
+                    padding: 40px 35px 24px 35px;
+                    //max-height: 331px;
+                    .textGroup {
+                        height: 108px;
+                        .text1 {
+                            margin-bottom: 20px;
+                            p {
+                                font-size: 20px;
+                            }
+                        }
+                        .text2 {
+                            margin-bottom: 30px;
+                            margin-left: 70px;
+                            p {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+            &--second {
+                .head1 {
+                    width: 597px;
+                    padding-top: 14px;
+                    padding-bottom: 16px;
+                }
+                .data1 {
+                    padding: 41px 57px 153px 64px;
+                    .textGroup {
+                        height: 207px;
+                        .donyu-contentPrivilege {
+                            list-style: none;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

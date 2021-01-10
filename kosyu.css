@@ -81,4 +81,251 @@ input, select {
 }
 
 /*メイン*/
+/*レスポンシブ（要相談）*/
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  width: 1400px;
+  letter-spacing: 2px;
+}
+
+.header-wrapper {
+  height: 80px;
+}
+
+.header-wrapper--logo {
+  width: 133px;
+  height: 48px;
+  margin-left: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.header-wrapper--nav {
+  float: right;
+}
+
+.header-wrapper--nav .list-header-nav {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-wrapper--nav .list-header-nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #64533d;
+  display: block;
+  margin-top: 33px;
+  margin-right: 40px;
+}
+
+.main__topImage {
+  height: 544px;
+}
+
+/*見出し*/
+.headline {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 56px;
+  font-weight: 550;
+  color: #841d08;
+}
+
+.main-wrapper {
+  height: 5253px;
+  background-image: url(./image/bg.png);
+  /*共通部分の設計*/
+  /*各講習部分の詳細設計*/
+}
+
+.main-wrapper__headline {
+  margin: 0px 448px 72px 459px;
+  padding-top: 100px;
+}
+
+.main-wrapper .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-wrapper .title-wrapper .leftShape {
+  margin-right: 22px;
+  height: 59px;
+}
+
+.main-wrapper .title-wrapper--text {
+  height: 59px;
+  padding-top: 8px;
+}
+
+.main-wrapper .title-wrapper--text .titleText {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 46px;
+  color: #64533d;
+  font-weight: 550;
+}
+
+.main-wrapper .title-wrapper .rightShape {
+  margin-left: 22px;
+  height: 59px;
+}
+
+.main-wrapper .caution {
+  font-size: 14px;
+  color: #64533d;
+  letter-spacing: 1.5px;
+}
+
+.main-wrapper table th {
+  color: white;
+  font-size: 20px;
+  background-color: #f19d19;
+  height: 49px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.main-wrapper table td {
+  color: #64533d;
+  font-size: 16px;
+  text-align: center;
+  background-color: #fadfcc;
+  line-height: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-wrapper .donyu {
+  width: 100%;
+}
+
+.main-wrapper .donyu .title-wrapper {
+  margin-left: 562px;
+}
+
+.main-wrapper .donyu__caution {
+  margin-left: 1038px;
+  margin-top: 14px;
+  margin-bottom: 15px;
+}
+
+.main-wrapper .donyu__table1 {
+  margin: 0 auto;
+  width: 922px;
+}
+
+.main-wrapper .donyu__table1 .head1 {
+  width: 196px;
+  padding: 14px 44px 16px 40px;
+}
+
+.main-wrapper .donyu__table1 .head2 {
+  width: 433px;
+  padding: 15px 193px 15px 196px;
+}
+
+.main-wrapper .donyu__table1 .head3 {
+  width: 291px;
+  padding: 15px 122px 16px 125px;
+}
+
+.main-wrapper .donyu__table1 .data1 {
+  padding-top: 40px;
+  padding-bottom: 63px;
+}
+
+.main-wrapper .donyu__table1 .data2 {
+  padding-top: 40px;
+}
+
+.main-wrapper .donyu__table1 .data3 .donyu-fee-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-wrapper .donyu__table1 .data3 .donyu-fee-table .donyu-instructors {
+  margin-left: 39px;
+  text-align: left;
+}
+
+.main-wrapper .donyu__table1 .data3 .donyu-fee-table .donyu-fee {
+  margin-left: 30px;
+}
+
+.main-wrapper .donyu__table1 .head1, .main-wrapper .donyu__table1 .data1, .main-wrapper .donyu__table1 .head2, .main-wrapper .donyu__table1 .data2 {
+  border-right: 2px solid #faefdb;
+}
+
+.main-wrapper .donyu__pattern {
+  width: 724px;
+  margin: 0 auto;
+  margin-top: 41px;
+}
+
+.main-wrapper .donyu__table2 {
+  margin-top: 41px;
+  margin-left: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-wrapper .donyu__table2--first {
+  margin-right: 32px;
+}
+
+.main-wrapper .donyu__table2--first .head1 {
+  width: 597px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.main-wrapper .donyu__table2--first .data1 {
+  padding: 40px 35px 24px 35px;
+}
+
+.main-wrapper .donyu__table2--first .data1 .textGroup {
+  height: 108px;
+}
+
+.main-wrapper .donyu__table2--first .data1 .textGroup .text1 {
+  margin-bottom: 20px;
+}
+
+.main-wrapper .donyu__table2--first .data1 .textGroup .text1 p {
+  font-size: 20px;
+}
+
+.main-wrapper .donyu__table2--first .data1 .textGroup .text2 {
+  margin-bottom: 30px;
+  margin-left: 70px;
+}
+
+.main-wrapper .donyu__table2--first .data1 .textGroup .text2 p {
+  text-align: left;
+}
+
+.main-wrapper .donyu__table2--second .head1 {
+  width: 597px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+
+.main-wrapper .donyu__table2--second .data1 {
+  padding: 41px 57px 153px 64px;
+}
+
+.main-wrapper .donyu__table2--second .data1 .textGroup {
+  height: 207px;
+}
+
+.main-wrapper .donyu__table2--second .data1 .textGroup .donyu-contentPrivilege {
+  list-style: none;
+  text-align: left;
+}
 /*# sourceMappingURL=kosyu.css.map */
