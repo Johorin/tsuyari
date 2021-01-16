@@ -63,22 +63,28 @@ body {
     //とりあえず文字の太さを550としている
     font-weight: 550;
     color: #841d08;
+    //とりあえず文字の間隔を5.5pxとしている
+    letter-spacing: 5.5px;
 }
 .main-wrapper {
     height: 5253px;
     background-image: url(./image/bg.png);
     &__headline {
-        margin: 0px 448px 72px 459px;
+        width: 492.8px;
+        //margin: 0px 448px 72px 459px;
+        margin: 0px auto 72px auto;
         padding-top: 100px;
     }
     /*共通部分の設計*/
     .title-wrapper {
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         .leftShape {
             margin-right: 22px;
             height: 59px;
         }
-        &--text {
+        &__text {
             height: 59px;
             //とりあえず8pxとした
             padding-top: 8px;
@@ -100,8 +106,13 @@ body {
         color: #64533d;
         //とりあえず注意書きの文字間は1.5pxとしている
         letter-spacing: 1.5px;
+        text-align: right;
+        margin-bottom: 15px;
     }
     table {
+        tr {
+            box-sizing: border-box;
+        }
         th {
             color: white;
             font-size: 20px;
@@ -123,12 +134,7 @@ body {
     .donyu {
         width: 100%;
         .title-wrapper {
-            margin-left: 562px;
-        }
-        &__caution {
-            margin-left: 1038px;
-            margin-top: 14px;
-            margin-bottom: 15px;
+            width: 300px;
         }
         &__table1 {
             margin: 0 auto;
@@ -221,6 +227,101 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+    .set {
+        margin-top: 73px;
+        .title-wrapper {
+            width: 340px;
+        }
+        &__table1 {
+            margin: 37px auto 41px auto;
+            width: 922px;
+            .head1 {
+                //width: 196px;
+                padding: 14px 83px 16px 84px;
+            }
+            .head2 {
+                //width: 433px;
+                padding: 15px 299px 15px 300px;
+            }
+            .data {
+                height: 142px;
+            }
+            .data1 {
+                padding-top: 51px;
+            }
+            .data2 {
+                padding-top: 51px;
+            }
+            .head1, .data1 {
+                border-right: 2px solid #faefdb;
+            }
+        }
+        &__table2 {
+            margin: 0 auto 0 auto;
+            width: 1226px;
+            .al-head {
+                background-color: #c28356;
+                vertical-align: middle;
+                padding-left: 15px;
+                padding-right: 12px;
+            }
+            .al-headA, .al-headB, .al-headC, .al-headD {
+                border-bottom: 2px solid #faefdb;
+            }
+            .head1 {
+                padding: 15px 200px 16px 200px;
+            }
+            .head2 {
+                padding: 15px 84px 16px 84px;
+            }
+            .head3 {
+                padding: 14px 216px 16px 218px;
+            }
+            .data {
+                height: 85.4px;
+            }
+            .data1 {
+                vertical-align: middle;
+                h3 {
+                    text-align: left;
+                    padding-left: 29px;
+                    color: #f19d19;
+                    font-size: 20px;
+                }
+                p {
+                    text-align: left;
+                    padding-left: 29px;
+                }
+            }
+            .data2 {
+                vertical-align: middle;
+            }
+            .data3 {
+                padding-top: 33px;
+                .textGroup {
+                    padding-left: 125px;
+                    ul {
+                        list-style: none;
+                        li {
+                            text-align: left;
+                        }
+                    }
+                }
+                .privilege {
+                    margin-top: 41px;
+                }
+            }
+            .head1, .data1, .head2, .data2 {
+                border-right: 2px solid #faefdb;
+            }
+            .data1, .data2 {
+                border-bottom: 2px solid #faefdb;
+            }
+            .data1-last, .data2-last {
+                border-bottom: none;
             }
         }
     }
