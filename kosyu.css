@@ -135,10 +135,16 @@ body {
 }
 
 .main-wrapper {
-  height: 5253px;
+  height: 6000px;
   background-image: url(./image/bg.png);
   /*共通部分の設計*/
   /*各講習部分の詳細設計*/
+  /*導入講習*/
+  /*セット講習*/
+  /*パーツ別講習*/
+  /*他社切り替え講習*/
+  /*初回導入セット*/
+  /*サロンスタッフ技術講習*/
 }
 
 .main-wrapper__headline {
@@ -610,5 +616,250 @@ body {
 
 .main-wrapper .byPart__table2 .data1-last, .main-wrapper .byPart__table2 .data2-last {
   border-bottom: none;
+}
+
+.main-wrapper .switchCompany {
+  margin-top: 73px;
+}
+
+.main-wrapper .switchCompany .title-wrapper {
+  width: 490px;
+}
+
+.main-wrapper .switchCompany .pattern {
+  width: 810px;
+}
+
+.main-wrapper .switchCompany__table1 {
+  margin: 9px auto 0 auto;
+  width: 922px;
+}
+
+.main-wrapper .switchCompany__table1 .head {
+  height: 49px;
+}
+
+.main-wrapper .switchCompany__table1 .head1 {
+  vertical-align: middle;
+  padding-left: 88px;
+  padding-right: 87px;
+}
+
+.main-wrapper .switchCompany__table1 .head2 {
+  vertical-align: middle;
+  padding-left: 211px;
+  padding-right: 212px;
+}
+
+.main-wrapper .switchCompany__table1 .head3 {
+  vertical-align: middle;
+  padding-left: 62px;
+  padding-right: 60px;
+}
+
+.main-wrapper .switchCompany__table1 .data {
+  height: 267px;
+}
+
+.main-wrapper .switchCompany__table1 .data1 {
+  text-align: center;
+  padding-top: 51px;
+}
+
+.main-wrapper .switchCompany__table1 .data2 {
+  text-align: center;
+}
+
+.main-wrapper .switchCompany__table1 .data3 {
+  text-align: center;
+}
+
+.main-wrapper .switchCompany__table1 .head1, .main-wrapper .switchCompany__table1 .data1, .main-wrapper .switchCompany__table1 .head2, .main-wrapper .switchCompany__table1 .data2 {
+  border-right: 2px solid #faefdb;
+}
+
+.main-wrapper .switchCompany__table2 {
+  margin: 42px auto 0 auto;
+  width: 1226px;
+}
+
+.main-wrapper .switchCompany__table2 .head {
+  height: 49px;
+}
+
+.main-wrapper .switchCompany__table2 .head1 {
+  vertical-align: middle;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.main-wrapper .switchCompany__table2 .head2 {
+  vertical-align: middle;
+  padding-left: 106px;
+  padding-right: 106px;
+}
+
+.main-wrapper .switchCompany__table2 .head3 {
+  vertical-align: middle;
+  padding-left: 195px;
+  padding-right: 195px;
+}
+
+.main-wrapper .switchCompany__table2 .data {
+  height: 307px;
+}
+
+.main-wrapper .switchCompany__table2 .data1 {
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 55px;
+}
+
+.main-wrapper .switchCompany__table2 .data2 {
+  vertical-align: middle;
+}
+
+.main-wrapper .switchCompany__table2 .data3 {
+  padding-top: 35px;
+}
+
+.main-wrapper .switchCompany__table2 .data3 ul {
+  list-style: none;
+}
+
+.main-wrapper .switchCompany__table2 .data3 ul li {
+  text-align: left;
+  padding-left: 48px;
+}
+
+.main-wrapper .switchCompany__table2 .data3 .privilege {
+  margin-top: 30px;
+}
+
+.main-wrapper .switchCompany__table2 .head1, .main-wrapper .switchCompany__table2 .data1, .main-wrapper .switchCompany__table2 .head2, .main-wrapper .switchCompany__table2 .data2 {
+  border-right: 2px solid #faefdb;
+}
+
+.main-wrapper .initialDeployment {
+  margin-top: 72px;
+}
+
+.main-wrapper .initialDeployment .title-wrapper {
+  width: 440px;
+}
+
+.main-wrapper .staffTec {
+  margin-top: 72px;
+}
+
+.main-wrapper .staffTec .title-wrapper {
+  width: 630px;
+}
+
+.main-wrapper .staffTec .pattern {
+  width: 852px;
+}
+
+.main-wrapper .staffTec__table1 {
+  margin: 9px auto 0 auto;
+  width: 922px;
+}
+
+.main-wrapper .staffTec__table1 .head {
+  height: 49px;
+}
+
+.main-wrapper .staffTec__table1 .head1 {
+  vertical-align: middle;
+  padding-left: 88px;
+  padding-right: 87px;
+}
+
+.main-wrapper .staffTec__table1 .head2 {
+  vertical-align: middle;
+  padding-left: 211px;
+  padding-right: 212px;
+}
+
+.main-wrapper .staffTec__table1 .head3 {
+  vertical-align: middle;
+  padding-left: 61px;
+  padding-right: 61px;
+}
+
+.main-wrapper .staffTec__table1 .data {
+  height: 142px;
+}
+
+.main-wrapper .staffTec__table1 .data1 {
+  vertical-align: middle;
+}
+
+.main-wrapper .staffTec__table1 .data2 {
+  vertical-align: middle;
+}
+
+.main-wrapper .staffTec__table1 .data3 {
+  vertical-align: middle;
+}
+
+.main-wrapper .staffTec__table1 .head1, .main-wrapper .staffTec__table1 .data1, .main-wrapper .staffTec__table1 .head2, .main-wrapper .staffTec__table1 .data2 {
+  border-right: 2px solid #faefdb;
+}
+
+.main-wrapper .staffTec__table2 {
+  margin: 42px auto 0 auto;
+  width: 1226px;
+}
+
+.main-wrapper .staffTec__table2 .head {
+  height: 49px;
+}
+
+.main-wrapper .staffTec__table2 .head1 {
+  vertical-align: middle;
+  padding-left: 136px;
+  padding-right: 137px;
+}
+
+.main-wrapper .staffTec__table2 .head2 {
+  vertical-align: middle;
+  padding-left: 113px;
+  padding-right: 113px;
+}
+
+.main-wrapper .staffTec__table2 .head3 {
+  vertical-align: middle;
+  padding-left: 252px;
+  padding-right: 251px;
+}
+
+.main-wrapper .staffTec__table2 .data {
+  height: 200px;
+}
+
+.main-wrapper .staffTec__table2 .data1 {
+  vertical-align: middle;
+}
+
+.main-wrapper .staffTec__table2 .data1 ul {
+  list-style: none;
+}
+
+.main-wrapper .staffTec__table2 .data1 ul li {
+  text-align: left;
+  padding-left: 50px;
+}
+
+.main-wrapper .staffTec__table2 .data2 {
+  vertical-align: middle;
+}
+
+.main-wrapper .staffTec__table2 .data3 {
+  vertical-align: middle;
+}
+
+.main-wrapper .staffTec__table2 .head1, .main-wrapper .staffTec__table2 .data1, .main-wrapper .staffTec__table2 .head2, .main-wrapper .staffTec__table2 .data2 {
+  border-right: 2px solid #faefdb;
 }
 /*# sourceMappingURL=kosyu.css.map */

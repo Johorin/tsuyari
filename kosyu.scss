@@ -67,7 +67,8 @@ body {
     letter-spacing: 5.5px;
 }
 .main-wrapper {
-    height: 5253px;
+    //height: 5253px;
+    height: 6000px;
     background-image: url(./image/bg.png);
     &__headline {
         width: 492.8px;
@@ -137,6 +138,7 @@ body {
         }
     }
     /*各講習部分の詳細設計*/
+    /*導入講習*/
     .donyu {
         width: 100%;
         .title-wrapper {
@@ -233,6 +235,7 @@ body {
             }
         }
     }
+    /*セット講習*/
     .set {
         margin-top: 73px;
         .title-wrapper {
@@ -329,6 +332,7 @@ body {
             }
         }
     }
+    /*パーツ別講習*/
     .byPart {
         margin-top: 73px;
         .title-wrapper {
@@ -439,6 +443,201 @@ body {
             }
             .data1-last, .data2-last {
                 border-bottom: none;
+            }
+        }
+    }
+    /*他社切り替え講習*/
+    .switchCompany {
+        margin-top: 73px;
+        .title-wrapper {
+            width: 490px;
+        }
+        .pattern {
+            width: 810px;
+        }
+        &__table1 {
+            margin: 9px auto 0 auto;
+            width: 922px;
+            .head {
+                height: 49px;
+            }
+            .head1 {
+                vertical-align: middle;
+                padding-left: 88px;
+                padding-right: 87px;
+            }
+            .head2 {
+                vertical-align: middle;
+                padding-left: 211px;
+                padding-right: 212px;
+            }
+            .head3 {
+                vertical-align: middle;
+                padding-left: 62px;
+                padding-right: 60px;
+            }
+            .data {
+                height: 267px;
+            }
+            .data1 {
+                text-align: center;
+                padding-top: 51px;
+            }
+            .data2 {
+                text-align: center;
+            }
+            .data3 {
+                text-align: center;
+            }
+            .head1, .data1, .head2, .data2 {
+                border-right: 2px solid #faefdb;
+            }
+        }
+        &__table2 {
+            margin: 42px auto 0 auto;
+            width: 1226px;
+            .head {
+                height: 49px;
+            }
+            .head1 {
+                vertical-align: middle;
+                padding-left: 200px;
+                padding-right: 200px;
+            }
+            .head2 {
+                vertical-align: middle;
+                padding-left: 106px;
+                padding-right: 106px;
+            }
+            .head3 {
+                vertical-align: middle;
+                padding-left: 195px;
+                padding-right: 195px;
+            }
+            .data {
+                height: 307px;
+            }
+            .data1 {
+                vertical-align: middle;
+                text-align: left;
+                padding-left: 55px;
+            }
+            .data2 {
+                vertical-align: middle;
+            }
+            .data3 {
+                padding-top: 35px;
+                ul {
+                    list-style: none;
+                    li {
+                        text-align: left;
+                        padding-left: 48px;
+                    }
+                }
+                .privilege {
+                    margin-top: 30px;
+                }
+            }
+            .head1, .data1, .head2, .data2 {
+                border-right: 2px solid #faefdb;
+            }
+        }
+    }
+    /*初回導入セット*/
+    .initialDeployment {
+        margin-top: 72px;
+        .title-wrapper {
+            width: 440px;
+        }
+    }
+    /*サロンスタッフ技術講習*/
+    .staffTec {
+        margin-top: 72px;
+        .title-wrapper {
+            width: 630px;
+        }
+        .pattern {
+            width: 852px;
+        }
+        &__table1 {
+            margin: 9px auto 0 auto;
+            width: 922px;
+            .head {
+                height: 49px;
+            }
+            .head1 {
+                vertical-align: middle;
+                padding-left: 88px;
+                padding-right: 87px;
+            }
+            .head2 {
+                vertical-align: middle;
+                padding-left: 211px;
+                padding-right: 212px;
+            }
+            .head3 {
+                vertical-align: middle;
+                padding-left: 61px;
+                padding-right: 61px;
+            }
+            .data {
+                height: 142px;
+            }
+            .data1 {
+                vertical-align: middle;
+            }
+            .data2 {
+                vertical-align: middle;
+            }
+            .data3 {
+                vertical-align: middle;
+            }
+            .head1, .data1, .head2, .data2 {
+                border-right: 2px solid #faefdb;
+            }
+        }
+        &__table2 {
+            margin: 42px auto 0 auto;
+            width: 1226px;
+            .head {
+                height: 49px;
+            }
+            .head1 {
+                vertical-align: middle;
+                padding-left: 136px;
+                padding-right: 137px;
+            }
+            .head2 {
+                vertical-align: middle;
+                padding-left: 113px;
+                padding-right: 113px;
+            }
+            .head3 {
+                vertical-align: middle;
+                padding-left: 252px;
+                padding-right: 251px;
+            }
+            .data {
+                height: 200px;
+            }
+            .data1 {
+                vertical-align: middle;
+                ul {
+                    list-style: none;
+                    li {
+                        text-align: left;
+                        padding-left: 50px;
+                    }
+                }
+            }
+            .data2 {
+                vertical-align: middle;
+            }
+            .data3 {
+                vertical-align: middle;
+            }
+            .head1, .data1, .head2, .data2 {
+                border-right: 2px solid #faefdb;
             }
         }
     }
