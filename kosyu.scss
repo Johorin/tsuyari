@@ -109,7 +109,13 @@ body {
         text-align: right;
         margin-bottom: 15px;
     }
+    .pattern {
+        margin: 0 auto;
+        margin-top: 41px;
+        margin-bottom: 42px;
+    }
     table {
+        box-sizing: border-box;
         tr {
             box-sizing: border-box;
         }
@@ -135,6 +141,9 @@ body {
         width: 100%;
         .title-wrapper {
             width: 300px;
+        }
+        .pattern {
+            width: 724px;
         }
         &__table1 {
             margin: 0 auto;
@@ -174,11 +183,6 @@ body {
                 border-right: 2px solid #faefdb;
             }
         }
-        &__pattern {
-            width: 724px;
-            margin: 0 auto;
-            margin-top: 41px;
-        }
         &__table2 {
             margin-top: 41px;
             margin-left: 87px;
@@ -192,7 +196,6 @@ body {
                 }
                 .data1 {
                     padding: 40px 35px 24px 35px;
-                    //max-height: 331px;
                     .textGroup {
                         height: 108px;
                         .text1 {
@@ -235,15 +238,16 @@ body {
         .title-wrapper {
             width: 340px;
         }
+        .pattern {
+            width: 768px;
+        }
         &__table1 {
             margin: 37px auto 41px auto;
             width: 922px;
             .head1 {
-                //width: 196px;
                 padding: 14px 83px 16px 84px;
             }
             .head2 {
-                //width: 433px;
                 padding: 15px 299px 15px 300px;
             }
             .data {
@@ -260,7 +264,7 @@ body {
             }
         }
         &__table2 {
-            margin: 0 auto 0 auto;
+            margin: 42px auto 0 auto;
             width: 1226px;
             .al-head {
                 background-color: #c28356;
@@ -318,6 +322,119 @@ body {
                 border-right: 2px solid #faefdb;
             }
             .data1, .data2 {
+                border-bottom: 2px solid #faefdb;
+            }
+            .data1-last, .data2-last {
+                border-bottom: none;
+            }
+        }
+    }
+    .byPart {
+        margin-top: 73px;
+        .title-wrapper {
+            width: 400px;
+        }
+        .pattern {
+            width: 664px;
+        }
+        &__table1 {
+            margin: 37px auto 0 auto;
+            width: 922px;
+            .head {
+                height: 49px;
+            }
+            .head1 {
+                vertical-align: middle;
+                padding-left: 42px;
+                padding-right: 42px;
+            }
+            .head2 {
+                vertical-align: middle;
+                padding-left: 196px;
+                padding-right: 193px;
+            }
+            .head3 {
+                vertical-align: middle;
+                padding-left: 125px;
+                padding-right: 122px;
+            }
+            .data {
+                height: 142px;
+            }
+            .data1 {
+                vertical-align: middle;
+            }
+            .data2 {
+                vertical-align: middle;
+            }
+            .data3 {
+                vertical-align: middle;
+            }
+            .head1, .data1, .head2, .data2 {
+                border-right: 2px solid #faefdb;
+            }
+        }
+        &__table2 {
+            margin: 0 auto 0 auto;
+            width: 1226px;
+            .al-head {
+                background-color: #c28356;
+                vertical-align: middle;
+                padding-left: 15px;
+                padding-right: 12px;
+            }
+            .al-headA, .al-headB, .al-headC, .al-headD, .al-headE {
+                border-bottom: 2px solid #faefdb;
+            }
+            .head1 {
+                vertical-align: middle;
+                padding-left: 273px;
+                padding-right: 273px;
+            }
+            .head2 {
+                vertical-align: middle;
+                padding-left: 33px;
+                padding-right: 33px;
+            }
+            .head3 {
+                vertical-align: middle;
+                padding-left: 195px;
+                padding-right: 195px;
+            }
+            .data {
+                height: 61.83px;
+            }
+            .data1 {
+                vertical-align: middle;
+                h3 {
+                    text-align: left;
+                    padding-left: 29px;
+                    color: #f19d19;
+                    font-size: 20px;
+                }
+            }
+            .data2 {
+                vertical-align: middle;
+            }
+            .data3 {
+                padding-top: 33px;
+                .textGroup {
+                    padding-left: 82px;
+                    ul {
+                        list-style: none;
+                        li {
+                            text-align: left;
+                        }
+                    }
+                }
+                .privilege {
+                    margin-top: 41px;
+                }
+            }
+            .head1, .data1, .head2, .data2 {
+                border-right: 2px solid #faefdb;
+            }
+            .data1 {
                 border-bottom: 2px solid #faefdb;
             }
             .data1-last, .data2-last {
