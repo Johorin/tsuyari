@@ -135,7 +135,7 @@ body {
 }
 
 .main-wrapper {
-  height: 6000px;
+  height: 6150px;
   background-image: url(./image/bg.png);
   /*共通部分の設計*/
   /*各講習部分の詳細設計*/
@@ -745,7 +745,203 @@ body {
 }
 
 .main-wrapper .initialDeployment .title-wrapper {
-  width: 440px;
+  width: 530px;
+}
+
+.main-wrapper .initialDeployment .pattern {
+  width: 664px;
+  position: relative;
+}
+
+.main-wrapper .initialDeployment .pattern h3 {
+  text-align: center;
+  color: #64533d;
+  font-size: 20px;
+  opacity: 0.9;
+  font-weight: 600;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  position: absolute;
+  top: 64px;
+  left: 83px;
+}
+
+.main-wrapper .initialDeployment__table1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1226px;
+  margin: 30px auto 0 auto;
+}
+
+.main-wrapper .initialDeployment__table1--A {
+  margin-right: 30px;
+}
+
+.main-wrapper .initialDeployment__table1--A table {
+  width: 389px;
+}
+
+.main-wrapper .initialDeployment__table1--A .head {
+  height: 49px;
+}
+
+.main-wrapper .initialDeployment__table1--A .head1 {
+  vertical-align: middle;
+}
+
+.main-wrapper .initialDeployment__table1--A .data {
+  height: 260px;
+}
+
+.main-wrapper .initialDeployment__table1--A .data1 p {
+  font-size: 12px;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.main-wrapper .initialDeployment__table1--A .data1 .limitedPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  margin: 30px auto 0 auto;
+}
+
+.main-wrapper .initialDeployment__table1--A .data1 .limitedPrice__text h3.price {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  text-decoration: line-through;
+}
+
+.main-wrapper .initialDeployment__table1--A .data1 .limitedPrice__text h3.text {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color: red;
+  letter-spacing: 5px;
+}
+
+.main-wrapper .initialDeployment__table1--A .data1 .limitedPrice__price {
+  margin-left: 10px;
+}
+
+.main-wrapper .initialDeployment__table1--A .data1 .limitedPrice__price h2 {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color: red;
+  font-size: 50px;
+  margin-top: 12px;
+}
+
+.main-wrapper .initialDeployment__table1--B {
+  margin-right: 30px;
+}
+
+.main-wrapper .initialDeployment__table1--B table {
+  width: 389px;
+}
+
+.main-wrapper .initialDeployment__table1--B .head {
+  height: 49px;
+}
+
+.main-wrapper .initialDeployment__table1--B .head1 {
+  vertical-align: middle;
+}
+
+.main-wrapper .initialDeployment__table1--B .data {
+  height: 260px;
+}
+
+.main-wrapper .initialDeployment__table1--B .data1 p {
+  font-size: 12px;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.main-wrapper .initialDeployment__table1--B .data1 .limitedPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  margin: 30px auto 0 auto;
+}
+
+.main-wrapper .initialDeployment__table1--B .data1 .limitedPrice__text h3.price {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  text-decoration: line-through;
+}
+
+.main-wrapper .initialDeployment__table1--B .data1 .limitedPrice__text h3.text {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color: red;
+  letter-spacing: 5px;
+}
+
+.main-wrapper .initialDeployment__table1--B .data1 .limitedPrice__price {
+  margin-left: 10px;
+}
+
+.main-wrapper .initialDeployment__table1--B .data1 .limitedPrice__price h2 {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color: red;
+  font-size: 50px;
+  margin-top: 12px;
+}
+
+.main-wrapper .initialDeployment__table1--C table {
+  width: 389px;
+}
+
+.main-wrapper .initialDeployment__table1--C .head {
+  height: 49px;
+}
+
+.main-wrapper .initialDeployment__table1--C .head1 {
+  vertical-align: middle;
+}
+
+.main-wrapper .initialDeployment__table1--C .data {
+  height: 260px;
+}
+
+.main-wrapper .initialDeployment__table1--C .data1 p {
+  font-size: 12px;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.main-wrapper .initialDeployment__table1--C .data1 .limitedPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  margin: 30px auto 0 auto;
+}
+
+.main-wrapper .initialDeployment__table1--C .data1 .limitedPrice__text h3.price {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  text-decoration: line-through;
+}
+
+.main-wrapper .initialDeployment__table1--C .data1 .limitedPrice__text h3.text {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color: red;
+  letter-spacing: 5px;
+}
+
+.main-wrapper .initialDeployment__table1--C .data1 .limitedPrice__price {
+  margin-left: 10px;
+}
+
+.main-wrapper .initialDeployment__table1--C .data1 .limitedPrice__price h2 {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color: red;
+  font-size: 50px;
+  margin-top: 12px;
+}
+
+.main-wrapper .initialDeployment__table1--C .data1 .limitedPrice {
+  margin-top: 78px;
 }
 
 .main-wrapper .staffTec {

@@ -68,7 +68,7 @@ body {
 }
 .main-wrapper {
     //height: 5253px;
-    height: 6000px;
+    height: 6150px;
     background-image: url(./image/bg.png);
     &__headline {
         width: 492.8px;
@@ -544,10 +544,119 @@ body {
         }
     }
     /*初回導入セット*/
+    @mixin iDTable-data1 {
+        p {
+            font-size: 12px;
+            text-align: left;
+            padding-top: 30px;
+            padding-left: 10px;
+        }
+        .limitedPrice {
+            display: flex;
+            width: 320px;
+            margin: 30px auto 0 auto;
+            &__text {
+                h3.price {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    text-decoration: line-through;
+                }
+                h3.text {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    color: red;
+                    letter-spacing: 5px;
+                }
+            }
+            &__price {
+                margin-left: 10px;
+                h2 {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    color: red;
+                    font-size: 50px;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
     .initialDeployment {
         margin-top: 72px;
         .title-wrapper {
-            width: 440px;
+            width: 530px;
+        }
+        .pattern {
+            width: 664px;
+            position: relative;
+            h3 {
+                text-align: center;
+                color: #64533d;
+                font-size: 20px;
+                opacity: 0.9;
+                font-weight: 600;
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                position: absolute;
+                top: 64px;
+                left: 83px;
+            }
+        }
+        &__table1 {
+            display: flex;
+            width: 1226px;
+            margin: 30px auto 0 auto;
+            &--A {
+                margin-right: 30px;
+                table {
+                    width: 389px;
+                }
+                .head {
+                    height: 49px;
+                }
+                .head1 {
+                    vertical-align: middle;
+                }
+                .data {
+                    height: 260px;
+                }
+                .data1 {
+                    @include iDTable-data1;
+                }
+            }
+            &--B {
+                margin-right: 30px;
+                table {
+                    width: 389px;
+                }
+                .head {
+                    height: 49px;
+                }
+                .head1 {
+                    vertical-align: middle;
+                }
+                .data {
+                    height: 260px;
+                }
+                .data1 {
+                    @include iDTable-data1;
+                }
+            }
+            &--C {
+                table {
+                    width: 389px;
+                }
+                .head {
+                    height: 49px;
+                }
+                .head1 {
+                    vertical-align: middle;
+                }
+                .data {
+                    height: 260px;
+                }
+                .data1 {
+                    @include iDTable-data1;
+                    .limitedPrice {
+                        margin-top: 78px;
+                    }
+                }
+            }
         }
     }
     /*サロンスタッフ技術講習*/
