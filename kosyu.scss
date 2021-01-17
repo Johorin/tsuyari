@@ -751,3 +751,96 @@ body {
         }
     }
 }
+.main-wrapper2 {
+    &__headline {
+        width: 800.8px;
+        margin: 100px auto 85px auto;
+    }
+    .ApplicationFlowBox {
+        width: 684px;
+        margin: 0 auto 0 auto;
+        &__titleBox {
+            position: relative;
+            &--number {
+                position: absolute;
+                top: 4px;
+                left: 27px;
+                h1 {
+                    font-family: 'Baskerville', serif;
+                    color: #c28356;
+                    font-size: 60px;
+                    font-style: italic;
+                    font-weight: lighter;
+                }
+            }
+            &--number-red {
+                position: absolute;
+                top: 4px;
+                left: 27px;
+                h1 {
+                    font-family: 'Baskerville', serif;
+                    color: #841d08;
+                    font-size: 60px;
+                    font-style: italic;
+                    font-weight: lighter;
+                }
+            }
+            &--text {
+                position: absolute;
+                top: 18px;
+                left: 118px;
+                h1 {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    color: #ffffff;
+                    font-size: 28px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .text {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            font-size: 16px;
+            color: #64533d;
+            letter-spacing: 1.5px;
+        }
+        &__text-first {
+            box-sizing: border-box;
+            width: 684px;
+            height: 259px;
+            border: 2px solid #c28356;
+            margin-top: -4px;
+            padding: 35px 47px 0px 47px;
+            .TelEmail {
+                img {
+                    margin: 30px 68px 0px 69px;
+                }
+            }
+        }
+        &__text {
+            box-sizing: border-box;
+            width: 684px;
+            height: 113px;
+            border: 2px solid #c28356;
+            margin-top: -4px;
+            padding: 35px 33px 0px 35px;
+        }
+        &__text-last {
+            box-sizing: border-box;
+            width: 684px;
+            height: 113px;
+            border: 2px solid #841d08;
+            margin-top: -4px;
+            padding: 35px 33px 0 33px;
+            margin-bottom: 75px;
+        }
+    }
+    .triangle {
+        border-top: 40px solid #c28356;
+        border-right: 50px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 50px solid transparent;
+        width: 0;
+        height: 0;
+        margin: 0 auto 0 auto;
+    }
+}

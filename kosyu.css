@@ -1058,4 +1058,111 @@ body {
 .main-wrapper .staffTec__table2 .head1, .main-wrapper .staffTec__table2 .data1, .main-wrapper .staffTec__table2 .head2, .main-wrapper .staffTec__table2 .data2 {
   border-right: 2px solid #faefdb;
 }
+
+.main-wrapper2__headline {
+  width: 800.8px;
+  margin: 100px auto 85px auto;
+}
+
+.main-wrapper2 .ApplicationFlowBox {
+  width: 684px;
+  margin: 0 auto 0 auto;
+}
+
+.main-wrapper2 .ApplicationFlowBox__titleBox {
+  position: relative;
+}
+
+.main-wrapper2 .ApplicationFlowBox__titleBox--number {
+  position: absolute;
+  top: 4px;
+  left: 27px;
+}
+
+.main-wrapper2 .ApplicationFlowBox__titleBox--number h1 {
+  font-family: 'Baskerville', serif;
+  color: #c28356;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.main-wrapper2 .ApplicationFlowBox__titleBox--number-red {
+  position: absolute;
+  top: 4px;
+  left: 27px;
+}
+
+.main-wrapper2 .ApplicationFlowBox__titleBox--number-red h1 {
+  font-family: 'Baskerville', serif;
+  color: #841d08;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.main-wrapper2 .ApplicationFlowBox__titleBox--text {
+  position: absolute;
+  top: 18px;
+  left: 118px;
+}
+
+.main-wrapper2 .ApplicationFlowBox__titleBox--text h1 {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.main-wrapper2 .ApplicationFlowBox .text {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 16px;
+  color: #64533d;
+  letter-spacing: 1.5px;
+}
+
+.main-wrapper2 .ApplicationFlowBox__text-first {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 684px;
+  height: 259px;
+  border: 2px solid #c28356;
+  margin-top: -4px;
+  padding: 35px 47px 0px 47px;
+}
+
+.main-wrapper2 .ApplicationFlowBox__text-first .TelEmail img {
+  margin: 30px 68px 0px 69px;
+}
+
+.main-wrapper2 .ApplicationFlowBox__text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 684px;
+  height: 113px;
+  border: 2px solid #c28356;
+  margin-top: -4px;
+  padding: 35px 33px 0px 35px;
+}
+
+.main-wrapper2 .ApplicationFlowBox__text-last {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 684px;
+  height: 113px;
+  border: 2px solid #841d08;
+  margin-top: -4px;
+  padding: 35px 33px 0 33px;
+  margin-bottom: 75px;
+}
+
+.main-wrapper2 .triangle {
+  border-top: 40px solid #c28356;
+  border-right: 50px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 50px solid transparent;
+  width: 0;
+  height: 0;
+  margin: 0 auto 0 auto;
+}
 /*# sourceMappingURL=kosyu.css.map */
