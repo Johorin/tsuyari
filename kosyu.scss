@@ -30,11 +30,10 @@ body {
 .header-wrapper {
     height: 80px;
     &--logo {
-        width: 133px;
-        height: 48px;
+        width: 236px;
+        height: 54px;
         margin-left: 40px;
-        margin-top: 16px;
-        margin-bottom: 16px;
+        margin: 13px 0 0 40px;
         display: inline-block;
     }
     &--nav {
