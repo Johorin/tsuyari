@@ -43,6 +43,7 @@ body {
             list-style: none;
             display: flex;
             a {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
                 text-decoration: none;
                 font-size: 16px;
                 color: #64533d;
@@ -842,5 +843,70 @@ body {
         width: 0;
         height: 0;
         margin: 0 auto 0 auto;
+    }
+}
+.footer-wrapper1 {
+    height: 140px;
+    &--nav {
+        width: 325px;
+        margin: 0 auto 0 auto;
+        .list-header-nav {
+            list-style: none;
+            display: flex;
+            a {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                text-decoration: none;
+                font-size: 16px;
+                color: #64533d;
+                display: block;
+                margin: 62px 40px 62px 0;
+            }
+            a.last {
+                margin-right: 0;
+            }
+        }
+    }
+}
+.footer-wrapper2 {
+    height: 265px;
+    background: url("./image/bg2.png");
+    position: relative;
+    .pageTop {
+        position: absolute;
+        top: 108px;
+        right: 40px;
+        &__text {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            margin-top: 5px;
+            font-size: 10px;
+            color: #64533d;
+            letter-spacing: normal;
+            font-weight: 600;
+            position: relative;
+            right: 1px;
+        }
+    }
+    &__logo {
+        width: 270px;
+        margin: 0 auto 25px auto;
+        padding-top: 30px;
+    }
+    &__address {
+        p {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            font-size: 16px;
+            color: #64533d;
+            text-align: center;
+            line-height: 24px;
+        }
+    }
+    &__copyright {
+        margin-top: 20px;
+        p {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            font-size: 10px;
+            color: #64533d;
+            text-align: center;
+        }
     }
 }
