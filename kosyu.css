@@ -1079,7 +1079,7 @@ body {
   left: 27px;
 }
 
-.main-wrapper2 .ApplicationFlowBox__titleBox--number h1 {
+.main-wrapper2 .ApplicationFlowBox__titleBox--number h2 {
   font-family: 'Baskerville', serif;
   color: #c28356;
   font-size: 60px;
@@ -1093,7 +1093,7 @@ body {
   left: 27px;
 }
 
-.main-wrapper2 .ApplicationFlowBox__titleBox--number-red h1 {
+.main-wrapper2 .ApplicationFlowBox__titleBox--number-red h2 {
   font-family: 'Baskerville', serif;
   color: #841d08;
   font-size: 60px;
@@ -1107,7 +1107,7 @@ body {
   left: 118px;
 }
 
-.main-wrapper2 .ApplicationFlowBox__titleBox--text h1 {
+.main-wrapper2 .ApplicationFlowBox__titleBox--text h2 {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #ffffff;
   font-size: 28px;
