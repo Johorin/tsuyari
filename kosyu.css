@@ -119,6 +119,11 @@ body {
   display: block;
   margin-top: 33px;
   margin-right: 40px;
+  letter-spacing: normal;
+}
+
+.header-wrapper--nav .list-header-nav a:hover {
+  opacity: 0.6;
 }
 
 .main__topImage {
@@ -1241,6 +1246,19 @@ body {
 .footImage {
   width: 100%;
   background: url("./image/footImage/footImage-background.png") center center/cover no-repeat;
+  position: relative;
+  z-index: 1;
+  /*&__contactToMail {
+        width: calc(361 / 1400 * 100%);
+        margin: 0 auto 0 auto;
+        margin-top: calc(207 / 1400 * (-100%));
+        img {
+            width: 100%;
+            &:hover {
+                color: lighten(#4698a2, 50%);
+            }
+        }
+    }*/
 }
 
 .footImage__title {
@@ -1266,19 +1284,55 @@ body {
 }
 
 .footImage__contactToMail {
-  width: calc(361 / 1400 * 100%);
+  height: 60px;
+  width: 351px;
   margin: 0 auto 0 auto;
   margin-top: calc(207 / 1400 * (-100%));
+  border: 2px solid #2b757e;
+  border-radius: 30px;
+  background: linear-gradient(-30deg, #4698a2 20%, #7bd8e4 40%, #7bd8e4 60%, #4698a2 80%, #4698a2);
+  position: relative;
+  z-index: 3;
 }
 
-.footImage__contactToMail img {
-  width: 100%;
+.footImage__contactToMail--btn {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 17px 0 17px 0;
+  font-size: 24px;
+  letter-spacing: normal;
+  font-weight: 600;
+  text-shadow: 3px 3px 10px #418892;
+  border-top: 2px solid #90ccd3;
+  border-left: 2px solid #90ccd3;
+  border-radius: 30px;
+}
+
+.footImage__contactToMail--btn .mailBox {
+  padding-right: 7px;
+}
+
+.footImage__contactToMail:hover {
+  opacity: 0.7;
+}
+
+.footImage .fundColor {
+  height: 60px;
+  width: 351px;
+  margin: -60px auto 0 auto;
+  border-radius: 30px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 .footImage__contactToPhone {
   width: calc(470 / 1400 * 100%);
   margin: 0 auto 0 auto;
-  margin-top: calc(20 / 1400 * 100%);
+  margin-top: calc(40 / 1400 * 100%);
   padding-bottom: calc(97 / 1400 * 100%);
 }
 
@@ -1309,6 +1363,11 @@ body {
   color: #64533d;
   display: block;
   margin: 62px 40px 62px 0;
+  letter-spacing: normal;
+}
+
+.footer-wrapper1--nav .list-header-nav a:hover {
+  opacity: 0.6;
 }
 
 .footer-wrapper1--nav .list-header-nav a.last {
