@@ -1449,6 +1449,10 @@ body {
   right: 1px;
 }
 
+.footer-wrapper2 .pageTop a:hover {
+  opacity: 0.8;
+}
+
 .footer-wrapper2__logo {
   width: 270px;
   margin: 0 auto 25px auto;
