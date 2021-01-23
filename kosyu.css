@@ -89,7 +89,12 @@ body {
 }
 
 .header-wrapper {
+  width: 100%;
   height: 80px;
+  background: #fff;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 10;
 }
 
 .header-wrapper--logo {
@@ -124,6 +129,10 @@ body {
 
 .header-wrapper--nav .list-header-nav a:hover {
   opacity: 0.6;
+}
+
+.main__topImage {
+  padding-top: 80px;
 }
 
 .main__topImage img {
