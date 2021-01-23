@@ -84,7 +84,7 @@ input, select {
 /*レスポンシブ（要相談）*/
 body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  width: 1400px;
+  width: 100%;
   letter-spacing: 2px;
 }
 
@@ -126,8 +126,8 @@ body {
   opacity: 0.6;
 }
 
-.main__topImage {
-  height: 544px;
+.main__topImage img {
+  width: 100%;
 }
 
 /*見出し*/
@@ -140,8 +140,8 @@ body {
 }
 
 .main-wrapper {
-  height: 6150px;
-  background-image: url("./image/backgroundMain.png");
+  margin-top: -2px;
+  background: url("./image/backgroundMain.png") center center/cover no-repeat;
   /*共通部分の設計*/
   /*各講習部分の詳細設計*/
   /*導入講習*/
@@ -307,8 +307,8 @@ body {
 }
 
 .main-wrapper .donyu__table2 {
-  margin-top: 41px;
-  margin-left: 87px;
+  width: 1226px;
+  margin: 41px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1081,6 +1081,7 @@ body {
 
 .main-wrapper .staffTec__table2 {
   margin: 42px auto 0 auto;
+  padding-bottom: 100px;
   width: 1226px;
 }
 
@@ -1301,17 +1302,6 @@ body {
   background: url("./image/footImage/footImage-background.png") center center/cover no-repeat;
   position: relative;
   z-index: 1;
-  /*&__contactToMail {
-        width: calc(361 / 1400 * 100%);
-        margin: 0 auto 0 auto;
-        margin-top: calc(207 / 1400 * (-100%));
-        img {
-            width: 100%;
-            &:hover {
-                color: lighten(#4698a2, 50%);
-            }
-        }
-    }*/
 }
 
 .footImage__title {
@@ -1429,7 +1419,7 @@ body {
 
 .footer-wrapper2 {
   height: 265px;
-  background: url("./image/backgroundFooter.png");
+  background: url("./image/backgroundFooter.png") center center/cover no-repeat;
   position: relative;
 }
 
