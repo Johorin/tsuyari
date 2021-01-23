@@ -831,9 +831,25 @@ body {
         margin: 0 auto 0 auto;
         &__titleBox {
             position: relative;
+            box-sizing: border-box;
+            width: 684px;
+            height: 64px;
+            background: #c28356;
+            border: 2px solid #c28356;
+            overflow: hidden;
+            &::before {
+                width: 100px;
+                height: 100px;
+                content: ' ';
+                background: #fff;
+                border-radius: 50%;
+                position: absolute;
+                top: -19px;
+                right: 590px;
+            }
             &--number {
                 position: absolute;
-                top: 4px;
+                top: 3px;
                 left: 27px;
                 h2 {
                     font-family: 'Baskerville', serif;
@@ -843,9 +859,39 @@ body {
                     font-weight: lighter;
                 }
             }
+            &--text {
+                position: absolute;
+                top: 18px;
+                left: 118px;
+                h2 {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    color: #ffffff;
+                    font-size: 28px;
+                    font-weight: 500;
+                }
+            }
+        }
+        &__titleBox-last {
+            position: relative;
+            box-sizing: border-box;
+            width: 684px;
+            height: 64px;
+            background: #841d08;
+            border: 2px solid #841d08;
+            overflow: hidden;
+            &::before {
+                width: 100px;
+                height: 100px;
+                content: ' ';
+                background: #fff;
+                border-radius: 50%;
+                position: absolute;
+                top: -19px;
+                right: 590px;
+            }
             &--number-red {
                 position: absolute;
-                top: 4px;
+                top: 3px;
                 left: 27px;
                 h2 {
                     font-family: 'Baskerville', serif;
