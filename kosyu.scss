@@ -69,7 +69,7 @@ body {
 .main-wrapper {
     //height: 5253px;
     height: 6150px;
-    background-image: url(./image/bg.png);
+    background-image: url("./image/backgroundMain.png");
     &__headline {
         width: 492.8px;
         //margin: 0px 448px 72px 459px;
@@ -146,6 +146,19 @@ body {
         }
         .pattern {
             width: 724px;
+            position: relative;
+            h3 {
+                text-align: center;
+                color: #64533d;
+                font-size: 20px;
+                letter-spacing: normal;
+                opacity: 0.9;
+                font-weight: 600;
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                position: absolute;
+                top: 65px;
+                left: 80px;
+            }
         }
         &__table1 {
             margin: 0 auto;
@@ -243,6 +256,19 @@ body {
         }
         .pattern {
             width: 768px;
+            position: relative;
+            h3 {
+                text-align: center;
+                color: #64533d;
+                font-size: 20px;
+                letter-spacing: normal;
+                opacity: 0.9;
+                font-weight: 600;
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                position: absolute;
+                top: 64px;
+                left: 83px;
+            }
         }
         &__table1 {
             margin: 37px auto 41px auto;
@@ -340,6 +366,19 @@ body {
         }
         .pattern {
             width: 664px;
+            position: relative;
+            h3 {
+                text-align: center;
+                color: #64533d;
+                font-size: 20px;
+                letter-spacing: normal;
+                opacity: 0.9;
+                font-weight: 600;
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                position: absolute;
+                top: 65px;
+                left: 83px;
+            }
         }
         &__table1 {
             margin: 37px auto 0 auto;
@@ -454,6 +493,19 @@ body {
         }
         .pattern {
             width: 810px;
+            position: relative;
+            h3 {
+                text-align: center;
+                color: #64533d;
+                font-size: 20px;
+                letter-spacing: normal;
+                opacity: 0.9;
+                font-weight: 600;
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                position: absolute;
+                top: 64px;
+                left: 88px;
+            }
         }
         &__table1 {
             margin: 9px auto 0 auto;
@@ -589,12 +641,13 @@ body {
                 text-align: center;
                 color: #64533d;
                 font-size: 20px;
+                letter-spacing: normal;
                 opacity: 0.9;
                 font-weight: 600;
                 font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
                 position: absolute;
                 top: 64px;
-                left: 83px;
+                left: 113px;
             }
         }
         &__table1 {
@@ -667,6 +720,19 @@ body {
         }
         .pattern {
             width: 852px;
+            position: relative;
+            h3 {
+                text-align: center;
+                color: #64533d;
+                font-size: 20px;
+                letter-spacing: normal;
+                opacity: 0.9;
+                font-weight: 600;
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                position: absolute;
+                top: 64px;
+                left: 83px;
+            }
         }
         &__table1 {
             margin: 9px auto 0 auto;
@@ -844,6 +910,29 @@ body {
         margin: 0 auto 0 auto;
     }
 }
+/*フッター部分*/
+.footImage {
+    width: 100%;
+    height: 1120px;
+    background-image: url("./image/footImage/footImage-background.png");
+    &__title {
+        width: 795px;
+        margin: 0px auto 0 auto;
+        padding-top: 80px;
+    }
+    &__marchandises {
+        width: 873px;
+        margin: -88px auto 0 auto;
+    }
+    &__contactToMail {
+        width: 351px;
+        margin: -197px auto 0 auto;
+    }
+    &__contactToPhone {
+        width: 470px;
+        margin: 40px auto 0 auto;
+    }
+}
 .footer-wrapper1 {
     height: 140px;
     &--nav {
@@ -868,7 +957,7 @@ body {
 }
 .footer-wrapper2 {
     height: 265px;
-    background: url("./image/bg2.png");
+    background: url("./image/backgroundFooter.png");
     position: relative;
     .pageTop {
         position: absolute;

@@ -136,7 +136,7 @@ body {
 
 .main-wrapper {
   height: 6150px;
-  background-image: url(./image/bg.png);
+  background-image: url("./image/backgroundMain.png");
   /*共通部分の設計*/
   /*各講習部分の詳細設計*/
   /*導入講習*/
@@ -237,6 +237,20 @@ body {
 
 .main-wrapper .donyu .pattern {
   width: 724px;
+  position: relative;
+}
+
+.main-wrapper .donyu .pattern h3 {
+  text-align: center;
+  color: #64533d;
+  font-size: 20px;
+  letter-spacing: normal;
+  opacity: 0.9;
+  font-weight: 600;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  position: absolute;
+  top: 65px;
+  left: 80px;
 }
 
 .main-wrapper .donyu__table1 {
@@ -359,6 +373,20 @@ body {
 
 .main-wrapper .set .pattern {
   width: 768px;
+  position: relative;
+}
+
+.main-wrapper .set .pattern h3 {
+  text-align: center;
+  color: #64533d;
+  font-size: 20px;
+  letter-spacing: normal;
+  opacity: 0.9;
+  font-weight: 600;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  position: absolute;
+  top: 64px;
+  left: 83px;
 }
 
 .main-wrapper .set__table1 {
@@ -484,6 +512,20 @@ body {
 
 .main-wrapper .byPart .pattern {
   width: 664px;
+  position: relative;
+}
+
+.main-wrapper .byPart .pattern h3 {
+  text-align: center;
+  color: #64533d;
+  font-size: 20px;
+  letter-spacing: normal;
+  opacity: 0.9;
+  font-weight: 600;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  position: absolute;
+  top: 65px;
+  left: 83px;
 }
 
 .main-wrapper .byPart__table1 {
@@ -628,6 +670,20 @@ body {
 
 .main-wrapper .switchCompany .pattern {
   width: 810px;
+  position: relative;
+}
+
+.main-wrapper .switchCompany .pattern h3 {
+  text-align: center;
+  color: #64533d;
+  font-size: 20px;
+  letter-spacing: normal;
+  opacity: 0.9;
+  font-weight: 600;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  position: absolute;
+  top: 64px;
+  left: 88px;
 }
 
 .main-wrapper .switchCompany__table1 {
@@ -757,12 +813,13 @@ body {
   text-align: center;
   color: #64533d;
   font-size: 20px;
+  letter-spacing: normal;
   opacity: 0.9;
   font-weight: 600;
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   position: absolute;
   top: 64px;
-  left: 83px;
+  left: 113px;
 }
 
 .main-wrapper .initialDeployment__table1 {
@@ -954,6 +1011,20 @@ body {
 
 .main-wrapper .staffTec .pattern {
   width: 852px;
+  position: relative;
+}
+
+.main-wrapper .staffTec .pattern h3 {
+  text-align: center;
+  color: #64533d;
+  font-size: 20px;
+  letter-spacing: normal;
+  opacity: 0.9;
+  font-weight: 600;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  position: absolute;
+  top: 64px;
+  left: 83px;
 }
 
 .main-wrapper .staffTec__table1 {
@@ -1166,6 +1237,34 @@ body {
   margin: 0 auto 0 auto;
 }
 
+/*フッター部分*/
+.footImage {
+  width: 100%;
+  height: 1120px;
+  background-image: url("./image/footImage/footImage-background.png");
+}
+
+.footImage__title {
+  width: 795px;
+  margin: 0px auto 0 auto;
+  padding-top: 80px;
+}
+
+.footImage__marchandises {
+  width: 873px;
+  margin: -88px auto 0 auto;
+}
+
+.footImage__contactToMail {
+  width: 351px;
+  margin: -197px auto 0 auto;
+}
+
+.footImage__contactToPhone {
+  width: 470px;
+  margin: 40px auto 0 auto;
+}
+
 .footer-wrapper1 {
   height: 140px;
 }
@@ -1197,7 +1296,7 @@ body {
 
 .footer-wrapper2 {
   height: 265px;
-  background: url("./image/bg2.png");
+  background: url("./image/backgroundFooter.png");
   position: relative;
 }
 
