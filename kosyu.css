@@ -150,7 +150,7 @@ body {
 
 .main-wrapper {
   margin-top: -2px;
-  background: url("./image/backgroundMain.png") center center/cover no-repeat;
+  background: url("./kosyu_image/backgroundMain.png") center center/cover no-repeat;
   /*共通部分の設計*/
   /*各講習部分の詳細設計*/
   /*導入講習*/
@@ -1308,7 +1308,7 @@ body {
 /*フッター部分*/
 .footImage {
   width: 100%;
-  background: url("./image/footImage/footImage-background.png") center center/cover no-repeat;
+  background: url("./kosyu_image/footImage/footImage-background.png") center center/cover no-repeat;
   position: relative;
   z-index: 1;
 }
@@ -1325,13 +1325,13 @@ body {
   width: 100%;
 }
 
-.footImage__marchandises {
+.footImage__merchandises {
   width: calc(873 / 1400 * 100%);
   margin: 0 auto 0 auto;
   margin-top: calc(98 / 1400 * (-100%));
 }
 
-.footImage__marchandises img {
+.footImage__merchandises img {
   width: 100%;
 }
 
@@ -1428,7 +1428,7 @@ body {
 
 .footer-wrapper2 {
   height: 265px;
-  background: url("./image/backgroundFooter.png") center center/cover no-repeat;
+  background: url("./kosyu_image/backgroundFooter.png") center center/cover no-repeat;
   position: relative;
 }
 

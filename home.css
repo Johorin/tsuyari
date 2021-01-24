@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/*
+*  html5resetcss
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*メイン*/
+/*レスポンシブ（要相談）*/
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+/*header部分*/
+.header-wrapper {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 10;
+}
+
+.header-wrapper--logo {
+  width: 236px;
+  height: 54px;
+  margin-left: 40px;
+  margin: 13px 0 0 40px;
+  display: inline-block;
+}
+
+.header-wrapper--nav {
+  float: right;
+}
+
+.header-wrapper--nav .list-header-nav {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-wrapper--nav .list-header-nav a {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: #64533d;
+  display: block;
+  margin-top: 33px;
+  margin-right: 40px;
+  letter-spacing: normal;
+}
+
+.header-wrapper--nav .list-header-nav a:hover {
+  opacity: 0.6;
+}
+
+/*main部分*/
+.merchandisesList__merchandise--details .textBox-Copal {
+  /*商品の容量部分*/
+}
+
+/*footer部分*/
+/*フッター部分*/
+.footImage {
+  width: 100%;
+  background: url("./kosyu_image/footImage/footImage-background.png") center center/cover no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.footImage__title {
+  width: calc(795 / 1400 * 100%);
+  /*画面幅に対して要素を調整*/
+  margin: 0 auto;
+  padding-top: calc(70 / 1400 * 100%);
+  /*画面幅に対して要素の位置を調整*/
+}
+
+.footImage__title img {
+  width: 100%;
+}
+
+.footImage__merchandises {
+  width: calc(873 / 1400 * 100%);
+  margin: 0 auto 0 auto;
+  margin-top: calc(98 / 1400 * (-100%));
+}
+
+.footImage__merchandises img {
+  width: 100%;
+}
+
+.footImage__contactToMail {
+  height: 60px;
+  width: 351px;
+  margin: 0 auto 0 auto;
+  margin-top: calc(207 / 1400 * (-100%));
+  border: 2px solid #2b757e;
+  border-radius: 30px;
+  background: linear-gradient(-30deg, #4698a2 20%, #7bd8e4 40%, #7bd8e4 60%, #4698a2 80%, #4698a2);
+  position: relative;
+  z-index: 3;
+}
+
+.footImage__contactToMail--btn {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 17px 0 17px 0;
+  font-size: 24px;
+  letter-spacing: normal;
+  font-weight: 600;
+  text-shadow: 3px 3px 10px #418892;
+  border-top: 2px solid #90ccd3;
+  border-left: 2px solid #90ccd3;
+  border-radius: 30px;
+}
+
+.footImage__contactToMail--btn .mailBox {
+  padding-right: 7px;
+}
+
+.footImage__contactToMail:hover {
+  opacity: 0.7;
+}
+
+.footImage .fundColor {
+  height: 60px;
+  width: 351px;
+  margin: -60px auto 0 auto;
+  border-radius: 30px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.footImage__contactToPhone {
+  width: calc(470 / 1400 * 100%);
+  margin: 0 auto 0 auto;
+  margin-top: calc(40 / 1400 * 100%);
+  padding-bottom: calc(97 / 1400 * 100%);
+}
+
+.footImage__contactToPhone img {
+  width: 100%;
+}
+
+.footer-wrapper1 {
+  height: 140px;
+}
+
+.footer-wrapper1--nav {
+  width: 325px;
+  margin: 0 auto 0 auto;
+}
+
+.footer-wrapper1--nav .list-header-nav {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-wrapper1--nav .list-header-nav a {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: #64533d;
+  display: block;
+  margin: 62px 40px 62px 0;
+  letter-spacing: normal;
+}
+
+.footer-wrapper1--nav .list-header-nav a:hover {
+  opacity: 0.6;
+}
+
+.footer-wrapper1--nav .list-header-nav a.last {
+  margin-right: 0;
+}
+
+.footer-wrapper2 {
+  height: 265px;
+  background: url("./kosyu_image/backgroundFooter.png") center center/cover no-repeat;
+  position: relative;
+}
+
+.footer-wrapper2 .pageTop {
+  position: absolute;
+  top: 108px;
+  right: 40px;
+}
+
+.footer-wrapper2 .pageTop__text {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #64533d;
+  letter-spacing: normal;
+  font-weight: 600;
+  position: relative;
+  right: 1px;
+}
+
+.footer-wrapper2 .pageTop a:hover {
+  opacity: 0.8;
+}
+
+.footer-wrapper2__logo {
+  width: 270px;
+  margin: 0 auto 25px auto;
+  padding-top: 30px;
+}
+
+.footer-wrapper2__address p {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 16px;
+  color: #64533d;
+  text-align: center;
+  line-height: 24px;
+}
+
+.footer-wrapper2__copyright {
+  margin-top: 20px;
+}
+
+.footer-wrapper2__copyright p {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 10px;
+  color: #64533d;
+  text-align: center;
+}
+/*# sourceMappingURL=home.css.map */
