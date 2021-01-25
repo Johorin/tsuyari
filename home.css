@@ -133,6 +133,103 @@ body {
 }
 
 /*main部分*/
+.topImages {
+  width: 100%;
+}
+
+.topImages .topImage1 img {
+  width: 100%;
+  padding-top: 80px;
+}
+
+.topImages .topImage2 img {
+  width: 100%;
+  margin-top: -28px;
+}
+
+.topImages .topImage3 img {
+  width: 100%;
+  margin-top: -30px;
+}
+
+.topImages .topImage4 img {
+  width: 100%;
+  margin-top: -2px;
+}
+
+.merchandisesList {
+  padding-top: 100px;
+  background: url("./home_image/background_main.png") center center/cover no-repeat;
+}
+
+.merchandisesList__logo {
+  width: calc(360 / 1400 * 100%);
+  margin: 0 auto;
+}
+
+.merchandisesList__logo img {
+  width: 100%;
+}
+
+.merchandisesList__titleText {
+  width: calc(526 / 1400 * 100%);
+  margin: 0 auto;
+  padding-top: 101px;
+}
+
+.merchandisesList__titleText h2 {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 46px;
+  font-weight: normal;
+  color: #64533d;
+  letter-spacing: 4px;
+}
+
+.merchandisesList__titleText--underShape {
+  /*疑問点*/
+  margin: 0 auto;
+}
+
+.merchandisesList__titleText--underShape img {
+  width: 100px;
+}
+
+.merchandisesList__merchandise {
+  width: calc(1209 / 1400 * 100%);
+}
+
+.merchandisesList__merchandise--image img {
+  width: calc(436 / 1209 * 100%);
+}
+
+.merchandisesList__merchandise--details {
+  /*Copal*/
+  /*Umber*/
+  /*SkinCleaner*/
+  /*SwellingPlus*/
+  /*ConditioningMilk*/
+  /*Rescuem*/
+  /*WhitySerum*/
+  /*PearlEssence*/
+  /*FabulousShot*/
+  /*
+            .text-FabulousShot {
+                &__description {
+                    p {}
+                }
+                &__usageType {
+                    p {}
+                }
+                &__features {
+                    ul {
+                        li {}
+                    }
+                }
+                &::after {}
+            }*/
+  /*DelicateWash*/
+}
+
 .merchandisesList__merchandise--details .textBox-Copal {
   /*商品の容量部分*/
 }

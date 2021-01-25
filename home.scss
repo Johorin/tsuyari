@@ -63,17 +63,68 @@ body {
     }
 }
 /*main部分*/
+.topImages {
+    width: 100%;
+    .topImage1 {
+        img {
+            width: 100%;
+            padding-top: 80px;
+        }
+    }
+    .topImage2 {
+        img {
+            width: 100%;
+            margin-top: -28px;
+        }
+    }
+    .topImage3 {
+        img {
+            width: 100%;
+            margin-top: -30px;
+        }
+    }
+    .topImage4 {
+        img {
+            width: 100%;
+            margin-top: -2px;
+        }
+    }
+}
 .merchandisesList {
+    padding-top: 100px;
+    background: url("./home_image/background_main.png") center center / cover no-repeat;
     &__logo {
-        img {}
+        width: calc(360 / 1400 * 100%);
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
     }
     &__titleText {
-        h2 {}
-        img {}
+        width: calc(526 / 1400 * 100%);
+        margin: 0 auto;
+        padding-top: 101px;
+        h2 {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            font-size: 46px;
+            font-weight: normal;
+            color: #64533d;
+            letter-spacing: 4px;
+        }
+        &--underShape {
+            /*疑問点*///なぜかこちらで書くとほとんど効かないがhtmlの方で書けば効くのでhtmlの方でいくらか記述している。
+            margin: 0 auto;
+            img {
+                width: 100px;
+            }
+        }
     }
     &__merchandise {
+        width: calc(1209 / 1400 * 100%);
         &--image {
-            img {}
+            img {
+                width: calc(436 / 1209 * 100%);
+            }
         }
         &--details {
             .name {
@@ -84,106 +135,160 @@ body {
             .kind {
                 h2 {}
             }
+            /*Copal*/
             .textBox-Copal {
                 &__description {
                     p {}
                 }
                 &__usageType {
-                    p {}
+                    &--box {
+                        p {}
+                    }
                 }
                 &__features {
-                    ul {
-                        li {}
+                    &--box {
+                        ul {
+                            li {}
+                        }
                     }
                 }
                 /*商品の容量部分*/
                 &::after {}
             }
+            /*Umber*/
             .textBox-Umber {
                 &__description {
                     p {}
                 }
                 &__usageType {
-                    p {}
+                    &--box {
+                        p {}
+                    }
                 }
                 &__features {
-                    ul {
-                        li {}
+                    &--box {
+                        ul {
+                            li {}
+                        }
                     }
                 }
                 &::after {}
             }
+            /*SkinCleaner*/
             .textBox-SkinCleaner {
                 &__description {
                     p {}
                 }
                 &__usageType {
-                    p {}
+                    &--box {
+                        p {}
+                    }
                 }
                 &__features {
-                    ul {
-                        li {}
+                    &--box {
+                        ul {
+                            li {}
+                        }
                     }
                 }
                 &::after {}
             }
+            /*SwellingPlus*/
             .text-SwellingPlus {
                 &__description {
                     p {}
                 }
                 &__usageType {
-                    p {}
+                    &--box {
+                        p {}
+                    }
                 }
                 &__features {
-                    ul {
-                        li {}
+                    &--box {
+                        ul {
+                            li {}
+                        }
                     }
                 }
                 &::after {}
             }
+            /*ConditioningMilk*/
             .text-ConditioningMilk {
                 &__description {
                     p {}
                 }
                 &__usageType {
-                    p {}
+                    &--box {
+                        p {}
+                    }
                 }
                 &__features {
-                    ul {
-                        li {}
+                    &--box {
+                        ul {
+                            li {}
+                        }
                     }
                 }
                 &::after {}
             }
+            /*Rescuem*/
             .text-Rescuem {
                 &__description {
                     p {}
                 }
                 &__usageType {
-                    p {}
+                    &--box {
+                        p {}
+                    }
                 }
                 &__features {
-                    ul {
-                        li {}
+                    &--box {
+                        ul {
+                            li {}
+                        }
                     }
                 }
                 &::after {}
             }
+            /*WhitySerum*/
             .text-WhitySerum {
                 &__description {
                     p {}
                 }
                 &__usageType {
-                    p {}
+                    &--box {
+                        p {}
+                    }
                 }
                 &__features {
-                    ul {
-                        li {}
+                    &--box {
+                        ul {
+                            li {}
+                        }
                     }
                 }
                 &::after {}
             }
+            /*PearlEssence*/
             .text-PearlEssence {
+                &__description {
+                    p {}
+                }
+                &__usageType {
+                    &--box {
+                        p {}
+                    }
+                }
+                &__features {
+                    &--box {
+                        ul {
+                            li {}
+                        }
+                    }
+                }
+                &::after {}
+            }
+            .text-DelicateWash {
                 &__description {
                     p {}
                 }
@@ -197,6 +302,7 @@ body {
                 }
                 &::after {}
             }
+            /*FabulousShot*//*
             .text-FabulousShot {
                 &__description {
                     p {}
@@ -210,7 +316,8 @@ body {
                     }
                 }
                 &::after {}
-            }
+            }*/
+            /*DelicateWash*/
         }
     }
 }
