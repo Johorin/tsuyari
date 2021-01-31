@@ -74,19 +74,20 @@ body {
     .topImage2 {
         img {
             width: 100%;
-            margin-top: -28px;
+            margin-top: -30px;
         }
     }
     .topImage3 {
         img {
             width: 100%;
-            margin-top: -30px;
+            margin-top: -32px;
         }
     }
     .topImage4 {
         img {
             width: 100%;
-            margin-top: -2px;
+            margin-top: -3px;
+            margin-bottom: -6px;
         }
     }
 }
@@ -112,212 +113,887 @@ body {
             letter-spacing: 4px;
         }
         &--underShape {
-            /*疑問点*///なぜかこちらで書くとほとんど効かないがhtmlの方で書けば効くのでhtmlの方でいくらか記述している。
+            width: calc((224 / 1400) * (1400 / 526) * 100%);
             margin: 0 auto;
+            padding-top: 20px;
             img {
-                width: 100px;
+                width: 100%;
             }
         }
     }
     &__merchandise {
-        width: calc(1209 / 1400 * 100%);
-        &--image {
-            img {
-                width: calc(436 / 1209 * 100%);
+        display: flex;
+        //width: calc(1209 / 1400 * 100%);
+        //width: calc(1300 / 1400 * 100%);
+        width: 1300px;
+        margin: 125px auto 0 auto;
+        &--image-Copal {
+            //width: calc(436 / 1209 * 100%);
+            //width: calc(500 / 1209 * 100%);
+            width: 540px;
+            margin-right: 80px;
+            img.Copal {
+                width: 100%;
+            }
+        }
+        &--image-Umber {
+            width: 540px;
+            margin-right: 80px;
+            img.Umber {
+                width: 100%;
+            }
+        }
+        &--image-SkinCleaner {
+            width: 540px;
+            margin-right: 80px;
+            padding-left: 130px;
+            box-sizing: border-box;
+            img.SkinCleaner {
+                width: 73%;
+            }
+        }
+        &--image-SwellingPlus {
+            width: 540px;
+            margin-right: 80px;
+            padding-left: 130px;
+            box-sizing: border-box;
+            img.SwellingPlus {
+                width: 73%;
+            }
+        }
+        &--image-ConditioningMilk {
+            width: 540px;
+            margin-right: 80px;
+            padding-left: 130px;
+            box-sizing: border-box;
+            img.ConditioningMilk {
+                width: 73%;
+            }
+        }
+        &--image-Rescuem {
+            width: 540px;
+            margin-top: 105px;
+            margin-right: 80px;
+            padding-left: 100px;
+            box-sizing: border-box;
+            img.Rescuem {
+                width: 90%;
+            }
+        }
+        &--image-WhitySerum {
+            width: 540px;
+            margin-top: 175px;
+            margin-right: 80px;
+            padding-left: 100px;
+            box-sizing: border-box;
+            img.WhitySerum {
+                width: 90%;
+            }
+        }
+        &--image-PearlEssence {
+            width: 540px;
+            margin-top: -25px;
+            margin-right: 80px;
+            padding-left: 130px;
+            box-sizing: border-box;
+            img.PearlEssence {
+                width: 73%;
+            }
+        }
+        &--image-DelicateWash {
+            width: 540px;
+            margin-top: -45px;
+            margin-right: 80px;
+            padding-left: 145px;
+            box-sizing: border-box;
+            img.DelicateWash {
+                width: 73%;
             }
         }
         &--details {
-            .name {
+            width: calc(660 / 1209 * 105%);
+            /*.name {
+                display: flex;
+                width: calc(428 / 1209 * 100%);
                 h2 {
-                    span {}
+                    font-size: 66px;
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    font-weight: normal;
+                    background: linear-gradient(117deg, #9e8151, #dbc5a1 20%, #9e8151 51%, #dbc5a1 88%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    span {
+                        font-family: 'Snell Roundhand', serif;
+                        font-weight: 700;
+                        //text-shadow: ;
+                        background: linear-gradient(117deg, #9e8151, #dbc5a1 20%, #9e8151 51%, #dbc5a1 88%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                h2.english {
+                    font-family: 'Snell Roundhand', serif;
+                    font-size: 66px;
+                    font-weight: 700;
+                    //text-shadow: 5px 5px 5px #000000;
+                    background: linear-gradient(117deg, #9e8151, #dbc5a1 20%, #9e8151 51%, #dbc5a1 88%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    box-shadow: 0px 0px #fff;
+                }
+                h3.japanese {
+                    font-size: 36px;
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    font-weight: normal;
+                    background: linear-gradient(117deg, #9e8151, #dbc5a1 20%, #9e8151 51%, #dbc5a1 88%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }*/
+            /*それぞれの商品名と容量の部分*/
+            .name-Copal {
+                margin-left: -20px;
+                position: relative;
+                /*商品の容量部分*/
+                &::after {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    content: '容量800g';
+                    font-size: 16px;
+                    color: #fff;
+                    padding-top: 7px;
+                    text-align: center;
+                    //widthは商品によって若干変わる
+                    width: 110px;
+                    height: 28px;
+                    background-color: #841d08;
+                    border-radius: 14px 14px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 40px;
+                    left: 475px;
                 }
             }
-            .kind {
-                h2 {}
+            .name-Umber {
+                margin-left: -20px;
+                margin-bottom: 10px;
+                position: relative;
+                /*商品の容量部分*/
+                &::after {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    content: '容量800g';
+                    font-size: 16px;
+                    color: #fff;
+                    padding-top: 7px;
+                    text-align: center;
+                    //widthは商品によって若干変わる
+                    width: 110px;
+                    height: 28px;
+                    background-color: #841d08;
+                    border-radius: 14px 14px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 40px;
+                    left: 475px;
+                }
+            }
+            .name-SkinCleaner {
+                margin-left: -20px;
+                margin-bottom: 10px;
+                position: relative;
+                /*商品の容量部分*/
+                &::after {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    content: '容量300ml';
+                    font-size: 16px;
+                    color: #fff;
+                    padding-top: 7px;
+                    text-align: center;
+                    //widthは商品によって若干変わる
+                    width: 120px;
+                    height: 28px;
+                    background-color: #841d08;
+                    border-radius: 14px 14px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 40px;
+                    left: 475px;
+                }
+            }
+            .name-SwellingPlus {
+                margin-left: -20px;
+                position: relative;
+                /*商品の容量部分*/
+                &::after {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    content: '容量300ml';
+                    font-size: 16px;
+                    color: #fff;
+                    padding-top: 7px;
+                    text-align: center;
+                    //widthは商品によって若干変わる
+                    width: 120px;
+                    height: 28px;
+                    background-color: #841d08;
+                    border-radius: 14px 14px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 40px;
+                    left: 480px;
+                }
+            }
+            .name-ConditioningMilk {
+                margin-left: -20px;
+                position: relative;
+                /*商品の容量部分*/
+                &::after {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    content: '容量300ml';
+                    font-size: 16px;
+                    color: #fff;
+                    padding-top: 7px;
+                    text-align: center;
+                    //widthは商品によって若干変わる
+                    width: 120px;
+                    height: 28px;
+                    background-color: #841d08;
+                    border-radius: 14px 14px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 40px;
+                    left: 620px;
+                }
+            }
+            .name-Rescuem {
+                margin-left: -20px;
+                margin-bottom: 10px;
+                position: relative;
+                /*商品の容量部分*/
+                &::after {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    content: '容量30g';
+                    font-size: 16px;
+                    color: #fff;
+                    padding-top: 7px;
+                    text-align: center;
+                    //widthは商品によって若干変わる
+                    width: 100px;
+                    height: 28px;
+                    background-color: #841d08;
+                    border-radius: 14px 14px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 40px;
+                    left: 480px;
+                }
+            }
+            .name-WhitySerum {
+                margin-left: -20px;
+                position: relative;
+                /*商品の容量部分*/
+                &::after {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    content: '容量50g';
+                    font-size: 16px;
+                    color: #fff;
+                    padding-top: 7px;
+                    text-align: center;
+                    //widthは商品によって若干変わる
+                    width: 100px;
+                    height: 28px;
+                    background-color: #841d08;
+                    border-radius: 14px 14px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 40px;
+                    left: 480px;
+                }
+            }
+            .name-PearlEssence {
+                margin-left: -20px;
+                margin-bottom: 10px;
+                position: relative;
+                /*商品の容量部分*/
+                &::after {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    content: '容量100ml';
+                    font-size: 16px;
+                    color: #fff;
+                    padding-top: 7px;
+                    text-align: center;
+                    //widthは商品によって若干変わる
+                    width: 120px;
+                    height: 28px;
+                    background-color: #841d08;
+                    border-radius: 14px 14px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 42px;
+                    left: 490px;
+                }
+            }
+            .name-DelicateWash {
+                margin-left: -20px;
+                margin-bottom: 15px;
+                position: relative;
+                /*商品の容量部分*/
+                &::after {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    content: '容量150ml';
+                    font-size: 16px;
+                    color: #fff;
+                    padding-top: 7px;
+                    text-align: center;
+                    //widthは商品によって若干変わる
+                    width: 120px;
+                    height: 28px;
+                    background-color: #841d08;
+                    border-radius: 14px 14px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 42px;
+                    left: 530px;
+                }
+            }
+            /*商品の種類名*/
+            .kindName {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                width: 623px;
+                max-height: 62px;
+                background: linear-gradient(120deg, #9e8151, #dbc5a1 21%, #9e8151 51%, rgba(219, 197, 161, 0) 90%);
+                padding: 13px 0px 13px 23px;
+                h2 {
+                    color: #fff;
+                    font-size: 36px;
+                    font-weight: normal;
+                }
             }
             /*Copal*/
             .textBox-Copal {
+                //width: 100%;
+                width: 710px;
+                //height: calc(475 / 612 * 100%);
+                background: url('./home_image/merchandises/Copal-textBox.png') no-repeat;
+                margin-top: 10px;
+                margin-left: -20px;
+                padding: 51px;
+                box-sizing: border-box;
                 &__description {
-                    p {}
+                    width: 592px;
+                    p {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        color: #64533d;
+                        font-size: 16px;
+                        letter-spacing: 2.1px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
                 }
                 &__usageType {
+                    margin-top: 30px;
                     &--box {
-                        p {}
+                        background: #c28356;
+                        width: 106px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
+                        }
+                    }
+                    p.main-text {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        font-size: 16px;
+                        color: #64533d;
+                        letter-spacing: 1.7px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
                     }
                 }
                 &__features {
+                    margin-top: 30px;
                     &--box {
-                        ul {
-                            li {}
+                        background: #c28356;
+                        width: 54px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
+                        }
+                    }
+                    ul.main-text {
+                        list-style: none;
+                        li {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #64533d;
+                            letter-spacing: 1.7px;
+                            font-weight: 600;
+                            line-height: 24px;
+                            opacity: 0.7;
                         }
                     }
                 }
-                /*商品の容量部分*/
-                &::after {}
             }
             /*Umber*/
             .textBox-Umber {
+                width: 710px;
+                background: url('./home_image/merchandises/Umber-textBox.png') no-repeat;
+                margin-top: 10px;
+                margin-left: -20px;
+                padding: 51px;
+                box-sizing: border-box;
                 &__description {
-                    p {}
+                    width: 592px;
+                    p {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        color: #64533d;
+                        font-size: 16px;
+                        letter-spacing: 2.1px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
                 }
                 &__usageType {
+                    margin-top: 30px;
                     &--box {
-                        p {}
+                        background: #c28356;
+                        width: 106px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
+                        }
+                    }
+                    p.main-text {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        font-size: 16px;
+                        color: #64533d;
+                        letter-spacing: 1.7px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
                     }
                 }
                 &__features {
+                    margin-top: 30px;
                     &--box {
-                        ul {
-                            li {}
+                        background: #c28356;
+                        width: 54px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
+                        }
+                    }
+                    ul.main-text {
+                        list-style: none;
+                        li {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #64533d;
+                            letter-spacing: 1.7px;
+                            font-weight: 600;
+                            line-height: 24px;
+                            opacity: 0.7;
                         }
                     }
                 }
-                &::after {}
             }
             /*SkinCleaner*/
             .textBox-SkinCleaner {
+                width: 710px;
+                background: url('./home_image/merchandises/SkinCleaner-textBox.png') no-repeat;
+                margin-top: 10px;
+                margin-left: -20px;
+                padding: 51px;
+                box-sizing: border-box;
                 &__description {
-                    p {}
-                }
-                &__usageType {
-                    &--box {
-                        p {}
+                    width: 592px;
+                    p {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        color: #64533d;
+                        font-size: 16px;
+                        letter-spacing: 2.1px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
                     }
                 }
-                &__features {
+                &__usefulness {
+                    margin-top: 30px;
                     &--box {
-                        ul {
-                            li {}
+                        background: #c28356;
+                        width: 54px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
                         }
                     }
+                    p.main-text {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        font-size: 16px;
+                        color: #64533d;
+                        letter-spacing: 1.7px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
                 }
-                &::after {}
             }
             /*SwellingPlus*/
-            .text-SwellingPlus {
+            .textBox-SwellingPlus {
+                width: 710px;
+                background: url('./home_image/merchandises/SwellingPlus-textBox.png') no-repeat;
+                margin-top: 10px;
+                margin-left: -20px;
+                padding: 51px;
+                box-sizing: border-box;
                 &__description {
-                    p {}
-                }
-                &__usageType {
-                    &--box {
-                        p {}
+                    width: 592px;
+                    p {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        color: #64533d;
+                        font-size: 16px;
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
                     }
                 }
-                &__features {
+                &__usefulness {
+                    margin-top: 30px;
                     &--box {
-                        ul {
-                            li {}
+                        background: #c28356;
+                        width: 54px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
                         }
                     }
+                    p.main-text {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        font-size: 16px;
+                        color: #64533d;
+                        letter-spacing: 1.7px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
                 }
-                &::after {}
             }
             /*ConditioningMilk*/
-            .text-ConditioningMilk {
+            .textBox-ConditioningMilk {
+                width: 710px;
+                background: url('./home_image/merchandises/ConditioningMilk-textBox.png') no-repeat;
+                margin-top: 10px;
+                margin-left: -20px;
+                padding: 51px;
+                box-sizing: border-box;
                 &__description {
-                    p {}
-                }
-                &__usageType {
-                    &--box {
-                        p {}
+                    width: 600px;
+                    p {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        color: #64533d;
+                        font-size: 16px;
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
                     }
                 }
-                &__features {
+                &__usefulness {
+                    margin-top: 30px;
                     &--box {
-                        ul {
-                            li {}
+                        background: #c28356;
+                        width: 54px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
                         }
                     }
+                    p.main-text {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        font-size: 16px;
+                        color: #64533d;
+                        letter-spacing: 1.7px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
                 }
-                &::after {}
             }
             /*Rescuem*/
-            .text-Rescuem {
+            .textBox-Rescuem {
+                width: 710px;
+                background: url('./home_image/merchandises/Rescuem-textBox.png') no-repeat;
+                margin-top: 10px;
+                margin-left: -20px;
+                padding: 51px;
+                box-sizing: border-box;
                 &__description {
-                    p {}
-                }
-                &__usageType {
-                    &--box {
-                        p {}
+                    width: 592px;
+                    p {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        color: #64533d;
+                        font-size: 16px;
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
                     }
                 }
-                &__features {
+                &__usefulness {
+                    margin-top: 30px;
+                    position: relative;
                     &--box {
-                        ul {
-                            li {}
+                        background: #c28356;
+                        width: 54px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
                         }
                     }
+                    p.main-text {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        font-size: 16px;
+                        color: #64533d;
+                        letter-spacing: 1.7px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
+                    /*注意書き部分*/
+                    &::after {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        content: '※店頭販売可能商品';
+                        color: #64533d;
+                        font-size: 13px;
+                        font-weight: normal;
+                        letter-spacing: 1px;
+                        position: absolute;
+                        top: 47px;
+                        left: 455px;
+                    }
                 }
-                &::after {}
             }
             /*WhitySerum*/
-            .text-WhitySerum {
+            .textBox-WhitySerum {
+                width: 710px;
+                background: url('./home_image/merchandises/WhitySerum-textBox.png') no-repeat;
+                margin-top: 10px;
+                margin-left: -20px;
+                padding: 51px;
+                box-sizing: border-box;
                 &__description {
-                    p {}
-                }
-                &__usageType {
-                    &--box {
-                        p {}
+                    width: 592px;
+                    p {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        color: #64533d;
+                        font-size: 16px;
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
                     }
                 }
-                &__features {
+                &__usefulness {
+                    margin-top: 30px;
+                    position: relative;
                     &--box {
-                        ul {
-                            li {}
+                        background: #c28356;
+                        width: 54px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
                         }
                     }
+                    p.main-text {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        font-size: 16px;
+                        color: #64533d;
+                        letter-spacing: 1.7px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
+                    /*注意書き部分*/
+                    &::after {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        content: '※店頭販売可能商品';
+                        color: #64533d;
+                        font-size: 13px;
+                        font-weight: normal;
+                        letter-spacing: 1px;
+                        position: absolute;
+                        top: 47px;
+                        left: 455px;
+                    }
                 }
-                &::after {}
             }
             /*PearlEssence*/
-            .text-PearlEssence {
+            .textBox-PearlEssence {
+                width: 710px;
+                background: url('./home_image/merchandises/PearlEssence-textBox.png') no-repeat;
+                margin-top: 10px;
+                margin-left: -20px;
+                padding: 51px;
+                box-sizing: border-box;
                 &__description {
-                    p {}
-                }
-                &__usageType {
-                    &--box {
-                        p {}
+                    width: 592px;
+                    p {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        color: #64533d;
+                        font-size: 16px;
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
                     }
                 }
-                &__features {
+                &__usefulness {
+                    margin-top: 30px;
+                    position: relative;
                     &--box {
-                        ul {
-                            li {}
+                        background: #c28356;
+                        width: 54px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
                         }
                     }
-                }
-                &::after {}
-            }
-            .text-DelicateWash {
-                &__description {
-                    p {}
-                }
-                &__usageType {
-                    p {}
-                }
-                &__features {
-                    ul {
-                        li {}
+                    p.main-text {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        font-size: 16px;
+                        color: #64533d;
+                        letter-spacing: 1.7px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
+                    /*注意書き部分*/
+                    &::after {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        content: '※店頭販売可能商品';
+                        color: #64533d;
+                        font-size: 13px;
+                        font-weight: normal;
+                        letter-spacing: 1px;
+                        position: absolute;
+                        top: 47px;
+                        left: 455px;
                     }
                 }
-                &::after {}
             }
             /*FabulousShot*//*
-            .text-FabulousShot {
-                &__description {
-                    p {}
-                }
-                &__usageType {
-                    p {}
-                }
-                &__features {
-                    ul {
-                        li {}
-                    }
-                }
-                &::after {}
+            .textBox-FabulousShot {
             }*/
             /*DelicateWash*/
+            .textBox-DelicateWash {
+                width: 710px;
+                background: url('./home_image/merchandises/DelicateWash-textBox.png') no-repeat;
+                margin-top: 10px;
+                margin-left: -20px;
+                padding: 51px;
+                box-sizing: border-box;
+                &__description {
+                    width: 592px;
+                    p {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        color: #64533d;
+                        font-size: 16px;
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
+                }
+                &__usefulness {
+                    margin-top: 30px;
+                    position: relative;
+                    &--box {
+                        background: #c28356;
+                        width: 54px;
+                        height: 30px;
+                        margin-bottom: 9px;
+                        p {
+                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                            font-size: 16px;
+                            color: #fff;
+                            padding: 8px 0 8px 0;
+                            text-align: center;
+                        }
+                    }
+                    p.main-text {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        font-size: 16px;
+                        color: #64533d;
+                        letter-spacing: 1.7px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.7;
+                    }
+                    /*注意書き部分*/
+                    &::after {
+                        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                        content: '※店頭販売可能商品';
+                        color: #64533d;
+                        font-size: 13px;
+                        font-weight: normal;
+                        letter-spacing: 1px;
+                        position: absolute;
+                        top: 47px;
+                        left: 455px;
+                    }
+                }
+            }
         }
     }
 }
