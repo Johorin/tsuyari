@@ -161,6 +161,7 @@ body {
 .merchandisesList {
   padding-top: 100px;
   background: url("./home_image/background_main.png") center center/cover no-repeat;
+  /*お問い合わせボタンとTEL*/
 }
 
 .merchandisesList__logo {
@@ -202,6 +203,7 @@ body {
   display: flex;
   width: 1300px;
   margin: 125px auto 0 auto;
+  /*DelicateWashの下の余白*/
 }
 
 .merchandisesList__merchandise--image-Copal {
@@ -1199,6 +1201,71 @@ body {
   position: absolute;
   top: 47px;
   left: 455px;
+}
+
+.merchandisesList__merchandise:last-of-type {
+  padding-bottom: 70px;
+}
+
+.merchandisesList__bottomInquiry {
+  margin-top: 300px;
+}
+
+.merchandisesList__bottomInquiry--ContactToMail {
+  height: 60px;
+  width: 351px;
+  margin: 0 auto 0 auto;
+  margin-top: calc(207 / 1400 * (-100%));
+  border: 2px solid #2b757e;
+  border-radius: 30px;
+  background: linear-gradient(-30deg, #4698a2 20%, #7bd8e4 40%, #7bd8e4 60%, #4698a2 80%, #4698a2);
+  position: relative;
+  z-index: 3;
+}
+
+.merchandisesList__bottomInquiry--ContactToMail .btn {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 17px 0 17px 0;
+  font-size: 24px;
+  letter-spacing: normal;
+  font-weight: 600;
+  text-shadow: 3px 3px 10px #418892;
+  border-top: 2px solid #90ccd3;
+  border-left: 2px solid #90ccd3;
+  border-radius: 30px;
+}
+
+.merchandisesList__bottomInquiry--ContactToMail .btn .mailBox {
+  padding-right: 7px;
+}
+
+.merchandisesList__bottomInquiry--ContactToMail:hover {
+  opacity: 0.7;
+}
+
+.merchandisesList__bottomInquiry .fundColor {
+  height: 60px;
+  width: 351px;
+  margin: -60px auto 0 auto;
+  border-radius: 30px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.merchandisesList__bottomInquiry--ContactToPhone {
+  width: calc(470 / 1400 * 100%);
+  margin: 0 auto 0 auto;
+  margin-top: calc(40 / 1400 * 100%);
+  padding-bottom: calc(97 / 1400 * 100%);
+}
+
+.merchandisesList__bottomInquiry--ContactToPhone img {
+  width: 100%;
 }
 
 /*footer部分*/

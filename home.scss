@@ -995,6 +995,64 @@ body {
                 }
             }
         }
+        /*DelicateWashの下の余白*/
+        &:last-of-type {
+            padding-bottom: 70px;
+        }
+    }
+    /*お問い合わせボタンとTEL*/
+    &__bottomInquiry {
+        margin-top: 300px;
+        &--ContactToMail {
+            height: 60px;
+            width: 351px;
+            margin: 0 auto 0 auto;
+            margin-top: calc(207 / 1400 * (-100%));
+            border: 2px solid #2b757e;
+            border-radius: 30px;
+            background: linear-gradient(-30deg, #4698a2 20%, #7bd8e4 40%, #7bd8e4 60%, #4698a2 80%, #4698a2);
+            position: relative;
+            z-index: 3;
+            .btn {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                text-align: center;
+                padding: 17px 0 17px 0;
+                font-size: 24px;
+                letter-spacing: normal;
+                font-weight: 600;
+                text-shadow: 3px 3px 10px #418892;
+                border-top: 2px solid #90ccd3;
+                border-left: 2px solid #90ccd3;
+                border-radius: 30px;
+                .mailBox {
+                    padding-right: 7px;
+                }
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .fundColor {
+            height: 60px;
+            width: 351px;
+            margin: -60px auto 0 auto;
+            border-radius: 30px;
+            background: #fff;
+            position: relative;
+            z-index: 2;
+        }
+        &--ContactToPhone {
+            width: calc(470 / 1400 * 100%);
+            margin: 0 auto 0 auto;
+            margin-top: calc(40 / 1400 * 100%);
+            padding-bottom: calc(97 / 1400 * 100%);
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 /*footer部分*/
