@@ -1268,6 +1268,102 @@ body {
   width: 100%;
 }
 
+.about-donyuKosyu {
+  width: 100%;
+  background: url("./home_image/footImage/footImage1.png") center center/cover no-repeat;
+  padding: 80px 0 107px 0;
+  position: relative;
+  z-index: 0;
+}
+
+.about-donyuKosyu h2 {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 56px;
+  font-weight: 600;
+  color: #841d08;
+  text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+  text-align: right;
+  letter-spacing: 6px;
+  padding-right: calc(90 / 1400 * 100%);
+}
+
+.about-donyuKosyu h3 {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 32px;
+  font-weight: normal;
+  color: #841d08;
+  text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+  text-align: right;
+  letter-spacing: 0px;
+  padding-right: calc(96 / 1400 * 100%);
+  margin-top: 38px;
+}
+
+.about-donyuKosyu .textBox {
+  width: 610px;
+  float: right;
+  padding-right: calc(66 / 1400 * 100%);
+  margin-top: 62px;
+}
+
+.about-donyuKosyu .textBox p {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #64533d;
+  text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+  text-align: center;
+  letter-spacing: 0px;
+  line-height: 32px;
+}
+
+.about-donyuKosyu__btn::before {
+  content: ' ';
+  background-color: #fff;
+  border-radius: 26.5px;
+  width: 325px;
+  height: 61px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+}
+
+.about-donyuKosyu__btn {
+  width: 325px;
+  height: 61px;
+  border-radius: 28.5px;
+  border-top: 2px solid #a75d4e;
+  border-left: 2px solid #a75d4e;
+  margin-top: 192px;
+  margin-left: calc(868 / 1400 * 100%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.about-donyuKosyu__btn a {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  display: block;
+  background-color: #841d08;
+  padding: 15px 57px 18px 57px;
+  width: 209px;
+  border-bottom: 2px solid #5e1506;
+  border-radius: 26.5px;
+}
+
+.about-donyuKosyu__btn a:hover {
+  opacity: 0.7;
+}
+
+.tsuyari-hope {
+  width: 100%;
+  background: url("./home_image/footImage/footImage2.png") center center/cover no-repeat;
+}
+
 /*footer部分*/
 /*フッター部分*/
 .footImage {
