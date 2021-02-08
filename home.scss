@@ -55,6 +55,7 @@ body {
                 margin-top: 33px;
                 margin-right: 40px;
                 letter-spacing: normal;
+                transition: 300ms;
                 &:hover {
                     opacity: 0.6;
                 }
@@ -1131,6 +1132,7 @@ body {
             width: 209px;
             border-bottom: 2px solid #5e1506;
             border-radius: 26.5px;
+            transition: 200ms;
         }
         a:hover {
             opacity: 0.7;
@@ -1252,6 +1254,7 @@ body {
                 display: block;
                 margin: 62px 40px 62px 0;
                 letter-spacing: normal;
+                transition: 300ms;
                 &:hover {
                     opacity: 0.6;
                 }

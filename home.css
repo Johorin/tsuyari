@@ -126,6 +126,8 @@ body {
   margin-top: 33px;
   margin-right: 40px;
   letter-spacing: normal;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .header-wrapper--nav .list-header-nav a:hover {
@@ -1353,6 +1355,8 @@ body {
   width: 209px;
   border-bottom: 2px solid #5e1506;
   border-radius: 26.5px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .about-donyuKosyu__btn a:hover {
@@ -1500,6 +1504,8 @@ body {
   display: block;
   margin: 62px 40px 62px 0;
   letter-spacing: normal;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .footer-wrapper1--nav .list-header-nav a:hover {
