@@ -1362,6 +1362,30 @@ body {
 .tsuyari-hope {
   width: 100%;
   background: url("./home_image/footImage/footImage2.png") center center/cover no-repeat;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  padding: 100px 0 100px 0;
+}
+
+.tsuyari-hope h2 {
+  color: #fff;
+  font-size: 46px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.tsuyari-hope__textBox {
+  width: 861px;
+  margin: 0 auto 0 auto;
+  margin-top: 60px;
+}
+
+.tsuyari-hope__textBox p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 32px;
 }
 
 /*footer部分*/
