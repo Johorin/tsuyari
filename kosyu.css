@@ -98,10 +98,9 @@ body {
 }
 
 .header-wrapper--logo {
-  width: 236px;
-  height: 54px;
-  margin-left: 40px;
-  margin: 13px 0 0 40px;
+  height: 70px;
+  margin-top: 3px;
+  margin-left: 20px;
   display: inline-block;
 }
 
@@ -960,6 +959,10 @@ body {
   margin-top: 12px;
 }
 
+.main-wrapper .initialDeployment__table1--C {
+  position: relative;
+}
+
 .main-wrapper .initialDeployment__table1--C table {
   width: 389px;
 }
@@ -1015,6 +1018,12 @@ body {
 
 .main-wrapper .initialDeployment__table1--C .data1 .limitedPrice {
   margin-top: 78px;
+}
+
+.main-wrapper .initialDeployment__table1--C .C-caution {
+  position: absolute;
+  top: -30px;
+  right: 0;
 }
 
 .main-wrapper .staffTec {
@@ -1458,7 +1467,7 @@ body {
 }
 
 .footer-wrapper2__logo {
-  width: 270px;
+  width: 380px;
   margin: 0 auto 25px auto;
   padding-top: 30px;
 }

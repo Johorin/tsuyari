@@ -36,10 +36,9 @@ body {
     position: fixed;
     z-index: 10;
     &--logo {
-        width: 236px;
-        height: 54px;
-        margin-left: 40px;
-        margin: 13px 0 0 40px;
+        height: 70px;
+        margin-top: 3px;
+        margin-left: 20px;
         display: inline-block;
     }
     &--nav {
@@ -704,6 +703,7 @@ body {
                 }
             }
             &--C {
+                position: relative;
                 table {
                     width: 389px;
                 }
@@ -721,6 +721,11 @@ body {
                     .limitedPrice {
                         margin-top: 78px;
                     }
+                }
+                .C-caution {
+                    position: absolute;
+                    top: -30px;
+                    right: 0;
                 }
             }
         }
@@ -1093,7 +1098,7 @@ body {
         }
     }
     &__logo {
-        width: 270px;
+        width: 380px;
         margin: 0 auto 25px auto;
         padding-top: 30px;
     }
