@@ -1310,3 +1310,15 @@ body {
         }
     }
 }
+/*フェードイン*/
+//シンプルなフェードイン
+.simple-fadeIn {
+    opacity: 0;
+    transition: all 1.5s 0s ease-in;
+ }
+//この部分とjQueryでスクロールフェードイン
+.slide-bottom {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.3s 0s ease-in-out;
+}

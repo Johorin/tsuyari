@@ -1490,4 +1490,27 @@ body {
   color: #64533d;
   text-align: center;
 }
+
+/*フェードイン*/
+.simple-fadeIn {
+  opacity: 0;
+  -webkit-transition: all 1.5s 0s ease-in;
+  transition: all 1.5s 0s ease-in;
+}
+
+.slide-bottom {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1.3s 0s ease-in-out;
+  transition: all 1.3s 0s ease-in-out;
+}
+
+.slide-right {
+  opacity: 0;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  -webkit-transition: all 1.3s 0s ease-in-out;
+  transition: all 1.3s 0s ease-in-out;
+}
 /*# sourceMappingURL=kosyu.css.map */
