@@ -139,24 +139,24 @@ body {
 }
 
 .topImages .topImage1 img {
+  display: block;
   width: 100%;
   padding-top: 80px;
 }
 
 .topImages .topImage2 img {
+  display: block;
   width: 100%;
-  margin-top: -30px;
 }
 
 .topImages .topImage3 img {
+  display: block;
   width: 100%;
-  margin-top: -32px;
 }
 
 .topImages .topImage4 img {
+  display: block;
   width: 100%;
-  margin-top: -3px;
-  margin-bottom: -6px;
 }
 
 .inner-wrapper {
@@ -224,89 +224,91 @@ body {
 }
 
 .merchandisesList__merchandise--image-Umber {
-  margin-right: 40px;
+  width: 40%;
+  margin-top: 5%;
 }
 
 .merchandisesList__merchandise--image-Umber img.Umber {
-  width: 100%;
+  width: 90%;
 }
 
 .merchandisesList__merchandise--image-SkinCleaner {
-  padding-left: 30px;
+  width: 40%;
+  padding-left: 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .merchandisesList__merchandise--image-SkinCleaner img.SkinCleaner {
-  width: 70%;
+  width: 60%;
 }
 
 .merchandisesList__merchandise--image-SwellingPlus {
-  margin-right: 80px;
-  padding-left: 30px;
+  width: 40%;
+  padding-left: 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .merchandisesList__merchandise--image-SwellingPlus img.SwellingPlus {
-  width: 70%;
+  width: 60%;
 }
 
 .merchandisesList__merchandise--image-ConditioningMilk {
-  margin-right: 80px;
-  padding-left: 30px;
+  width: 40%;
+  padding-left: 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .merchandisesList__merchandise--image-ConditioningMilk img.ConditioningMilk {
-  width: 70%;
+  width: 60%;
 }
 
 .merchandisesList__merchandise--image-Rescuem {
-  margin-top: 105px;
-  margin-right: 80px;
-  padding-left: 20px;
+  width: 40%;
+  padding-top: 10%;
+  padding-left: 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .merchandisesList__merchandise--image-Rescuem img.Rescuem {
-  width: 70%;
+  width: 75%;
 }
 
 .merchandisesList__merchandise--image-WhitySerum {
-  margin-top: 175px;
+  width: 40%;
+  padding-top: 10%;
+  padding-left: 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .merchandisesList__merchandise--image-WhitySerum img.WhitySerum {
-  width: 80%;
+  width: 75%;
 }
 
 .merchandisesList__merchandise--image-PearlEssence {
-  margin-top: -25px;
-  margin-right: 80px;
-  padding-left: 30px;
+  width: 40%;
+  padding-left: 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .merchandisesList__merchandise--image-PearlEssence img.PearlEssence {
-  width: 70%;
+  width: 60%;
 }
 
 .merchandisesList__merchandise--image-DelicateWash {
-  margin-top: -45px;
-  margin-right: 80px;
-  padding-left: 30px;
+  width: 40%;
+  padding-left: 6%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .merchandisesList__merchandise--image-DelicateWash img.DelicateWash {
-  width: 70%;
+  width: 60%;
 }
 
 .merchandisesList__merchandise--details {
@@ -381,7 +383,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
-  top: 40%;
+  top: 45%;
   right: 1%;
 }
 
@@ -410,7 +412,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
-  top: 30%;
+  top: 35%;
   right: -2%;
 }
 
@@ -495,7 +497,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
-  top: 40%;
+  top: 45%;
   right: 3%;
 }
 
@@ -599,7 +601,7 @@ body {
   font-weight: normal;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper {
   width: 105%;
   height: 75%;
   background: url("../home_image/merchandises/Copal-textBox.png") left top/contain no-repeat;
@@ -607,20 +609,20 @@ body {
   margin-left: -10px;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal {
   /*padding-top: 10%;
                     padding-right: 10%;
                     padding-left: 50px;*/
-  padding: 10% 10% 0 10%;
+  padding: 8% 8% 0 8%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__description {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__description {
   width: 100%;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__description p {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__description p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #64533d;
   font-size: 12px;
@@ -630,18 +632,18 @@ body {
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__usageType {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType {
   margin-top: calc(15 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__usageType--box {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box {
   background: #c28356;
   width: 95px;
   height: 25px;
   margin-bottom: 9px;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__usageType--box p {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   font-size: 14px;
   color: #fff;
@@ -649,7 +651,7 @@ body {
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__usageType p.main-text {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType p.main-text {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   font-size: 12px;
   color: #64533d;
@@ -659,18 +661,18 @@ body {
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__features {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features {
   margin-top: calc(15 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__features--box {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box {
   background: #c28356;
   width: 50px;
   height: 25px;
   margin-bottom: 9px;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__features--box p {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   font-size: 14px;
   color: #fff;
@@ -678,11 +680,11 @@ body {
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__features ul.main-text {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features ul.main-text {
   list-style: none;
 }
 
-.merchandisesList__merchandise--details .textBox-wrapper .textBox-Copal__features ul.main-text li {
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features ul.main-text li {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   font-size: 12px;
   color: #64533d;
@@ -692,517 +694,497 @@ body {
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-Umber {
-  width: 710px;
-  background: url("../home_image/merchandises/Umber-textBox.png") no-repeat;
+.merchandisesList__merchandise--details .textBox-Umber-wrapper {
+  width: 105%;
+  height: 75%;
+  background: url("../home_image/merchandises/Umber-textBox.png") left top/contain no-repeat;
   margin-top: 10px;
-  margin-left: -20px;
-  padding: 51px;
+  margin-left: -10px;
+}
+
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber {
+  /*padding-top: 10%;
+                    padding-right: 10%;
+                    padding-left: 50px;*/
+  padding: 8% 8% 0 8%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__description {
-  width: 592px;
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__description {
+  width: 100%;
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__description p {
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__description p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #64533d;
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 2.1px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__usageType {
-  margin-top: 30px;
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__usageType {
+  margin-top: calc(15 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__usageType--box {
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__usageType--box {
   background: #c28356;
-  width: 106px;
-  height: 30px;
+  width: 95px;
+  height: 25px;
   margin-bottom: 9px;
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__usageType--box p {
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__usageType--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  padding: 8px 0 8px 0;
+  padding-top: 6px;
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__usageType p.main-text {
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__usageType p.main-text {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #64533d;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.8px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__features {
-  margin-top: 30px;
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__features {
+  margin-top: calc(15 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__features--box {
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__features--box {
   background: #c28356;
-  width: 54px;
-  height: 30px;
+  width: 50px;
+  height: 25px;
   margin-bottom: 9px;
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__features--box p {
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__features--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  padding: 8px 0 8px 0;
+  padding-top: 6px;
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__features ul.main-text {
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__features ul.main-text {
   list-style: none;
 }
 
-.merchandisesList__merchandise--details .textBox-Umber__features ul.main-text li {
+.merchandisesList__merchandise--details .textBox-Umber-wrapper .textBox-Umber__features ul.main-text li {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #64533d;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.8px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 16px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-SkinCleaner {
-  width: 710px;
-  background: url("../home_image/merchandises/SkinCleaner-textBox.png") no-repeat;
+.merchandisesList__merchandise--details .textBox-SkinCleaner-wrapper {
+  width: 105%;
+  height: 75%;
+  background: url("../home_image/merchandises/SkinCleaner-textBox.png") left top/contain no-repeat;
   margin-top: 10px;
-  margin-left: -20px;
-  padding: 51px;
+  margin-left: -10px;
+}
+
+.merchandisesList__merchandise--details .textBox-SkinCleaner-wrapper .textBox-SkinCleaner {
+  padding: 8% 8% 0 8%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.merchandisesList__merchandise--details .textBox-SkinCleaner__description {
-  width: 592px;
+.merchandisesList__merchandise--details .textBox-SkinCleaner-wrapper .textBox-SkinCleaner__description {
+  width: 100%;
 }
 
-.merchandisesList__merchandise--details .textBox-SkinCleaner__description p {
+.merchandisesList__merchandise--details .textBox-SkinCleaner-wrapper .textBox-SkinCleaner__description p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #64533d;
-  font-size: 16px;
-  letter-spacing: 2.1px;
+  font-size: 12px;
+  letter-spacing: 1.7px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-SkinCleaner__usefulness {
-  margin-top: 30px;
+.merchandisesList__merchandise--details .textBox-SkinCleaner-wrapper .textBox-SkinCleaner__usefulness {
+  margin-top: calc(15 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-SkinCleaner__usefulness--box {
+.merchandisesList__merchandise--details .textBox-SkinCleaner-wrapper .textBox-SkinCleaner__usefulness--box {
   background: #c28356;
-  width: 54px;
-  height: 30px;
+  width: 50px;
+  height: 25px;
   margin-bottom: 9px;
 }
 
-.merchandisesList__merchandise--details .textBox-SkinCleaner__usefulness--box p {
+.merchandisesList__merchandise--details .textBox-SkinCleaner-wrapper .textBox-SkinCleaner__usefulness--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  padding: 8px 0 8px 0;
+  padding-top: 6px;
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-SkinCleaner__usefulness p.main-text {
+.merchandisesList__merchandise--details .textBox-SkinCleaner-wrapper .textBox-SkinCleaner__usefulness p.main-text {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #64533d;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.8px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-SwellingPlus {
-  width: 710px;
-  background: url("../home_image/merchandises/SwellingPlus-textBox.png") no-repeat;
+.merchandisesList__merchandise--details .textBox-SwellingPlus-wrapper {
+  width: 105%;
+  height: 75%;
+  background: url("../home_image/merchandises/SwellingPlus-textBox.png") left top/contain no-repeat;
   margin-top: 10px;
-  margin-left: -20px;
-  padding: 51px;
+  margin-left: -10px;
+}
+
+.merchandisesList__merchandise--details .textBox-SwellingPlus-wrapper .textBox-SwellingPlus {
+  padding: 8% 8% 0 8%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.merchandisesList__merchandise--details .textBox-SwellingPlus__description {
-  width: 592px;
+.merchandisesList__merchandise--details .textBox-SwellingPlus-wrapper .textBox-SwellingPlus__description {
+  width: 100%;
 }
 
-.merchandisesList__merchandise--details .textBox-SwellingPlus__description p {
+.merchandisesList__merchandise--details .textBox-SwellingPlus-wrapper .textBox-SwellingPlus__description p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #64533d;
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 12px;
+  letter-spacing: 1.7px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-SwellingPlus__usefulness {
-  margin-top: 30px;
+.merchandisesList__merchandise--details .textBox-SwellingPlus-wrapper .textBox-SwellingPlus__usefulness {
+  margin-top: calc(15 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-SwellingPlus__usefulness--box {
+.merchandisesList__merchandise--details .textBox-SwellingPlus-wrapper .textBox-SwellingPlus__usefulness--box {
   background: #c28356;
-  width: 54px;
-  height: 30px;
+  width: 50px;
+  height: 25px;
   margin-bottom: 9px;
 }
 
-.merchandisesList__merchandise--details .textBox-SwellingPlus__usefulness--box p {
+.merchandisesList__merchandise--details .textBox-SwellingPlus-wrapper .textBox-SwellingPlus__usefulness--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  padding: 8px 0 8px 0;
+  padding-top: 6px;
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-SwellingPlus__usefulness p.main-text {
+.merchandisesList__merchandise--details .textBox-SwellingPlus-wrapper .textBox-SwellingPlus__usefulness p.main-text {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #64533d;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.8px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-ConditioningMilk {
-  width: 710px;
-  background: url("../home_image/merchandises/ConditioningMilk-textBox.png") no-repeat;
+.merchandisesList__merchandise--details .textBox-ConditioningMilk-wrapper {
+  width: 105%;
+  height: 75%;
+  background: url("../home_image/merchandises/ConditioningMilk-textBox.png") left top/contain no-repeat;
   margin-top: 10px;
-  margin-left: -20px;
-  padding: 51px;
+  margin-left: -10px;
+}
+
+.merchandisesList__merchandise--details .textBox-ConditioningMilk-wrapper .textBox-ConditioningMilk {
+  padding: 8% 8% 0 8%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.merchandisesList__merchandise--details .textBox-ConditioningMilk__description {
-  width: 600px;
+.merchandisesList__merchandise--details .textBox-ConditioningMilk-wrapper .textBox-ConditioningMilk__description {
+  width: 100%;
 }
 
-.merchandisesList__merchandise--details .textBox-ConditioningMilk__description p {
+.merchandisesList__merchandise--details .textBox-ConditioningMilk-wrapper .textBox-ConditioningMilk__description p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #64533d;
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 12px;
+  letter-spacing: 1.7px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-ConditioningMilk__usefulness {
-  margin-top: 30px;
+.merchandisesList__merchandise--details .textBox-ConditioningMilk-wrapper .textBox-ConditioningMilk__usefulness {
+  margin-top: calc(15 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-ConditioningMilk__usefulness--box {
+.merchandisesList__merchandise--details .textBox-ConditioningMilk-wrapper .textBox-ConditioningMilk__usefulness--box {
   background: #c28356;
-  width: 54px;
-  height: 30px;
+  width: 50px;
+  height: 25px;
   margin-bottom: 9px;
 }
 
-.merchandisesList__merchandise--details .textBox-ConditioningMilk__usefulness--box p {
+.merchandisesList__merchandise--details .textBox-ConditioningMilk-wrapper .textBox-ConditioningMilk__usefulness--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  padding: 8px 0 8px 0;
+  padding-top: 6px;
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-ConditioningMilk__usefulness p.main-text {
+.merchandisesList__merchandise--details .textBox-ConditioningMilk-wrapper .textBox-ConditioningMilk__usefulness p.main-text {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #64533d;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.8px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-Rescuem {
-  width: 710px;
-  background: url("../home_image/merchandises/Rescuem-textBox.png") no-repeat;
+.merchandisesList__merchandise--details .textBox-Rescuem-wrapper {
+  width: 105%;
+  height: 75%;
+  background: url("../home_image/merchandises/Rescuem-textBox.png") left top/contain no-repeat;
   margin-top: 10px;
-  margin-left: -20px;
-  padding: 51px;
+  margin-left: -10px;
+}
+
+.merchandisesList__merchandise--details .textBox-Rescuem-wrapper .textBox-Rescuem {
+  padding: 8% 8% 0 8%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.merchandisesList__merchandise--details .textBox-Rescuem__description {
-  width: 592px;
+.merchandisesList__merchandise--details .textBox-Rescuem-wrapper .textBox-Rescuem__description {
+  width: 100%;
 }
 
-.merchandisesList__merchandise--details .textBox-Rescuem__description p {
+.merchandisesList__merchandise--details .textBox-Rescuem-wrapper .textBox-Rescuem__description p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #64533d;
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 12px;
+  letter-spacing: 1.7px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-Rescuem__usefulness {
-  margin-top: 30px;
-  position: relative;
-  /*注意書き部分*/
+.merchandisesList__merchandise--details .textBox-Rescuem-wrapper .textBox-Rescuem__usefulness {
+  margin-top: calc(15 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-Rescuem__usefulness--box {
+.merchandisesList__merchandise--details .textBox-Rescuem-wrapper .textBox-Rescuem__usefulness--box {
   background: #c28356;
-  width: 54px;
-  height: 30px;
+  width: 50px;
+  height: 25px;
   margin-bottom: 9px;
 }
 
-.merchandisesList__merchandise--details .textBox-Rescuem__usefulness--box p {
+.merchandisesList__merchandise--details .textBox-Rescuem-wrapper .textBox-Rescuem__usefulness--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  padding: 8px 0 8px 0;
+  padding-top: 6px;
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-Rescuem__usefulness p.main-text {
+.merchandisesList__merchandise--details .textBox-Rescuem-wrapper .textBox-Rescuem__usefulness p.main-text {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #64533d;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.8px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-Rescuem__usefulness::after {
-  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  content: '※店頭販売可能商品';
-  color: #64533d;
-  font-size: 13px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  position: absolute;
-  top: 47px;
-  left: 455px;
+.merchandisesList__merchandise--details .textBox-WhitySerum-wrapper {
+  width: 105%;
+  height: 85%;
+  background: url("../home_image/merchandises/WhitySerum-textBox.png") left top/contain no-repeat;
+  margin-top: 10px;
+  margin-left: -10px;
+  margin-bottom: 100px;
 }
 
-.merchandisesList__merchandise--details .textBox-WhitySerum {
-  width: 710px;
-  background: url("../home_image/merchandises/WhitySerum-textBox.png") no-repeat;
-  margin-top: 10px;
-  margin-left: -20px;
-  padding: 51px;
+.merchandisesList__merchandise--details .textBox-WhitySerum-wrapper .textBox-WhitySerum {
+  padding: 8% 8% 0 8%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.merchandisesList__merchandise--details .textBox-WhitySerum__description {
-  width: 592px;
+.merchandisesList__merchandise--details .textBox-WhitySerum-wrapper .textBox-WhitySerum__description {
+  width: 100%;
 }
 
-.merchandisesList__merchandise--details .textBox-WhitySerum__description p {
+.merchandisesList__merchandise--details .textBox-WhitySerum-wrapper .textBox-WhitySerum__description p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #64533d;
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 12px;
+  letter-spacing: 1.7px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 16px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-WhitySerum__usefulness {
-  margin-top: 30px;
-  position: relative;
-  /*注意書き部分*/
+.merchandisesList__merchandise--details .textBox-WhitySerum-wrapper .textBox-WhitySerum__usefulness {
+  margin-top: calc(15 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-WhitySerum__usefulness--box {
+.merchandisesList__merchandise--details .textBox-WhitySerum-wrapper .textBox-WhitySerum__usefulness--box {
   background: #c28356;
-  width: 54px;
-  height: 30px;
+  width: 50px;
+  height: 25px;
   margin-bottom: 9px;
 }
 
-.merchandisesList__merchandise--details .textBox-WhitySerum__usefulness--box p {
+.merchandisesList__merchandise--details .textBox-WhitySerum-wrapper .textBox-WhitySerum__usefulness--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  padding: 8px 0 8px 0;
+  padding-top: 6px;
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-WhitySerum__usefulness p.main-text {
+.merchandisesList__merchandise--details .textBox-WhitySerum-wrapper .textBox-WhitySerum__usefulness p.main-text {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #64533d;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.8px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-WhitySerum__usefulness::after {
-  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  content: '※店頭販売可能商品';
-  color: #64533d;
-  font-size: 13px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  position: absolute;
-  top: 47px;
-  left: 455px;
+.merchandisesList__merchandise--details .textBox-PearlEssence-wrapper {
+  width: 105%;
+  height: 75%;
+  background: url("../home_image/merchandises/PearlEssence-textBox.png") left top/contain no-repeat;
+  margin-top: 10px;
+  margin-left: -10px;
 }
 
-.merchandisesList__merchandise--details .textBox-PearlEssence {
-  width: 710px;
-  background: url("../home_image/merchandises/PearlEssence-textBox.png") no-repeat;
-  margin-top: 10px;
-  margin-left: -20px;
-  padding: 51px;
+.merchandisesList__merchandise--details .textBox-PearlEssence-wrapper .textBox-PearlEssence {
+  padding: 8% 8% 0 8%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.merchandisesList__merchandise--details .textBox-PearlEssence__description {
-  width: 592px;
+.merchandisesList__merchandise--details .textBox-PearlEssence-wrapper .textBox-PearlEssence__description {
+  width: 100%;
 }
 
-.merchandisesList__merchandise--details .textBox-PearlEssence__description p {
+.merchandisesList__merchandise--details .textBox-PearlEssence-wrapper .textBox-PearlEssence__description p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #64533d;
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 12px;
+  letter-spacing: 1.7px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 16px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-PearlEssence__usefulness {
-  margin-top: 30px;
-  position: relative;
-  /*注意書き部分*/
+.merchandisesList__merchandise--details .textBox-PearlEssence-wrapper .textBox-PearlEssence__usefulness {
+  margin-top: calc(10 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-PearlEssence__usefulness--box {
+.merchandisesList__merchandise--details .textBox-PearlEssence-wrapper .textBox-PearlEssence__usefulness--box {
   background: #c28356;
-  width: 54px;
-  height: 30px;
-  margin-bottom: 9px;
+  width: 50px;
+  height: 25px;
+  margin-bottom: 8px;
 }
 
-.merchandisesList__merchandise--details .textBox-PearlEssence__usefulness--box p {
+.merchandisesList__merchandise--details .textBox-PearlEssence-wrapper .textBox-PearlEssence__usefulness--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  padding: 8px 0 8px 0;
+  padding-top: 6px;
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-PearlEssence__usefulness p.main-text {
+.merchandisesList__merchandise--details .textBox-PearlEssence-wrapper .textBox-PearlEssence__usefulness p.main-text {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #64533d;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.8px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-PearlEssence__usefulness::after {
-  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  content: '※店頭販売可能商品';
-  color: #64533d;
-  font-size: 13px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  position: absolute;
-  top: 47px;
-  left: 455px;
+.merchandisesList__merchandise--details .textBox-DelicateWash-wrapper {
+  width: 105%;
+  height: 75%;
+  background: url("../home_image/merchandises/DelicateWash-textBox.png") left top/contain no-repeat;
+  margin-top: 10px;
+  margin-left: -10px;
 }
 
-.merchandisesList__merchandise--details .textBox-DelicateWash {
-  width: 710px;
-  background: url("../home_image/merchandises/DelicateWash-textBox.png") no-repeat;
-  margin-top: 10px;
-  margin-left: -20px;
-  padding: 51px;
+.merchandisesList__merchandise--details .textBox-DelicateWash-wrapper .textBox-DelicateWash {
+  padding: 8% 8% 0 8%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.merchandisesList__merchandise--details .textBox-DelicateWash__description {
-  width: 592px;
+.merchandisesList__merchandise--details .textBox-DelicateWash-wrapper .textBox-DelicateWash__description {
+  width: 100%;
 }
 
-.merchandisesList__merchandise--details .textBox-DelicateWash__description p {
+.merchandisesList__merchandise--details .textBox-DelicateWash-wrapper .textBox-DelicateWash__description p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #64533d;
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 12px;
+  letter-spacing: 1.7px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 16px;
   opacity: 0.7;
 }
 
-.merchandisesList__merchandise--details .textBox-DelicateWash__usefulness {
-  margin-top: 30px;
-  position: relative;
-  /*注意書き部分*/
+.merchandisesList__merchandise--details .textBox-DelicateWash-wrapper .textBox-DelicateWash__usefulness {
+  margin-top: calc(10 / 330 * 100%);
 }
 
-.merchandisesList__merchandise--details .textBox-DelicateWash__usefulness--box {
+.merchandisesList__merchandise--details .textBox-DelicateWash-wrapper .textBox-DelicateWash__usefulness--box {
   background: #c28356;
-  width: 54px;
-  height: 30px;
-  margin-bottom: 9px;
+  width: 50px;
+  height: 25px;
+  margin-bottom: 8px;
 }
 
-.merchandisesList__merchandise--details .textBox-DelicateWash__usefulness--box p {
+.merchandisesList__merchandise--details .textBox-DelicateWash-wrapper .textBox-DelicateWash__usefulness--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
-  padding: 8px 0 8px 0;
+  padding-top: 6px;
   text-align: center;
 }
 
-.merchandisesList__merchandise--details .textBox-DelicateWash__usefulness p.main-text {
+.merchandisesList__merchandise--details .textBox-DelicateWash-wrapper .textBox-DelicateWash__usefulness p.main-text {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 16px;
+  font-size: 12px;
   color: #64533d;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.8px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 14px;
   opacity: 0.7;
-}
-
-.merchandisesList__merchandise--details .textBox-DelicateWash__usefulness::after {
-  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  content: '※店頭販売可能商品';
-  color: #64533d;
-  font-size: 13px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  position: absolute;
-  top: 47px;
-  left: 455px;
 }
 
 .merchandisesList__merchandise:last-of-type {

@@ -139,24 +139,24 @@ body {
 }
 
 .topImages .topImage1 img {
+  display: block;
   width: 100%;
   padding-top: 80px;
 }
 
 .topImages .topImage2 img {
+  display: block;
   width: 100%;
-  margin-top: -30px;
 }
 
 .topImages .topImage3 img {
+  display: block;
   width: 100%;
-  margin-top: -32px;
 }
 
 .topImages .topImage4 img {
+  display: block;
   width: 100%;
-  margin-top: -3px;
-  margin-bottom: -6px;
 }
 
 .merchandisesList {
