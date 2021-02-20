@@ -1043,10 +1043,103 @@ body {
 }
 .about-donyuKosyu {
     width: 100%;
-    background: url('../home_image/footImage/footImage1.png') center center / cover no-repeat;
-    padding: 80px 0 107px 0;
+    height: calc(544 / 1400 * 100vw);
+    background: url('../home_image/footImage/footImage1.png') top center / contain no-repeat;
+    /*position: relative;
+    //z-indexの値をマイナスにするとaタグのhoverが効かなくなる
+    z-index: 0;*/
+    h2 {
+        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+        //font-size: 56px;
+        //font-size: calc(112.5% + 0.5vw);
+        font-size: 4vw;
+        font-weight: 600;
+        color: #841d08;
+        text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+        text-align: right;
+        letter-spacing: 6px;
+        padding-right: calc(90 / 1400 * 100vw); 
+        padding-top: calc(80 / 1400 * 100vw);
+    }
+    h3 {
+        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+        font-size: 2.4vw;
+        font-weight: normal;
+        color: #841d08;
+        text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+        text-align: right;
+        letter-spacing: 0px;
+        padding-right: calc(96 / 1400 * 100vw);
+        margin-top: 38px;
+    }
+    &__textBox {
+        width: calc(610 / 1400 * 100vw);
+        margin: 0 0 0 auto;
+        padding-right: calc(66 / 1400 * 100vw);
+        margin-top: calc(62 / 1400 * 100vw);
+        p {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            font-size: 1.4vw;
+            font-weight: normal;
+            color: #64533d;
+            text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+            text-align: center;
+            letter-spacing: 0px;
+            line-height: calc(32 / 1400 * 100vw);
+        }
+    }
+    &__btn::before {
+        content: ' ';
+        background-color: #fff;
+        border-radius: calc(27 /1400 * 100vw);
+        width: calc(324 / 1400 * 100vw);
+        height: calc(61 / 1400 * 100vw);
+        position: absolute;
+        top: -2px;
+        left: -1px;
+        z-index: -1;
+    }
+    &__btn {
+        width: calc(325 / 1400 * 100vw);
+        height: calc(61 / 1400 * 100vw);
+        border-radius: calc(28.5 / 1400 * 100vw);
+        border-top: 2px solid #a75d4e;
+        border-left: 2px solid #a75d4e;
+        margin: 0 0 0 auto;
+        margin-top: calc(40 / 1400 * 100vw);
+        margin-right: calc(207 / 1400 * 100vw);
+        box-sizing: border-box;
+        position: relative;
+        a {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            color: #fff;
+            font-size: 1.7vw;
+            white-space: nowrap;
+            text-decoration: none;
+            display: block;
+            background-color: #841d08;
+            padding: calc(16 / 1400 * 100vw) calc(58 / 1400 * 100vw);
+            //width: 209px;
+            border-bottom: 2px solid #5e1506;
+            border-radius: calc(25 / 1400 * 100vw);
+            transition: 200ms;
+        }
+        a:hover {
+            opacity: 0.7;
+        }
+    }
+}
+/*.about-donyuKosyu {
+    //display: block;
+    width: 100%;
+    //min-height: calc(544 / 13152 * 100%);
+    height: calc(544 / 1400 * 100vw);
+    background: url('../home_image/footImage/footImage1.png') top center / contain no-repeat;
+    //padding: 80px 0 107px 0;
+    //padding-top: 7%;
+    //padding-bottom: calc(344 / 1400 * 100vw);
     position: relative;
-    //z-indexの値をマイナスにするとうまくaタグのhoverが効かなくなる
+    //z-indexの値をマイナスにするとaタグのhoverが効かなくなる
     z-index: 0;
     h2 {
         font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
@@ -1084,8 +1177,8 @@ body {
             letter-spacing: 0px;
             line-height: 32px;
         }
-    }
-    &__btn::before {
+    }*/
+    /*&__btn::before {
         content: ' ';
         background-color: #fff;
         border-radius: 26.5px;
@@ -1123,10 +1216,11 @@ body {
             opacity: 0.7;
         }
     }
-}
+}*/
 .tsuyari-hope {
+    display: block;
     width: 100%;
-    background: url('../home_image/footImage/footImage2.png') center center / cover no-repeat;
+    background: url('../home_image/footImage/footImage2.png') center center / contain no-repeat;
     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
     padding: 100px 0 100px 0;
     h2 {

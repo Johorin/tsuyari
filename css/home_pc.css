@@ -1263,14 +1263,14 @@ body {
   margin-top: 38px;
 }
 
-.about-donyuKosyu .textBox {
+.about-donyuKosyu__textBox {
   width: 610px;
   float: right;
   padding-right: calc(66 / 1400 * 100%);
   margin-top: 62px;
 }
 
-.about-donyuKosyu .textBox p {
+.about-donyuKosyu__textBox p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   font-size: 20px;
   font-weight: normal;
