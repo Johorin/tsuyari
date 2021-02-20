@@ -111,7 +111,7 @@ body {
         padding-top: 101px;
         h2 {
             font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-            font-size: 30px;
+            font-size: 3.3vw;
             font-weight: normal;
             color: #64533d;
             letter-spacing: 4px;
@@ -1129,117 +1129,34 @@ body {
         }
     }
 }
-/*.about-donyuKosyu {
-    //display: block;
-    width: 100%;
-    //min-height: calc(544 / 13152 * 100%);
-    height: calc(544 / 1400 * 100vw);
-    background: url('../home_image/footImage/footImage1.png') top center / contain no-repeat;
-    //padding: 80px 0 107px 0;
-    //padding-top: 7%;
-    //padding-bottom: calc(344 / 1400 * 100vw);
-    position: relative;
-    //z-indexの値をマイナスにするとaタグのhoverが効かなくなる
-    z-index: 0;
-    h2 {
-        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-        font-size: 56px;
-        font-weight: 600;
-        color: #841d08;
-        text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
-        text-align: right;
-        letter-spacing: 6px;
-        padding-right: calc(90 / 1400 * 100%);
-    }
-    h3 {
-        font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-        font-size: 32px;
-        font-weight: normal;
-        color: #841d08;
-        text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
-        text-align: right;
-        letter-spacing: 0px;
-        padding-right: calc(96 / 1400 * 100%);
-        margin-top: 38px;
-    }
-    .textBox {
-        width: 610px;
-        float: right;
-        padding-right: calc(66 / 1400 * 100%);
-        margin-top: 62px;
-        p {
-            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-            font-size: 20px;
-            font-weight: normal;
-            color: #64533d;
-            text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
-            text-align: center;
-            letter-spacing: 0px;
-            line-height: 32px;
-        }
-    }*/
-    /*&__btn::before {
-        content: ' ';
-        background-color: #fff;
-        border-radius: 26.5px;
-        width: 325px;
-        height: 61px;
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        z-index: -1;
-    }
-    &__btn {
-        width: 325px;
-        height: 61px;
-        border-radius: 28.5px;
-        border-top: 2px solid #a75d4e;
-        border-left: 2px solid #a75d4e;
-        margin-top: 192px;
-        margin-left: calc(868 / 1400 * 100%);
-        box-sizing: border-box;
-        position: relative;
-        a {
-            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-            color: #fff;
-            font-size: 24px;
-            text-decoration: none;
-            display: block;
-            background-color: #841d08;
-            padding: 15px 57px 18px 57px;
-            width: 209px;
-            border-bottom: 2px solid #5e1506;
-            border-radius: 26.5px;
-            transition: 200ms;
-        }
-        a:hover {
-            opacity: 0.7;
-        }
-    }
-}*/
 .tsuyari-hope {
     display: block;
     width: 100%;
-    background: url('../home_image/footImage/footImage2.png') center center / contain no-repeat;
+    height: calc(799 / 1400 * 100vw);
+    background: url('../home_image/footImage/footImage2.png') top center / contain no-repeat;
     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-    padding: 100px 0 100px 0;
+    //padding: 100px 0 100px 0;
+    //padding-top: calc(100 / 1400 * 100vw);
+    //padding-bottom: calc(100 / 1400 * 100vw);
     h2 {
         color: #fff;
-        font-size: 46px;
+        font-size: 3.3vw;
         font-weight: normal;
-        letter-spacing: 5px;
+        letter-spacing: calc(5 / 1400 * 100vw);
         text-align: center;
+        padding-top: calc(100 / 1400 * 100vw);
     }
     &__textBox {
-        width: 861px;
+        width: calc(861 / 1400 * 100vw);
         margin: 0 auto 0 auto;
-        margin-top: 60px;
+        margin-top: calc(60 / 1400 * 100vw);
+        padding-bottom: calc(100 / 1400 * 100vw);
         p {
             color: #fff;
-            font-size: 20px;
+            font-size: 1.43vw;
             text-align: center;
-            letter-spacing: 0.5px;
-            line-height: 32px;
+            letter-spacing: calc(0.5 / 1400 * 100vw);
+            line-height: calc(32 / 1400 * 100vw);
         }
     }
 }

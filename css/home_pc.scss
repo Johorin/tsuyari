@@ -111,6 +111,7 @@ body {
             color: #64533d;
             letter-spacing: 4px;
             text-align: center;
+            white-space: nowrap;
         }
         &--underShape {
             width: calc((224 / 1400) * (1400 / 526) * 100%);
