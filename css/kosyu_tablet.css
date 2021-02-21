@@ -132,13 +132,45 @@ body {
   opacity: 0.6;
 }
 
-.main__topImage {
+.main-topImage {
+  width: 100vw;
+  height: calc(544 / 1400 * 100vw);
+  background: url("../kosyu_image/bg_Topimage.png") bottom center/contain no-repeat;
   padding-top: 80px;
 }
 
-.main__topImage img {
-  display: block;
-  width: 100%;
+.main-topImage h2 {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-weight: 600;
+  text-align: center;
+  padding-top: calc(139 / 1400 * 100vw);
+  font-size: 4vw;
+  color: #841d08;
+  text-shadow: 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff;
+}
+
+.main-topImage h3 {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: calc(38 / 1400 * 100vw);
+  font-size: 2.29vw;
+  color: #841d08;
+  text-shadow: 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff;
+}
+
+.main-topImage__textBox {
+  margin-top: calc(62 / 1400 * 100vw);
+}
+
+.main-topImage__textBox p {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.43vw;
+  color: #64533d;
+  line-height: calc(32 / 1400 * 100vw);
+  text-shadow: 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff, 0 0 12px #fff;
 }
 
 /*見出し*/
