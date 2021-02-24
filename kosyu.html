@@ -8,7 +8,7 @@
         <!--タブレット-->
         <link rel="stylesheet" href="./css/kosyu_tablet.css" media="screen and (min-width:962px) and (max-width:1289px)">
         <!--(タブレット〜)スマホ-->
-        <link rel="stylesheet" href="" media="screen and (min-width:320px) and (max-width:961px)">
+        <link rel="stylesheet" href="./css/kosyu_sp.css" media="screen and (min-width:320px) and (max-width:961px)">
     <link rel="icon" href="./logo-icon/logo-icon-152×152.ico">
     <link rel="apple-touch-icon" type="image/png" href="./logo-icon/logo-icon-152×152.png">
     <title>国産WAX脱毛商材、艶人の販売代理店店｜Luire</title>
@@ -18,16 +18,26 @@
 <body>
 <header>
 <div class="header-wrapper">
-    <div class="header-wrapper--logo">
-        <h1 class="logo"><img src="./logo.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></h1>
+    <div class="header-wrapper__logo">
+        <div class="header-wrapper__logo--wrapper">
+            <h1 class="logo"><img src="./logo.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></h1>
+        </div>
     </div>
-    <div class="header-wrapper--nav">
+    <div class="header-wrapper__nav">
         <ul class="list-header-nav">
             <li><a href="#">HOME</a></li>
             <li><a href="#">導入講習</a></li>
             <li><a href="#">お問い合わせ</a></li>
         </ul>
     </div>
+    <!--ハンバーガーメニューの実装がうまくいかなかったので後ほど別の方法で作ります-->
+    <!--<div class="header-wrapper__hamburger-menu">
+        <button class="menu-trigger" id="hbmn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>          
+    </div>-->
 </div>
 </header>
 <main>
@@ -62,13 +72,15 @@
             </div>
             <table>
                 <tr>
-                    <th class="head1">日数・時間</th><th class="head2">詳細</th><th class="head3">料金</th>
+                    <th class="head1"><p>日数・時間</p></th>
+                    <th class="head2"><p>詳細</p></th>
+                    <th class="head3"><p>料金</p></th>
                 </tr>
                 <tr>
-                    <td class="data1">①導入講習<br>2日間/12時間</td>
-                    <td class="data2">理論・カウンセリング・商品説明・注意事項<br>ボディー・フェイシャル・ヒゲ・HOT パック<br>ブラジリアン or メンズブラジリアン</td>
+                    <td class="data1"><p>①導入講習<br>2日間/12時間</p></td>
+                    <td class="data2"><p>理論・カウンセリング・商品説明・注意事項<br>ボディー・フェイシャル・ヒゲ・HOT パック<br>ブラジリアン or メンズブラジリアン</p></td>
                     <td class="data3">
-                        <div class="donyu-fee-table">
+                        <div class="donyu-fee-table text1">
                             <div class="donyu-instructors">
                                 <p>マンツーマン</p>
                                 <p>3人以上</p>
@@ -80,12 +92,18 @@
                                 <p>¥100,000</p>
                             </div>
                         </div>
+                        <div class="donyu-fee-table text2">
+                            <div class="donyu-specifics">
+                                <p>マンツーマン<br>¥180,000</p>
+                                <p>3人以上<br>¥150,000</p>
+                                <p>10人以上<br>¥100,000</p>
+                            </div>
+                        </div>
                     </td>
                 </tr>
             </table>
         </div>
         <div class="pattern slide-bottom show2">
-            <img src="./kosyu_image/pattern-donyu.png" alt="">
             <h3>ワックス脱毛初心者の方、基礎から理論と技術を学びたい方</h3>
         </div>
         <div class="donyu__table2 slide-bottom show2">
@@ -122,8 +140,7 @@
                         <td class="data1">
                             <div class="textGroup">
                                 <ul class="donyu-contentPrivilege">
-                                    <li>・ワックス脱毛のメニュー価格、サロンワークへのご提案<br>
-                                        (部位ごとの施術金額など) サロンワークに必要な資料提供</li>
+                                    <li>・ワックス脱毛のメニュー価格、サロンワークへのご提案(部位ごとの施術金額など) サロンワークに必要な資料提供</li>
                                     <li>・販促 POP、画像などの提供</li>
                                     <li>・艶人HPにて認定サロン&取扱サロンとして掲載</li>
                                     <li>・メーカー主催講習割引</li>
@@ -162,7 +179,6 @@
             </table>
         </div>
         <div class="pattern slide-bottom show2">
-            <img src="./kosyu_image/pattern-set.png" alt="">
             <h3>サロンに必要な人気な部位を艶人オリジナルで組み合わせた講習</h3>
         </div>
         <div class="set__table2 slide-bottom show2">
@@ -261,7 +277,6 @@
             </table>
         </div>
         <div class="pattern slide-bottom show2">
-            <img src="./kosyu_image/pattern-byPart.png" alt="">
             <h3>サロンメニューに必要な技術をパーツ別に学べる講習</h3>
         </div>
         <div class="byPart__table2 slide-bottom show2">
@@ -365,7 +380,6 @@
             </table>
         </div>
         <div class="pattern slide-bottom show2">
-            <img src="./kosyu_image/pattern-switchCompany.png" alt="">
             <h3>他社講習取得済の方で艶人の技術の基本、商材について学べる講習</h3>
         </div>
         <div class="switchCompany__table2 slide-bottom show2">
@@ -413,7 +427,6 @@
             </div>
         </div>
         <div class="pattern slide-bottom show2">
-            <img src="./kosyu_image/pattern-initialDeployment.png" alt="">
             <h3>初回の講習受講時限定のお得なセット商材です。</h3>
         </div>
         <div class="initialDeployment__table1 slide-bottom show2">
@@ -499,6 +512,9 @@
                     </tr>
                 </table>
             </div>
+            <div class="initialDeployment__table1--caution">
+                <p class="caution">※いずれも税込み表示価格</p>
+            </div>
         </div>
     </div>
     <div class="staffTec">
@@ -531,7 +547,6 @@
             </table>
         </div>
         <div class="pattern slide-bottom show2">
-            <img src="./kosyu_image/pattern-staffTec.png" alt="">
             <h3>導入サロンスタッフへ艶人専属講師による技術、商品販売などの直接指導</h3>
         </div>
         <div class="staffTec__table2 slide-bottom show2">

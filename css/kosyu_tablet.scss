@@ -297,6 +297,7 @@ body {
                     padding-bottom: calc(16 / 1400 * 100vw);
                 }
                 .data1 {
+                    //max-width: calc(471 / 1400 * 100vw);
                     //padding: 41px 57px 153px 64px;
                     padding-top: calc(41 / 1400 * 100vw);
                     padding-right: calc(57 / 1400 * 100vw);
@@ -304,6 +305,7 @@ body {
                     padding-left: calc(64 / 1400 * 100vw);
                     .textGroup {
                         height: calc(207 / 1400 * 100vw);
+                        white-space: normal;
                         .donyu-contentPrivilege {
                             list-style: none;
                             text-align: left;
