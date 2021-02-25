@@ -1829,6 +1829,37 @@ body {
     z-index: 0;*/
 }
 
+@media screen and (max-width: 700px) {
+  .about-donyuKosyu {
+    background: url("../home_image/footImage/footImage1.png") top center/cover no-repeat;
+    height: 272px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-donyuKosyu {
+    height: 290px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-donyuKosyu {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-donyuKosyu {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about-donyuKosyu {
+    height: 220px;
+  }
+}
+
 .about-donyuKosyu h2 {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   font-size: 4vw;
@@ -1837,8 +1868,14 @@ body {
   text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
   text-align: right;
   letter-spacing: 6px;
-  padding-right: calc(90 / 1400 * 100vw);
   padding-top: calc(80 / 1400 * 100vw);
+  padding-right: calc(90 / 1400 * 100vw);
+}
+
+@media screen and (max-width: 600px) {
+  .about-donyuKosyu h2 {
+    text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+  }
 }
 
 .about-donyuKosyu h3 {
@@ -1853,11 +1890,90 @@ body {
   margin-top: 38px;
 }
 
+@media screen and (max-width: 600px) {
+  .about-donyuKosyu h3 {
+    text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-donyuKosyu h3 {
+    padding-right: 9vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-donyuKosyu h3 {
+    padding-right: 10.5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-donyuKosyu h3 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-donyuKosyu h3 {
+    padding-right: 9vw;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about-donyuKosyu h3 {
+    padding-right: 7vw;
+  }
+}
+
 .about-donyuKosyu__textBox {
   width: calc(610 / 1400 * 100vw);
   margin: 0 0 0 auto;
   padding-right: calc(66 / 1400 * 100vw);
   margin-top: calc(62 / 1400 * 100vw);
+}
+
+@media screen and (max-width: 700px) {
+  .about-donyuKosyu__textBox {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-donyuKosyu__textBox {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-donyuKosyu__textBox {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-donyuKosyu__textBox {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-donyuKosyu__textBox {
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-donyuKosyu__textBox {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about-donyuKosyu__textBox {
+    width: 180px;
+  }
 }
 
 .about-donyuKosyu__textBox p {
@@ -1871,6 +1987,24 @@ body {
   line-height: calc(32 / 1400 * 100vw);
 }
 
+@media screen and (max-width: 600px) {
+  .about-donyuKosyu__textBox p {
+    text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about-donyuKosyu__textBox p {
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-donyuKosyu__textBox p {
+    line-height: 16px;
+  }
+}
+
 .about-donyuKosyu__btn::before {
   content: ' ';
   background-color: #fff;
@@ -1881,6 +2015,14 @@ body {
   top: -2px;
   left: -1px;
   z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  .about-donyuKosyu__btn::before {
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+  }
 }
 
 .about-donyuKosyu__btn {
@@ -1897,6 +2039,44 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 800px) {
+  .about-donyuKosyu__btn {
+    width: 185px;
+    height: 35px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-donyuKosyu__btn {
+    margin-right: 15vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-donyuKosyu__btn {
+    margin-right: 13vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-donyuKosyu__btn {
+    margin-right: 11vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-donyuKosyu__btn {
+    margin-right: 9vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about-donyuKosyu__btn {
+    margin-right: 5vw;
+  }
+}
+
 .about-donyuKosyu__btn a {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #fff;
@@ -1910,6 +2090,14 @@ body {
   border-radius: calc(25 / 1400 * 100vw);
   -webkit-transition: 200ms;
   transition: 200ms;
+}
+
+@media screen and (max-width: 800px) {
+  .about-donyuKosyu__btn a {
+    font-size: 13.6px;
+    padding: 9px 33px;
+    border-radius: 15px;
+  }
 }
 
 .about-donyuKosyu__btn a:hover {
