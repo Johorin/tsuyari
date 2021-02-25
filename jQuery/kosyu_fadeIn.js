@@ -24,11 +24,11 @@ $(function() {
 //hbmn_element.classList.add("active");
 /*document.getElementById('hbmn').addEventListener('click', () => {
    document.getElementById('hbmn').classList.add("active");
-});*//*
+});*/
 $("button.menu-trigger").click(function(){
    if($(this).hasClass("active")){ // クリックされた要素がactiveクラスだったら
      $(this).removeClass("active");
    }else{
      $(this).addClass("active");
    }
-});*/
+});

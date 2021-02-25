@@ -1221,9 +1221,13 @@ body {
   border-top: 2px solid #90ccd3;
   border-left: 2px solid #90ccd3;
   border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .merchandisesList__bottomInquiry--ContactToMail .btn .mailBox {
+  padding-left: 20px;
   padding-right: 7px;
 }
 
@@ -1437,9 +1441,13 @@ body {
   border-top: 2px solid #90ccd3;
   border-left: 2px solid #90ccd3;
   border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footImage__contactToMail--btn .mailBox {
+  padding-left: 20px;
   padding-right: 7px;
 }
 

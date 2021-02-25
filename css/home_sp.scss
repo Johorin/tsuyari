@@ -57,7 +57,8 @@ body {
         img {
             display: block;
             width: 100%;
-            padding-top: 80px;
+            //padding-top: 80px;
+            padding-top: calc(40 / 320 * 100vw);
         }
     }
     .topImage2 {
@@ -1204,7 +1205,7 @@ body {
     }
     /*お問い合わせボタンとTEL*/
     &__bottomInquiry {
-        margin-top: 300px;
+        margin-top: 300px;/*
         &--ContactToMail {
             height: 60px;
             width: 351px;
@@ -1245,6 +1246,123 @@ body {
             background: #fff;
             position: relative;
             z-index: 2;
+        }*/
+        &--ContactToMail {
+            height: 60px;
+            width: 351px;
+            //メールでのお問い合わせのボタンのサイズ調整
+            @media screen and (max-width:750px) {
+                height: calc(100 / 1400 * 100vw);
+                width: calc(600 / 1400 * 100vw);
+            }
+            @media screen and (max-width:700px) {
+                height: 54px;
+                width: 304px;
+            }
+            @media screen and (max-width:550px) {
+                height: 45px;
+                width: 280px;
+            }
+            @media screen and (max-width:400px) {
+                height: 40px;
+                width: 240px;
+            }
+            margin: 0 auto 0 auto;
+            margin-top: calc(207 / 1400 * (-100%));
+            border: 2px solid #2b757e;
+            border-radius: 30px;
+            background: linear-gradient(-30deg, #4698a2 20%, #7bd8e4 40%, #7bd8e4 60%, #4698a2 80%, #4698a2);
+            position: relative;
+            z-index: 3;
+            a.btn {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                text-align: center;
+                padding: 17px 0;
+                font-size: 24px;
+                display: flex;
+                @media screen and (max-width:750px) {
+                    padding: 11px 0 15px 0;
+                    font-size: 20px;
+                }
+                @media screen and (max-width:700px) {
+                    padding: 10px 0 16px 0;
+                    font-size: 19px;
+                    p {
+                        padding-top: 4px;
+                    }
+                }
+                @media screen and (max-width:550px) {
+                    padding: 6px 0 12px 0;
+                    font-size: 18px;
+                    p {
+                        padding-top: 6px;
+                    }
+                }
+                @media screen and (max-width:400px) {
+                    padding: 2px 0 8px 0;
+                    font-size: 16px;
+                    p {
+                        padding-top: 10px;
+                    }
+                }
+                letter-spacing: normal;
+                font-weight: 600;
+                text-shadow: 3px 3px 10px #418892;
+                border-top: 2px solid #90ccd3;
+                border-left: 2px solid #90ccd3;
+                border-radius: 30px;
+                img.mailBox {
+                    padding-right: 7px;
+                    padding-left: 20px;
+                    @media screen and (max-width:750px) {
+                        padding-top: 5px;
+                        padding-right: 20px;
+                    }
+                    @media screen and (max-width:550px) {
+                        padding-right: 15px;
+                    }
+                    @media screen and (max-width:400px) {
+                        padding-top: 8px;
+                        padding-right: 10px;
+                        padding-left: 15px;
+                    }
+                }
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        .fundColor {
+            height: 60px;
+            width: 351px;
+            margin: -60px auto 0 auto;
+            @media screen and (max-width:750px) {
+                height: calc(100 / 1400 * 100vw);
+                width: calc(600 / 1400 * 100vw);
+                margin-top: calc(-100 / 1400 * 100vw);
+            }
+            @media screen and (max-width:700px) {
+                height: 54px;
+                width: 304px;
+                margin-top: -54px;
+            }
+            @media screen and (max-width:550px) {
+                height: 45px;
+                width: 280px;
+                margin-top: -45px;
+            }
+            @media screen and (max-width:400px) {
+                height: 40px;
+                width: 240px;
+                margin-top: -40px;
+            }
+            border-radius: 30px;
+            background: #fff;
+            position: relative;
+            z-index: 2;
         }
         &--ContactToPhone {
             width: calc(470 / 1400 * 100%);
@@ -1253,6 +1371,19 @@ body {
             padding-bottom: calc(97 / 1400 * 100%);
             img {
                 width: 100%;
+            }
+            //「お電話でのお問い合わせはこちら」の画像のサイズ調整
+            @media screen and (max-width:750px) {
+                width: 300px;
+            }
+            @media screen and (max-width:600px) {
+                width: 260px;
+            }
+            @media screen and (max-width:500px) {
+                width: 220px;
+            }
+            @media screen and (max-width:400px) {
+                width: 200px;
             }
         }
     }
@@ -1390,6 +1521,13 @@ body {
         img {
             width: 100%;
         }
+        //画像「脱毛ワックスNo.1ブランドを目指して」のサイズ調整
+        @media screen and (max-width:500px) {
+            width: 320px;
+        }
+        @media screen and (max-width:400px) {
+            width: 280px;
+        }
     }
     &__merchandises {
         width: calc(873 / 1400 * 100%);
@@ -1398,10 +1536,34 @@ body {
         img {
             width: 100%;
         }
+        //商品画像のサイズ調整
+        @media screen and (max-width:500px) {
+            width: 320px;
+        }
+        @media screen and (max-width:400px) {
+            width: 280px;
+        }
     }
     &__contactToMail {
         height: 60px;
         width: 351px;
+        //メールでのお問い合わせのボタンのサイズ調整
+        @media screen and (max-width:750px) {
+            height: calc(100 / 1400 * 100vw);
+            width: calc(600 / 1400 * 100vw);
+        }
+        @media screen and (max-width:700px) {
+            height: 54px;
+            width: 304px;
+        }
+        @media screen and (max-width:550px) {
+            height: 45px;
+            width: 280px;
+        }
+        @media screen and (max-width:400px) {
+            height: 40px;
+            width: 240px;
+        }
         margin: 0 auto 0 auto;
         margin-top: calc(207 / 1400 * (-100%));
         border: 2px solid #2b757e;
@@ -1415,16 +1577,55 @@ body {
             color: #fff;
             display: block;
             text-align: center;
-            padding: 17px 0 17px 0;
+            padding: 17px 0;
             font-size: 24px;
+            display: flex;
+            @media screen and (max-width:750px) {
+                padding: 11px 0 15px 0;
+                font-size: 20px;
+            }
+            @media screen and (max-width:700px) {
+                padding: 10px 0 16px 0;
+                font-size: 19px;
+                p {
+                    padding-top: 4px;
+                }
+            }
+            @media screen and (max-width:550px) {
+                padding: 6px 0 12px 0;
+                font-size: 18px;
+                p {
+                    padding-top: 6px;
+                }
+            }
+            @media screen and (max-width:400px) {
+                padding: 2px 0 8px 0;
+                font-size: 16px;
+                p {
+                    padding-top: 10px;
+                }
+            }
             letter-spacing: normal;
             font-weight: 600;
             text-shadow: 3px 3px 10px #418892;
             border-top: 2px solid #90ccd3;
             border-left: 2px solid #90ccd3;
             border-radius: 30px;
-            .mailBox {
+            img.mailBox {
                 padding-right: 7px;
+                padding-left: 20px;
+                @media screen and (max-width:750px) {
+                    padding-top: 5px;
+                    padding-right: 20px;
+                }
+                @media screen and (max-width:550px) {
+                    padding-right: 15px;
+                }
+                @media screen and (max-width:400px) {
+                    padding-top: 8px;
+                    padding-right: 10px;
+                    padding-left: 15px;
+                }
             }
         }
         &:hover {
@@ -1435,6 +1636,26 @@ body {
         height: 60px;
         width: 351px;
         margin: -60px auto 0 auto;
+        @media screen and (max-width:750px) {
+            height: calc(100 / 1400 * 100vw);
+            width: calc(600 / 1400 * 100vw);
+            margin-top: calc(-100 / 1400 * 100vw);
+        }
+        @media screen and (max-width:700px) {
+            height: 54px;
+            width: 304px;
+            margin-top: -54px;
+        }
+        @media screen and (max-width:550px) {
+            height: 45px;
+            width: 280px;
+            margin-top: -45px;
+        }
+        @media screen and (max-width:400px) {
+            height: 40px;
+            width: 240px;
+            margin-top: -40px;
+        }
         border-radius: 30px;
         background: #fff;
         position: relative;
@@ -1448,13 +1669,35 @@ body {
         img {
             width: 100%;
         }
+        //「お電話でのお問い合わせはこちら」の画像のサイズ調整
+        @media screen and (max-width:750px) {
+            width: 300px;
+        }
+        @media screen and (max-width:600px) {
+            width: 260px;
+        }
+        @media screen and (max-width:500px) {
+            width: 220px;
+        }
+        @media screen and (max-width:400px) {
+            width: 200px;
+        }
     }
 }
 .footer-wrapper1 {
     height: 140px;
-    &--nav {
-        width: 325px;
+    &__nav {
         margin: 0 auto 0 auto;
+        width: 300px;
+        @media screen and (max-width:750px) {
+            width: 340px;
+        }
+        @media screen and (max-width:500px) {
+            width: 320px;
+        }
+        @media screen and (max-width:400px) {
+            width: 275px;
+        }
         .list-header-nav {
             list-style: none;
             display: flex;
@@ -1465,6 +1708,15 @@ body {
                 color: #64533d;
                 display: block;
                 margin: 62px 40px 62px 0;
+                @media screen and (max-width:750px) {
+                    margin-right: 60px;
+                }
+                @media screen and (max-width:500px) {
+                    margin-right: 50px;
+                }
+                @media screen and (max-width:400px) {
+                    margin-right: 30px;
+                }
                 letter-spacing: normal;
                 transition: 300ms;
                 &:hover {
@@ -1479,13 +1731,23 @@ body {
 }
 .footer-wrapper2 {
     width: 100%;
-    height: 265px;
+    //height: 265px;
     background: url("../kosyu_image/backgroundFooter.png") center center / cover no-repeat;
     position: relative;
     .pageTop {
         position: absolute;
         top: 108px;
         right: 40px;
+        @media screen and (max-width:700px) {
+            position: static;
+            width: 50px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            img {
+                width: 100%;
+            }
+        }
         &__text {
             font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
             margin-top: 5px;
@@ -1495,6 +1757,7 @@ body {
             font-weight: 600;
             position: relative;
             right: 1px;
+            white-space: nowrap;
         }
         a:hover {
             opacity: 0.8;
@@ -1502,8 +1765,19 @@ body {
     }
     &__logo {
         width: 380px;
+        //ロゴイメージのサイズ調整
+        @media screen and (max-width:480px) {
+            width: 300px;
+        }
         margin: 0 auto 25px auto;
         padding-top: 20px;
+        //ロゴイメージとpageTopボタンの配置変更
+        @media screen and (max-width:700px) {
+            padding-top: 0;
+        }
+        img {
+            width: 100%;
+        }
     }
     &__address {
         p {
@@ -1512,10 +1786,21 @@ body {
             color: #312b24;
             text-align: center;
             line-height: 24px;
+            //住所のテキストのフォントサイズ調整
+            @media screen and (max-width:480px) {
+                font-size: 14px;
+            }
+            @media screen and (max-width:400px) {
+                font-size: 12px;
+            }
+            @media screen and (max-width:360px) {
+                font-size: 10px;
+            }
         }
     }
     &__copyright {
         margin-top: 20px;
+        padding-bottom: 10px;
         p {
             font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
             font-size: 10px;

@@ -73,7 +73,7 @@ body {
             }
         }*/
     }
-    /*ボタンのアニメーションの実装部分*//*
+    /*ボタンのアニメーションの実装部分*/
     &__hamburger-menu {
         .menu-trigger,
         .menu-trigger span {
@@ -132,12 +132,12 @@ body {
             transform: translateY(calc(-19 / 961 * 100vw)) rotate(315deg) scale(.8);
         }
     }
-    /*ボタンの配置の部分*//*
+    /*ボタンの配置の部分*/
     &__hamburger-menu {
         float: right;
         margin-top: calc(12 / 320 * 100vw);
         margin-right: calc(20 / 320 * 100vw);
-    }*/
+    }
 }
 .main-topImage {
     width: 100vw;

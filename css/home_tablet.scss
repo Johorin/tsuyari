@@ -1013,7 +1013,9 @@ body {
                 border-top: 2px solid #90ccd3;
                 border-left: 2px solid #90ccd3;
                 border-radius: 30px;
+                display: flex;
                 .mailBox {
+                    padding-left: 20px;
                     padding-right: 7px;
                 }
             }
@@ -1207,7 +1209,9 @@ body {
             border-top: 2px solid #90ccd3;
             border-left: 2px solid #90ccd3;
             border-radius: 30px;
+            display: flex;
             .mailBox {
+                padding-left: 20px;
                 padding-right: 7px;
             }
         }
