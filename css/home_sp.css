@@ -1920,8 +1920,33 @@ body {
   display: block;
   width: 100%;
   height: calc(799 / 1400 * 100vw);
-  background: url("../home_image/footImage/footImage2.png") top center/contain no-repeat;
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  background: url("../home_image/footImage/footImage2.png") top center/contain no-repeat;
+}
+
+@media screen and (max-width: 550px) {
+  .tsuyari-hope {
+    background: url("../home_image/footImage/footImage2.png") center center/cover no-repeat;
+    height: calc(900 / 1400 * 100vw);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tsuyari-hope {
+    height: calc(1000 / 1400 * 100vw);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tsuyari-hope {
+    height: calc(1100 / 1400 * 100vw);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tsuyari-hope {
+    height: calc(1250 / 1400 * 100vw);
+  }
 }
 
 .tsuyari-hope h2 {
@@ -1940,12 +1965,42 @@ body {
   padding-bottom: calc(100 / 1400 * 100vw);
 }
 
+@media screen and (max-width: 700px) {
+  .tsuyari-hope__textBox {
+    width: calc(500 / 700 * 100vw);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tsuyari-hope__textBox {
+    width: calc(550 / 700 * 100vw);
+  }
+}
+
 .tsuyari-hope__textBox p {
   color: #fff;
   font-size: 1.43vw;
   text-align: center;
   letter-spacing: calc(0.5 / 1400 * 100vw);
   line-height: calc(32 / 1400 * 100vw);
+}
+
+@media screen and (max-width: 500px) {
+  .tsuyari-hope__textBox p {
+    line-height: calc(40 / 1400 * 100vw);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tsuyari-hope__textBox p {
+    line-height: calc(43 / 1400 * 100vw);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tsuyari-hope__textBox p {
+    line-height: calc(46 / 1400 * 100vw);
+  }
 }
 
 /*footer部分*/

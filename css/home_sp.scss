@@ -1480,11 +1480,24 @@ body {
     display: block;
     width: 100%;
     height: calc(799 / 1400 * 100vw);
-    background: url('../home_image/footImage/footImage2.png') top center / contain no-repeat;
     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
     //padding: 100px 0 100px 0;
     //padding-top: calc(100 / 1400 * 100vw);
     //padding-bottom: calc(100 / 1400 * 100vw);
+    background: url('../home_image/footImage/footImage2.png') top center / contain no-repeat;
+    @media screen and (max-width:550px) {
+        background: url('../home_image/footImage/footImage2.png') center center / cover no-repeat;
+        height: calc(900 / 1400 * 100vw);
+    }
+    @media screen and (max-width:500px) {
+        height: calc(1000 / 1400 * 100vw);
+    }
+    @media screen and (max-width:450px) {
+        height: calc(1100 / 1400 * 100vw);
+    }
+    @media screen and (max-width:400px) {
+        height: calc(1250 / 1400 * 100vw);
+    }
     h2 {
         color: #fff;
         font-size: 3.3vw;
@@ -1495,6 +1508,12 @@ body {
     }
     &__textBox {
         width: calc(861 / 1400 * 100vw);
+        @media screen and (max-width:700px) {
+            width: calc(500 / 700 * 100vw);
+        }
+        @media screen and (max-width:600px) {
+            width: calc(550 / 700 * 100vw);
+        }
         margin: 0 auto 0 auto;
         margin-top: calc(60 / 1400 * 100vw);
         padding-bottom: calc(100 / 1400 * 100vw);
@@ -1504,6 +1523,15 @@ body {
             text-align: center;
             letter-spacing: calc(0.5 / 1400 * 100vw);
             line-height: calc(32 / 1400 * 100vw);
+            @media screen and (max-width:500px) {
+                line-height: calc(40 / 1400 * 100vw);
+            }
+            @media screen and (max-width:450px) {
+                line-height: calc(43 / 1400 * 100vw);
+            }
+            @media screen and (max-width:400px) {
+                line-height: calc(46 / 1400 * 100vw);
+            }
         }
     }
 }
