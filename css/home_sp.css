@@ -239,21 +239,17 @@ body {
 }
 
 .merchandisesList__merchandise {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin: 125px auto 0 auto;
   /*DelicateWashの下の余白*/
 }
 
 .merchandisesList__merchandise--image-Copal {
-  width: 40%;
-  margin-top: 5%;
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
 }
 
 .merchandisesList__merchandise--image-Copal img.Copal {
-  width: 90%;
+  width: 50%;
 }
 
 .merchandisesList__merchandise--image-Umber {
@@ -345,9 +341,11 @@ body {
 }
 
 .merchandisesList__merchandise--details {
-  width: calc(660 / 1209 * 105%);
+  width: calc(900 / 1209 * 105%);
+  margin: 0 auto;
   /*それぞれの商品名と容量の部分*/
   /*商品の種類名*/
+  /*textBoxのレスポンシブ*/
   /*Copal*/
   /*Umber*/
   /*SkinCleaner*/
@@ -363,42 +361,71 @@ body {
   /*DelicateWash*/
 }
 
+@media screen and (max-width: 500px) {
+  .merchandisesList__merchandise--details {
+    width: calc(1000 / 1209 * 105%);
+  }
+}
+
 .merchandisesList__merchandise--details .name-Copal {
-  margin-left: calc(-20 / 1400 * 100vw);
   position: relative;
   /*商品の容量部分*/
 }
 
 .merchandisesList__merchandise--details .name-Copal img.Copal {
-  width: 70%;
+  width: 100%;
 }
 
 .merchandisesList__merchandise--details .name-Copal::after {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   content: '容量800g';
-  font-size: 16px;
   color: #fff;
-  padding-top: 7px;
-  text-align: center;
-  width: 110px;
-  height: 28px;
   background-color: #841d08;
-  border-radius: 14px 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 35px 35px;
   position: absolute;
-  top: 35%;
-  right: 1%;
+  top: 80%;
+  right: 0%;
+  /*//容量の要素のサイズ調整
+                    @media screen and (max-width:850px) {
+                        padding-top: calc(10 / 900 * 100vw);
+                        width: calc(120 / 900 * 100vw);
+                        height: calc(35 / 900 * 100vw);
+                        font-size: 14px;
+                        top: 25%;
+                        right: 0%;
+                    }
+                    @media screen and (max-width:700px) {
+                        font-size: 12px;
+                    }
+                    @media screen and (max-width:600px) {
+                        padding-top: calc(8 / 900 * 100vw);
+                        font-size: 10px;
+                    }
+                    @media screen and (max-width:500px) {
+                        padding-top: calc(17 / 900 * 100vw);
+                        width: calc(70 / 320 * 100vw);
+                        height: calc(20 / 320 * 100vw);
+                        font-size: 14px;
+                        transform: scale(0.8);
+                        top: 20%;
+                        right: -10%;
+                    }
+                    @media screen and (max-width:400px) {
+                        font-size: 12px;
+                        transform: scale(0.5);
+                        right: -5%;
+                    }*/
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
   .merchandisesList__merchandise--details .name-Copal::after {
-    padding-top: calc(10 / 900 * 100vw);
-    width: calc(120 / 900 * 100vw);
-    height: calc(35 / 900 * 100vw);
     font-size: 14px;
-    top: 25%;
-    right: 0%;
+    top: 75%;
   }
 }
 
@@ -408,32 +435,10 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .merchandisesList__merchandise--details .name-Copal::after {
-    padding-top: calc(8 / 900 * 100vw);
-    font-size: 10px;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .merchandisesList__merchandise--details .name-Copal::after {
-    padding-top: calc(17 / 900 * 100vw);
-    width: calc(70 / 320 * 100vw);
-    height: calc(20 / 320 * 100vw);
-    font-size: 14px;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    top: 20%;
-    right: -10%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .merchandisesList__merchandise--details .name-Copal::after {
-    font-size: 12px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    right: -5%;
+    font-size: 10px;
+    padding: 7px 22px;
   }
 }
 
@@ -673,33 +678,84 @@ body {
   background: linear-gradient(120deg, #9e8151, #dbc5a1 21%, #9e8151 51%, rgba(219, 197, 161, 0) 90%);
   padding-top: calc(20 / 1400 * 100vw);
   padding-bottom: calc(20 / 1400 * 100vw);
-  padding-left: calc(28 / 1400 * 100vw);
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .merchandisesList__merchandise--details .kindName {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .merchandisesList__merchandise--details .kindName {
+    margin-top: 25px;
+  }
 }
 
 .merchandisesList__merchandise--details .kindName h2 {
   color: #fff;
-  font-size: 29px;
+  font-size: 36px;
   font-weight: 600;
+  padding-left: calc(28 / 1400 * 100vw);
 }
 
 @media screen and (max-width: 800px) {
   .merchandisesList__merchandise--details .kindName h2 {
-    font-size: 3.5vw;
+    font-size: 29px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .merchandisesList__merchandise--details .kindName h2 {
-    font-size: 3vw;
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .merchandisesList__merchandise--details .kindName h2 {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .merchandisesList__merchandise--details .kindName h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .merchandisesList__merchandise--details .kindName h2 {
+    font-size: 16px;
   }
 }
 
 .merchandisesList__merchandise--details .textBox-Copal-wrapper {
+  background: url("../home_image/merchandises/Copal-textBox.png") left top/cover no-repeat;
   width: 105%;
-  height: 75%;
-  background: url("../home_image/merchandises/Copal-textBox.png") left top/contain no-repeat;
+  height: calc(420 / 899 * 100vw);
   margin-top: calc(10 / 1400 * 100vw);
-  margin-left: calc(-18 / 1400 * 100vw);
+  margin-left: calc(-25 / 1400 * 100vw);
+}
+
+@media screen and (max-width: 550px) {
+  .merchandisesList__merchandise--details .textBox-Copal-wrapper {
+    background: url("../home_image/merchandises/Copal-textBox-sp/Copal-textBox-500to550.png") left top/cover no-repeat;
+    height: calc(470 / 899 * 100vw);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .merchandisesList__merchandise--details .textBox-Copal-wrapper {
+    height: calc(530 / 899 * 100vw);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .merchandisesList__merchandise--details .textBox-Copal-wrapper {
+    background: url("../home_image/merchandises/Copal-textBox-sp/Copal-textBox-to320.png") left top/cover no-repeat;
+    height: calc(810 / 899 * 100vw);
+  }
 }
 
 .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal {
@@ -716,299 +772,307 @@ body {
 .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__description p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #64533d;
-  font-size: 10px;
+  font-size: 16px;
+  line-height: 120%;
   letter-spacing: 2.1px;
   font-weight: 600;
-  line-height: 2.1vh;
   opacity: 0.7;
+  /*//説明テキストのフォントサイズ調整
+                            @media screen and (max-width:800px) {
+                                width: 110%;
+                                transform: scale(0.9);
+                                transform-origin: top left;
+                            }
+                            @media screen and (max-width:700px) {
+                                width: 130%;
+                                transform: scale(0.8);
+                            }
+                            @media screen and (max-width:600px) {
+                                width: 155%;
+                                transform: scale(0.65);
+                            }
+                            @media screen and (max-width:500px) {
+                                width: 200%;
+                                transform: scale(0.5);
+                            }
+                            @media screen and (max-width:400px) {
+                                width: 220%;
+                                transform: scale(0.45);
+                            }*/
 }
 
 @media screen and (max-width: 800px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__description p {
-    width: 110%;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__description p {
-    width: 130%;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__description p {
+    font-size: 10px;
+  }
+}
+
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType {
+  margin-top: 60px;
+  /*//使用タイプの上の余白の調整
+                        @media screen and (max-width:700px) {
+                            margin-top: -10%;
+                        }
+                        @media screen and (max-width:600px) {
+                            margin-top: -15%;
+                        }
+                        @media screen and (max-width:500px) {
+                            margin-top: -25%;
+                        }
+                        @media screen and (max-width:400px) {
+                            margin-top: -30%;
+                        }
+                        @media screen and (max-width:340px) {
+                            margin-top: calc(-50 / 320 * 100vw);
+                        }*/
+}
+
+@media screen and (max-width: 800px) {
+  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType {
+    margin-top: 5px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__description p {
-    width: 155%;
-    -webkit-transform: scale(0.65);
-            transform: scale(0.65);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__description p {
-    width: 200%;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__description p {
-    width: 220%;
-    -webkit-transform: scale(0.45);
-            transform: scale(0.45);
-  }
-}
-
-@media screen and (max-width: 700px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType {
-    margin-top: -10%;
+    margin-top: 0;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType {
-    margin-top: -15%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType {
-    margin-top: -25%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType {
-    margin-top: -30%;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType {
-    margin-top: calc(-50 / 320 * 100vw);
+    margin-top: 20px;
   }
 }
 
 .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box {
   background: #c28356;
-  width: calc(95 / 900 * 100vw);
-  height: calc(30 / 900 * 100vw);
-  margin-bottom: calc(9 / 900 * 100vw);
-}
-
-@media screen and (max-width: 650px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box {
-    height: calc(25 / 900 * 100vw);
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box {
-    width: calc(105 / 900 * 100vw);
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box {
-    width: calc(135 / 900 * 100vw);
-    height: calc(30 / 900 * 100vw);
-  }
+  margin-bottom: 9px;
+  /*//使用タイプのボックスの大きさ
+                            @media screen and (max-width:650px) {
+                                height: calc(25 / 900 * 100vw);
+                            }
+                            @media screen and (max-width:450px) {
+                                width: calc(105 / 900 * 100vw);
+                            }
+                            @media screen and (max-width:350px) {
+                                width: calc(135 / 900 * 100vw);
+                                height: calc(30 / 900 * 100vw);
+                            }*/
+  width: 106px;
 }
 
 .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
   color: #fff;
-  padding-top: 10%;
+  padding: 7px 10px 8px 10px;
+  letter-spacing: 1px;
   text-align: center;
+  /*//テキスト「使用タイプ」の大きさ調整
+                                @media screen and (max-width:800px) {
+                                    width: 110%;
+                                    transform: scale(0.9);
+                                    transform-origin: top left;
+                                }
+                                @media screen and (max-width:700px) {
+                                    width: 130%;
+                                    transform: scale(0.8);
+                                }
+                                @media screen and (max-width:600px) {
+                                    width: 155%;
+                                    transform: scale(0.65);
+                                }
+                                @media screen and (max-width:500px) {
+                                    width: 200%;
+                                    transform: scale(0.5);
+                                }
+                                @media screen and (max-width:400px) {
+                                    width: 220%;
+                                    transform: scale(0.45);
+                                }*/
 }
 
 @media screen and (max-width: 800px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box p {
-    width: 110%;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box p {
-    width: 130%;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box {
+    width: 90px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box p {
-    width: 155%;
-    -webkit-transform: scale(0.65);
-            transform: scale(0.65);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box p {
-    width: 200%;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box p {
-    width: 220%;
-    -webkit-transform: scale(0.45);
-            transform: scale(0.45);
+  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType--box {
+    width: 80px;
   }
 }
 
 .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType p.main-text {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 10px;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 2.1px;
   color: #64533d;
-  letter-spacing: 0.8px;
   font-weight: 600;
-  line-height: 14px;
   opacity: 0.7;
+  /*//説明テキストの大きさ調整
+                            @media screen and (max-width:800px) {
+                                width: 110%;
+                                transform: scale(0.9);
+                                transform-origin: top left;
+                            }
+                            @media screen and (max-width:700px) {
+                                width: 130%;
+                                transform: scale(0.8);
+                            }
+                            @media screen and (max-width:600px) {
+                                width: 155%;
+                                transform: scale(0.65);
+                            }
+                            @media screen and (max-width:500px) {
+                                width: 200%;
+                                transform: scale(0.5);
+                            }
+                            @media screen and (max-width:400px) {
+                                width: 220%;
+                                transform: scale(0.45);
+                            }*/
 }
 
 @media screen and (max-width: 800px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType p.main-text {
-    width: 110%;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType p.main-text {
-    width: 130%;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    font-size: 12px;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType p.main-text {
+    font-size: 10px;
+  }
+}
+
+.merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features {
+  margin-top: 20px;
+  /*@media screen and (min-width:550px) {
+                            margin-top: calc(10 / 900 * 100vw);
+                        }
+                        @media screen and (max-width:400px) {
+                            margin-top: calc(-5 / 900 * 100vw);
+                        }*/
 }
 
 @media screen and (max-width: 600px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType p.main-text {
-    width: 155%;
-    -webkit-transform: scale(0.65);
-            transform: scale(0.65);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType p.main-text {
-    width: 200%;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__usageType p.main-text {
-    width: 220%;
-    -webkit-transform: scale(0.45);
-            transform: scale(0.45);
-  }
-}
-
-@media screen and (min-width: 550px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features {
-    margin-top: calc(10 / 900 * 100vw);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features {
-    margin-top: calc(-5 / 900 * 100vw);
+    margin-top: 15px;
   }
 }
 
 .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box {
   background: #c28356;
-  width: calc(60 / 900 * 100vw);
-  height: calc(28 / 900 * 100vw);
-  margin-bottom: calc(9 / 900 * 100vw);
-}
-
-@media screen and (max-width: 650px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box {
-    height: calc(25 / 900 * 100vw);
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box {
-    width: calc(50 / 900 * 100vw);
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box {
-    width: calc(65 / 900 * 100vw);
-    height: calc(30 / 900 * 100vw);
-  }
+  width: 54px;
+  margin-bottom: 9px;
+  /*//特徴のボックスの大きさ
+                            @media screen and (max-width:650px) {
+                                height: calc(25 / 900 * 100vw);
+                            }
+                            @media screen and (max-width:450px) {
+                                width: calc(50 / 900 * 100vw);
+                            }
+                            @media screen and (max-width:350px) {
+                                width: calc(65 / 900 * 100vw);
+                                height: calc(30 / 900 * 100vw);
+                            }*/
 }
 
 .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box p {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
   color: #fff;
-  padding-top: 10%;
+  padding: 7px 10px 8px 10px;
+  letter-spacing: 1px;
   text-align: center;
+  /*//テキスト「特徴」の大きさ調整
+                                @media screen and (max-width:800px) {
+                                    width: 110%;
+                                    transform: scale(0.9);
+                                    transform-origin: top left;
+                                }
+                                @media screen and (max-width:700px) {
+                                    width: 130%;
+                                    transform: scale(0.8);
+                                }
+                                @media screen and (max-width:600px) {
+                                    width: 155%;
+                                    transform: scale(0.65);
+                                }
+                                @media screen and (max-width:500px) {
+                                    padding-top: 20%;
+                                    width: 200%;
+                                    transform: scale(0.5);
+                                }
+                                @media screen and (max-width:400px) {
+                                    width: 220%;
+                                    transform: scale(0.45);
+                                }*/
 }
 
 @media screen and (max-width: 800px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box p {
-    width: 110%;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box p {
-    width: 130%;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box p {
-    width: 155%;
-    -webkit-transform: scale(0.65);
-            transform: scale(0.65);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box p {
-    padding-top: 20%;
-    width: 200%;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features--box p {
-    width: 220%;
-    -webkit-transform: scale(0.45);
-            transform: scale(0.45);
+    font-size: 10px;
   }
 }
 
@@ -1018,59 +1082,58 @@ body {
 
 .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features ul.main-text li {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 10px;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 2.1px;
   color: #64533d;
-  letter-spacing: 0.8px;
   font-weight: 600;
   opacity: 0.7;
+  /*//説明テキストの大きさ調整
+                                @media screen and (max-width:800px) {
+                                    width: 110%;
+                                    transform: scale(0.9);
+                                    transform-origin: top left;
+                                }
+                                @media screen and (max-width:700px) {
+                                    width: 130%;
+                                    transform: scale(0.8);
+                                }
+                                @media screen and (max-width:600px) {
+                                    width: 155%;
+                                    transform: scale(0.65);
+                                }
+                                @media screen and (max-width:500px) {
+                                    width: 200%;
+                                    transform: scale(0.5);
+                                    &:first-of-type {
+                                        margin-bottom: calc(-10 / 900 * 100vw);
+                                    }
+                                }
+                                @media screen and (max-width:400px) {
+                                    font-size: 10px;
+                                    width: 220%;
+                                    transform: scale(0.45);
+                                    &:first-of-type {
+                                        margin-bottom: calc(-10 / 900 * 100vw);
+                                    }
+                                }*/
 }
 
 @media screen and (max-width: 800px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features ul.main-text li {
-    width: 110%;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features ul.main-text li {
-    width: 130%;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features ul.main-text li {
-    width: 155%;
-    -webkit-transform: scale(0.65);
-            transform: scale(0.65);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features ul.main-text li {
-    width: 200%;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features ul.main-text li:first-of-type {
-    margin-bottom: calc(-10 / 900 * 100vw);
-  }
-}
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features ul.main-text li {
     font-size: 10px;
-    width: 220%;
-    -webkit-transform: scale(0.45);
-            transform: scale(0.45);
-  }
-  .merchandisesList__merchandise--details .textBox-Copal-wrapper .textBox-Copal__features ul.main-text li:first-of-type {
-    margin-bottom: calc(-10 / 900 * 100vw);
   }
 }
 
