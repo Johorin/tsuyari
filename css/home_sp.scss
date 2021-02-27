@@ -17,9 +17,6 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 
 /*メイン*/
-
-/*レスポンシブ（要相談）*/
-//@media (max-width: ){
 body {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     width: 100%;
@@ -29,25 +26,147 @@ body {
 .header-wrapper {
     width: 100%;
     height: calc(40 / 320 * 100vw);
+    @media screen and (max-width:500px) {
+        height: 60px;
+    }
     background: #fff;
     opacity: 0.9;
     position: fixed;
     z-index: 10;
     &__logo {
         width: 40vw;
+        @media screen and (max-width:500px) {
+            width: 150px;
+        }
         height: 100%;
         display: inline-block;
         &--wrapper {
             width: 100%;
             margin-top: calc(8 / 320 * 100vw);
             margin-left: calc(10 / 320 * 100vw);
+            @media screen and (max-width:500px) {
+                margin-top: 16px;
+                margin-left: 12px;
+            }
             img {
                 width: 100%;
             }
         }
     }
     &__nav {
+        float: right;
+        height: 100%;
+        position: relative;
+        margin-right: 30px;
+        @media screen and (max-width:650px) {
+            margin-right: 10px;
+        }
+        ul.list-header-nav {
+            list-style: none;
+            width: 550px;
+            @media screen and (max-width:600px) {
+                width: 500px;
+            }
+            @media screen and (max-width:550px) {
+                width: 450px;
+            }
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            a {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                text-decoration: none;
+                font-size: 16px;
+                @media screen and (max-width:750px) {
+                    font-size: 14px;
+                }
+                @media screen and (max-width:600px) {
+                    font-size: 12px;
+                }
+                color: #64533d;
+                letter-spacing: normal;
+                transition: 300ms;
+                margin-right: calc(40 / 1400 * 100vw);
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+        @media screen and (max-width:500px) {
+            display: none;
+        }
+    }
+    /*ボタンのアニメーションの実装部分*/
+    &__hamburger-menu {
         display: none;
+        /*ボタンの配置の部分*/
+        float: right;
+        //margin-top: calc(12 / 320 * 100vw);
+        //margin-right: calc(20 / 320 * 100vw);
+        margin-top: 16px;
+        margin-right: 16px;
+        @media screen and (max-width:500px) {
+            display: initial;
+            .menu-trigger,
+            .menu-trigger span {
+                display: inline-block;
+                transition: all .4s;
+                box-sizing: border-box;
+            }
+            .menu-trigger {
+                position: relative;
+                //width: 50px;
+                width: 20px;
+                //height: 44px;
+                height: 16px;
+                background: none;
+                border: none;
+                appearance: none;
+                cursor: pointer;
+                outline: none;
+            }
+            .menu-trigger span {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                //height: 4px;
+                height: 2px;
+                background-color: rgb(150, 150, 150);
+                //border-radius: 4px;
+                //border-radius: 3vw;
+            }
+            .menu-trigger span:nth-of-type(1) {
+                top: 0;
+            }
+            .menu-trigger span:nth-of-type(2) {
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+            }
+            .menu-trigger span:nth-of-type(3) {
+                bottom: 0;
+            }
+            .menu-trigger.active span:nth-of-type(1) {
+                //transform: translateY(20px) rotate(-315deg) scale(.8);
+                transform: translateY(7px) rotate(-315deg) scale(.8);
+            }
+            .menu-trigger.active span:nth-of-type(2) {
+                //width: 60px;
+                width: 30px;
+                //height: 60px;
+                height: 30px;
+                background-color: transparent;
+                //border: 3px solid #000;
+                border: 2px solid rgb(150, 150, 150);
+                border-radius: 50%;
+            }
+            .menu-trigger.active span:nth-of-type(3) {
+                //transform: translateY(-20px) rotate(315deg) scale(.8);
+                transform: translateY(-7px) rotate(315deg) scale(.8);
+            }
+        }
     }
 }
 /*main部分*/
@@ -1070,9 +1189,9 @@ body {
             }
         }
         /*DelicateWashの下の余白*/
-        &:last-of-type {
+        /*&:last-of-type {
             padding-bottom: 70px;
-        }
+        }*/
     }
     /*お問い合わせボタンとTEL*/
     &__bottomInquiry {
@@ -1643,45 +1762,76 @@ body {
 }
 .footer-wrapper1 {
     height: 140px;
+    @media screen and (max-width:500px) {
+        height: 200px;
+    }
     &__nav {
-        margin: 0 auto 0 auto;
-        width: 300px;
-        @media screen and (max-width:750px) {
-            width: 340px;
-        }
-        @media screen and (max-width:500px) {
-            width: 320px;
-        }
-        @media screen and (max-width:400px) {
-            width: 275px;
-        }
-        .list-header-nav {
-            list-style: none;
-            display: flex;
-            a {
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                text-decoration: none;
-                font-size: 16px;
-                color: #64533d;
-                display: block;
-                margin: 62px 40px 62px 0;
-                @media screen and (max-width:750px) {
-                    margin-right: 60px;
+        @media screen and (min-width:501px) {
+            margin: 0 auto;
+            width: 300px;
+            @media screen and (max-width:750px) {
+                width: 340px;
+            }
+            @media screen and (max-width:500px) {
+                width: 320px;
+            }
+            @media screen and (max-width:400px) {
+                width: 275px;
+            }
+            .list-header-nav {
+                list-style: none;
+                display: flex;
+                a {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: #64533d;
+                    display: block;
+                    margin: 62px 40px 62px 0;
+                    @media screen and (max-width:750px) {
+                        margin-right: 60px;
+                    }
+                    @media screen and (max-width:500px) {
+                        margin-right: 50px;
+                    }
+                    @media screen and (max-width:400px) {
+                        margin-right: 30px;
+                    }
+                    letter-spacing: normal;
+                    transition: 300ms;
+                    &:hover {
+                        opacity: 0.6;
+                    }
                 }
-                @media screen and (max-width:500px) {
-                    margin-right: 50px;
-                }
-                @media screen and (max-width:400px) {
-                    margin-right: 30px;
-                }
-                letter-spacing: normal;
-                transition: 300ms;
-                &:hover {
-                    opacity: 0.6;
+                a.last {
+                    margin-right: 0;
                 }
             }
-            a.last {
-                margin-right: 0;
+        }
+        @media screen and (max-width:500px)  {
+            margin: 0 auto;
+            height: 70px;
+            width: 100px;
+            padding-top: 33px;
+            .list-header-nav {
+                list-style: none;
+                a {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: #64533d;
+                    display: block;
+                    letter-spacing: normal;
+                    transition: 300ms;
+                    text-align: center;
+                    margin-bottom: 40px;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+                a.last {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -1765,6 +1915,66 @@ body {
             text-align: center;
         }
     }
+}
+/*ハンバーガーメニュー*/
+.hamburgermenu {
+    background: #fff;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    right: -150px;
+    height: 100%;
+    z-index: 20;
+    transition: transform 0.3s;
+    ul.nav {
+        li {
+            margin-left: 30px;
+            margin-bottom: 15px;
+            list-style: none;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            a {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                font-size: 12px;
+                color: #64533d;
+                display: block;
+                letter-spacing: normal;
+                text-decoration: none;
+                transition: 300ms;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+        li.menuText {
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            h2 {
+                font-size: 16px;
+                color: #000;
+                opacity: 0.9;
+            }
+        }
+    }
+}
+/*ハンバーガーメニューのドロワーが開かれた時のスタイル*/
+.slide {
+    transform: translate3d(-150px, 0, 0);
+    //transition: transform 0.3s;
+}
+/*全体のアニメーション*/
+.header-wrapper,
+.topImages,
+.inner-wrapper,
+.about-donyuKosyu,
+.tsuyari-hope,
+.footImage,
+.footer-wrapper1,
+.footer-wrapper2,
+nav.hamburgermenu {
+    transition: transform 0.3s;
 }
 /*フェードイン*/
 //シンプルなフェードイン

@@ -132,6 +132,10 @@ body {
   opacity: 0.6;
 }
 
+.header-wrapper__hamburger-menu {
+  display: none;
+}
+
 /*main部分*/
 .topImages {
   width: 100%;
@@ -1310,6 +1314,14 @@ body {
   position: relative;
 }
 
+@media screen and (min-width: 1401px) {
+  .about-donyuKosyu__btn {
+    margin: 0 0 0 auto;
+    margin-top: 192px;
+    margin-right: 220px;
+  }
+}
+
 .about-donyuKosyu__btn a {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #fff;
@@ -1537,6 +1549,10 @@ body {
   font-size: 10px;
   color: #64533d;
   text-align: center;
+}
+
+.hamburgermenu {
+  display: none;
 }
 
 /*フェードイン*/

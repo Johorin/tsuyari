@@ -17,3 +17,29 @@ $(function(){
      });
     });
  });
+//ハンバーガーメニュー
+$("button.menu-trigger").click(function(){
+   if($(this).hasClass("active")){ // クリックされた要素がactiveクラスだったら
+     $(this).removeClass("active");
+     $(".header-wrapper").removeClass("slide");
+     $(".topImages").removeClass("slide");
+     $(".inner-wrapper").removeClass("slide");
+     $(".about-donyuKosyu").removeClass("slide");
+     $(".tsuyari-hope").removeClass("slide");
+     $(".footImage").removeClass("slide");
+     $(".footer-wrapper1").removeClass("slide");
+     $(".footer-wrapper2").removeClass("slide");
+     $("nav.hamburgermenu").removeClass("slide");
+   }else{
+     $(this).addClass("active");
+     $(".header-wrapper").addClass("slide");
+     $(".topImages").addClass("slide");
+     $(".inner-wrapper").addClass("slide");
+     $(".about-donyuKosyu").addClass("slide");
+     $(".tsuyari-hope").addClass("slide");
+     $(".footImage").addClass("slide");
+     $(".footer-wrapper1").addClass("slide");
+     $(".footer-wrapper2").addClass("slide");
+     $("nav.hamburgermenu").addClass("slide");
+   }
+});

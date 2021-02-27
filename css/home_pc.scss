@@ -57,6 +57,9 @@ body {
             }
         }
     }
+    &__hamburger-menu {
+        display: none;
+    }
 }
 /*main部分*/
 .topImages {
@@ -1076,6 +1079,11 @@ body {
         border-left: 2px solid #a75d4e;
         margin-top: 192px;
         margin-left: calc(868 / 1400 * 100%);
+        @media screen and (min-width:1401px) {
+            margin: 0 0 0 auto;
+            margin-top: 192px;
+            margin-right: 220px;
+        }
         box-sizing: border-box;
         position: relative;
         a {
@@ -1270,6 +1278,9 @@ body {
             text-align: center;
         }
     }
+}
+.hamburgermenu {
+    display: none;
 }
 /*フェードイン*/
 //シンプルなフェードイン

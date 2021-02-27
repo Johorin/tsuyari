@@ -132,6 +132,10 @@ body {
   opacity: 0.6;
 }
 
+.header-wrapper__hamburger-menu {
+  display: none;
+}
+
 /*main部分*/
 .topImages {
   width: 100%;
@@ -1562,6 +1566,10 @@ body {
   font-size: 10px;
   color: #64533d;
   text-align: center;
+}
+
+.hamburgermenu {
+  display: none;
 }
 
 /*フェードイン*/
