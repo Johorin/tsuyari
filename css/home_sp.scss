@@ -350,6 +350,7 @@ body {
             @media screen and (max-width:500px) {
                 width: calc(1000 / 1209 * 105%);
             }
+            //容量のデザイン
             @mixin capacity {
                 font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
                 color: #fff;
@@ -1315,7 +1316,7 @@ body {
         }
         &--ContactToPhone {
             width: calc(470 / 1400 * 100%);
-            margin: 0 auto 0 auto;
+            margin: 0 auto;
             margin-top: calc(40 / 1400 * 100%);
             padding-bottom: calc(97 / 1400 * 100%);
             img {
@@ -1374,7 +1375,7 @@ body {
         text-align: right;
         letter-spacing: 6px;
         padding-top: calc(80 / 1400 * 100vw);
-        padding-right: calc(90 / 1400 * 100vw); 
+        padding-right: calc(90 / 1400 * 100vw);
     }
     h3 {
         font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
@@ -1435,6 +1436,9 @@ body {
         p {
             font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
             font-size: 1.4vw;
+            @media screen and (max-width:650px) {
+                font-size: 10px;
+            }
             font-weight: normal;
             color: #64533d;
             text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
@@ -1562,12 +1566,15 @@ body {
         @media screen and (max-width:600px) {
             width: calc(550 / 700 * 100vw);
         }
-        margin: 0 auto 0 auto;
+        margin: 0 auto;
         margin-top: calc(60 / 1400 * 100vw);
         padding-bottom: calc(100 / 1400 * 100vw);
         p {
             color: #fff;
             font-size: 1.43vw;
+            @media screen and (max-width:650px) {
+                font-size: 10px;
+            }
             text-align: center;
             letter-spacing: calc(0.5 / 1400 * 100vw);
             line-height: calc(32 / 1400 * 100vw);
@@ -1962,14 +1969,12 @@ body {
 /*ハンバーガーメニューのドロワーが開かれた時のスタイル*/
 .slide {
     transform: translate3d(-150px, 0, 0);
-    //transition: transform 0.3s;
 }
 /*全体のアニメーション*/
 .header-wrapper,
 .topImages,
 .inner-wrapper,
-.about-donyuKosyu,
-.tsuyari-hope,
+.inner-wrapper2,
 .footImage,
 .footer-wrapper1,
 .footer-wrapper2,

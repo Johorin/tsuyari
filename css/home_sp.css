@@ -3008,7 +3008,7 @@ body {
 
 .merchandisesList__bottomInquiry--ContactToPhone {
   width: calc(470 / 1400 * 100%);
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   margin-top: calc(40 / 1400 * 100%);
   padding-bottom: calc(97 / 1400 * 100%);
 }
@@ -3208,6 +3208,12 @@ body {
   line-height: calc(32 / 1400 * 100vw);
 }
 
+@media screen and (max-width: 650px) {
+  .about-donyuKosyu__textBox p {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .about-donyuKosyu__textBox p {
     text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #fff;
@@ -3369,7 +3375,7 @@ body {
 
 .tsuyari-hope__textBox {
   width: calc(861 / 1400 * 100vw);
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   margin-top: calc(60 / 1400 * 100vw);
   padding-bottom: calc(100 / 1400 * 100vw);
 }
@@ -3392,6 +3398,12 @@ body {
   text-align: center;
   letter-spacing: calc(0.5 / 1400 * 100vw);
   line-height: calc(32 / 1400 * 100vw);
+}
+
+@media screen and (max-width: 650px) {
+  .tsuyari-hope__textBox p {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -3945,8 +3957,7 @@ body {
 .header-wrapper,
 .topImages,
 .inner-wrapper,
-.about-donyuKosyu,
-.tsuyari-hope,
+.inner-wrapper2,
 .footImage,
 .footer-wrapper1,
 .footer-wrapper2,

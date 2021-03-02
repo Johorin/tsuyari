@@ -24,8 +24,7 @@ $("button.menu-trigger").click(function(){
      $(".header-wrapper").removeClass("slide");
      $(".topImages").removeClass("slide");
      $(".inner-wrapper").removeClass("slide");
-     $(".about-donyuKosyu").removeClass("slide");
-     $(".tsuyari-hope").removeClass("slide");
+     $(".inner-wrapper2").removeClass("slide");
      $(".footImage").removeClass("slide");
      $(".footer-wrapper1").removeClass("slide");
      $(".footer-wrapper2").removeClass("slide");
@@ -35,6 +34,7 @@ $("button.menu-trigger").click(function(){
      $(".header-wrapper").addClass("slide");
      $(".topImages").addClass("slide");
      $(".inner-wrapper").addClass("slide");
+     $(".inner-wrapper2").addClass("slide");
      $(".about-donyuKosyu").addClass("slide");
      $(".tsuyari-hope").addClass("slide");
      $(".footImage").addClass("slide");
