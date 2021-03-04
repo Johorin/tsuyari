@@ -17,10 +17,6 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 
 /*メイン*/
-
-/*レスポンシブ（要相談）*/
-//@media (max-width: ){
-
 body {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     //width: 1400px;
@@ -35,13 +31,13 @@ body {
     opacity: 0.9;
     position: fixed;
     z-index: 10;
-    &--logo {
+    &__logo {
         height: 70px;
         margin-top: 3px;
         margin-left: 20px;
         display: inline-block;
     }
-    &--nav {
+    &__nav {
         float: right;
         .list-header-nav {
             list-style: none;
@@ -158,6 +154,22 @@ body {
         margin: 0 auto;
         margin-top: 41px;
         margin-bottom: 42px;
+        //以下を新しく追加した
+        height: 147px;
+        display: flex;
+        align-content: center;
+        h3 {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: normal;
+            color: #64533d;
+            opacity: 0.9;
+            line-height: 147px;
+            width: 100%;
+            white-space: nowrap;
+        }
     }
     table {
         box-sizing: border-box;
@@ -190,19 +202,7 @@ body {
         }
         .pattern {
             width: 724px;
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 20px;
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: 65px;
-                left: 80px;
-            }
+            background: url('../kosyu_image/pattern-donyu.png') top center / contain no-repeat;
         }
         &__table1 {
             margin: 0 auto;
@@ -300,19 +300,7 @@ body {
         }
         .pattern {
             width: 768px;
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 20px;
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: 64px;
-                left: 83px;
-            }
+            background: url('../kosyu_image/pattern-set.png') top center / contain no-repeat;
         }
         &__table1 {
             margin: 37px auto 41px auto;
@@ -410,19 +398,7 @@ body {
         }
         .pattern {
             width: 664px;
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 20px;
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: 65px;
-                left: 83px;
-            }
+            background: url('../kosyu_image/pattern-byPart.png') top center / contain no-repeat;
         }
         &__table1 {
             margin: 37px auto 0 auto;
@@ -537,19 +513,7 @@ body {
         }
         .pattern {
             width: 810px;
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 20px;
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: 64px;
-                left: 88px;
-            }
+            background: url('../kosyu_image/pattern-switchCompany.png') top center / contain no-repeat;
         }
         &__table1 {
             margin: 9px auto 0 auto;
@@ -680,19 +644,7 @@ body {
         }
         .pattern {
             width: 664px;
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 20px;
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: 64px;
-                left: 113px;
-            }
+            background: url('../kosyu_image/pattern-initialDeployment.png') top center / contain no-repeat;
         }
         &__table1 {
             display: flex;
@@ -770,19 +722,7 @@ body {
         }
         .pattern {
             width: 852px;
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 20px;
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: 64px;
-                left: 83px;
-            }
+            background: url('../kosyu_image/pattern-staffTec.png') top center / contain no-repeat;
         }
         &__table1 {
             margin: 9px auto 0 auto;
