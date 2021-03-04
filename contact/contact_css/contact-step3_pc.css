@@ -280,7 +280,6 @@ input, select {
 
 .footer-wrapper2 {
   width: 100%;
-  height: 265px;
   background: url("../../kosyu_image/backgroundFooter.png") center center/cover no-repeat;
   position: relative;
 }
