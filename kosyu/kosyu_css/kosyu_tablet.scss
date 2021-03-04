@@ -35,13 +35,13 @@ body {
     opacity: 0.9;
     position: fixed;
     z-index: 10;
-    &--logo {
+    &__logo {
         height: 70px;
         margin-top: 3px;
         margin-left: 20px;
         display: inline-block;
     }
-    &--nav {
+    &__nav {
         float: right;
         .list-header-nav {
             list-style: none;
@@ -155,10 +155,34 @@ body {
         text-align: right;
         margin-bottom: calc(15 / 1400 * 100vw);
     }
+    /*.pattern {
+        margin: 0 auto;
+        margin-top: calc(41 / 1400 * 100vw);
+        margin-bottom: calc(42 / 1400 * 100vw);
+    }*/
     .pattern {
         margin: 0 auto;
         margin-top: calc(41 / 1400 * 100vw);
         margin-bottom: calc(42 / 1400 * 100vw);
+        //以下を新しく追加した
+        //height: 147px;
+        height: calc(147 / 1400 * 100vw);
+        //display: flex;
+        //align-content: center;
+        h3 {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            font-weight: 600;
+            //font-size: 20px;
+            font-size: 1.43vw;
+            text-align: center;
+            letter-spacing: normal;
+            color: #64533d;
+            opacity: 0.9;
+            //line-height: 147px;
+            line-height: calc(147 / 1400 * 100vw);
+            width: 100%;
+            white-space: nowrap;
+        }
     }
     table {
         box-sizing: border-box;
@@ -193,22 +217,7 @@ body {
         }
         .pattern {
             width: calc(724 / 1400 * 100vw);
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 1.42vw;  //20px
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: calc(65 / 1400 * 100vw);
-                left: calc(80 / 1400 * 100vw);
-            }
-            img {
-                width: 100%;
-            }
+            background: url('../kosyu_image/pattern-donyu.png') top center / contain no-repeat;
         }
         &__table1 {
             margin: 0 auto;
@@ -326,22 +335,7 @@ body {
         }
         .pattern {
             width: calc(768 / 1400 * 100vw);
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 1.42vw;  //20px
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: calc(64 / 1400 * 100vw);
-                left: calc(83 / 1400 * 100vw);
-            }
-            img {
-                width: 100%;
-            }
+            background: url('../kosyu_image/pattern-set.png') top center / contain no-repeat;
         }
         &__table1 {
             margin: 0 auto;
@@ -458,22 +452,7 @@ body {
         }
         .pattern {
             width: calc(664 / 1400 * 100vw);
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 1.42vw;  //20px
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: calc(65 / 1400 * 100vw);
-                left: calc(83 / 1400 * 100vw);
-            }
-            img {
-                width: 100%;
-            }
+            background: url('../kosyu_image/pattern-byPart.png') top center / contain no-repeat;
         }
         &__table1 {
             margin: 0 auto;
@@ -595,22 +574,7 @@ body {
         }
         .pattern {
             width: calc(810 / 1400 * 100vw);
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 1.42vw;  //20px
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: calc(64 / 1400 * 100vw);
-                left: calc(88 / 1400 * 100vw);
-            }
-            img {
-                width: 100%;
-            }
+            background: url('../kosyu_image/pattern-switchCompany.png') top center / contain no-repeat;
         }
         &__table1 {
             margin: 0 auto;
@@ -750,22 +714,7 @@ body {
         }
         .pattern {
             width: calc(664 / 1400 * 100vw);
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 1.42vw;  //20px
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: calc(64 / 1400 * 100vw);
-                left: calc(113 / 1400 * 100vw);
-            }
-            img {
-                width: 100%;
-            }
+            background: url('../kosyu_image/pattern-initialDeployment.png') top center / contain no-repeat;
         }
         &__table1 {
             display: flex;
@@ -847,22 +796,7 @@ body {
         }
         .pattern {
             width: calc(852 / 1400 * 100vw);
-            position: relative;
-            h3 {
-                text-align: center;
-                color: #64533d;
-                font-size: 1.42vw;  //20px
-                letter-spacing: normal;
-                opacity: 0.9;
-                font-weight: 600;
-                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                position: absolute;
-                top: calc(64 / 1400 * 100vw);
-                left: calc(83 / 1400 * 100vw);
-            }
-            img {
-                width: 100%;
-            }
+            background: url('../kosyu_image/pattern-staffTec.png') top center / contain no-repeat;
         }
         &__table1 {
             margin: 0 auto;
