@@ -237,6 +237,9 @@ body {
                         margin-left: 30px;
                     }
                 }
+                .text2 {
+                    display: none;
+                }
             }
             .head1, .data1, .head2, .data2 {
                 border-right: 2px solid #faefdb;
@@ -712,6 +715,9 @@ body {
                     right: 0;
                 }
             }
+            &--caution {
+                display: none;
+            }
         }
     }
     /*サロンスタッフ技術講習*/
@@ -1101,7 +1107,7 @@ body {
 .simple-fadeIn {
     opacity: 0;
     transition: all 1.5s 0s ease-in;
- }
+}
 //これらの部分とjQueryでスクロールフェードイン
 .slide-bottom {
     opacity: 0;

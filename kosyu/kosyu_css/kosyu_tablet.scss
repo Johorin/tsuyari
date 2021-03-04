@@ -255,6 +255,9 @@ body {
                         margin-left: calc(30 / 1400 * 100vw);
                     }
                 }
+                .text2 {
+                    display: none;
+                }
             }
             .head1, .data1, .head2, .data2 {
                 border-right: 2px solid #faefdb;
@@ -786,6 +789,9 @@ body {
                     right: 0;
                 }
             }
+            &--caution {
+                display: none;
+            }
         }
     }
     /*サロンスタッフ技術講習*/
@@ -958,7 +964,7 @@ body {
                 background: #fff;
                 border-radius: 50%;
                 position: absolute;
-                top: -19px;
+                top: calc(-19 / 1400 * 100vw);
                 right: calc(590 / 1400 * 100vw);
             }
             &--number-red {

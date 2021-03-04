@@ -354,6 +354,10 @@ body {
   margin-left: 30px;
 }
 
+.main-wrapper .donyu__table1 .data3 .text2 {
+  display: none;
+}
+
 .main-wrapper .donyu__table1 .head1, .main-wrapper .donyu__table1 .data1, .main-wrapper .donyu__table1 .head2, .main-wrapper .donyu__table1 .data2 {
   border-right: 2px solid #faefdb;
 }
@@ -1014,6 +1018,10 @@ body {
   position: absolute;
   top: -30px;
   right: 0;
+}
+
+.main-wrapper .initialDeployment__table1--caution {
+  display: none;
 }
 
 .main-wrapper .staffTec {

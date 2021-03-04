@@ -328,13 +328,19 @@ body {
 }
 
 /*見出し*/
-.headline {
+h2.headline {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 4vw;
+  font-size: 5vw;
   font-weight: 550;
   color: #841d08;
   letter-spacing: calc(5.5 / 1400 * 100vw);
   text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  h2.headline {
+    font-size: 16px;
+  }
 }
 
 .main-wrapper {
@@ -351,23 +357,21 @@ body {
 }
 
 .main-wrapper__headline {
-  width: calc(492.8 / 1400 * 100vw);
-  margin: 0 auto;
   margin-bottom: calc(72 / 1400 * 100vw);
   padding-top: calc(100 / 1400 * 100vw);
 }
 
 .main-wrapper .title-wrapper {
-  height: calc(59 / 1400 * 100vw);
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: calc(59 / 1400 * 100vw);
 }
 
 .main-wrapper .title-wrapper .leftShape {
-  width: calc(27 / 1400 * 100vw);
   margin-right: calc(22 / 1400 * 100vw);
+  width: calc(27 / 1400 * 100vw);
 }
 
 .main-wrapper .title-wrapper .leftShape img {
@@ -378,7 +382,7 @@ body {
   padding-top: calc(8 / 1400 * 100vw);
 }
 
-.main-wrapper .title-wrapper__text .titleText {
+.main-wrapper .title-wrapper__text h2.titleText {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   font-size: 3.3vw;
   color: #64533d;
@@ -387,12 +391,43 @@ body {
 }
 
 .main-wrapper .title-wrapper .rightShape {
-  width: calc(27 / 1400 * 100vw);
   margin-left: calc(22 / 1400 * 100vw);
+  width: calc(27 / 1400 * 100vw);
 }
 
 .main-wrapper .title-wrapper .rightShape img {
   height: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .main-wrapper .title-wrapper {
+    height: 34px;
+  }
+  .main-wrapper .title-wrapper .leftShape {
+    margin-right: 10.5px;
+    width: 12.6px;
+  }
+  .main-wrapper .title-wrapper .leftShape img {
+    height: 100%;
+  }
+  .main-wrapper .title-wrapper__text {
+    padding-top: 7px;
+  }
+  .main-wrapper .title-wrapper__text h2.titleText {
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-size: 21.5px;
+    color: #64533d;
+    font-weight: 550;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .main-wrapper .title-wrapper .rightShape {
+    margin-left: 6.5px;
+    width: 12.6px;
+  }
+  .main-wrapper .title-wrapper .rightShape img {
+    height: 100%;
+  }
 }
 
 .main-wrapper .caution {
@@ -401,22 +436,21 @@ body {
   letter-spacing: calc(1.5 / 1400 * 100vw);
   text-align: right;
   margin-bottom: calc(15 / 1400 * 100vw);
+  /*//画面幅599pxから適用
+        @media screen and (max-width:599px) {
+            font-size: 10px;
+            transform: scale(0.8);
+            transform-origin: right;
+        }
+        //画面幅400pxから適用
+        @media screen and (max-width:400px) {
+            transform: scale(0.7);
+        }*/
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   .main-wrapper .caution {
     font-size: 10px;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    -webkit-transform-origin: right;
-            transform-origin: right;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .main-wrapper .caution {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
   }
 }
 
@@ -443,22 +477,14 @@ body {
   line-height: calc(147 / 1000 * 100vw);
   width: 100%;
   white-space: nowrap;
-}
-
-@media screen and (min-width: 400px) and (max-width: 499px) {
-  .main-wrapper .pattern h3 {
-    font-size: 10px;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-}
-
-@media screen and (max-width: 399px) {
-  .main-wrapper .pattern h3 {
-    font-size: 10px;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
+  /*@media screen and (min-width:400px) and (max-width:499px) {
+                font-size: 10px;
+                transform: scale(0.9);
+            }
+            @media screen and (max-width:399px) {
+                font-size: 10px;
+                transform: scale(0.7);
+            }*/
 }
 
 .main-wrapper table {
@@ -481,6 +507,12 @@ body {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 600px) {
+  .main-wrapper table th {
+    font-size: 12px;
+  }
+}
+
 .main-wrapper table td {
   color: #64533d;
   font-size: 1.14vw;
@@ -492,12 +524,24 @@ body {
   letter-spacing: 0.005vw;
 }
 
+@media screen and (max-width: 877px) {
+  .main-wrapper table td {
+    font-size: 10px;
+  }
+}
+
 .main-wrapper .donyu {
   width: 100%;
 }
 
 .main-wrapper .donyu .title-wrapper {
   max-width: calc(300 / 1400 * 100vw);
+}
+
+@media screen and (max-width: 650px) {
+  .main-wrapper .donyu .title-wrapper {
+    min-width: 139.5px;
+  }
 }
 
 .main-wrapper .donyu .pattern {
@@ -1070,6 +1114,12 @@ body {
   max-width: calc(340 / 1400 * 100vw);
 }
 
+@media screen and (max-width: 650px) {
+  .main-wrapper .set .title-wrapper {
+    min-width: 160px;
+  }
+}
+
 .main-wrapper .set .pattern {
   width: calc(768 / 1000 * 100vw);
   background: url("../kosyu_image/pattern-set.png") top center/contain no-repeat;
@@ -1221,6 +1271,12 @@ body {
 
 .main-wrapper .byPart .title-wrapper {
   max-width: calc(400 / 1400 * 100vw);
+}
+
+@media screen and (max-width: 650px) {
+  .main-wrapper .byPart .title-wrapper {
+    min-width: 185.7px;
+  }
 }
 
 .main-wrapper .byPart .pattern {
@@ -1375,6 +1431,12 @@ body {
   max-width: calc(490 / 1400 * 100vw);
 }
 
+@media screen and (max-width: 650px) {
+  .main-wrapper .switchCompany .title-wrapper {
+    min-width: 230px;
+  }
+}
+
 .main-wrapper .switchCompany .pattern {
   width: calc(810 / 1000 * 100vw);
   background: url("../kosyu_image/pattern-switchCompany.png") top center/contain no-repeat;
@@ -1504,6 +1566,12 @@ body {
 
 .main-wrapper .initialDeployment .title-wrapper {
   max-width: calc(540 / 1400 * 100vw);
+}
+
+@media screen and (max-width: 650px) {
+  .main-wrapper .initialDeployment .title-wrapper {
+    min-width: 255px;
+  }
 }
 
 .main-wrapper .initialDeployment .pattern {
@@ -1775,6 +1843,12 @@ body {
   max-width: calc(630 / 1400 * 100vw);
 }
 
+@media screen and (max-width: 650px) {
+  .main-wrapper .staffTec .title-wrapper {
+    min-width: 305px;
+  }
+}
+
 .main-wrapper .staffTec .pattern {
   width: calc(852 / 1000 * 100vw);
   background: url("../kosyu_image/pattern-staffTec.png") top center/contain no-repeat;
@@ -1896,7 +1970,7 @@ body {
 }
 
 .main-wrapper2__headline {
-  width: calc(800.8 / 1400 * 100vw);
+  width: calc(1000 / 1400 * 100vw);
   margin: 0 auto;
   margin-top: calc(100 / 1400 * 100vw);
   margin-bottom: calc(85 / 1400 * 100vw);
@@ -1974,7 +2048,7 @@ body {
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: -19px;
+  top: calc(-19 / 1400 * 100vw);
   right: calc(590 / 1400 * 100vw);
 }
 
@@ -2243,8 +2317,120 @@ body {
   text-align: center;
 }
 
+/*ハンバーガーメニュー*/
 .hamburgermenu {
-  display: none;
+  background: #fff;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  right: -150px;
+  height: 100%;
+  z-index: 20;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.hamburgermenu ul.nav li {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.hamburgermenu ul.nav li:last-of-type {
+  margin-bottom: 0;
+}
+
+.hamburgermenu ul.nav li a {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 12px;
+  color: #64533d;
+  display: block;
+  letter-spacing: normal;
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.hamburgermenu ul.nav li a:hover {
+  opacity: 0.6;
+}
+
+.hamburgermenu ul.nav li.menuText {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.hamburgermenu ul.nav li.menuText h2 {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.9;
+}
+
+/*ハンバーガーメニューのドロワーが開かれた時のスタイル*/
+.slide {
+  -webkit-transform: translate3d(-150px, 0, 0);
+          transform: translate3d(-150px, 0, 0);
+}
+
+/*ハンバーガーメニュー*/
+.hamburgermenu {
+  background: #fff;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  right: -150px;
+  height: 100%;
+  z-index: 20;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.hamburgermenu ul.nav li {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.hamburgermenu ul.nav li:last-of-type {
+  margin-bottom: 0;
+}
+
+.hamburgermenu ul.nav li a {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 12px;
+  color: #64533d;
+  display: block;
+  letter-spacing: normal;
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.hamburgermenu ul.nav li a:hover {
+  opacity: 0.6;
+}
+
+.hamburgermenu ul.nav li.menuText {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.hamburgermenu ul.nav li.menuText h2 {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.9;
+}
+
+/*ハンバーガーメニューのドロワーが開かれた時のスタイル*/
+.slide {
+  -webkit-transform: translate3d(-150px, 0, 0);
+          transform: translate3d(-150px, 0, 0);
 }
 
 /*フェードイン*/

@@ -217,9 +217,13 @@ body {
     }
 }
 /*見出し*/
-.headline {
+h2.headline {
     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-    font-size: 4vw; //画面幅1400pxで文字サイズ56px
+    //font-size: 4vw; //画面幅1400pxで文字サイズ56px
+    font-size: 5vw;
+    @media screen and (max-width:650px) {
+        font-size: 16px;
+    }
     font-weight: 550;
     color: #841d08;
     letter-spacing: calc(5.5 / 1400 * 100vw);
@@ -228,26 +232,26 @@ body {
 .main-wrapper {
     background: url("../kosyu_image/backgroundMain.png") center center / cover no-repeat;
     &__headline {
-        width: calc(492.8 / 1400 * 100vw);
-        margin: 0 auto;
+        //width: calc(492.8 / 1400 * 100vw);
+        //margin: 0 auto;
         margin-bottom: calc(72 / 1400 * 100vw);
         padding-top: calc(100 / 1400 * 100vw);
     }
     /*共通部分の設計*/
     .title-wrapper {
-        height: calc(59 / 1400 * 100vw);
         margin: 0 auto;
         display: flex;
+        height: calc(59 / 1400 * 100vw);
         .leftShape {
-            width: calc(27 / 1400 * 100vw);
             margin-right: calc(22 / 1400 * 100vw);
+            width: calc(27 / 1400 * 100vw);
             img {
                 height: 100%;
             }
         }
         &__text {
             padding-top: calc(8 / 1400 * 100vw);
-            .titleText {
+            h2.titleText {
                 font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
                 font-size: 3.3vw;
                 color: #64533d;
@@ -256,21 +260,52 @@ body {
             }
         }
         .rightShape {
-            width: calc(27 / 1400 * 100vw);
             margin-left: calc(22 / 1400 * 100vw);
+            width: calc(27 / 1400 * 100vw);
             img {
                 height: 100%;
+            }
+        }
+        @media screen and (max-width:650px) {
+            height: 34px;
+            .leftShape {
+                margin-right: 10.5px;
+                width: 12.6px;
+                img {
+                    height: 100%;
+                }
+            }
+            &__text {
+                padding-top: 7px;
+                h2.titleText {
+                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                    font-size: 21.5px;
+                    color: #64533d;
+                    font-weight: 550;
+                    text-align: center;
+                    white-space: nowrap;
+                }
+            }
+            .rightShape {
+                margin-left: 6.5px;
+                width: 12.6px;
+                img {
+                    height: 100%;
+                }
             }
         }
     }
     .caution {
         //font-size: calc(80% + 0.01vw);  //フォントサイズが小さすぎる時は% + vwで。
         font-size: 1.3vw;
+        @media screen and (max-width:768px) {
+            font-size: 10px;
+        }
         color: #64533d;
         letter-spacing: calc(1.5 / 1400 * 100vw);
         text-align: right;
         margin-bottom: calc(15 / 1400 * 100vw);
-        //画面幅599pxから適用
+        /*//画面幅599pxから適用
         @media screen and (max-width:599px) {
             font-size: 10px;
             transform: scale(0.8);
@@ -279,7 +314,7 @@ body {
         //画面幅400pxから適用
         @media screen and (max-width:400px) {
             transform: scale(0.7);
-        }
+        }*/
     }
     .pattern {
         margin: 0 auto;
@@ -303,16 +338,14 @@ body {
             line-height: calc(147 / 1000 * 100vw);
             width: 100%;
             white-space: nowrap;
-            @media screen and (min-width:400px) and (max-width:499px) {
+            /*@media screen and (min-width:400px) and (max-width:499px) {
                 font-size: 10px;
                 transform: scale(0.9);
-                //padding-left: calc(100 / 1400 * 100vw);
             }
             @media screen and (max-width:399px) {
                 font-size: 10px;
                 transform: scale(0.7);
-                //padding-left: calc(-50 / 1000 * 100vw);
-            }
+            }*/
         }
     }
     table {
@@ -324,6 +357,9 @@ body {
             color: white;
             //font-size: 1.42vw;  //元々20px
             font-size: 2vw;
+            @media screen and (max-width:600px) {
+                font-size: 12px;
+            }
             background-color: #f19d19;
             height: calc(49 / 1400 * 100vw);
             box-sizing: border-box;
@@ -333,6 +369,9 @@ body {
             color: #64533d;
             //font-size: calc(80% + 0.23vw);  //元々16px
             font-size: 1.14vw;  //元々16px
+            @media screen and (max-width:877px) {
+                font-size: 10px;
+            }
             text-align: center;
             background-color: #fadfcc;
             line-height: calc(24 / 1400 * 100vw);
@@ -347,6 +386,9 @@ body {
         width: 100%;
         .title-wrapper {
             max-width: calc(300 / 1400 * 100vw);
+            @media screen and (max-width:650px) {
+                min-width: 139.5px;
+            }
         }
         .pattern {
             width: calc(724 / 1000 * 100vw);
@@ -674,6 +716,9 @@ body {
         margin-top: calc(73 / 1400 * 100vw);
         .title-wrapper {
             max-width: calc(340 / 1400 * 100vw);
+            @media screen and (max-width:650px) {
+                min-width: 160px;
+            }
         }
         .pattern {
             width: calc(768 / 1000 * 100vw);
@@ -798,6 +843,9 @@ body {
         margin-top: calc(73 / 1400 * 100vw);
         .title-wrapper {
             max-width: calc(400 / 1400 * 100vw);
+            @media screen and (max-width:650px) {
+                min-width: 185.7px;
+            }
         }
         .pattern {
             width: calc(664 / 1000 * 100vw);
@@ -920,6 +968,9 @@ body {
         margin-top: calc(73 / 1400 * 100vw);
         .title-wrapper {
             max-width: calc(490 / 1400 * 100vw);
+            @media screen and (max-width:650px) {
+                min-width: 230px;
+            }
         }
         .pattern {
             width: calc(810 / 1000 * 100vw);
@@ -1077,6 +1128,9 @@ body {
         margin-top: calc(72 / 1400 * 100vw);
         .title-wrapper {
             max-width: calc(540 / 1400 * 100vw);
+            @media screen and (max-width:650px) {
+                min-width: 255px;
+            }
         }
         .pattern {
             width: calc(664 / 1000 * 100vw);
@@ -1177,6 +1231,9 @@ body {
         margin-top: calc(72 / 1400 * 100vw);
         .title-wrapper {
             max-width: calc(630 / 1400 * 100vw);
+            @media screen and (max-width:650px) {
+                min-width: 305px;
+            }
         }
         .pattern {
             width: calc(852 / 1000 * 100vw);
@@ -1277,7 +1334,7 @@ body {
 }
 .main-wrapper2 {
     &__headline {
-        width: calc(800.8 / 1400 * 100vw);
+        width: calc(1000 / 1400 * 100vw);
         margin: 0 auto;
         margin-top: calc(100 / 1400 * 100vw);
         margin-bottom: calc(85 / 1400 * 100vw);
@@ -1342,7 +1399,7 @@ body {
                 background: #fff;
                 border-radius: 50%;
                 position: absolute;
-                top: -19px;
+                top: calc(-19 / 1400 * 100vw);
                 right: calc(590 / 1400 * 100vw);
             }
             &--number-red {
@@ -1581,11 +1638,99 @@ body {
         }
     }
 }
+/*ハンバーガーメニュー*/
 .hamburgermenu {
-    display: none;
-    &__nav {
-        li {}
+    background: #fff;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    right: -150px;
+    height: 100%;
+    z-index: 20;
+    transition: transform 0.3s;
+    ul.nav {
+        li {
+            margin-left: 30px;
+            margin-bottom: 15px;
+            list-style: none;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            a {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                font-size: 12px;
+                color: #64533d;
+                display: block;
+                letter-spacing: normal;
+                text-decoration: none;
+                transition: 300ms;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+        li.menuText {
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            h2 {
+                font-size: 16px;
+                color: #000;
+                opacity: 0.9;
+            }
+        }
     }
+}
+/*ハンバーガーメニューのドロワーが開かれた時のスタイル*/
+.slide {
+    transform: translate3d(-150px, 0, 0);
+}
+/*ハンバーガーメニュー*/
+.hamburgermenu {
+    background: #fff;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    right: -150px;
+    height: 100%;
+    z-index: 20;
+    transition: transform 0.3s;
+    ul.nav {
+        li {
+            margin-left: 30px;
+            margin-bottom: 15px;
+            list-style: none;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            a {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                font-size: 12px;
+                color: #64533d;
+                display: block;
+                letter-spacing: normal;
+                text-decoration: none;
+                transition: 300ms;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+        li.menuText {
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            h2 {
+                font-size: 16px;
+                color: #000;
+                opacity: 0.9;
+            }
+        }
+    }
+}
+/*ハンバーガーメニューのドロワーが開かれた時のスタイル*/
+.slide {
+    transform: translate3d(-150px, 0, 0);
 }
 /*フェードイン*/
 //シンプルなフェードイン

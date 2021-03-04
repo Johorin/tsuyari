@@ -364,6 +364,10 @@ body {
   margin-left: calc(30 / 1400 * 100vw);
 }
 
+.main-wrapper .donyu__table1 .data3 .text2 {
+  display: none;
+}
+
 .main-wrapper .donyu__table1 .head1, .main-wrapper .donyu__table1 .data1, .main-wrapper .donyu__table1 .head2, .main-wrapper .donyu__table1 .data2 {
   border-right: 2px solid #faefdb;
 }
@@ -1079,6 +1083,10 @@ body {
   right: 0;
 }
 
+.main-wrapper .initialDeployment__table1--caution {
+  display: none;
+}
+
 .main-wrapper .staffTec {
   margin-top: calc(72 / 1400 * 100vw);
 }
@@ -1286,7 +1294,7 @@ body {
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: -19px;
+  top: calc(-19 / 1400 * 100vw);
   right: calc(590 / 1400 * 100vw);
 }
 
