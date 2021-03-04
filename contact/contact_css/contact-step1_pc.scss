@@ -1,0 +1,343 @@
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+/*メイン*/
+* {
+    //font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #000;
+}
+/*header部分*/
+.header-wrapper {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 10;
+    &__logo {
+        height: 70px;
+        margin-top: 3px;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    &__nav {
+        float: right;
+        .list-header-nav {
+            list-style: none;
+            display: flex;
+            a {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                text-decoration: none;
+                font-size: 16px;
+                color: #64533d;
+                display: block;
+                margin-top: 33px;
+                margin-right: 40px;
+                letter-spacing: normal;
+                transition: 300ms;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+    &__hamburger-menu {
+        display: none;
+    }
+}
+/*main部分*/
+.contact-wrapper {
+    padding-top: 80px;
+    width: 801px;
+    margin: 0 auto;
+    .title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        h2 {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            font-size: 32px;
+            font-weight: normal;
+            text-align: center;
+        }
+    }
+    .step-wrapper {
+        height: 80px;
+        background: url('../contact_image/step1.png') center center / contain no-repeat;
+        position: relative;
+        .step1,
+        .step2,
+        .step3 {
+            p {
+                font-size: 16px;
+            }
+            h3 {
+                font-size: 24px;
+            }
+        }
+        .step1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            p,
+            h3 {
+                color: #fff;
+            }
+        }
+        .step2 {
+            position: absolute;
+            top: 20px;
+            left: 310px;
+            p,
+            h3 {
+                color: #000;
+            }
+        }
+        .step3 {
+            position: absolute;
+            top: 20px;
+            left: 570px;
+            p,
+            h3 {
+                color: #000;
+            }
+        }
+    }
+    //textBoxは複数個共通にしている
+    .textBox {
+        padding: 20px;
+    }
+    //必須と任意のボックス
+    .required-box,
+    .optional-box  {
+        width: 50px;
+        height: 30px;
+        padding: 5px;
+        margin-left: 15px;
+        background-color: red;
+        p {
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .required-box {
+        background-color: red;
+    }
+    .optional-box {
+        background-color: orange;
+    }
+    .head-wrapper {
+        padding-top: 20px;
+        padding-right: 25px;
+        padding-bottom: 20px;
+        display: flex;
+        p.head {
+            margin: 0 0 0 auto;
+            margin-top: 5px;
+        }
+        .required-box,
+        .optional-box {
+            margin: 0 0 0 auto;
+        }
+    }
+    .head-wrapper-address {
+        padding-left: 14px;
+    }
+    form {
+        table {
+            width: 100%;
+            border: 2px solid grey;
+            background-color: rgb(240, 240, 240);
+            tr {
+                border-bottom: 1px solid rgb(200, 200, 200);
+            }
+            th {
+                border-right: 1px solid rgb(200, 200, 200);
+            }
+            td {
+                padding-left: 20px;
+            }
+            input {
+                width: 95%;
+            }
+            textarea {
+                width: 95%;
+                height: 150px;
+            }
+            /*tr.pattern1 {
+                td {
+                    padding-left: 20px;
+                }
+            }*/
+            tr.pattern2 {
+                td.data4 {
+                    .post-number {
+                        display: flex;
+                        &__form {
+                            input {
+                                width: 150px;
+                            }
+                        }
+                        &__button {
+                            margin-left: 20px;
+                            input {
+                                width: 100px;
+                            }
+                        }
+                        /*&__form {
+                            position: relative;
+                            top: -158px;
+                            left: 20px;
+                        }
+                        &__button {
+                            position: relative;
+                            top: -158px;
+                            left: 30px;
+                        }*/
+                    }
+                    .prefecture,
+                    .address-form {
+                        margin-top: 40px;
+                    }
+                }
+            }
+            tr.pattern3 {
+                th {
+                    vertical-align: top;
+                }
+                td {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+    .personalInfomation-form {
+        margin-bottom: 30px;
+        textarea {
+            width: 100%;
+        }
+    }
+    .agree-box-form {
+        background-color: rgb(240, 240, 240);
+        border: 2px solid grey;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &__wrapper {
+            width: 310px;
+            display: flex;
+            margin: 0 auto;
+            .required-box {
+                margin: 0;
+            }
+            .checkBox {
+                margin-top: 5px;
+                margin-left: 10px;
+                font-weight: normal;
+            }
+        }
+    }
+    .confirm-button {
+        width: 160px; 
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+}
+/*footer部分*/
+.footer-wrapper1 {
+    height: 140px;
+    &__nav {
+        width: 325px;
+        margin: 0 auto 0 auto;
+        .list-header-nav {
+            list-style: none;
+            display: flex;
+            a {
+                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+                text-decoration: none;
+                font-size: 16px;
+                color: #64533d;
+                display: block;
+                margin: 62px 40px 62px 0;
+                letter-spacing: normal;
+                transition: 300ms;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+            a.last {
+                margin-right: 0;
+            }
+        }
+    }
+}
+.footer-wrapper2 {
+    width: 100%;
+    height: 265px;
+    background: url("../../kosyu_image/backgroundFooter.png") center center / cover no-repeat;
+    position: relative;
+    .pageTop {
+        position: absolute;
+        top: 108px;
+        right: 40px;
+        &__text {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            margin-top: 5px;
+            font-size: 10px;
+            color: #64533d;
+            letter-spacing: normal;
+            font-weight: 600;
+            position: relative;
+            right: 1px;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+    }
+    &__logo {
+        width: 380px;
+        margin: 0 auto 25px auto;
+        padding-top: 20px;
+    }
+    &__address {
+        p {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            font-size: 16px;
+            color: #64533d;
+            text-align: center;
+            line-height: 24px;
+        }
+    }
+    &__copyright {
+        margin-top: 20px;
+        p {
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            font-size: 10px;
+            color: #64533d;
+            text-align: center;
+        }
+    }
+}
+.hamburgermenu {
+    display: none;
+}
