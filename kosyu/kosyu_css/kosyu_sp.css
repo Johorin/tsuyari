@@ -454,37 +454,79 @@ h2.headline {
   }
 }
 
-.main-wrapper .pattern {
-  margin: 0 auto;
-  margin-top: calc(41 / 1400 * 100vw);
-  margin-bottom: calc(42 / 1400 * 100vw);
-  height: calc(147 / 1000 * 100vw);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+@media screen and (min-width: 501px) {
+  .main-wrapper .pattern {
+    margin: 0 auto;
+    margin-top: calc(41 / 1400 * 100vw);
+    margin-bottom: calc(42 / 1400 * 100vw);
+    height: calc(147 / 1000 * 100vw);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main-wrapper .pattern h3 {
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-weight: 600;
+    font-size: 2vw;
+    text-align: center;
+    letter-spacing: normal;
+    color: #64533d;
+    opacity: 0.9;
+    line-height: calc(147 / 1000 * 100vw);
+    width: 100%;
+  }
 }
 
-.main-wrapper .pattern h3 {
-  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-weight: 600;
-  font-size: 2vw;
-  text-align: center;
-  letter-spacing: normal;
-  color: #64533d;
-  opacity: 0.9;
-  line-height: calc(147 / 1000 * 100vw);
-  width: 100%;
-  white-space: nowrap;
-  /*@media screen and (min-width:400px) and (max-width:499px) {
-                font-size: 10px;
-                transform: scale(0.9);
-            }
-            @media screen and (max-width:399px) {
-                font-size: 10px;
-                transform: scale(0.7);
-            }*/
+@media screen and (max-width: 500px) {
+  .main-wrapper .pattern {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .main-wrapper .pattern-sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper .pattern-sp {
+    margin: 0 auto;
+    margin-top: calc(41 / 1400 * 100vw);
+    margin-bottom: calc(42 / 1400 * 100vw);
+    height: calc(147 / 1000 * 100vw);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .main-wrapper .pattern-sp h3 {
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: normal;
+    color: #64533d;
+    opacity: 0.9;
+    line-height: 3vw;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-wrapper .pattern-sp {
+    height: calc(160 / 1000 * 100vw);
+  }
+  .main-wrapper .pattern-sp h3 {
+    line-height: 4vw;
+  }
 }
 
 .main-wrapper table {
@@ -547,13 +589,26 @@ h2.headline {
 .main-wrapper .donyu .pattern {
   width: calc(724 / 1000 * 100vw);
   background: url("../kosyu_image/pattern-donyu.png") top center/contain no-repeat;
+  /*h3 {
+                //width: calc(724 / 1000 * 100vw);
+                @media screen and (max-width:399px) {
+                    transform-origin: left;
+                    margin-left: calc(80 / 1200 * 100vw);
+                }
+            }*/
 }
 
-@media screen and (max-width: 399px) {
-  .main-wrapper .donyu .pattern h3 {
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    margin-left: calc(80 / 1200 * 100vw);
+@media screen and (max-width: 500px) {
+  .main-wrapper .donyu .pattern {
+    width: calc(690 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-wrapper .donyu .pattern {
+    width: calc(740 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
   }
 }
 
@@ -1125,15 +1180,17 @@ h2.headline {
   background: url("../kosyu_image/pattern-set.png") top center/contain no-repeat;
 }
 
-.main-wrapper .set .pattern h3 {
-  width: calc(768 / 1000 * 100vw);
+@media screen and (max-width: 500px) {
+  .main-wrapper .set .pattern {
+    width: calc(690 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
+  }
 }
 
-@media screen and (max-width: 399px) {
-  .main-wrapper .set .pattern h3 {
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    padding-left: 12vw;
+@media screen and (max-width: 400px) {
+  .main-wrapper .set .pattern {
+    width: calc(740 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
   }
 }
 
@@ -1282,6 +1339,20 @@ h2.headline {
 .main-wrapper .byPart .pattern {
   width: calc(664 / 1000 * 100vw);
   background: url("../kosyu_image/pattern-byPart.png") top center/contain no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper .byPart .pattern {
+    width: calc(690 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-wrapper .byPart .pattern {
+    width: calc(740 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
+  }
 }
 
 .main-wrapper .byPart__table1 {
@@ -1442,6 +1513,20 @@ h2.headline {
   background: url("../kosyu_image/pattern-switchCompany.png") top center/contain no-repeat;
 }
 
+@media screen and (max-width: 500px) {
+  .main-wrapper .switchCompany .pattern {
+    width: calc(690 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-wrapper .switchCompany .pattern {
+    width: calc(740 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
+  }
+}
+
 .main-wrapper .switchCompany__table1 {
   margin: 0 auto;
   margin-top: calc(9 / 1400 * 100vw);
@@ -1577,6 +1662,20 @@ h2.headline {
 .main-wrapper .initialDeployment .pattern {
   width: calc(664 / 1000 * 100vw);
   background: url("../kosyu_image/pattern-initialDeployment.png") top center/contain no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper .initialDeployment .pattern {
+    width: calc(690 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-wrapper .initialDeployment .pattern {
+    width: calc(740 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
+  }
 }
 
 .main-wrapper .initialDeployment__table1 {
@@ -1852,6 +1951,20 @@ h2.headline {
 .main-wrapper .staffTec .pattern {
   width: calc(852 / 1000 * 100vw);
   background: url("../kosyu_image/pattern-staffTec.png") top center/contain no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper .staffTec .pattern {
+    width: calc(690 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-wrapper .staffTec .pattern {
+    width: calc(740 / 1000 * 100vw);
+    background: url("../kosyu_image/pattern-sp.png") top center/contain no-repeat;
+  }
 }
 
 .main-wrapper .staffTec__table1 {
