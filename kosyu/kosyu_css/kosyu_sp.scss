@@ -239,9 +239,12 @@ h2.headline {
     }
     /*共通部分の設計*/
     .title-wrapper {
-        margin: 0 auto;
         display: flex;
         height: calc(59 / 1400 * 100vw);
+        margin: 0 auto;
+        @media screen and (max-width:650px) {
+            margin-bottom: 10px;
+        }
         .leftShape {
             margin-right: calc(22 / 1400 * 100vw);
             width: calc(27 / 1400 * 100vw);
@@ -346,8 +349,8 @@ h2.headline {
         }
         @media screen and (max-width:500px) {
             margin: 0 auto;
-            margin-top: calc(41 / 1400 * 100vw);
-            margin-bottom: calc(42 / 1400 * 100vw);
+            margin-top: 20px;
+            margin-bottom: 20px;
             //以下を新しく追加した
             height: calc(147 / 1000 * 100vw);
             display: flex;
@@ -381,16 +384,16 @@ h2.headline {
             box-sizing: border-box;
         }
         th {
-            color: white;
-            //font-size: 1.42vw;  //元々20px
-            font-size: 2vw;
-            @media screen and (max-width:600px) {
-                font-size: 12px;
-            }
             background-color: #f19d19;
-            height: calc(49 / 1400 * 100vw);
             box-sizing: border-box;
             white-space: nowrap;
+            color: white;
+            font-size: 2vw;
+            height: calc(49 / 1400 * 100vw);
+            @media screen and (max-width:600px) {
+                font-size: 12px;
+                height: 25px;
+            }
         }
         td {
             color: #64533d;
@@ -402,9 +405,10 @@ h2.headline {
             text-align: center;
             background-color: #fadfcc;
             line-height: calc(24 / 1400 * 100vw);
+            letter-spacing: normal;
             box-sizing: border-box;
             //white-space: nowrap;
-            letter-spacing: 0.005vw;
+            //letter-spacing: 0.005vw;
         }
     }
     /*各講習部分の詳細設計*/
@@ -428,169 +432,147 @@ h2.headline {
                 width: calc(740 / 1000 * 100vw);
                 background: url('../kosyu_image/pattern-sp.png') top center / contain no-repeat;
             }
-            /*h3 {
-                //width: calc(724 / 1000 * 100vw);
-                @media screen and (max-width:399px) {
-                    transform-origin: left;
-                    margin-left: calc(80 / 1200 * 100vw);
-                }
-            }*/
         }
         &__table1 {
             margin: 0 auto;
             width: calc(922 / 1400 * 100vw);
-            @media screen and (max-width:665px) {
-                width: calc(922 / 1200 * 100vw);
-            }
-            @mixin donyu-responsive1-Under700 {
-                @media screen and (max-width:700px) {
-                    p {
-                        font-size: 12px;
-                        transform: scale(0.9);
-                    }
-                }
-            }
-            @mixin donyu-responsive1-Under500 {
-                @media screen and (max-width:500px) {
-                    p {
-                        font-size: 10px;
-                        transform: scale(0.8);
-                    }
-                }
+            .head1,
+            .head2,
+            .head3 {
+                text-align: center;
+                vertical-align: middle;
             }
             .head1 {
                 min-width: calc(196 / 1400 * 100vw);
-                min-height: calc(100 / 1400 * 100vw);
-                @media screen and (max-width:665px) {
-                    min-width: calc(196 / 1200 * 100vw);
-                }
-                //padding: 14px 44px 16px 40px;
-                //padding: calc(15 / 1400 * 100vw) calc(42 / 1400 * 100vw);
-                text-align: center;
-                vertical-align: middle;
-                @include donyu-responsive1-Under700;
-                @include donyu-responsive1-Under500;
             }
             .head2 {
                 min-width: calc(433 / 1400 * 100vw);
-                @media screen and (max-width:665px) {
-                    min-width: calc(433 / 1200 * 100vw);
-                }
-                @media screen and (max-width:568px) {
-                    min-width: calc(473 / 1200 * 100vw);
-                }
-                //padding: 15px 193px 15px 196px;
-                //padding: calc(15 / 1400 * 100vw) calc(195 / 1400 * 100vw);
-                text-align: center;
-                vertical-align: middle;
-                @include donyu-responsive1-Under700;
-                @include donyu-responsive1-Under500;
             }
             .head3 {
                 width: calc(291 / 1400 * 100vw);
-                @media screen and (max-width:665px) {
-                    //min-width: calc(196 / 1400 * 100vw);
-                    min-width: calc(291 / 1200 * 100vw);
-                }
-                @media screen and (max-width:568px) {
-                    min-width: calc(251 / 1200 * 100vw);
-                }
-                //padding: 15px 122px 16px 125px;
-                //padding: calc(15 / 1400 * 100vw) calc(124 / 1400 * 100vw);
-                text-align: center;
-                vertical-align: middle;
-                @include donyu-responsive1-Under700;
-                @include donyu-responsive1-Under500;
             }
-            @mixin donyu-responsive2-Under700 {
-                @media screen and (max-width:700px) {
-                    p {
-                        font-size: 10px;
-                        transform: scale(0.9);
-                        transform-origin: top;
-                    }
-                }
-            }
-            @mixin donyu-responsive2-Under500 {
-                @media screen and (max-width:500px) {
-                    p {
-                        font-size: 10px;
-                        transform: scale(0.7);
-                        transform-origin: top;
-                        //white-space: nowrap;
-                    }
-                }
-            }
-            .data1 {
+            .data1,
+            .data2,
+            .data3 {
                 padding-top: calc(40 / 1400 * 100vw);
                 padding-bottom: calc(63 / 1400 * 100vw);
-                white-space: nowrap;
-                @include donyu-responsive2-Under700;
-                @include donyu-responsive2-Under500;
-                @media screen and (max-width:665px) {
-                    line-height: calc(24 / 1200 * 100vw);
-                }
-                @media screen and (max-width:500px) {
-                    line-height: calc(45 / 1200 * 100vw);
-                }
+                line-height: calc(24 / 1200 * 100vw);
             }
             .data2 {
-                padding-top: calc(40 / 1400 * 100vw);
-                @include donyu-responsive2-Under700;
-                @include donyu-responsive2-Under500;
-                @media screen and (max-width:665px) {
-                    line-height: calc(24 / 1200 * 100vw);
+                p.text1 {
+                    display: none;
+                    @media screen and (min-width:550px) {
+                        display: initial;
+                    }
                 }
-                @media screen and (max-width:500px) {
-                    line-height: calc(45 / 1200 * 100vw);
+                p.text2 {
+                    display: none;
                 }
             }
             .data3 {
-                @media screen and (max-width:665px) {
-                    line-height: calc(24 / 1200 * 100vw);
-                }
                 .text1 {
                     display: none;
-                    @media screen and (min-width:569px) {
+                    @media screen and (min-width:550px) {
                         display: flex;
                         .donyu-instructors {
-                            //margin-left: calc(39 / 1400 * 100vw);
                             margin-left: calc(30 / 1400 * 100vw);
-                            @media screen and (max-width:665px) {
-                                margin-left: calc(30 / 1200 * 100vw);
-                            }
                             text-align: left;
-                            @include donyu-responsive2-Under700;
-                            @include donyu-responsive2-Under500;
                         }
                         .donyu-fee {
                             margin-left: calc(30 / 1400 * 100vw);
-                            @include donyu-responsive2-Under700;
-                            @include donyu-responsive2-Under500;
                         }
                     }
                 }
                 .text2 {
                     display: none;
-                    @media screen and (max-width:568px) {
+                }
+            }
+            .head1,
+            .data1,
+            .head2,
+            .data2 {
+                border-right: 2px solid #faefdb;
+            }
+            /*画面幅665px以下の時のtable1*/
+            @media screen and (max-width:665px) {
+                width: 511px;
+                .head1 {
+                    min-width: 109px;
+                }
+                .head2 {
+                    min-width: 240px;
+                }
+                .head3 {
+                    min-width: 162px;
+                }
+                .data1,
+                .data2,
+                .data3 {
+                    padding-top: 19px;
+                    padding-bottom: 30px;
+                    line-height: 14px;
+                }
+                .data2 {
+                    p.text1 {
+                        display: initial;
+                    }
+                }
+                .data3 {
+                    .text1 {
                         display: flex;
-                        .donyu-specifics {
-                            //margin-left: calc(39 / 1400 * 100vw);
-                            //margin-left: calc(30 / 1400 * 100vw);
-                            //text-align: center;
-                            width: 100%;
-                            padding-bottom: 10%;
-                            @include donyu-responsive2-Under700;
-                            @include donyu-responsive2-Under500;
-                            p {
-                                line-height: 100%;
-                            }
+                        .donyu-instructors {
+                            margin-left: 20px;
+                            text-align: left;
+                        }
+                        .donyu-fee {
+                            margin-left: 14.5px;
                         }
                     }
                 }
             }
-            .head1, .data1, .head2, .data2 {
-                border-right: 2px solid #faefdb;
+            /*画面幅549px以下の時のtable1*/
+            @media screen and (max-width:549px) {
+                width: 400px;
+                .head1 {
+                    min-width: 90px;
+                }
+                .head2 {
+                    min-width: 230px;
+                }
+                .head3 {
+                    min-width: 80px;
+                }
+                .data2 {
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    p.text2 {
+                        display: initial;
+                    }
+                }
+                .data3 {
+                    .text1 {
+                        display: none;
+                    }
+                    .text2 {
+                        display: flex;
+                        .donyu-specifics {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            /*画面幅450px以下の時のtable1*/
+            @media screen and (max-width:450px) {
+                width: 300px;
+                .head1 {
+                    min-width: 80px;
+                }
+                .head2 {
+                    min-width: 150px;
+                }
+                .head3 {
+                    min-width: 70px;
+                }
             }
         }
         &__table2 {
