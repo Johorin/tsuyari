@@ -549,6 +549,8 @@ h2.headline {
           box-sizing: border-box;
   white-space: nowrap;
   color: white;
+  text-align: center;
+  vertical-align: middle;
   font-size: 2vw;
   height: calc(49 / 1400 * 100vw);
 }
@@ -574,6 +576,12 @@ h2.headline {
 @media screen and (max-width: 877px) {
   .main-wrapper table td {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .main-wrapper table td {
+    line-height: 14px;
   }
 }
 
@@ -618,13 +626,6 @@ h2.headline {
   /*画面幅450px以下の時のtable1*/
 }
 
-.main-wrapper .donyu__table1 .head1,
-.main-wrapper .donyu__table1 .head2,
-.main-wrapper .donyu__table1 .head3 {
-  text-align: center;
-  vertical-align: middle;
-}
-
 .main-wrapper .donyu__table1 .head1 {
   min-width: calc(196 / 1400 * 100vw);
 }
@@ -642,7 +643,6 @@ h2.headline {
 .main-wrapper .donyu__table1 .data3 {
   padding-top: calc(40 / 1400 * 100vw);
   padding-bottom: calc(63 / 1400 * 100vw);
-  line-height: calc(24 / 1200 * 100vw);
 }
 
 .main-wrapper .donyu__table1 .data2 p.text1 {
@@ -707,7 +707,6 @@ h2.headline {
   .main-wrapper .donyu__table1 .data3 {
     padding-top: 19px;
     padding-bottom: 30px;
-    line-height: 14px;
   }
   .main-wrapper .donyu__table1 .data2 p.text1 {
     display: initial;
@@ -775,12 +774,11 @@ h2.headline {
 }
 
 .main-wrapper .donyu__table2 {
-  width: calc(1226 / 1400 * 100vw);
   margin: 0 auto;
-  margin-top: calc(41 / 1400 * 100vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: calc(1226 / 1400 * 100vw);
 }
 
 .main-wrapper .donyu__table2--first {
@@ -798,24 +796,15 @@ h2.headline {
   padding-right: calc(35 / 1400 * 100vw);
   padding-bottom: calc(24 / 1400 * 100vw);
   padding-left: calc(35 / 1400 * 100vw);
-}
-
-@media screen and (max-width: 670px) {
-  .main-wrapper .donyu__table2--first .data1 {
-    height: calc(431 / 1400 * 100vw);
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .main-wrapper .donyu__table2--first .data1 {
-    height: calc(451 / 1400 * 100vw);
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .main-wrapper .donyu__table2--first .data1 {
-    height: calc(471 / 1400 * 100vw);
-  }
+  /*@media screen and (max-width:670px) {
+                        height: calc(431 / 1400 * 100vw);
+                    }
+                    @media screen and (max-width:520px){
+                        height: calc(451 / 1400 * 100vw);
+                    }
+                    @media screen and (max-width:350px){
+                        height: calc(471 / 1400 * 100vw);
+                    }*/
 }
 
 .main-wrapper .donyu__table2--first .data1 .textGroup {
@@ -826,115 +815,26 @@ h2.headline {
   margin-bottom: calc(20 / 1400 * 100vw);
 }
 
-.main-wrapper .donyu__table2--first .data1 .textGroup .text1 p {
-  font-size: calc(20 / 1400 * 100vw);
-}
-
-@media screen and (max-width: 770px) {
-  .main-wrapper .donyu__table2--first .data1 .textGroup .text1 p {
-    font-size: 10px;
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-}
-
-@media screen and (max-width: 670px) {
-  .main-wrapper .donyu__table2--first .data1 .textGroup .text1 p {
-    font-size: 10px;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .main-wrapper .donyu__table2--first .data1 .textGroup .text1 p {
-    font-size: 10px;
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .main-wrapper .donyu__table2--first .data1 .textGroup .text1 p {
-    font-size: 10px;
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
-  }
-}
-
 .main-wrapper .donyu__table2--first .data1 .textGroup .text2 {
+  text-align: left;
   margin-bottom: calc(30 / 1400 * 100vw);
   margin-left: calc(70 / 1400 * 100vw);
-}
-
-@media screen and (max-width: 400px) {
-  .main-wrapper .donyu__table2--first .data1 .textGroup .text2 {
-    margin-left: calc(20 / 1400 * 100vw);
-  }
-}
-
-.main-wrapper .donyu__table2--first .data1 .textGroup .text2 p {
-  text-align: left;
-}
-
-@media screen and (max-width: 770px) {
-  .main-wrapper .donyu__table2--first .data1 .textGroup .text2 p {
-    font-size: 10px;
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-}
-
-@media screen and (max-width: 670px) {
-  .main-wrapper .donyu__table2--first .data1 .textGroup .text2 p {
-    font-size: 10px;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .main-wrapper .donyu__table2--first .data1 .textGroup .text2 p {
-    font-size: 10px;
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .main-wrapper .donyu__table2--first .data1 .textGroup .text2 p {
-    font-size: 10px;
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .main-wrapper .donyu__table2--first .data1 .textGroup .text2 p {
-    line-height: 100%;
-  }
+  /*@media screen and (max-width:400px) {
+                                margin-left: calc(20 / 1400 * 100vw);
+                            }*/
 }
 
 .main-wrapper .donyu__table2--first .data1 .syozai-donyu-set {
   width: calc(527 / 1400 * 100vw);
-}
-
-@media screen and (max-width: 670px) {
-  .main-wrapper .donyu__table2--first .data1 .syozai-donyu-set {
-    margin-top: calc(30 / 1400 * 100vw);
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .main-wrapper .donyu__table2--first .data1 .syozai-donyu-set {
-    margin-top: calc(50 / 1400 * 100vw);
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .main-wrapper .donyu__table2--first .data1 .syozai-donyu-set {
-    margin-top: calc(70 / 1400 * 100vw);
-  }
+  /*@media screen and (max-width:670px) {
+                            margin-top: calc(30 / 1400 * 100vw);
+                        }
+                        @media screen and (max-width:520px){
+                            margin-top: calc(50 / 1400 * 100vw);
+                        }
+                        @media screen and (max-width:350px){
+                            margin-top: calc(70 / 1400 * 100vw);
+                        }*/
 }
 
 .main-wrapper .donyu__table2--first .data1 .syozai-donyu-set img {
@@ -952,24 +852,15 @@ h2.headline {
   padding-right: calc(57 / 1400 * 100vw);
   padding-bottom: calc(153 / 1400 * 100vw);
   padding-left: calc(64 / 1400 * 100vw);
-}
-
-@media screen and (max-width: 670px) {
-  .main-wrapper .donyu__table2--second .data1 {
-    height: calc(431 / 1400 * 100vw);
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .main-wrapper .donyu__table2--second .data1 {
-    height: calc(451 / 1400 * 100vw);
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .main-wrapper .donyu__table2--second .data1 {
-    height: calc(471 / 1400 * 100vw);
-  }
+  /*@media screen and (max-width:670px) {
+                        height: calc(431 / 1400 * 100vw);
+                    }
+                    @media screen and (max-width:520px){
+                        height: calc(451 / 1400 * 100vw);
+                    }
+                    @media screen and (max-width:350px){
+                        height: calc(471 / 1400 * 100vw);
+                    }*/
 }
 
 .main-wrapper .donyu__table2--second .data1 .textGroup {
@@ -981,43 +872,131 @@ h2.headline {
   text-align: left;
 }
 
-@media screen and (max-width: 770px) {
-  .main-wrapper .donyu__table2--second .data1 .textGroup .donyu-contentPrivilege {
-    font-size: 10px;
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-    -webkit-transform-origin: top;
-            transform-origin: top;
+@media screen and (max-width: 700px) {
+  .main-wrapper .donyu__table2 {
+    width: 550px;
+  }
+  .main-wrapper .donyu__table2--first {
+    margin-right: 20px;
+  }
+  .main-wrapper .donyu__table2--first .head1 {
+    min-width: 265px;
+  }
+  .main-wrapper .donyu__table2--first .data1 {
+    padding: 10px;
+    height: 200px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .textGroup {
+    height: 54.5px;
+    margin-bottom: 22px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .textGroup .text1 {
+    margin-bottom: 10px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .textGroup .text2 {
+    margin-left: 15px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .syozai-donyu-set {
+    width: 240px;
+  }
+  .main-wrapper .donyu__table2--second .head1 {
+    min-width: 265px;
+  }
+  .main-wrapper .donyu__table2--second .data1 {
+    padding: 20px;
+    height: 200px;
+  }
+  .main-wrapper .donyu__table2--second .data1 .textGroup {
+    height: 161px;
   }
 }
 
-@media screen and (max-width: 670px) {
-  .main-wrapper .donyu__table2--second .data1 .textGroup .donyu-contentPrivilege {
-    font-size: 10px;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+@media screen and (max-width: 600px) {
+  .main-wrapper .donyu__table2 {
+    width: 450px;
+  }
+  .main-wrapper .donyu__table2--first .head1 {
+    min-width: 215px;
+  }
+  .main-wrapper .donyu__table2--first .data1 {
+    height: 200px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .textGroup {
+    height: 63px;
+    margin-bottom: 32px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .textGroup .text2 {
+    margin-left: 15px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .syozai-donyu-set {
+    width: 195px;
+  }
+  .main-wrapper .donyu__table2--second .head1 {
+    min-width: 215px;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .main-wrapper .donyu__table2--second .data1 .textGroup .donyu-contentPrivilege {
-    font-size: 10px;
-    -webkit-transform: scale(0.85);
-            transform: scale(0.85);
+@media screen and (max-width: 500px) {
+  .main-wrapper .donyu__table2 {
+    width: 380px;
+  }
+  .main-wrapper .donyu__table2--first {
+    margin-right: 10px;
+  }
+  .main-wrapper .donyu__table2--first .head1 {
+    min-width: 185px;
+  }
+  .main-wrapper .donyu__table2--first .data1 {
+    height: 230px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .textGroup {
+    height: 63px;
+    margin-bottom: 32px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .textGroup .text2 {
+    margin-left: 15px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .syozai-donyu-set {
+    width: 165px;
+  }
+  .main-wrapper .donyu__table2--second .head1 {
+    min-width: 185px;
+  }
+  .main-wrapper .donyu__table2--second .data1 {
+    height: 230px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .main-wrapper .donyu__table2--second .data1 .textGroup .donyu-contentPrivilege {
-    font-size: 10px;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+  .main-wrapper .donyu__table2 {
+    display: block;
+    width: 260px;
   }
-}
-
-@media screen and (max-width: 550px) {
-  .main-wrapper .donyu__table2--second .data1 .textGroup .donyu-contentPrivilege {
-    line-height: 100%;
+  .main-wrapper .donyu__table2--first {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .main-wrapper .donyu__table2--first .head1 {
+    min-width: 260px;
+  }
+  .main-wrapper .donyu__table2--first .data1 {
+    height: 200px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .textGroup {
+    height: 63px;
+    margin-bottom: 0;
+  }
+  .main-wrapper .donyu__table2--first .data1 .textGroup .text2 {
+    margin-left: 15px;
+  }
+  .main-wrapper .donyu__table2--first .data1 .syozai-donyu-set {
+    width: 240px;
+  }
+  .main-wrapper .donyu__table2--second .head1 {
+    min-width: 260px;
+  }
+  .main-wrapper .donyu__table2--second .data1 {
+    height: 200px;
   }
 }
 
