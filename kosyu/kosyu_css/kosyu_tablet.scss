@@ -17,10 +17,6 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 
 /*メイン*/
-
-/*レスポンシブ（要相談）*/
-//@media (max-width: ){
-
 body {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     //width: 1400px;
@@ -184,6 +180,9 @@ body {
             white-space: nowrap;
         }
     }
+    .pattern-sp {
+        display: none;
+    }
     table {
         box-sizing: border-box;
         tr {
@@ -243,6 +242,9 @@ body {
             }
             .data2 {
                 padding-top: calc(40 / 1400 * 100vw);
+                p.text2 {
+                    display: none;
+                }
             }
             .data3 {
                 .donyu-fee-table {
@@ -299,6 +301,9 @@ body {
                     }
                     .syozai-donyu-set {
                         width: calc(527 / 1400 * 100vw);
+                        img.text2 {
+                            display: none;
+                        }
                         img {
                             width: 100%;
                         }
@@ -367,10 +372,16 @@ body {
             }
             .data2 {
                 padding-top: calc(51 / 1400 * 100vw);
+                p.text2 {
+                    display: none;
+                }
             }
             .head1, .data1 {
                 border-right: 2px solid #faefdb;
             }
+        }
+        &__table2-text2 {
+            display: none;
         }
         &__table2 {
             margin: 0 auto;
@@ -495,6 +506,9 @@ body {
                 border-right: 2px solid #faefdb;
             }
         }
+        &__table2-text2 {
+            display: none;
+        }
         &__table2 {
             margin: 0 auto 0 auto;
             width: calc(1226 / 1400 * 100vw);
@@ -617,6 +631,11 @@ body {
             .head1, .data1, .head2, .data2 {
                 border-right: 2px solid #faefdb;
             }
+            td.data2 {
+                p.text2 {
+                    display: none;
+                }
+            }
         }
         &__table2 {
             margin: 0 auto;
@@ -671,6 +690,19 @@ body {
             }
             .head1, .data1, .head2, .data2 {
                 border-right: 2px solid #faefdb;
+            }
+            td.data2 {
+                p.text2 {
+                    display: none;
+                }
+            }
+            .privilege {
+                img.text2 {
+                    display: none;
+                }
+            }
+            &--text2 {
+                display: none;
             }
         }
     }
@@ -788,9 +820,9 @@ body {
                     top: calc(-30 / 1400 * 100vw);
                     right: 0;
                 }
-            }
-            &--caution {
-                display: none;
+                .C-caution2 {
+                    display: none;
+                }
             }
         }
     }
@@ -889,10 +921,16 @@ body {
                     img {
                         width: 100%;
                     }
+                    img.text2 {
+                        display: none;
+                    }
                 }
             }
             .head1, .data1, .head2, .data2 {
                 border-right: 2px solid #faefdb;
+            }
+            &--text2 {
+                display: none;
             }
         }
     }

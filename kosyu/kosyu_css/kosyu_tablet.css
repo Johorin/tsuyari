@@ -81,7 +81,6 @@ input, select {
 }
 
 /*メイン*/
-/*レスポンシブ（要相談）*/
 body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   width: 100%;
@@ -276,6 +275,10 @@ body {
   white-space: nowrap;
 }
 
+.main-wrapper .pattern-sp {
+  display: none;
+}
+
 .main-wrapper table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -347,6 +350,10 @@ body {
 
 .main-wrapper .donyu__table1 .data2 {
   padding-top: calc(40 / 1400 * 100vw);
+}
+
+.main-wrapper .donyu__table1 .data2 p.text2 {
+  display: none;
 }
 
 .main-wrapper .donyu__table1 .data3 .donyu-fee-table {
@@ -423,6 +430,10 @@ body {
   width: calc(527 / 1400 * 100vw);
 }
 
+.main-wrapper .donyu__table2--first .data1 .syozai-donyu-set img.text2 {
+  display: none;
+}
+
 .main-wrapper .donyu__table2--first .data1 .syozai-donyu-set img {
   width: 100%;
 }
@@ -496,8 +507,16 @@ body {
   padding-top: calc(51 / 1400 * 100vw);
 }
 
+.main-wrapper .set__table1 .data2 p.text2 {
+  display: none;
+}
+
 .main-wrapper .set__table1 .head1, .main-wrapper .set__table1 .data1 {
   border-right: 2px solid #faefdb;
+}
+
+.main-wrapper .set__table2-text2 {
+  display: none;
 }
 
 .main-wrapper .set__table2 {
@@ -650,6 +669,10 @@ body {
 
 .main-wrapper .byPart__table1 .head1, .main-wrapper .byPart__table1 .data1, .main-wrapper .byPart__table1 .head2, .main-wrapper .byPart__table1 .data2 {
   border-right: 2px solid #faefdb;
+}
+
+.main-wrapper .byPart__table2-text2 {
+  display: none;
 }
 
 .main-wrapper .byPart__table2 {
@@ -805,6 +828,10 @@ body {
   border-right: 2px solid #faefdb;
 }
 
+.main-wrapper .switchCompany__table1 td.data2 p.text2 {
+  display: none;
+}
+
 .main-wrapper .switchCompany__table2 {
   margin: 0 auto;
   margin-top: calc(42 / 1400 * 100vw);
@@ -872,6 +899,18 @@ body {
 
 .main-wrapper .switchCompany__table2 .head1, .main-wrapper .switchCompany__table2 .data1, .main-wrapper .switchCompany__table2 .head2, .main-wrapper .switchCompany__table2 .data2 {
   border-right: 2px solid #faefdb;
+}
+
+.main-wrapper .switchCompany__table2 td.data2 p.text2 {
+  display: none;
+}
+
+.main-wrapper .switchCompany__table2 .privilege img.text2 {
+  display: none;
+}
+
+.main-wrapper .switchCompany__table2--text2 {
+  display: none;
 }
 
 .main-wrapper .initialDeployment {
@@ -1083,7 +1122,7 @@ body {
   right: 0;
 }
 
-.main-wrapper .initialDeployment__table1--caution {
+.main-wrapper .initialDeployment__table1--C .C-caution2 {
   display: none;
 }
 
@@ -1211,8 +1250,16 @@ body {
   width: 100%;
 }
 
+.main-wrapper .staffTec__table2 .data3 .privilege img.text2 {
+  display: none;
+}
+
 .main-wrapper .staffTec__table2 .head1, .main-wrapper .staffTec__table2 .data1, .main-wrapper .staffTec__table2 .head2, .main-wrapper .staffTec__table2 .data2 {
   border-right: 2px solid #faefdb;
+}
+
+.main-wrapper .staffTec__table2--text2 {
+  display: none;
 }
 
 .main-wrapper2__headline {

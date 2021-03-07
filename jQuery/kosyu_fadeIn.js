@@ -25,10 +25,34 @@ $(function() {
 /*document.getElementById('hbmn').addEventListener('click', () => {
    document.getElementById('hbmn').classList.add("active");
 });*/
-$("button.menu-trigger").click(function(){
+/*$("button.menu-trigger").click(function(){
    if($(this).hasClass("active")){ // クリックされた要素がactiveクラスだったら
      $(this).removeClass("active");
    }else{
      $(this).addClass("active");
+   }
+});*/
+//ハンバーガーメニュー
+$("button.menu-trigger").click(function(){
+   if($(this).hasClass("active")){ // クリックされた要素がactiveクラスだったら
+     $(this).removeClass("active");
+     $(".header-wrapper").removeClass("slide");
+     $(".top-wrapper").removeClass("slide");
+     $(".main-wrapper").removeClass("slide");
+     $(".main-wrapper2").removeClass("slide");
+     $(".footImage").removeClass("slide");
+     $(".footer-wrapper1").removeClass("slide");
+     $(".footer-wrapper2").removeClass("slide");
+     $("nav.hamburgermenu").removeClass("slide");
+   }else{
+     $(this).addClass("active");
+     $(".header-wrapper").addClass("slide");
+     $(".top-wrapper").addClass("slide");
+     $(".main-wrapper").addClass("slide");
+     $(".main-wrapper2").addClass("slide");
+     $(".footImage").addClass("slide");
+     $(".footer-wrapper1").addClass("slide");
+     $(".footer-wrapper2").addClass("slide");
+     $("nav.hamburgermenu").addClass("slide");
    }
 });

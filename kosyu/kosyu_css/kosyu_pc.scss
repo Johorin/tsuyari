@@ -171,6 +171,9 @@ body {
             white-space: nowrap;
         }
     }
+    .pattern-sp {
+        display: none;
+    }
     table {
         box-sizing: border-box;
         tr {
@@ -225,6 +228,9 @@ body {
             }
             .data2 {
                 padding-top: 40px;
+                p.text2 {
+                    display: none;
+                }
             }
             .data3 {
                 .donyu-fee-table {
@@ -272,6 +278,11 @@ body {
                             p {
                                 text-align: left;
                             }
+                        }
+                    }
+                    .syozai-donyu-set {
+                        img.text2 {
+                            display: none;
                         }
                     }
                 }
@@ -322,10 +333,16 @@ body {
             }
             .data2 {
                 padding-top: 51px;
+                p.text2 {
+                    display: none;
+                }
             }
             .head1, .data1 {
                 border-right: 2px solid #faefdb;
             }
+        }
+        &__table2-text2 {
+            display: none;
         }
         &__table2 {
             margin: 42px auto 0 auto;
@@ -439,6 +456,9 @@ body {
             .head1, .data1, .head2, .data2 {
                 border-right: 2px solid #faefdb;
             }
+        }
+        &__table2-text2 {
+            display: none;
         }
         &__table2 {
             margin: 0 auto 0 auto;
@@ -555,6 +575,11 @@ body {
             .head1, .data1, .head2, .data2 {
                 border-right: 2px solid #faefdb;
             }
+            td.data2 {
+                p.text2 {
+                    display: none;
+                }
+            }
         }
         &__table2 {
             margin: 42px auto 0 auto;
@@ -603,6 +628,19 @@ body {
             }
             .head1, .data1, .head2, .data2 {
                 border-right: 2px solid #faefdb;
+            }
+            td.data2 {
+                p.text2 {
+                    display: none;
+                }
+            }
+            .privilege {
+                img.text2 {
+                    display: none;
+                }
+            }
+            &--text2 {
+                display: none;
             }
         }
     }
@@ -714,9 +752,9 @@ body {
                     top: -30px;
                     right: 0;
                 }
-            }
-            &--caution {
-                display: none;
+                .C-caution2 {
+                    display: none;
+                }
             }
         }
     }
@@ -807,9 +845,17 @@ body {
             }
             .data3 {
                 vertical-align: middle;
+                .privilege {
+                    img.text2 {
+                        display: none;
+                    }
+                }
             }
             .head1, .data1, .head2, .data2 {
                 border-right: 2px solid #faefdb;
+            }
+            &--text2 {
+                display: none;
             }
         }
     }
