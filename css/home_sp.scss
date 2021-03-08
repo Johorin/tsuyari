@@ -198,6 +198,17 @@ body {
             width: 100%;
         }
     }
+    img.sp {
+        display: none;
+    }
+    @media screen and (max-width:750px) {
+        img.pc {
+            display: none;
+        }
+        img.sp {
+            display: block;
+        }
+    }
 }
 .inner-wrapper {
     width: 100%;

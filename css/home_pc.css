@@ -162,6 +162,10 @@ body {
   width: 100%;
 }
 
+.topImages img.sp {
+  display: none;
+}
+
 .merchandisesList {
   padding-top: 100px;
   background: url("../home_image/background_main.png") center center/cover no-repeat;

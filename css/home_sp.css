@@ -298,6 +298,19 @@ body {
   width: 100%;
 }
 
+.topImages img.sp {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .topImages img.pc {
+    display: none;
+  }
+  .topImages img.sp {
+    display: block;
+  }
+}
+
 .inner-wrapper {
   width: 100%;
   background: url("../home_image/background_main.png") center center/cover no-repeat;
