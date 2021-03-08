@@ -2051,7 +2051,7 @@ h2.headline {
 }
 
 .main-wrapper2 .ApplicationFlowBox {
-  width: calc(684 / 1400 * 100vw);
+  width: 469px;
   margin: 0 auto;
 }
 
@@ -2059,48 +2059,48 @@ h2.headline {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: calc(684 / 1400 * 100vw);
-  height: calc(64 / 1400 * 100vw);
+  width: 100%;
+  height: 44px;
   background: #c28356;
   border: 2px solid #c28356;
   overflow: hidden;
 }
 
 .main-wrapper2 .ApplicationFlowBox__titleBox::before {
-  width: calc(100 / 1400 * 100vw);
-  height: calc(100 / 1400 * 100vw);
+  width: 68.5px;
+  height: 68.5px;
   content: ' ';
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: calc(-19 / 1400 * 100vw);
-  right: calc(590 / 1400 * 100vw);
+  top: -13px;
+  right: 410px;
 }
 
 .main-wrapper2 .ApplicationFlowBox__titleBox--number {
   position: absolute;
-  top: calc(3 / 1400 * 100vw);
-  left: calc(27 / 1400 * 100vw);
+  top: 1px;
+  left: 20px;
 }
 
 .main-wrapper2 .ApplicationFlowBox__titleBox--number h2 {
   font-family: 'Baskerville', serif;
   color: #c28356;
-  font-size: 4.29vw;
+  font-size: 41px;
   font-style: italic;
   font-weight: lighter;
 }
 
 .main-wrapper2 .ApplicationFlowBox__titleBox--text {
   position: absolute;
-  top: calc(18 / 1400 * 100vw);
-  left: calc(118 / 1400 * 100vw);
+  top: 10px;
+  left: 80px;
 }
 
 .main-wrapper2 .ApplicationFlowBox__titleBox--text h2 {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -2108,111 +2108,189 @@ h2.headline {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: calc(684 / 1400 * 100vw);
-  height: calc(64 / 1400 * 100vw);
+  width: 100%;
+  height: 44px;
   background: #841d08;
   border: 2px solid #841d08;
   overflow: hidden;
 }
 
 .main-wrapper2 .ApplicationFlowBox__titleBox-last::before {
-  width: calc(100 / 1400 * 100vw);
-  height: calc(100 / 1400 * 100vw);
+  width: 68.5px;
+  height: 68.5px;
   content: ' ';
   background: #fff;
   border-radius: 50%;
   position: absolute;
-  top: calc(-19 / 1400 * 100vw);
-  right: calc(590 / 1400 * 100vw);
+  top: -13px;
+  right: 410px;
 }
 
 .main-wrapper2 .ApplicationFlowBox__titleBox-last--number-red {
   position: absolute;
-  top: calc(3 / 1400 * 100vw);
-  left: calc(27 / 1400 * 100vw);
+  top: 1px;
+  left: 20px;
 }
 
 .main-wrapper2 .ApplicationFlowBox__titleBox-last--number-red h2 {
   font-family: 'Baskerville', serif;
   color: #841d08;
-  font-size: 4.29vw;
+  font-size: 41px;
   font-style: italic;
   font-weight: lighter;
 }
 
 .main-wrapper2 .ApplicationFlowBox__titleBox-last--text {
   position: absolute;
-  top: calc(18 / 1400 * 100vw);
-  left: calc(118 / 1400 * 100vw);
+  top: 10px;
+  left: 80px;
 }
 
 .main-wrapper2 .ApplicationFlowBox__titleBox-last--text h2 {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   color: #ffffff;
-  font-size: calc(28 / 1400 * 100vw);
+  font-size: 20px;
   font-weight: 500;
 }
 
 .main-wrapper2 .ApplicationFlowBox .text {
-  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-  font-size: 1.14vw;
   color: #64533d;
   letter-spacing: calc(1.5 / 1400 * 100vw);
-}
-
-.main-wrapper2 .ApplicationFlowBox__text-first {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: calc(684 / 1400 * 100vw);
-  height: calc(259 / 1400 * 100vw);
-  border: 2px solid #c28356;
-  margin-top: calc(-4 / 1400 * 100vw);
-  padding-top: calc(35 / 1400 * 100vw);
-  padding-right: calc(47 / 1400 * 100vw);
-  padding-left: calc(47 / 1400 * 100vw);
-}
-
-.main-wrapper2 .ApplicationFlowBox__text-first .TelEmail {
-  width: calc(453 / 1400 * 100vw);
-}
-
-.main-wrapper2 .ApplicationFlowBox__text-first .TelEmail img {
-  width: 100%;
-  margin-top: calc(30 / 1400 * 100vw);
-  margin-right: calc(68 / 1400 * 100vw);
-  margin-left: calc(69 / 1400 * 100vw);
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  line-height: 15px;
+  font-size: 12px;
+  /*@media screen and (max-width:768px) {
+                font-size: 10px;
+            }*/
 }
 
 .main-wrapper2 .ApplicationFlowBox__text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: calc(684 / 1400 * 100vw);
-  height: calc(113 / 1400 * 100vw);
+  width: 100%;
+  height: 77.5px;
   border: 2px solid #c28356;
-  margin-top: calc(-4 / 1400 * 100vw);
-  padding-top: calc(35 / 1400 * 100vw);
-  padding-right: calc(33 / 1400 * 100vw);
-  padding-left: calc(35 / 1400 * 100vw);
+  margin-top: -2px;
+  padding-top: 24px;
+  padding-right: 22.5px;
+  padding-left: 22.5px;
+}
+
+.main-wrapper2 .ApplicationFlowBox__text-first {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 177.5px;
+  border: 2px solid #c28356;
+  margin-top: -2px;
+  padding: 24px 32px 0 32px;
+}
+
+.main-wrapper2 .ApplicationFlowBox__text-first .TelEmail {
+  width: 311px;
+  margin-top: 20.5px;
+  margin-left: 47px;
+  margin-right: 47px;
+}
+
+.main-wrapper2 .ApplicationFlowBox__text-first .TelEmail img {
+  width: 100%;
 }
 
 .main-wrapper2 .ApplicationFlowBox__text-last {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: calc(684 / 1400 * 100vw);
-  height: calc(113 / 1400 * 100vw);
+  width: 100%;
+  height: 77.5px;
   border: 2px solid #841d08;
-  margin-top: calc(-4 / 1400 * 100vw);
-  margin-bottom: calc(75 / 1400 * 100vw);
-  padding-top: calc(35 / 1400 * 100vw);
-  padding-right: calc(33 / 1400 * 100vw);
-  padding-left: calc(33 / 1400 * 100vw);
+  margin-top: -2px;
+  margin-bottom: 51.5px;
+  padding-top: 24px;
+  padding-right: 22.5px;
+  padding-left: 22.5px;
+}
+
+@media screen and (max-width: 500px) {
+  .main-wrapper2 .ApplicationFlowBox {
+    width: 400px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__titleBox {
+    height: 33px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__titleBox::before {
+    width: 58.5px;
+    height: 58.5px;
+    top: -15px;
+    right: 345px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__titleBox--number h2 {
+    font-size: 31px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__titleBox--text {
+    top: 7px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__titleBox--text h2 {
+    font-size: 16px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__text {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__text-first .TelEmail {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__text-2nd, .main-wrapper2 .ApplicationFlowBox__text-3rd, .main-wrapper2 .ApplicationFlowBox__text-last {
+    height: 65px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__text-4th, .main-wrapper2 .ApplicationFlowBox__text-5th {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main-wrapper2 .ApplicationFlowBox {
+    width: 280px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__titleBox::before {
+    right: 230px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__titleBox--text {
+    left: 60px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__text-first {
+    height: 160px;
+  }
+  .main-wrapper2 .ApplicationFlowBox__text-first .TelEmail {
+    width: 246px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) and (min-width: 360px) {
+  .main-wrapper2 .ApplicationFlowBox__text-3rd {
+    height: 92px;
+  }
+}
+
+@media screen and (max-width: 420px) and (max-width: 359px) {
+  .main-wrapper2 .ApplicationFlowBox__text-3rd {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main-wrapper2 .ApplicationFlowBox__text-4th, .main-wrapper2 .ApplicationFlowBox__text-5th {
+    height: 50px;
+  }
 }
 
 .main-wrapper2 .triangle {
-  border-top: calc(40 / 1400 * 100vw) solid #c28356;
-  border-right: calc(50 / 1400 * 100vw) solid transparent;
-  border-bottom: calc(40 / 1400 * 100vw) solid transparent;
-  border-left: calc(50 / 1400 * 100vw) solid transparent;
+  border-top: 27.5px solid #c28356;
+  border-right: 34.5px solid transparent;
+  border-bottom: 27.5px solid transparent;
+  border-left: 34.5px solid transparent;
   width: 0;
   height: 0;
   margin: 0 auto;

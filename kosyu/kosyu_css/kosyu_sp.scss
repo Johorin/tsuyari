@@ -1766,46 +1766,59 @@ h2.headline {
         margin-bottom: calc(85 / 1400 * 100vw);
     }
     .ApplicationFlowBox {
-        width: calc(684 / 1400 * 100vw);
+        //width: calc(684 / 1400 * 100vw);
+        width: 469px;
         margin: 0 auto;
         &__titleBox {
             position: relative;
             box-sizing: border-box;
-            width: calc(684 / 1400 * 100vw);
-            height: calc(64 / 1400 * 100vw);
+            //width: calc(684 / 1400 * 100vw);
+            //height: calc(64 / 1400 * 100vw);
+            width: 100%;
+            height: 44px;
             background: #c28356;
             border: 2px solid #c28356;
             overflow: hidden;   //はみ出した要素を隠す
             &::before {
-                width: calc(100 / 1400 * 100vw);
-                height: calc(100 / 1400 * 100vw);
+                //width: calc(100 / 1400 * 100vw);
+                //height: calc(100 / 1400 * 100vw);
+                width: 68.5px;
+                height: 68.5px;
                 content: ' ';
                 background: #fff;
                 border-radius: 50%;
                 position: absolute;
-                top: calc(-19 / 1400 * 100vw);
-                right: calc(590 / 1400 * 100vw);
+                //top: calc(-19 / 1400 * 100vw);
+                //right: calc(590 / 1400 * 100vw);
+                top: -13px;
+                right: 410px;
             }
             &--number {
                 position: absolute;
-                top: calc(3 / 1400 * 100vw);
-                left: calc(27 / 1400 * 100vw);
+                //top: calc(3 / 1400 * 100vw);
+                //left: calc(27 / 1400 * 100vw);
+                top: 1px;
+                left: 20px;
                 h2 {
                     font-family: 'Baskerville', serif;
                     color: #c28356;
-                    font-size: 4.29vw;  //60px
+                    //font-size: 4.29vw;  //60px
+                    font-size: 41px;
                     font-style: italic;
                     font-weight: lighter;
                 }
             }
             &--text {
                 position: absolute;
-                top: calc(18 / 1400 * 100vw);
-                left: calc(118 / 1400 * 100vw);
+                //top: calc(18 / 1400 * 100vw);
+                //left: calc(118 / 1400 * 100vw);
+                top: 10px;
+                left: 80px;
                 h2 {
                     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
                     color: #ffffff;
-                    font-size: 2vw; //28px
+                    //font-size: 2vw; //28px
+                    font-size: 20px;
                     font-weight: 500;
                 }
             }
@@ -1813,101 +1826,210 @@ h2.headline {
         &__titleBox-last {
             position: relative;
             box-sizing: border-box;
-            width: calc(684 / 1400 * 100vw);
-            height: calc(64 / 1400 * 100vw);
+            //width: calc(684 / 1400 * 100vw);
+            //height: calc(64 / 1400 * 100vw);
+            width: 100%;
+            height: 44px;
             background: #841d08;
             border: 2px solid #841d08;
             overflow: hidden;
             &::before {
-                width: calc(100 / 1400 * 100vw);
-                height: calc(100 / 1400 * 100vw);
+                //width: calc(100 / 1400 * 100vw);
+                //height: calc(100 / 1400 * 100vw);
+                width: 68.5px;
+                height: 68.5px;
                 content: ' ';
                 background: #fff;
                 border-radius: 50%;
                 position: absolute;
-                top: calc(-19 / 1400 * 100vw);
-                right: calc(590 / 1400 * 100vw);
+                //top: calc(-19 / 1400 * 100vw);
+                //right: calc(590 / 1400 * 100vw);
+                top: -13px;
+                right: 410px;
             }
             &--number-red {
                 position: absolute;
-                top: calc(3 / 1400 * 100vw);
-                left: calc(27 / 1400 * 100vw);
+                //top: calc(3 / 1400 * 100vw);
+                //left: calc(27 / 1400 * 100vw);
+                top: 1px;
+                left: 20px;
                 h2 {
                     font-family: 'Baskerville', serif;
                     color: #841d08;
-                    font-size: 4.29vw;  //60px
+                    //font-size: 4.29vw;  //60px
+                    font-size: 41px;
                     font-style: italic;
                     font-weight: lighter;
                 }
             }
             &--text {
                 position: absolute;
-                top: calc(18 / 1400 * 100vw);
-                left: calc(118 / 1400 * 100vw);
+                //top: calc(18 / 1400 * 100vw);
+                //left: calc(118 / 1400 * 100vw);
+                top: 10px;
+                left: 80px;
                 h2 {
                     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
                     color: #ffffff;
-                    font-size: calc(28 / 1400 * 100vw);
+                    //font-size: calc(28 / 1400 * 100vw);
+                    font-size: 20px;
                     font-weight: 500;
                 }
             }
         }
         .text {
-            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-            font-size: 1.14vw;  //16px
             color: #64533d;
             letter-spacing: calc(1.5 / 1400 * 100vw);
-        }
-        &__text-first {
-            box-sizing: border-box;
-            width: calc(684 / 1400 * 100vw);
-            height: calc(259 / 1400 * 100vw);
-            border: 2px solid #c28356;
-            margin-top: calc(-4 / 1400 * 100vw);
-            //padding: 35px 47px 0px 47px;
-            padding-top: calc(35 / 1400 * 100vw);
-            padding-right: calc(47 / 1400 * 100vw);
-            padding-left: calc(47 / 1400 * 100vw);
-            .TelEmail {
-                width: calc(453 / 1400 * 100vw);
-                img {
-                    //margin: 30px 68px 0px 69px;
-                    width: 100%;
-                    margin-top: calc(30 / 1400 * 100vw);
-                    margin-right: calc(68 / 1400 * 100vw);
-                    margin-left: calc(69 / 1400 * 100vw);
-                }
-            }
+            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+            //font-size: 1.14vw;  //16px
+            //font-size: 1.3vw;
+            line-height: 15px;
+            font-size: 12px;
+            /*@media screen and (max-width:768px) {
+                font-size: 10px;
+            }*/
         }
         &__text {
             box-sizing: border-box;
-            width: calc(684 / 1400 * 100vw);
-            height: calc(113 / 1400 * 100vw);
+            //width: calc(684 / 1400 * 100vw);
+            //height: calc(113 / 1400 * 100vw);
+            width: 100%;
+            height: 77.5px;
             border: 2px solid #c28356;
-            margin-top: calc(-4 / 1400 * 100vw);
-            //padding: 35px 33px 0px 35px;
-            padding-top: calc(35 / 1400 * 100vw);
-            padding-right: calc(33 / 1400 * 100vw);
-            padding-left: calc(35 / 1400 * 100vw);
+            //margin-top: calc(-4 / 1400 * 100vw);
+            margin-top: -2px;
+            //padding-top: calc(35 / 1400 * 100vw);
+            //padding-right: calc(33 / 1400 * 100vw);
+            //padding-left: calc(33 / 1400 * 100vw);
+            padding-top: 24px;
+            padding-right: 22.5px;
+            padding-left: 22.5px;
+        }
+        &__text-first {
+            box-sizing: border-box;
+            //width: calc(684 / 1400 * 100vw);
+            //height: calc(259 / 1400 * 100vw);
+            width: 100%;
+            height: 177.5px;
+            border: 2px solid #c28356;
+            //margin-top: calc(-4 / 1400 * 100vw);
+            margin-top: -2px;
+            //padding-top: calc(35 / 1400 * 100vw);
+            //padding-right: calc(47 / 1400 * 100vw);
+            //padding-left: calc(47 / 1400 * 100vw);
+            padding: 24px 32px 0 32px;
+            .TelEmail {
+                //width: calc(453 / 1400 * 100vw);
+                width: 311px;
+                //margin-top: calc(30 / 1400 * 100vw);
+                //margin-right: calc(68 / 1400 * 100vw);
+                //margin-left: calc(69 / 1400 * 100vw);
+                margin-top: 20.5px;
+                margin-left: 47px;
+                margin-right: 47px;
+                img {
+                    width: 100%;
+                }
+            }
         }
         &__text-last {
             box-sizing: border-box;
-            width: calc(684 / 1400 * 100vw);
-            height: calc(113 / 1400 * 100vw);
+            //width: calc(684 / 1400 * 100vw);
+            //height: calc(113 / 1400 * 100vw);
+            width: 100%;
+            height: 77.5px;
             border: 2px solid #841d08;
-            margin-top: calc(-4 / 1400 * 100vw);
-            margin-bottom: calc(75 / 1400 * 100vw);
-            //padding: 35px 33px 0 33px;
-            padding-top: calc(35 / 1400 * 100vw);
-            padding-right: calc(33 / 1400 * 100vw);
-            padding-left: calc(33 / 1400 * 100vw);
+            //margin-top: calc(-4 / 1400 * 100vw);
+            margin-top: -2px;
+            //margin-bottom: calc(75 / 1400 * 100vw);
+            margin-bottom: 51.5px;
+            //padding-top: calc(35 / 1400 * 100vw);
+            //padding-right: calc(33 / 1400 * 100vw);
+            //padding-left: calc(33 / 1400 * 100vw);
+            padding-top: 24px;
+            padding-right: 22.5px;
+            padding-left: 22.5px;
+        }
+        @media screen and (max-width:500px) {
+            width: 400px;
+            &__titleBox {
+                height: 33px;
+                &::before {
+                    width: 58.5px;
+                    height: 58.5px;
+                    top: -15px;
+                    right: 345px;
+                }
+                &--number {
+                    h2 {
+                        font-size: 31px;
+                    }
+                }
+                &--text {
+                    top: 7px;
+                    h2 {
+                        font-size: 16px;
+                    }
+                }
+            }
+            &__text {
+                padding-top: 15px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            &__text-first {
+                .TelEmail {
+                    //width: 311px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                }
+            }
+            &__text-2nd,
+            &__text-3rd,
+            &__text-last {
+                height: 65px;
+            }
+            &__text-4th,
+            &__text-5th {
+                height: 50px;
+            }
+        }
+        @media screen and (max-width:420px) {
+            width: 280px;
+            &__titleBox {
+                &::before {
+                    right: 230px;
+                }
+                &--text {
+                    left: 60px;
+                }
+            }
+            &__text-first {
+                height: 160px;
+                .TelEmail {
+                    width: 246px;
+                    margin-top: 15px;
+                }
+            }
+            &__text-3rd {
+                @media screen and (min-width:360px) {
+                    height: 92px;
+                }
+                @media screen and (max-width:359px) {
+                    height: 80px;
+                }
+            }
+            &__text-4th,
+            &__text-5th {
+                height: 50px;
+            }
         }
     }
     .triangle {
-        border-top: calc(40 / 1400 * 100vw) solid #c28356;
-        border-right: calc(50 / 1400 * 100vw) solid transparent;
-        border-bottom: calc(40 / 1400 * 100vw) solid transparent;
-        border-left: calc(50 / 1400 * 100vw) solid transparent;
+        border-top: 27.5px solid #c28356;
+        border-right: 34.5px solid transparent;
+        border-bottom: 27.5px solid transparent;
+        border-left: 34.5px solid transparent;
         width: 0;
         height: 0;
         margin: 0 auto;

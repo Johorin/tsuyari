@@ -1166,7 +1166,7 @@ body {
 /*フッター部分*/
 .footImage {
     width: 100%;
-    background: url("../kosyu_image/footImage/footImage-background.png") center center / cover no-repeat;
+    background: url("../kosyu/kosyu_image/footImage/footImage-background.png") center center / cover no-repeat;
     position: relative;
     z-index: 1;
     &__title {
@@ -1268,7 +1268,7 @@ body {
 .footer-wrapper2 {
     width: 100%;
     height: 265px;
-    background: url("../kosyu_image/backgroundFooter.png") center center / cover no-repeat;
+    background: url("../kosyu/kosyu_image/backgroundFooter.png") center center / cover no-repeat;
     position: relative;
     .pageTop {
         position: absolute;

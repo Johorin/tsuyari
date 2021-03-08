@@ -1089,52 +1089,6 @@ body {
             }*/
             /*DelicateWash*/
             .textBox-DelicateWash-wrapper {
-                /*width: 105%;
-                height: 75%;
-                background: url('../home_image/merchandises/DelicateWash-textBox.png') left top / contain no-repeat;
-                margin-top: 10px;
-                margin-left: -10px;
-                .textBox-DelicateWash {
-                    padding: 8% 8% 0 8%;
-                    box-sizing: border-box;
-                    &__description {
-                        width: 100%;
-                        p {
-                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                            color: #64533d;
-                            font-size: 12px;
-                            letter-spacing: 1.7px;
-                            font-weight: 600;
-                            line-height: 16px;
-                            opacity: 0.7;
-                        }
-                    }
-                    &__usefulness {
-                        margin-top: calc(10 / 330 * 100%);
-                        &--box {
-                            background: #c28356;
-                            width: 50px;
-                            height: 25px;
-                            margin-bottom: 8px;
-                            p {
-                                font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                                font-size: 14px;
-                                color: #fff;
-                                padding-top: 6px;
-                                text-align: center;
-                            }
-                        }
-                        p.main-text {
-                            font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                            font-size: 12px;
-                            color: #64533d;
-                            letter-spacing: 0.8px;
-                            font-weight: 600;
-                            line-height: 14px;
-                            opacity: 0.7;
-                        }
-                    }
-                }*/
                 margin-top: calc(10 / 1400 * 100vw);
                 margin-left: calc(-25 / 1400 * 100vw);
                 background: url('../home_image/merchandises/DelicateWash-textBox.png') left top / cover no-repeat;
@@ -1594,7 +1548,7 @@ body {
 /*フッター部分*/
 .footImage {
     width: 100%;
-    background: url("../kosyu_image/footImage/footImage-background.png") center center / cover no-repeat;
+    background: url("../kosyu/kosyu_image/footImage/footImage-background.png") center center / cover no-repeat;
     position: relative;
     z-index: 1;
     &__title {
@@ -1846,7 +1800,7 @@ body {
 .footer-wrapper2 {
     width: 100%;
     //height: 265px;
-    background: url("../kosyu_image/backgroundFooter.png") center center / cover no-repeat;
+    background: url("../kosyu/kosyu_image/backgroundFooter.png") center center / cover no-repeat;
     position: relative;
     .pageTop {
         position: absolute;

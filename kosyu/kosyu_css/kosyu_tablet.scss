@@ -1035,6 +1035,17 @@ body {
             color: #64533d;
             letter-spacing: calc(1.5 / 1400 * 100vw);
         }
+        &__text {
+            box-sizing: border-box;
+            width: calc(684 / 1400 * 100vw);
+            height: calc(113 / 1400 * 100vw);
+            border: 2px solid #c28356;
+            margin-top: calc(-4 / 1400 * 100vw);
+            //padding: 35px 33px 0px 35px;
+            padding-top: calc(35 / 1400 * 100vw);
+            padding-right: calc(33 / 1400 * 100vw);
+            padding-left: calc(35 / 1400 * 100vw);
+        }
         &__text-first {
             box-sizing: border-box;
             width: calc(684 / 1400 * 100vw);
@@ -1055,17 +1066,6 @@ body {
                     margin-left: calc(69 / 1400 * 100vw);
                 }
             }
-        }
-        &__text {
-            box-sizing: border-box;
-            width: calc(684 / 1400 * 100vw);
-            height: calc(113 / 1400 * 100vw);
-            border: 2px solid #c28356;
-            margin-top: calc(-4 / 1400 * 100vw);
-            //padding: 35px 33px 0px 35px;
-            padding-top: calc(35 / 1400 * 100vw);
-            padding-right: calc(33 / 1400 * 100vw);
-            padding-left: calc(35 / 1400 * 100vw);
         }
         &__text-last {
             box-sizing: border-box;
@@ -1126,7 +1126,8 @@ body {
             font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
             text-decoration: none;
             color: #fff;
-            display: block;
+            //display: block;
+            display: flex;
             text-align: center;
             padding: 17px 0 17px 0;
             font-size: 24px;
@@ -1138,6 +1139,7 @@ body {
             border-radius: 30px;
             .mailBox {
                 padding-right: 7px;
+                padding-left: 20px;
             }
         }
         &:hover {
@@ -1165,7 +1167,7 @@ body {
 }
 .footer-wrapper1 {
     height: 140px;
-    &--nav {
+    &__nav {
         width: 325px;
         margin: 0 auto 0 auto;
         .list-header-nav {

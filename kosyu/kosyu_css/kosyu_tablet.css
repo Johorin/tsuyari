@@ -1379,6 +1379,18 @@ body {
   letter-spacing: calc(1.5 / 1400 * 100vw);
 }
 
+.main-wrapper2 .ApplicationFlowBox__text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(684 / 1400 * 100vw);
+  height: calc(113 / 1400 * 100vw);
+  border: 2px solid #c28356;
+  margin-top: calc(-4 / 1400 * 100vw);
+  padding-top: calc(35 / 1400 * 100vw);
+  padding-right: calc(33 / 1400 * 100vw);
+  padding-left: calc(35 / 1400 * 100vw);
+}
+
 .main-wrapper2 .ApplicationFlowBox__text-first {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1400,18 +1412,6 @@ body {
   margin-top: calc(30 / 1400 * 100vw);
   margin-right: calc(68 / 1400 * 100vw);
   margin-left: calc(69 / 1400 * 100vw);
-}
-
-.main-wrapper2 .ApplicationFlowBox__text {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: calc(684 / 1400 * 100vw);
-  height: calc(113 / 1400 * 100vw);
-  border: 2px solid #c28356;
-  margin-top: calc(-4 / 1400 * 100vw);
-  padding-top: calc(35 / 1400 * 100vw);
-  padding-right: calc(33 / 1400 * 100vw);
-  padding-left: calc(35 / 1400 * 100vw);
 }
 
 .main-wrapper2 .ApplicationFlowBox__text-last {
@@ -1483,7 +1483,9 @@ body {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   text-decoration: none;
   color: #fff;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   padding: 17px 0 17px 0;
   font-size: 24px;
@@ -1497,6 +1499,7 @@ body {
 
 .footImage__contactToMail--btn .mailBox {
   padding-right: 7px;
+  padding-left: 20px;
 }
 
 .footImage__contactToMail:hover {
@@ -1528,19 +1531,19 @@ body {
   height: 140px;
 }
 
-.footer-wrapper1--nav {
+.footer-wrapper1__nav {
   width: 325px;
   margin: 0 auto 0 auto;
 }
 
-.footer-wrapper1--nav .list-header-nav {
+.footer-wrapper1__nav .list-header-nav {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer-wrapper1--nav .list-header-nav a {
+.footer-wrapper1__nav .list-header-nav a {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   text-decoration: none;
   font-size: 16px;
@@ -1552,11 +1555,11 @@ body {
   transition: 300ms;
 }
 
-.footer-wrapper1--nav .list-header-nav a:hover {
+.footer-wrapper1__nav .list-header-nav a:hover {
   opacity: 0.6;
 }
 
-.footer-wrapper1--nav .list-header-nav a.last {
+.footer-wrapper1__nav .list-header-nav a.last {
   margin-right: 0;
 }
 

@@ -1304,6 +1304,16 @@ body {
   letter-spacing: 1.5px;
 }
 
+.main-wrapper2 .ApplicationFlowBox__text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 684px;
+  height: 113px;
+  border: 2px solid #c28356;
+  margin-top: -4px;
+  padding: 35px 33px 0px 35px;
+}
+
 .main-wrapper2 .ApplicationFlowBox__text-first {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1316,16 +1326,6 @@ body {
 
 .main-wrapper2 .ApplicationFlowBox__text-first .TelEmail img {
   margin: 30px 68px 0px 69px;
-}
-
-.main-wrapper2 .ApplicationFlowBox__text {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 684px;
-  height: 113px;
-  border: 2px solid #c28356;
-  margin-top: -4px;
-  padding: 35px 33px 0px 35px;
 }
 
 .main-wrapper2 .ApplicationFlowBox__text-last {
@@ -1395,7 +1395,9 @@ body {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   text-decoration: none;
   color: #fff;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   padding: 17px 0 17px 0;
   font-size: 24px;
@@ -1409,6 +1411,7 @@ body {
 
 .footImage__contactToMail--btn .mailBox {
   padding-right: 7px;
+  padding-left: 25px;
 }
 
 .footImage__contactToMail:hover {
@@ -1440,19 +1443,19 @@ body {
   height: 140px;
 }
 
-.footer-wrapper1--nav {
+.footer-wrapper1__nav {
   width: 325px;
   margin: 0 auto 0 auto;
 }
 
-.footer-wrapper1--nav .list-header-nav {
+.footer-wrapper1__nav .list-header-nav {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer-wrapper1--nav .list-header-nav a {
+.footer-wrapper1__nav .list-header-nav a {
   font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   text-decoration: none;
   font-size: 16px;
@@ -1464,11 +1467,11 @@ body {
   transition: 300ms;
 }
 
-.footer-wrapper1--nav .list-header-nav a:hover {
+.footer-wrapper1__nav .list-header-nav a:hover {
   opacity: 0.6;
 }
 
-.footer-wrapper1--nav .list-header-nav a.last {
+.footer-wrapper1__nav .list-header-nav a.last {
   margin-right: 0;
 }
 
