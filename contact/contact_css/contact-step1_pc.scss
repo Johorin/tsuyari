@@ -18,13 +18,17 @@ input,select{vertical-align:middle}
 
 /*メイン*/
 * {
-    //font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    //font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     box-sizing: border-box;
     font-size: 16px;
     font-weight: normal;
     line-height: 20px;
     color: #000;
+}
+/*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
+main {
+    background-color: rgb(250, 250, 250);
 }
 /*header部分*/
 .header-wrapper {
@@ -122,6 +126,10 @@ input,select{vertical-align:middle}
             }
         }
     }
+    input,
+    select {
+        padding: 5px;
+    }
     //textBoxは複数個共通にしている
     .textBox {
         padding: 20px;
@@ -202,6 +210,10 @@ input,select{vertical-align:middle}
                             input {
                                 width: 100px;
                             }
+                            input.searchAddress {
+                                color: #fff;
+                                background: rgb(100, 100, 100);
+                            }
                         }
                         /*&__form {
                             position: relative;
@@ -216,7 +228,12 @@ input,select{vertical-align:middle}
                     }
                     .prefecture,
                     .address-form {
-                        margin-top: 40px;
+                        margin-top: 38px;
+                    }
+                    .prefecture {
+                        select.prefectureSelect {
+                            //padding: 5px;
+                        }
                     }
                 }
             }
@@ -226,7 +243,7 @@ input,select{vertical-align:middle}
                 }
                 td {
                     padding-top: 20px;
-                    padding-bottom: 20px;
+                    padding-bottom: 16px;
                 }
             }
         }
@@ -243,24 +260,48 @@ input,select{vertical-align:middle}
         padding-top: 10px;
         padding-bottom: 10px;
         &__wrapper {
-            width: 310px;
+            width: 330px;
             display: flex;
             margin: 0 auto;
             .required-box {
                 margin: 0;
+                margin-top: 3px;
             }
-            .checkBox {
-                margin-top: 5px;
+            .checkBox-wrapper {
+                margin-top: 3px;
                 margin-left: 10px;
                 font-weight: normal;
+                display: flex;
+                input.checkBox {
+                    width: 25px;
+                    height: 25px;
+                }
+                p.text {
+                    padding-top: 5px;
+                    padding-left: 10px;
+                }
             }
         }
     }
-    .confirm-button {
-        width: 160px; 
+    .textBox-center {
+        text-align: center;
+    }
+    .confirm-button-wrapper {
+        width: 250px; 
         margin: 0 auto;
         margin-top: 20px;
-        margin-bottom: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        input.button {
+            width: 100%;
+            color: #fff;
+            background: #00aa0c;
+            padding: 13px;
+            padding-right: 20px;
+            padding-left: 20px;
+            text-align: center;
+            border: none;
+        }
     }
 }
 /*footer部分*/
@@ -293,7 +334,7 @@ input,select{vertical-align:middle}
 }
 .footer-wrapper2 {
     width: 100%;
-    background: url("../../kosyu_image/backgroundFooter.png") center center / cover no-repeat;
+    background: url("../../kosyu/kosyu_image/backgroundFooter.png") center center / cover no-repeat;
     position: relative;
     .pageTop {
         position: absolute;
