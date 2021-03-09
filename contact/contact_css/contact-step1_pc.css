@@ -216,8 +216,18 @@ main {
 }
 
 .contact-wrapper input,
+.contact-wrapper textarea,
 .contact-wrapper select {
+  background-color: #fff;
   padding: 5px;
+  border: 1px solid #000;
+  outline: none;
+}
+
+.contact-wrapper input:focus,
+.contact-wrapper textarea:focus,
+.contact-wrapper select:focus {
+  outline: #000 solid 2px;
 }
 
 .contact-wrapper .textBox {
@@ -268,6 +278,10 @@ main {
 
 .contact-wrapper .head-wrapper-address {
   padding-left: 14px;
+}
+
+.contact-wrapper form.sp {
+  display: none;
 }
 
 .contact-wrapper form table {

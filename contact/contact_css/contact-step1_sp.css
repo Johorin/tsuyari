@@ -1,0 +1,1202 @@
+@charset "UTF-8";
+/*
+*  html5resetcss
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*メイン*/
+* {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: normal;
+  line-height: 20px;
+  color: #000;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+/*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
+main {
+  background-color: #fafafa;
+}
+
+/*header部分*/
+.header-wrapper {
+  width: 100%;
+  height: calc(40 / 320 * 100vw);
+  background: #fff;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 10;
+  /*ボタンのアニメーションの実装部分*/
+}
+
+@media screen and (max-width: 500px) {
+  .header-wrapper {
+    height: 60px;
+  }
+}
+
+.header-wrapper__logo {
+  width: 40vw;
+  height: 100%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  .header-wrapper__logo {
+    width: 150px;
+  }
+}
+
+.header-wrapper__logo--wrapper {
+  width: 100%;
+  margin-top: calc(8 / 320 * 100vw);
+  margin-left: calc(10 / 320 * 100vw);
+}
+
+@media screen and (max-width: 500px) {
+  .header-wrapper__logo--wrapper {
+    margin-top: 16px;
+    margin-left: 12px;
+  }
+}
+
+.header-wrapper__logo--wrapper img {
+  width: 100%;
+}
+
+.header-wrapper__nav {
+  float: right;
+  height: 100%;
+  position: relative;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 650px) {
+  .header-wrapper__nav {
+    margin-right: 10px;
+  }
+}
+
+.header-wrapper__nav ul.list-header-nav {
+  list-style: none;
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+@media screen and (max-width: 600px) {
+  .header-wrapper__nav ul.list-header-nav {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header-wrapper__nav ul.list-header-nav {
+    width: 450px;
+  }
+}
+
+.header-wrapper__nav ul.list-header-nav a {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: #64533d;
+  letter-spacing: normal;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  margin-right: calc(40 / 1400 * 100vw);
+}
+
+@media screen and (max-width: 750px) {
+  .header-wrapper__nav ul.list-header-nav a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-wrapper__nav ul.list-header-nav a {
+    font-size: 12px;
+  }
+}
+
+.header-wrapper__nav ul.list-header-nav a:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 500px) {
+  .header-wrapper__nav {
+    display: none;
+  }
+}
+
+.header-wrapper__hamburger-menu {
+  display: none;
+  /*ボタンの配置の部分*/
+  float: right;
+  margin-top: 16px;
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .header-wrapper__hamburger-menu {
+    display: initial;
+  }
+  .header-wrapper__hamburger-menu .menu-trigger,
+  .header-wrapper__hamburger-menu .menu-trigger span {
+    display: inline-block;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .header-wrapper__hamburger-menu .menu-trigger {
+    position: relative;
+    width: 20px;
+    height: 16px;
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .header-wrapper__hamburger-menu .menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #969696;
+  }
+  .header-wrapper__hamburger-menu .menu-trigger span:nth-of-type(1) {
+    top: 0;
+  }
+  .header-wrapper__hamburger-menu .menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  .header-wrapper__hamburger-menu .menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .header-wrapper__hamburger-menu .menu-trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(7px) rotate(-315deg) scale(0.8);
+            transform: translateY(7px) rotate(-315deg) scale(0.8);
+  }
+  .header-wrapper__hamburger-menu .menu-trigger.active span:nth-of-type(2) {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #969696;
+    border-radius: 50%;
+  }
+  .header-wrapper__hamburger-menu .menu-trigger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-7px) rotate(315deg) scale(0.8);
+            transform: translateY(-7px) rotate(315deg) scale(0.8);
+  }
+}
+
+/*main部分*/
+main {
+  width: 100%;
+}
+
+.contact-wrapper {
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+.contact-wrapper .title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-wrapper .title h2 {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 450px) {
+  .contact-wrapper .title {
+    margin: 15px;
+    margin-bottom: 15px;
+  }
+  .contact-wrapper .title h2 {
+    font-size: 20px;
+  }
+}
+
+.contact-wrapper .step-wrapper {
+  width: 640px;
+  height: 60px;
+  margin: 0 auto;
+  background: url("../contact_image/step1.png") center center/contain no-repeat;
+  position: relative;
+}
+
+.contact-wrapper .step-wrapper .step1 p,
+.contact-wrapper .step-wrapper .step2 p,
+.contact-wrapper .step-wrapper .step3 p {
+  font-size: 16px;
+}
+
+.contact-wrapper .step-wrapper .step1 h3,
+.contact-wrapper .step-wrapper .step2 h3,
+.contact-wrapper .step-wrapper .step3 h3 {
+  font-size: 20px;
+}
+
+.contact-wrapper .step-wrapper .step1 {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.contact-wrapper .step-wrapper .step1 p,
+.contact-wrapper .step-wrapper .step1 h3 {
+  color: #fff;
+}
+
+.contact-wrapper .step-wrapper .step2 {
+  position: absolute;
+  top: 10px;
+  left: 245px;
+}
+
+.contact-wrapper .step-wrapper .step2 p,
+.contact-wrapper .step-wrapper .step2 h3 {
+  color: #000;
+}
+
+.contact-wrapper .step-wrapper .step3 {
+  position: absolute;
+  top: 10px;
+  left: 450px;
+}
+
+.contact-wrapper .step-wrapper .step3 p,
+.contact-wrapper .step-wrapper .step3 h3 {
+  color: #000;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-wrapper .step-wrapper {
+    width: 530px;
+    height: 50px;
+  }
+  .contact-wrapper .step-wrapper .step1 p,
+  .contact-wrapper .step-wrapper .step2 p,
+  .contact-wrapper .step-wrapper .step3 p {
+    font-size: 14px;
+  }
+  .contact-wrapper .step-wrapper .step1 h3,
+  .contact-wrapper .step-wrapper .step2 h3,
+  .contact-wrapper .step-wrapper .step3 h3 {
+    font-size: 18px;
+  }
+  .contact-wrapper .step-wrapper .step1 {
+    top: 6px;
+    left: 20px;
+  }
+  .contact-wrapper .step-wrapper .step2 {
+    top: 6px;
+    left: 205px;
+  }
+  .contact-wrapper .step-wrapper .step3 {
+    top: 6px;
+    left: 375px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-wrapper .step-wrapper {
+    width: 420px;
+    background: url("../contact_image/step1-sp.png") center center/contain no-repeat;
+  }
+  .contact-wrapper .step-wrapper .step2 {
+    left: 155px;
+  }
+  .contact-wrapper .step-wrapper .step3 {
+    left: 295px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-wrapper .step-wrapper {
+    width: 400px;
+  }
+  .contact-wrapper .step-wrapper .step1 p,
+  .contact-wrapper .step-wrapper .step2 p,
+  .contact-wrapper .step-wrapper .step3 p {
+    font-size: 12px;
+  }
+  .contact-wrapper .step-wrapper .step1 h3,
+  .contact-wrapper .step-wrapper .step2 h3,
+  .contact-wrapper .step-wrapper .step3 h3 {
+    font-size: 16px;
+  }
+  .contact-wrapper .step-wrapper .step2 {
+    left: 150px;
+  }
+  .contact-wrapper .step-wrapper .step3 {
+    left: 280px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contact-wrapper .step-wrapper {
+    width: 330px;
+  }
+  .contact-wrapper .step-wrapper .step1 h3,
+  .contact-wrapper .step-wrapper .step2 h3,
+  .contact-wrapper .step-wrapper .step3 h3 {
+    font-size: 14px;
+  }
+  .contact-wrapper .step-wrapper .step2 {
+    left: 123px;
+  }
+  .contact-wrapper .step-wrapper .step3 {
+    left: 235px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contact-wrapper .step-wrapper {
+    width: 300px;
+  }
+  .contact-wrapper .step-wrapper .step1 p,
+  .contact-wrapper .step-wrapper .step2 p,
+  .contact-wrapper .step-wrapper .step3 p {
+    font-size: 10px;
+  }
+  .contact-wrapper .step-wrapper .step1 h3,
+  .contact-wrapper .step-wrapper .step2 h3,
+  .contact-wrapper .step-wrapper .step3 h3 {
+    font-size: 12px;
+    margin-top: -5px;
+  }
+  .contact-wrapper .step-wrapper .step2 {
+    left: 115px;
+  }
+  .contact-wrapper .step-wrapper .step3 {
+    left: 215px;
+  }
+}
+
+.contact-wrapper input,
+.contact-wrapper textarea,
+.contact-wrapper select {
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #000;
+  outline: none;
+}
+
+.contact-wrapper input:focus,
+.contact-wrapper textarea:focus,
+.contact-wrapper select:focus {
+  outline: #000 solid 2px;
+}
+
+.contact-wrapper .textBox {
+  padding: 20px;
+  margin: 0 auto;
+  width: calc(400 / 500 * 100vw);
+}
+
+@media screen and (max-width: 400px) {
+  .contact-wrapper .textBox {
+    width: calc(450 / 500 * 100vw);
+  }
+}
+
+.contact-wrapper .textBox-center {
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .contact-wrapper .textBox-center {
+    width: calc(480 / 500 * 100vw);
+  }
+}
+
+.contact-wrapper .required-box,
+.contact-wrapper .optional-box {
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+  margin-left: 15px;
+  background-color: red;
+}
+
+.contact-wrapper .required-box p,
+.contact-wrapper .optional-box p {
+  color: #fff;
+  text-align: center;
+}
+
+.contact-wrapper .required-box {
+  background-color: red;
+}
+
+.contact-wrapper .optional-box {
+  background-color: orange;
+}
+
+.contact-wrapper .head-wrapper {
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-wrapper .head-wrapper p.head {
+  margin: 0 0 0 auto;
+  margin-top: 5px;
+}
+
+.contact-wrapper .head-wrapper .required-box,
+.contact-wrapper .head-wrapper .optional-box {
+  margin: 0 0 0 auto;
+}
+
+.contact-wrapper .head-wrapper-address {
+  padding-left: 14px;
+}
+
+.contact-wrapper form.sp {
+  display: none;
+}
+
+@media screen and (max-width: 670px) {
+  .contact-wrapper form.pc {
+    display: none;
+  }
+  .contact-wrapper form.sp {
+    display: block;
+  }
+}
+
+.contact-wrapper form.pc {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-wrapper form.pc table {
+  width: 100%;
+  border: 2px solid grey;
+  background-color: #f0f0f0;
+  /*tr.pattern1 {
+                td {
+                    padding-left: 20px;
+                }
+            }*/
+}
+
+.contact-wrapper form.pc table tr {
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.contact-wrapper form.pc table th {
+  border-right: 1px solid #c8c8c8;
+}
+
+.contact-wrapper form.pc table td {
+  padding-left: 20px;
+}
+
+.contact-wrapper form.pc table input {
+  width: 95%;
+}
+
+.contact-wrapper form.pc table textarea {
+  width: 95%;
+  height: 150px;
+}
+
+.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*&__form {
+                            position: relative;
+                            top: -158px;
+                            left: 20px;
+                        }
+                        &__button {
+                            position: relative;
+                            top: -158px;
+                            left: 30px;
+                        }*/
+}
+
+.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__form input {
+  width: 150px;
+}
+
+.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__button {
+  margin-left: 20px;
+}
+
+.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__button input {
+  width: 100px;
+}
+
+.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__button input.searchAddress {
+  color: #fff;
+  background: #646464;
+}
+
+.contact-wrapper form.pc table tr.pattern2 td.data4 .prefecture,
+.contact-wrapper form.pc table tr.pattern2 td.data4 .address-form {
+  margin-top: 38px;
+}
+
+.contact-wrapper form.pc table tr.pattern3 th {
+  vertical-align: top;
+}
+
+.contact-wrapper form.pc table tr.pattern3 td {
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+.contact-wrapper form.sp {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-wrapper form.sp table {
+  width: 100%;
+  border: 2px solid grey;
+  background-color: #f0f0f0;
+}
+
+.contact-wrapper form.sp table tr {
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.contact-wrapper form.sp table th {
+  border-right: 1px solid #c8c8c8;
+}
+
+.contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper,
+.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper,
+.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper {
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper p.head,
+.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper p.head,
+.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper p.head {
+  margin: 0;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+.contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper .required-box,
+.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper .required-box,
+.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper .required-box {
+  margin: 0;
+}
+
+.contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper .optional-box,
+.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper .optional-box,
+.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper .optional-box {
+  margin: 0;
+}
+
+.contact-wrapper form.sp table tr.pattern1 th.head1 input,
+.contact-wrapper form.sp table tr.pattern1 th.head2 input,
+.contact-wrapper form.sp table tr.pattern1 th.head3 input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 362px;
+}
+
+@media screen and (max-width: 450px) {
+  .contact-wrapper form.sp table tr.pattern1 th.head1 input,
+  .contact-wrapper form.sp table tr.pattern1 th.head2 input,
+  .contact-wrapper form.sp table tr.pattern1 th.head3 input {
+    width: 90%;
+  }
+}
+
+.contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper {
+  width: 128px;
+}
+
+.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper {
+  width: 192px;
+}
+
+.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper {
+  width: 144px;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper {
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper p.head {
+  margin: 0;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper .required-box {
+  margin: 0;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper .optional-box {
+  margin: 0;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .head-wrapper {
+  width: 144px;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 284px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number {
+    width: 255px;
+  }
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number__button {
+  margin-left: 30px;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number__button input.searchAddress {
+  color: #fff;
+  background: #646464;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .prefecture-wrapper .head-wrapper {
+  width: 144px;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .prefecture-wrapper .prefecture {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .address-wrapper .head-wrapper {
+  width: 128px;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .address-wrapper .address-form {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-wrapper form.sp table tr.pattern2 th.head4 .address-wrapper .address-form input {
+  width: 362px;
+}
+
+@media screen and (max-width: 450px) {
+  .contact-wrapper form.sp table tr.pattern2 th.head4 .address-wrapper .address-form input {
+    width: 90%;
+  }
+}
+
+.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper {
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper p.head {
+  margin: 0;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper .required-box {
+  margin: 0;
+}
+
+.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper .optional-box {
+  margin: 0;
+}
+
+.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper {
+  width: 208px;
+}
+
+.contact-wrapper form.sp table tr.pattern3 textarea {
+  width: 90%;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-wrapper .personalInfomation-form {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.contact-wrapper .personalInfomation-form textarea {
+  width: 100%;
+}
+
+.contact-wrapper .agree-box-form {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  border: 2px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact-wrapper .agree-box-form__wrapper {
+  width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.contact-wrapper .agree-box-form__wrapper .required-box {
+  margin: 0;
+  margin-top: 3px;
+}
+
+.contact-wrapper .agree-box-form__wrapper .checkBox-wrapper {
+  margin-top: 3px;
+  margin-left: 10px;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-wrapper .agree-box-form__wrapper .checkBox-wrapper input.checkBox {
+  width: 25px;
+  height: 25px;
+}
+
+.contact-wrapper .agree-box-form__wrapper .checkBox-wrapper p.text {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .contact-wrapper .agree-box-form__wrapper {
+    width: 280px;
+  }
+  .contact-wrapper .agree-box-form__wrapper .required-box {
+    width: 40px;
+  }
+  .contact-wrapper .agree-box-form__wrapper .checkBox-wrapper {
+    margin-left: 5px;
+  }
+  .contact-wrapper .agree-box-form__wrapper .checkBox-wrapper p.text {
+    padding-left: 5px;
+  }
+}
+
+.contact-wrapper .confirm-button-wrapper {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 400px) {
+  .contact-wrapper .confirm-button-wrapper {
+    width: 220px;
+  }
+}
+
+.contact-wrapper .confirm-button-wrapper input.button {
+  width: 100%;
+  color: #fff;
+  background: #00aa0c;
+  padding: 13px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  border: none;
+}
+
+/*footer部分*/
+.footer-wrapper1 {
+  height: 140px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-wrapper1 {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .footer-wrapper1__nav {
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 750px) {
+  .footer-wrapper1__nav {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 500px) {
+  .footer-wrapper1__nav {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 400px) {
+  .footer-wrapper1__nav {
+    width: 275px;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .footer-wrapper1__nav .list-header-nav {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-wrapper1__nav .list-header-nav a {
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #64533d;
+    display: block;
+    margin: 62px 40px 62px 0;
+    letter-spacing: normal;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 750px) {
+  .footer-wrapper1__nav .list-header-nav a {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 500px) {
+  .footer-wrapper1__nav .list-header-nav a {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 400px) {
+  .footer-wrapper1__nav .list-header-nav a {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .footer-wrapper1__nav .list-header-nav a:hover {
+    opacity: 0.6;
+  }
+  .footer-wrapper1__nav .list-header-nav a.last {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-wrapper1__nav {
+    margin: 0 auto;
+    height: 70px;
+    width: 100px;
+    padding-top: 33px;
+  }
+  .footer-wrapper1__nav .list-header-nav {
+    list-style: none;
+  }
+  .footer-wrapper1__nav .list-header-nav a {
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #64533d;
+    display: block;
+    letter-spacing: normal;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer-wrapper1__nav .list-header-nav a:hover {
+    opacity: 0.6;
+  }
+  .footer-wrapper1__nav .list-header-nav a.last {
+    margin-bottom: 0;
+  }
+}
+
+.footer-wrapper2 {
+  width: 100%;
+  background: url("../../kosyu/kosyu_image/backgroundFooter.png") center center/cover no-repeat;
+  position: relative;
+}
+
+.footer-wrapper2 .pageTop {
+  position: absolute;
+  top: 108px;
+  right: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-wrapper2 .pageTop {
+    position: static;
+    width: 50px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer-wrapper2 .pageTop img {
+    width: 100%;
+  }
+}
+
+.footer-wrapper2 .pageTop__text {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #64533d;
+  letter-spacing: normal;
+  font-weight: 600;
+  position: relative;
+  right: 1px;
+  white-space: nowrap;
+}
+
+.footer-wrapper2 .pageTop a:hover {
+  opacity: 0.8;
+}
+
+.footer-wrapper2__logo {
+  width: 380px;
+  margin: 0 auto 25px auto;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-wrapper2__logo {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer-wrapper2__logo {
+    padding-top: 0;
+  }
+}
+
+.footer-wrapper2__logo img {
+  width: 100%;
+}
+
+.footer-wrapper2__address p {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 16px;
+  color: #312b24;
+  text-align: center;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-wrapper2__address p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-wrapper2__address p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer-wrapper2__address p {
+    font-size: 10px;
+  }
+}
+
+.footer-wrapper2__copyright {
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-wrapper2__copyright p {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 10px;
+  color: #64533d;
+  text-align: center;
+}
+
+/*ハンバーガーメニュー*/
+.hamburgermenu {
+  background: #fff;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  right: -150px;
+  height: 100%;
+  z-index: 20;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.hamburgermenu ul.nav li {
+  margin-bottom: 40px;
+  list-style: none;
+  text-align: center;
+}
+
+.hamburgermenu ul.nav li:last-of-type {
+  margin-bottom: 0;
+}
+
+.hamburgermenu ul.nav li a {
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-size: 16px;
+  color: #64533d;
+  letter-spacing: normal;
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.hamburgermenu ul.nav li a:hover {
+  opacity: 0.6;
+}
+
+.hamburgermenu ul.nav li.menuText {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.hamburgermenu ul.nav li.menuText h2 {
+  font-size: 20px;
+  color: #000;
+  opacity: 0.9;
+  text-align: center;
+}
+/*# sourceMappingURL=contact-step1_sp.css.map */

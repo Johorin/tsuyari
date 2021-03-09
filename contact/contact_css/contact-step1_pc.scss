@@ -127,8 +127,16 @@ main {
         }
     }
     input,
+    textarea,
     select {
+        //appearance: none;
+        background-color: #fff;
         padding: 5px;
+        border: 1px solid #000;
+        outline: none;
+        &:focus {
+            outline: #000 solid 2px;
+        }
     }
     //textBoxは複数個共通にしている
     .textBox {
@@ -169,6 +177,9 @@ main {
     }
     .head-wrapper-address {
         padding-left: 14px;
+    }
+    form.sp {
+        display: none;
     }
     form {
         table {
@@ -229,11 +240,6 @@ main {
                     .prefecture,
                     .address-form {
                         margin-top: 38px;
-                    }
-                    .prefecture {
-                        select.prefectureSelect {
-                            //padding: 5px;
-                        }
                     }
                 }
             }
