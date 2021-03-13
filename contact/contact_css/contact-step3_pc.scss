@@ -66,6 +66,11 @@ input,select{vertical-align:middle}
     }
 }
 /*main部分*/
+/*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
+main {
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 20px;
+}
 .contact-wrapper {
     padding-top: 80px;
     width: 801px;
@@ -123,7 +128,8 @@ input,select{vertical-align:middle}
         }
     }
     .appreciation {
-        margin-top: 30px;
+        //margin-top: 30px;
+        margin-top: 60px;
         margin-bottom: 10px;
         h2 {
             font-size: 28px;
@@ -138,7 +144,7 @@ input,select{vertical-align:middle}
         margin: 0 auto;
         margin-top: 20px;
         margin-bottom: 60px;
-        input.green-button {
+        input.button {
             padding: 10px 80px;
             color: #fff;
             background-color: #00aa0c;
@@ -179,7 +185,7 @@ input,select{vertical-align:middle}
 }
 .footer-wrapper2 {
     width: 100%;
-    background: url("../../kosyu_image/backgroundFooter.png") center center / cover no-repeat;
+    background: url("../../kosyu/kosyu_image/backgroundFooter.png") center center / cover no-repeat;
     position: relative;
     .pageTop {
         position: absolute;

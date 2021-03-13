@@ -82,7 +82,7 @@ input, select {
 
 /*メイン*/
 * {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
@@ -141,6 +141,11 @@ input, select {
 }
 
 /*main部分*/
+/*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
+main {
+  background-color: #fafafa;
+}
+
 .contact-wrapper {
   padding-top: 80px;
   width: 801px;
@@ -214,6 +219,10 @@ input, select {
   padding: 20px;
 }
 
+.contact-wrapper .input-contents-text2 {
+  display: none;
+}
+
 .contact-wrapper .input-contents table {
   width: 100%;
   border: 2px solid grey;
@@ -257,6 +266,10 @@ input, select {
   padding: 30px 0 120px 20px;
 }
 
+.contact-wrapper .input-contents2-text2 {
+  display: none;
+}
+
 .contact-wrapper .input-contents2 table {
   width: 100%;
   border: 2px solid grey;
@@ -287,11 +300,29 @@ input, select {
   color: purple;
 }
 
-.contact-wrapper .submit-button {
-  width: 160px;
+.contact-wrapper .submit-button-wrapper {
+  width: 250px;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-wrapper .submit-button-wrapper input.button {
+  width: 100%;
+  color: #fff;
+  background: #00aa0c;
+  padding: 13px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  border: none;
+}
+
+.contact-wrapper .submit-button-wrapper input.button:hover {
+  opacity: 0.8;
 }
 
 /*footer部分*/
@@ -333,7 +364,7 @@ input, select {
 
 .footer-wrapper2 {
   width: 100%;
-  background: url("../../kosyu_image/backgroundFooter.png") center center/cover no-repeat;
+  background: url("../../kosyu/kosyu_image/backgroundFooter.png") center center/cover no-repeat;
   position: relative;
 }
 

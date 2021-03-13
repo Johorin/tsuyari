@@ -177,11 +177,6 @@ input,select{vertical-align:middle}
     }
 }
 /*main部分*/
-#error_msg {
-    color: red;
-    text-align: right;
-    margin-right: 30px;
-}
 /*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
 main {
     background-color: rgb(250, 250, 250);
@@ -215,7 +210,7 @@ main {
         width: 640px;
         height: 60px;
         margin: 0 auto;
-        background: url('../contact_image/step1.png') center center / contain no-repeat;
+        background: url('../contact_image/step2.png') center center / contain no-repeat;
         position: relative;
         .step1,
         .step2,
@@ -233,7 +228,7 @@ main {
             left: 25px;
             p,
             h3 {
-                color: #fff;
+                color: #000;
             }
         }
         .step2 {
@@ -242,7 +237,7 @@ main {
             left: 245px;
             p,
             h3 {
-                color: #000;
+                color: #fff;
             }
         }
         .step3 {
@@ -282,7 +277,7 @@ main {
         }
         @media screen and (max-width:600px) {
             width: 420px;
-            background: url('../contact_image/step1-sp.png') center center / contain no-repeat;
+            background: url('../contact_image/step2-sp.png') center center / contain no-repeat;
             .step2 {
                 left: 155px;
             }
@@ -346,18 +341,6 @@ main {
             }
         }
     }
-    input,
-    textarea,
-    select {
-        //appearance: none;
-        background-color: #fff;
-        padding: 5px;
-        border: 1px solid #000;
-        outline: none;
-        &:focus {
-            outline: #000 solid 2px;
-        }
-    }
     //textBoxは複数個共通にしている
     .textBox {
         padding: 20px;
@@ -373,135 +356,75 @@ main {
             width: calc(480 / 500 * 100vw);
         }
     }
-    //必須と任意のボックス
-    .required-box,
-    .optional-box  {
-        width: 50px;
-        height: 30px;
-        padding: 5px;
-        margin-left: 15px;
-        background-color: red;
-        p {
-            color: #fff;
-            text-align: center;
-        }
-    }
-    .required-box {
-        background-color: red;
-    }
-    .optional-box {
-        background-color: orange;
-    }
-    .head-wrapper {
-        padding-top: 20px;
-        padding-right: 25px;
-        padding-bottom: 20px;
-        display: flex;
-        p.head {
-            margin: 0 0 0 auto;
-            margin-top: 5px;
-        }
-        .required-box,
-        .optional-box {
-            margin: 0 0 0 auto;
-        }
-    }
-    .head-wrapper-address {
-        padding-left: 14px;
-    }
-    form.sp {
+    .input-contents-text2 {
         display: none;
     }
     @media screen and (max-width:670px) {
-        form.pc {
+        .input-contents-text1 {
             display: none;
         }
-        form.sp {
+        .input-contents-text2 {
             display: block;
         }
     }
-    form.pc {
+    .input-contents-text1 {
         width: 90%;
         margin: 0 auto;
         table {
             width: 100%;
             border: 2px solid grey;
             background-color: rgb(240, 240, 240);
-            tr {
-                border-bottom: 1px solid rgb(200, 200, 200);
-            }
             th {
+                width: 30%;
                 border-right: 1px solid rgb(200, 200, 200);
             }
-            td {
-                padding-left: 20px;
+            tr {
+                width: 70%;
+                border-bottom: 1px solid rgb(200, 200, 200);
             }
-            input {
-                width: 95%;
-            }
-            textarea {
-                width: 95%;
-                height: 150px;
-            }
-            /*tr.pattern1 {
-                td {
-                    padding-left: 20px;
+            tr.pattern1 {
+                th {
+                    padding: 30px 0 30px 40px;
+                    text-align: left;
                 }
-            }*/
+                td {
+                    padding: 30px 0 30px 20px;
+                    text-align: left;
+                }
+            }
             tr.pattern2 {
-                td.data4 {
-                    .post-number {
-                        display: flex;
-                        &__form {
-                            input {
-                                width: 150px;
-                            }
-                        }
-                        &__button {
-                            margin-left: 20px;
-                            input {
-                                width: 100px;
-                            }
-                            input.searchAddress {
-                                color: #fff;
-                                background: rgb(100, 100, 100);
-                                &:focus {
-                                    outline: none;
-                                }
-                                &:hover {
-                                    opacity: 0.8;
-                                }
-                            }
-                        }
-                        /*&__form {
-                            position: relative;
-                            top: -158px;
-                            left: 20px;
-                        }
-                        &__button {
-                            position: relative;
-                            top: -158px;
-                            left: 30px;
-                        }*/
-                    }
-                    .prefecture,
-                    .address-form {
-                        margin-top: 38px;
-                    }
+                th {
+                    padding: 30px 0 60px 40px;
+                    text-align: left;
+                }
+                td {
+                    padding: 30px 0 60px 20px;
+                    text-align: left;
                 }
             }
             tr.pattern3 {
                 th {
-                    vertical-align: top;
+                    padding: 30px 0 120px 40px;
+                    text-align: left;
                 }
                 td {
-                    padding-top: 20px;
-                    padding-bottom: 16px;
+                    padding: 30px 0 120px 20px;
+                }
+            }
+            tr.pattern1,
+            tr.pattern2,
+            tr.pattern3 {
+                th,
+                td {
+                    @media screen and (max-width:780px) {
+                        padding-left: 0;
+                        text-align: center;
+                    }
                 }
             }
         }
     }
-    form.sp {
+    .input-contents-text2 {
         width: 90%;
         margin: 0 auto;
         table {
@@ -512,192 +435,113 @@ main {
                 border-bottom: 1px solid rgb(200, 200, 200);
             }
             th {
-                border-right: 1px solid rgb(200, 200, 200);
-            }
-            @mixin tableSame {
-                .head-wrapper {
-                    padding: 0;
-                    padding-top: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                p.itemText {
+                    padding-bottom: 20px;
+                }
+                p.postNumber {
                     padding-bottom: 10px;
-                    margin: 0 auto;
-                    p.head {
-                        margin: 0;
-                        margin-top: 5px;
-                        margin-right: 30px;
-                    }
-                    .required-box {
-                        margin: 0;
-                    }
-                    .optional-box {
-                        margin: 0;
-                    }
-                }
-            }
-            tr.pattern1 {
-                th.head1,
-                th.head2,
-                th.head3 {
-                    @include tableSame;
-                    input {
-                        margin-top: 10px;
-                        margin-bottom: 20px;
-                        width: 362px;
-                        @media screen and (max-width:450px) {
-                            width: 90%;
-                        }
-                    }
-                }
-                th.head1 {
-                    .head-wrapper {
-                        width: 128px;
-                    }
-                }
-                th.head2 {
-                    .head-wrapper {
-                        width: 192px;
-                    }
-                }
-                th.head3 {
-                    .head-wrapper {
-                        width: 144px;
-                    }
-                }
-            }
-            tr.pattern2 {
-                th.head4 {
-                    @include tableSame;
-                    .post-number-wrapper {
-                        .head-wrapper {
-                            width: 144px;
-                        }
-                        .post-number {
-                            display: flex;
-                            width: 284px;
-                            @media screen and (max-width:500px) {
-                                width: 255px;
-                            }
-                            margin: 0 auto;
-                            padding-top: 10px;
-                            padding-bottom: 20px;
-                            &__button {
-                                margin-left: 30px;
-                                input.searchAddress {
-                                    color: #fff;
-                                    background: rgb(100, 100, 100);
-                                    &:focus {
-                                        outline: none;
-                                    }
-                                    &:hover {
-                                        opacity: 0.8;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .prefecture-wrapper {
-                        .head-wrapper {
-                            width: 144px;
-                        }
-                        .prefecture {
-                            margin-top: 10px;
-                            margin-bottom: 20px;
-                        }
-                    }
-                    .address-wrapper {
-                        .head-wrapper {
-                            width: 128px;
-                        }
-                        .address-form {
-                            margin-top: 10px;
-                            margin-bottom: 20px;
-                            input {
-                                width: 362px;
-                                @media screen and (max-width:450px) {
-                                    width: 90%;
-                                }
-                            }
-                        }
-                    }
                 }
             }
             tr.pattern3 {
                 th.head5 {
-                    @include tableSame;
-                    .head-wrapper {
-                        width: 208px;
-                    }
-                }
-                textarea {
-                    width: 90%;
-                    height: 150px;
-                    margin-top: 10px;
-                    margin-bottom: 20px;
+                    height: 180px;
                 }
             }
         }
     }
-    .personalInfomation-form {
+    .input-contents2-text2 {
+        display: none;
+    }
+    @media screen and (max-width:400px) {
+        .input-contents2-text1 {
+            display: none;
+        }
+        .input-contents2-text2 {
+            display: block;
+        }
+    }
+    .input-contents2-text1 {
         width: 90%;
         margin: 0 auto;
-        margin-bottom: 30px;
-        textarea {
+        table {
             width: 100%;
+            border: 2px solid grey;
+            background-color: rgb(240, 240, 240);
+            tr {
+                th {
+                    width: 338px;
+                    padding: 20px 0 20px 40px;
+                    text-align: left;
+                    border-right: 1px solid rgb(200, 200, 200);
+                }
+                td {
+                    padding: 20px 0 20px 20px;
+                }
+            }
+        }
+        @media screen and (max-width:670px) {
+            table {
+                tr {
+                    th {
+                        width: 30%;
+                        padding-left: 0;
+                        p {
+                            text-align: center;
+                        }
+                    }
+                    td {
+                        padding-left: 0;
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
         }
     }
-    .agree-box-form {
+    .input-contents2-text2 {
         width: 90%;
         margin: 0 auto;
-        background-color: rgb(240, 240, 240);
-        border: 2px solid grey;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        &__wrapper {
-            width: 330px;
-            display: flex;
-            margin: 0 auto;
-            .required-box {
-                margin: 0;
-                margin-top: 3px;
-            }
-            .checkBox-wrapper {
-                margin-top: 3px;
-                margin-left: 10px;
-                font-weight: normal;
-                display: flex;
-                input.checkBox {
-                    width: 25px;
-                    height: 25px;
-                    &:focus {
-                        outline: none;
-                    }
-                }
-                p.text {
-                    padding-top: 5px;
-                    padding-left: 10px;
-                }
-            }
-        }
-        @media screen and (max-width:500px) {
-            &__wrapper {
-                width: 280px;
-                .required-box {
-                    width: 40px;
-                }
-                .checkBox-wrapper {
-                    margin-left: 5px;
-                    p.text {
-                        padding-left: 5px;
+        table {
+            width: 100%;
+            border: 2px solid grey;
+            background-color: rgb(240, 240, 240);
+            tr {
+                th {
+                    width: 338px;
+                    padding: 20px 0 20px 40px;
+                    text-align: left;
+                    border-right: 1px solid rgb(200, 200, 200);
+                    @media screen and (max-width:400px) {
+                        padding-left: 0;
+                        p {
+                            text-align: center;
+                        }
+                        p.itemText {
+                            padding-bottom: 10px;
+                        }
                     }
                 }
             }
-        }
-        p#error_msg {
-            margin-top: 10px;
-            margin-right: 0;
-            text-align: center;
         }
     }
-    .confirm-button-wrapper {
+    .pageBack {
+        width: 90%;
+        margin: 0 auto;
+        a {
+            text-decoration: none;
+            color: purple;
+        }
+    }
+    /*.submit-button-wrapper {
+        width: 160px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }*/
+    .submit-button-wrapper {
         width: 250px;
         @media screen and (max-width:400px) {
             width: 220px;

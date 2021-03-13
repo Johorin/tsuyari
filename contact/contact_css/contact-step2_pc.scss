@@ -18,8 +18,8 @@ input,select{vertical-align:middle}
 
 /*メイン*/
 * {
-    //font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    //font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     box-sizing: border-box;
     font-size: 16px;
     font-weight: normal;
@@ -66,6 +66,10 @@ input,select{vertical-align:middle}
     }
 }
 /*main部分*/
+/*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
+main {
+    background-color: rgb(250, 250, 250);
+}
 .contact-wrapper {
     padding-top: 80px;
     width: 801px;
@@ -126,6 +130,9 @@ input,select{vertical-align:middle}
     .textBox {
         padding: 20px;
     }
+    .input-contents-text2 {
+        display: none;
+    }
     .input-contents {
         table {
             width: 100%;
@@ -168,6 +175,9 @@ input,select{vertical-align:middle}
             }
         }
     }
+    .input-contents2-text2 {
+        display: none;
+    }
     .input-contents2 {
         table {
             width: 100%;
@@ -198,11 +208,25 @@ input,select{vertical-align:middle}
             color: purple;
         }
     }
-    .submit-button {
-        width: 160px;
+    .submit-button-wrapper {
+        width: 250px; 
         margin: 0 auto;
         margin-top: 20px;
-        margin-bottom: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        input.button {
+            width: 100%;
+            color: #fff;
+            background: #00aa0c;
+            padding: 13px;
+            padding-right: 20px;
+            padding-left: 20px;
+            text-align: center;
+            border: none;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
     }
 }
 /*footer部分*/
@@ -235,7 +259,7 @@ input,select{vertical-align:middle}
 }
 .footer-wrapper2 {
     width: 100%;
-    background: url("../../kosyu_image/backgroundFooter.png") center center / cover no-repeat;
+    background: url("../../kosyu/kosyu_image/backgroundFooter.png") center center / cover no-repeat;
     position: relative;
     .pageTop {
         position: absolute;

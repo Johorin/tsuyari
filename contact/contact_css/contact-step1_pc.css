@@ -146,6 +146,12 @@ main {
 }
 
 /*main部分*/
+#error_msg {
+  color: red;
+  text-align: right;
+  margin-right: 30px;
+}
+
 .contact-wrapper {
   padding-top: 80px;
   width: 801px;
@@ -349,6 +355,14 @@ main {
   background: #646464;
 }
 
+.contact-wrapper form table tr.pattern2 td.data4 .post-number__button input.searchAddress:focus {
+  outline: none;
+}
+
+.contact-wrapper form table tr.pattern2 td.data4 .post-number__button input.searchAddress:hover {
+  opacity: 0.8;
+}
+
 .contact-wrapper form table tr.pattern2 td.data4 .prefecture,
 .contact-wrapper form table tr.pattern2 td.data4 .address-form {
   margin-top: 38px;
@@ -405,9 +419,19 @@ main {
   height: 25px;
 }
 
+.contact-wrapper .agree-box-form__wrapper .checkBox-wrapper input.checkBox:focus {
+  outline: none;
+}
+
 .contact-wrapper .agree-box-form__wrapper .checkBox-wrapper p.text {
   padding-top: 5px;
   padding-left: 10px;
+}
+
+.contact-wrapper .agree-box-form p#error_msg {
+  margin-top: 10px;
+  margin-right: 0;
+  text-align: center;
 }
 
 .contact-wrapper .textBox-center {
@@ -433,6 +457,10 @@ main {
   padding-left: 20px;
   text-align: center;
   border: none;
+}
+
+.contact-wrapper .confirm-button-wrapper input.button:hover {
+  opacity: 0.8;
 }
 
 /*footer部分*/

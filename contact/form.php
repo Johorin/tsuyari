@@ -1,3 +1,62 @@
+<?php
+//セッション機能を使うときはまず宣言しておく。
+session_start();
+//空のerror配列を宣言しておく。
+$error = [];
+
+$prefectures = [
+    "都道府県", "北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県",
+    "茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県",
+    "新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県",
+    "静岡県", "愛知県", "三重県", "滋賀県", "京都府", "大阪府", "兵庫県",
+    "奈良県", "和歌山県", "鳥取県", "島根県", "岡山県", "広島県", "山口県",
+    "徳島県", "香川県", "愛媛県", "高知県", "福岡県", "佐賀県", "長崎県",
+    "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"
+];
+
+//postが起こったら（submitボタンが送信されたら）true。
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    //安全なデータだということを確認してからpost変数に格納。
+    $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    //送信された必須項目が空欄であれば定義しておいたerror配列の該当キーに'blank'データを格納。
+    //nameはお名前。５０文字以上入力されてもエラーに。
+    if ($post['name'] === '') {
+        $error['name'] = 'blank';
+    } elseif (mb_strlen($post['name'] > 50)) {
+        $error['name'] = 'long';
+    }
+    //mail-addressはメールアドレス。入力されたメールアドレスのフォーマットもチェック
+    if ($post['mail-address'] === '') {
+        $error['mail-address'] = 'blank';
+    } elseif (!filter_var($post['mail-address'], FILTER_VALIDATE_EMAIL)) {
+        $error['mail-address'] = 'email';
+    }
+    //contact-contentはお問い合わせ内容
+    if ($post['contact-content'] === '') {
+        $error['contact-content'] = 'blank';
+    }
+    //checkBoxはチェックボックス
+    if (!isset($post['checkBox']) || !$post['checkBox']) {
+        $error['checkBox'] = 'blank';
+    }
+
+    //error配列の成分数を数え、0であればerrorなしとみなせる。
+    if (count($error) === 0) {
+        // エラーがないので確認画面に移動
+        //セッションにpost変数の内容を保存しておく。
+        $_SESSION['form'] = $post;
+        //このように記述することで指定した画面に画面遷移させる。
+        header('Location: confirm.php');
+        exit();
+    }
+} else {    //送信ボタンが押されていない時実行。
+    //confirm.phpから戻ってきた時は以下を実行。
+    if (isset($_SESSION['form'])) {
+        //保存しておいたセッションの内容をpost変数に戻す。
+        $post = $_SESSION['form'];
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -7,8 +66,8 @@
     <link rel="stylesheet" href="./contact_css/contact-step1_pc.css" media="screen and (min-width:900px)">
     <!--(タブレット〜)スマホ-->
     <link rel="stylesheet" href="./contact_css/contact-step1_sp.css" media="screen and (min-width:320px) and (max-width:899px)">
-    <link rel="icon" sizes="32x32" href="./logo-icon/logo-icon-32×32.ico">
-    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="./logo-icon/logo-icon-152×152.png">
+    <link rel="icon" sizes="32x32" href="../logo-icon/logo-icon-32×32.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="../logo-icon/logo-icon-152×152.png">
     <title>国産WAX脱毛商材、艶人の販売代理店店｜Luire</title>
     <meta name="description" content="純国産のWAX脱毛商材、艶人の魅力をお伝えしています。植物由来成分100％でどなたでも安心して使える脱毛商材です。">
     <meta name="keywords" content="艶人,WAX脱毛,脱毛商材,国産脱毛材,Luire,ルイ―ル,栃木県,小山市">
@@ -28,7 +87,6 @@
             <li><a href="#">お問い合わせ</a></li>
         </ul>
     </div>
-    <!--ハンバーガーメニューの実装がうまくいかなかったので後ほど別の方法で作ります-->
     <div class="header-wrapper__hamburger-menu">
         <button class="menu-trigger" id="hbmn">
             <span></span>
@@ -64,7 +122,7 @@
         <p>　</p>
         <p>＞お電話の場合　050-3503-7195</p>
     </div>
-    <form class="pc" action="">
+    <form class="pc" action="" method="post" novalidate><!--novalidateはhtmlで用意されている既存のバリデーションを無効にする-->
         <table>
             <tr class="pattern1">
                 <th class="head1">
@@ -76,7 +134,15 @@
                     </div>
                 </th>
                 <td class="data1">
-                    <input type="text" name="name" class="name" size="43" placeholder="お名前を記入してください。">
+                    <!--valueの中身はconfirm.phpから戻ってきた時（post変数に情報が格納されている時）postからname="name"を受け取り、受け取る文字列が安全かどうかチェックしてからデフォルトで入力済みの内容を入れておく記述をしている。requiredは必須項目であることを示している。-->
+                    <input type="text" name="name" class="name" size="43" placeholder="お名前を記入してください。" value="<?php echo htmlspecialchars($post['name']); ?>" required>
+                    <!--error配列に'blank'というデータが格納されていればendifまでのhtmlを表示させる。-->
+                    <?php if ($error['name'] === 'blank') : ?>
+                    <p class="error_msg" id="error_msg">※お名前をご記入下さい</p>
+                    <?php endif; ?>
+                    <?php if ($error['name'] === 'long') : ?>
+                    <p class="error_msg" id="error_msg">※お名前が長すぎます</p>
+                    <?php endif; ?>
                 </td>
             </tr>
             <tr class="pattern1">
@@ -89,7 +155,13 @@
                     </div>
                 </th>
                 <td class="data2">
-                    <input type="text" name="mail-address" size="43" placeholder="例)aaa@example.com">
+                    <input type="text" name="mail-address" size="43" placeholder="例)aaa@example.com" value="<?php echo htmlspecialchars($post['mail-address']); ?>" required>
+                    <?php if ($error['mail-address'] === 'blank') : ?>
+                    <p class="error_msg" id="error_msg">※メールアドレスをご記入下さい</p>
+                    <?php endif; ?>
+                    <?php if ($error['mail-address'] === 'email') : ?>
+                    <p class="error_msg" id="error_msg">※メールアドレスのフォーマットが正しくありません</p>
+                    <?php endif; ?>
                 </td>
             </tr>
             <tr class="pattern1">
@@ -102,7 +174,7 @@
                     </div>
                 </th>
                 <td class="data3">
-                    <input type="text" name="phone-number" size="43" placeholder="例)12345678910">
+                    <input type="text" name="phone-number" size="43" placeholder="例)12345678910" value="<?php echo htmlspecialchars($post['phone-number']) ?>">
                 </td>
             </tr>
             <tr class="pattern2">
@@ -129,14 +201,14 @@
                 <td class="data4">
                     <div class="post-number">
                         <div class="post-number__form">
-                            <input type="text" name="phone-number" placeholder="例)000000">
+                            <input type="text" class="zip" name="zip" placeholder="例)000000" value="<?php echo htmlspecialchars($post['zip']) ?>">
                         </div>
                         <div class="post-number__button">
-                            <input class="searchAddress" type="button" value="住所検索">
+                            <input class="searchAddress ajaxzip3" type="button" value="住所検索">
                         </div>
                     </div>
                     <div class="prefecture">
-                        <select class="prefectureSelect" name="pref_name">
+                        <!--<select name="pref_name" class="prefectureSelect pref" name="pref_name pref">
                             <option value="" selected>都道府県</option>
                             <option value="北海道">北海道</option>
                             <option value="青森県">青森県</option>
@@ -185,10 +257,19 @@
                             <option value="宮崎県">宮崎県</option>
                             <option value="鹿児島県">鹿児島県</option>
                             <option value="沖縄県">沖縄県</option>
+                        </select>-->
+                        <select name="pref" class="prefectureSelect pref">
+                            <?php foreach ($prefectures as $index => $value) : ?>
+                                <?php if ($post['pref'] == $index) : ?>
+                                    <option value="<?php echo $index ?>" selected><?php echo $value ?></option>
+                                <?php else : ?>
+                                    <option value="<?php echo $index ?>"><?php echo $value ?></option>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
                         </select>
                     </div>
                     <div class="address-form">
-                        <input type="text" name="address">
+                        <input type="text" name="address" value="<?php echo htmlspecialchars($post['address']) ?>">
                     </div>
                 </td>
             </tr>
@@ -202,12 +283,43 @@
                     </div>
                 </th>
                 <td class="data5">
-                    <textarea name="contact-content" id="" placeholder="お問い合わせの内容を記入してください。"></textarea>
+                    <textarea name="contact-content" id="" placeholder="お問い合わせの内容を記入してください。" required><?php echo htmlspecialchars($post['contact-content']) ?></textarea>
+                    <?php if ($error['contact-content'] === 'blank') : ?>
+                    <p class="error_msg" id="error_msg">※お問い合わせ内容をご記入下さい</p>
+                    <?php endif; ?>
                 </td>
             </tr>
         </table>
+        <div class="textBox">
+            <p>＞個人情報の取り扱いについて</p>
+            <p>下記事項をご確認の上同意していただける場合は[同意する]にチェックを入れてください。</p>
+        </div>
+        <div class="personalInfomation-form">
+            <textarea name="privacy" rows="10" cols="80" readonly="readonly">ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。</textarea>
+        </div>
+        <div class="agree-box-form">
+            <div class="agree-box-form__wrapper">
+                <div class="required-box">
+                    <p>必須</p>
+                </div>
+                <div class="checkBox-wrapper">
+                    <input class="checkBox" name="checkBox" type="checkbox" value="同意する" required <?php if ($post['checkBox']) { echo 'checked'; } ?>>
+                    <p class="text">個人情報の取り扱いに同意する</p>
+                </div>
+            </div>
+            <?php if ($error['checkBox'] === 'blank') : ?>
+            <p class="error_msg" id="error_msg">※個人情報保護方針をお読み頂いた上で同意してください</p>
+            <?php endif; ?>
+        </div>
+        <div class="textBox textBox-center">
+            <p>「入力内容の確認画面へ」ボタンをクリックして入力内容のご確認をお願いします。</p>
+            <p>ご入力、誠にありがとうございました。</p>
+        </div>
+        <div class="confirm-button-wrapper">
+            <input class="button" type="submit" value="入力内容を確認する">
+        </div>
     </form>
-    <form class="sp" action="">
+    <form class="sp" action="" method="post" novalidate>
         <table>
             <tr class="pattern1">
                 <th class="head1">
@@ -217,7 +329,15 @@
                             <p>必須</p>
                         </div>
                     </div>
-                    <input type="text" name="name" class="name" size="43" placeholder="お名前を記入してください。">
+                    <!--valueの中身はconfirm.phpから戻ってきた時（post変数に情報が格納されている時）postからname="name"を受け取り、受け取る文字列が安全かどうかチェックしてからデフォルトで入力済みの内容を入れておく記述をしている。requiredは必須項目であることを示している。-->
+                    <input type="text" name="name" class="name" size="43" placeholder="お名前を記入してください。" value="<?php echo htmlspecialchars($post['name']); ?>" required>
+                    <!--error配列に'blank'というデータが格納されていればendifまでのhtmlを表示させる。-->
+                    <?php if ($error['name'] === 'blank') : ?>
+                    <p class="error_msg" id="error_msg">※お名前をご記入下さい</p>
+                    <?php endif; ?>
+                    <?php if ($error['name'] === 'long') : ?>
+                    <p class="error_msg" id="error_msg">※お名前が長すぎます</p>
+                    <?php endif; ?>
                 </th>
             </tr>
             <tr class="pattern1">
@@ -228,7 +348,13 @@
                             <p>必須</p>
                         </div>
                     </div>
-                    <input type="text" name="mail-address" size="43" placeholder="例)aaa@example.com">
+                    <input type="text" name="mail-address" size="43" placeholder="例)aaa@example.com" value="<?php echo htmlspecialchars($post['mail-address']); ?>" required>
+                    <?php if ($error['mail-address'] === 'blank') : ?>
+                    <p class="error_msg" id="error_msg">※メールアドレスをご記入下さい</p>
+                    <?php endif; ?>
+                    <?php if ($error['mail-address'] === 'email') : ?>
+                    <p class="error_msg" id="error_msg">※メールアドレスのフォーマットが正しくありません</p>
+                    <?php endif; ?>
                 </th>
             </tr>
             <tr class="pattern1">
@@ -239,7 +365,7 @@
                             <p>任意</p>
                         </div>
                     </div>
-                    <input type="text" name="phone-number" size="43" placeholder="例)12345678910">
+                    <input type="text" name="phone-number" size="43" placeholder="例)12345678910" value="<?php echo htmlspecialchars($post['phone-number']) ?>">
                 </th>
             </tr>
             <tr class="pattern2">
@@ -253,10 +379,10 @@
                         </div>
                         <div class="post-number">
                             <div class="post-number__form">
-                                <input type="text" name="phone-number" placeholder="例)000000">
+                                <input type="text" name="zip" class="zip" placeholder="例)000000" value="<?php echo htmlspecialchars($post['zip']) ?>">
                             </div>
                             <div class="post-number__button">
-                                <input class="searchAddress" type="button" value="住所検索">
+                                <input class="searchAddress ajaxzip3" type="button" value="住所検索">
                             </div>
                         </div>
                     </div>
@@ -268,7 +394,7 @@
                             </div>
                         </div>
                         <div class="prefecture">
-                            <select class="prefectureSelect" name="pref_name">
+                            <!--<select class="prefectureSelect pref" name="pref_name pref">
                                 <option value="" selected>都道府県</option>
                                 <option value="北海道">北海道</option>
                                 <option value="青森県">青森県</option>
@@ -317,6 +443,15 @@
                                 <option value="宮崎県">宮崎県</option>
                                 <option value="鹿児島県">鹿児島県</option>
                                 <option value="沖縄県">沖縄県</option>
+                            </select>-->
+                            <select name="pref" class="prefectureSelect pref">
+                                <?php foreach ($prefectures as $index => $value) : ?>
+                                    <?php if ($post['pref'] == $index) : ?>
+                                        <option value="<?php echo $index ?>" selected><?php echo $value ?></option>
+                                    <?php else : ?>
+                                        <option value="<?php echo $index ?>"><?php echo $value ?></option>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                     </div>
@@ -328,7 +463,7 @@
                             </div>
                         </div>
                         <div class="address-form">
-                            <input type="text" name="address">
+                            <input type="text" name="address" value="<?php echo htmlspecialchars($post['address']) ?>">
                         </div>
                     </div>
                 </th>
@@ -341,36 +476,42 @@
                             <p>必須</p>
                         </div>
                     </div>
-                    <textarea name="contact-content" id="" placeholder="お問い合わせの内容を記入してください。"></textarea>
+                    <textarea name="contact-content" id="" placeholder="お問い合わせの内容を記入してください。" required><?php echo htmlspecialchars($post['contact-content']) ?></textarea>
+                    <?php if ($error['contact-content'] === 'blank') : ?>
+                    <p class="error_msg" id="error_msg">※お問い合わせ内容をご記入下さい</p>
+                    <?php endif; ?>
                 </th>
             </tr>
         </table>
-    </form>
-    <div class="textBox">
-        <p>＞個人情報の取り扱いについて</p>
-        <p>下記事項をご確認の上同意していただける場合は[同意する]にチェックを入れてください。</p>
-    </div>
-    <div class="personalInfomation-form">
-        <textarea name="privacy" rows="10" cols="80" readonly="readonly">ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。</textarea>
-    </div>
-    <div class="agree-box-form">
-        <div class="agree-box-form__wrapper">
-            <div class="required-box">
-                <p>必須</p>
-            </div>
-            <div class="checkBox-wrapper">
-                <input class="checkBox" type="checkbox" value="同意する">
-                <p class="text">個人情報の取り扱いに同意する</p>
-            </div>
+        <div class="textBox">
+            <p>＞個人情報の取り扱いについて</p>
+            <p>下記事項をご確認の上同意していただける場合は[同意する]にチェックを入れてください。</p>
         </div>
-    </div>
-    <div class="textBox textBox-center">
-        <p>「入力内容の確認画面へ」ボタンをクリックして入力内容のご確認をお願いします。</p>
-        <p>ご入力、誠にありがとうございました。</p>
-    </div>
-    <div class="confirm-button-wrapper">
-        <input class="button" type="submit" value="入力内容を確認する">
-    </div>
+        <div class="personalInfomation-form">
+            <textarea name="privacy" rows="10" cols="80" readonly="readonly">ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。ここに個人情報保護方針が入ります。</textarea>
+        </div>
+        <div class="agree-box-form">
+            <div class="agree-box-form__wrapper">
+                <div class="required-box">
+                    <p>必須</p>
+                </div>
+                <div class="checkBox-wrapper">
+                    <input name="checkBox" class="checkBox" type="checkbox" value="同意する" required>
+                    <p class="text">個人情報の取り扱いに同意する</p>
+                </div>
+            </div>
+            <?php if ($error['checkBox'] === 'blank') : ?>
+            <p class="error_msg" id="error_msg">※個人情報保護方針をお読み頂いた上で同意してください</p>
+            <?php endif; ?>
+        </div>
+        <div class="textBox textBox-center">
+            <p>「入力内容の確認画面へ」ボタンをクリックして入力内容のご確認をお願いします。</p>
+            <p>ご入力、誠にありがとうございました。</p>
+        </div>
+        <div class="confirm-button-wrapper">
+            <input class="button" type="submit" value="入力内容を確認する">
+        </div>
+    </form>
 </div>
 </main>
 <footer>
@@ -404,7 +545,7 @@
 </div>
 <nav class="hamburgermenu">
     <ul class="nav">
-        <li class="menuText"><h2>MENU</h2></li>
+        <li class="menuText"><h2>-MENU-</h2></li>
         <li><a href="#">HOME</a></li>
         <li><a href="#">導入講習</a></li>
         <li><a href="#" class="last">お問い合わせ</a></li>
@@ -412,8 +553,11 @@
 </nav>
 </footer>
 <!--jQuery(3.5.1)の読み込み-->
-<script src="./jQuery/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="./jQuery/index_fadeIn.js"></script>
+<script src="../jQuery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="../jQuery/contact-step1.js"></script>
+<!--ajaxzip3の読み込み（住所自動取得）-->
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../jQuery/auto_search.js"></script>
 <script>
     /*アンカーリンクのアニメーション*/
     $(function () {

@@ -70,6 +70,11 @@ main {
     }
 }
 /*main部分*/
+#error_msg {
+    color: red;
+    text-align: right;
+    margin-right: 30px;
+}
 .contact-wrapper {
     padding-top: 80px;
     width: 801px;
@@ -224,6 +229,12 @@ main {
                             input.searchAddress {
                                 color: #fff;
                                 background: rgb(100, 100, 100);
+                                &:focus {
+                                    outline: none;
+                                }
+                                &:hover {
+                                    opacity: 0.8;
+                                }
                             }
                         }
                         /*&__form {
@@ -281,12 +292,20 @@ main {
                 input.checkBox {
                     width: 25px;
                     height: 25px;
+                    &:focus {
+                        outline: none;
+                    }
                 }
                 p.text {
                     padding-top: 5px;
                     padding-left: 10px;
                 }
             }
+        }
+        p#error_msg {
+            margin-top: 10px;
+            margin-right: 0;
+            text-align: center;
         }
     }
     .textBox-center {
@@ -307,6 +326,9 @@ main {
             padding-left: 20px;
             text-align: center;
             border: none;
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
 }

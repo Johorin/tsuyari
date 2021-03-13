@@ -283,12 +283,6 @@ input, select {
 }
 
 /*main部分*/
-#error_msg {
-  color: red;
-  text-align: right;
-  margin-right: 30px;
-}
-
 /*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
 main {
   background-color: #fafafa;
@@ -298,6 +292,12 @@ main {
 .contact-wrapper {
   padding-top: calc(60 / 320 * 100vw);
   margin: 0 auto;
+  /*.submit-button-wrapper {
+        width: 160px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }*/
 }
 
 @media screen and (max-width: 500px) {
@@ -332,7 +332,7 @@ main {
   width: 640px;
   height: 60px;
   margin: 0 auto;
-  background: url("../contact_image/step1.png") center center/contain no-repeat;
+  background: url("../contact_image/step2.png") center center/contain no-repeat;
   position: relative;
 }
 
@@ -356,7 +356,7 @@ main {
 
 .contact-wrapper .step-wrapper .step1 p,
 .contact-wrapper .step-wrapper .step1 h3 {
-  color: #fff;
+  color: #000;
 }
 
 .contact-wrapper .step-wrapper .step2 {
@@ -367,7 +367,7 @@ main {
 
 .contact-wrapper .step-wrapper .step2 p,
 .contact-wrapper .step-wrapper .step2 h3 {
-  color: #000;
+  color: #fff;
 }
 
 .contact-wrapper .step-wrapper .step3 {
@@ -413,7 +413,7 @@ main {
 @media screen and (max-width: 600px) {
   .contact-wrapper .step-wrapper {
     width: 420px;
-    background: url("../contact_image/step1-sp.png") center center/contain no-repeat;
+    background: url("../contact_image/step2-sp.png") center center/contain no-repeat;
   }
   .contact-wrapper .step-wrapper .step2 {
     left: 155px;
@@ -485,21 +485,6 @@ main {
   }
 }
 
-.contact-wrapper input,
-.contact-wrapper textarea,
-.contact-wrapper select {
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #000;
-  outline: none;
-}
-
-.contact-wrapper input:focus,
-.contact-wrapper textarea:focus,
-.contact-wrapper select:focus {
-  outline: #000 solid 2px;
-}
-
 .contact-wrapper .textBox {
   padding: 20px;
   margin: 0 auto;
@@ -522,428 +507,205 @@ main {
   }
 }
 
-.contact-wrapper .required-box,
-.contact-wrapper .optional-box {
-  width: 50px;
-  height: 30px;
-  padding: 5px;
-  margin-left: 15px;
-  background-color: red;
-}
-
-.contact-wrapper .required-box p,
-.contact-wrapper .optional-box p {
-  color: #fff;
-  text-align: center;
-}
-
-.contact-wrapper .required-box {
-  background-color: red;
-}
-
-.contact-wrapper .optional-box {
-  background-color: orange;
-}
-
-.contact-wrapper .head-wrapper {
-  padding-top: 20px;
-  padding-right: 25px;
-  padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contact-wrapper .head-wrapper p.head {
-  margin: 0 0 0 auto;
-  margin-top: 5px;
-}
-
-.contact-wrapper .head-wrapper .required-box,
-.contact-wrapper .head-wrapper .optional-box {
-  margin: 0 0 0 auto;
-}
-
-.contact-wrapper .head-wrapper-address {
-  padding-left: 14px;
-}
-
-.contact-wrapper form.sp {
+.contact-wrapper .input-contents-text2 {
   display: none;
 }
 
 @media screen and (max-width: 670px) {
-  .contact-wrapper form.pc {
+  .contact-wrapper .input-contents-text1 {
     display: none;
   }
-  .contact-wrapper form.sp {
+  .contact-wrapper .input-contents-text2 {
     display: block;
   }
 }
 
-.contact-wrapper form.pc {
+.contact-wrapper .input-contents-text1 {
   width: 90%;
   margin: 0 auto;
 }
 
-.contact-wrapper form.pc table {
-  width: 100%;
-  border: 2px solid grey;
-  background-color: #f0f0f0;
-  /*tr.pattern1 {
-                td {
-                    padding-left: 20px;
-                }
-            }*/
-}
-
-.contact-wrapper form.pc table tr {
-  border-bottom: 1px solid #c8c8c8;
-}
-
-.contact-wrapper form.pc table th {
-  border-right: 1px solid #c8c8c8;
-}
-
-.contact-wrapper form.pc table td {
-  padding-left: 20px;
-}
-
-.contact-wrapper form.pc table input {
-  width: 95%;
-}
-
-.contact-wrapper form.pc table textarea {
-  width: 95%;
-  height: 150px;
-}
-
-.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /*&__form {
-                            position: relative;
-                            top: -158px;
-                            left: 20px;
-                        }
-                        &__button {
-                            position: relative;
-                            top: -158px;
-                            left: 30px;
-                        }*/
-}
-
-.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__form input {
-  width: 150px;
-}
-
-.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__button {
-  margin-left: 20px;
-}
-
-.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__button input {
-  width: 100px;
-}
-
-.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__button input.searchAddress {
-  color: #fff;
-  background: #646464;
-}
-
-.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__button input.searchAddress:focus {
-  outline: none;
-}
-
-.contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__button input.searchAddress:hover {
-  opacity: 0.8;
-}
-
-.contact-wrapper form.pc table tr.pattern2 td.data4 .prefecture,
-.contact-wrapper form.pc table tr.pattern2 td.data4 .address-form {
-  margin-top: 38px;
-}
-
-.contact-wrapper form.pc table tr.pattern3 th {
-  vertical-align: top;
-}
-
-.contact-wrapper form.pc table tr.pattern3 td {
-  padding-top: 20px;
-  padding-bottom: 16px;
-}
-
-.contact-wrapper form.sp {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.contact-wrapper form.sp table {
+.contact-wrapper .input-contents-text1 table {
   width: 100%;
   border: 2px solid grey;
   background-color: #f0f0f0;
 }
 
-.contact-wrapper form.sp table tr {
-  border-bottom: 1px solid #c8c8c8;
-}
-
-.contact-wrapper form.sp table th {
+.contact-wrapper .input-contents-text1 table th {
+  width: 30%;
   border-right: 1px solid #c8c8c8;
 }
 
-.contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper,
-.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper,
-.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper {
-  padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0 auto;
+.contact-wrapper .input-contents-text1 table tr {
+  width: 70%;
+  border-bottom: 1px solid #c8c8c8;
 }
 
-.contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper p.head,
-.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper p.head,
-.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper p.head {
-  margin: 0;
-  margin-top: 5px;
-  margin-right: 30px;
+.contact-wrapper .input-contents-text1 table tr.pattern1 th {
+  padding: 30px 0 30px 40px;
+  text-align: left;
 }
 
-.contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper .required-box,
-.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper .required-box,
-.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper .required-box {
-  margin: 0;
+.contact-wrapper .input-contents-text1 table tr.pattern1 td {
+  padding: 30px 0 30px 20px;
+  text-align: left;
 }
 
-.contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper .optional-box,
-.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper .optional-box,
-.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper .optional-box {
-  margin: 0;
+.contact-wrapper .input-contents-text1 table tr.pattern2 th {
+  padding: 30px 0 60px 40px;
+  text-align: left;
 }
 
-.contact-wrapper form.sp table tr.pattern1 th.head1 input,
-.contact-wrapper form.sp table tr.pattern1 th.head2 input,
-.contact-wrapper form.sp table tr.pattern1 th.head3 input {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 362px;
+.contact-wrapper .input-contents-text1 table tr.pattern2 td {
+  padding: 30px 0 60px 20px;
+  text-align: left;
 }
 
-@media screen and (max-width: 450px) {
-  .contact-wrapper form.sp table tr.pattern1 th.head1 input,
-  .contact-wrapper form.sp table tr.pattern1 th.head2 input,
-  .contact-wrapper form.sp table tr.pattern1 th.head3 input {
-    width: 90%;
+.contact-wrapper .input-contents-text1 table tr.pattern3 th {
+  padding: 30px 0 120px 40px;
+  text-align: left;
+}
+
+.contact-wrapper .input-contents-text1 table tr.pattern3 td {
+  padding: 30px 0 120px 20px;
+}
+
+@media screen and (max-width: 780px) {
+  .contact-wrapper .input-contents-text1 table tr.pattern1 th,
+  .contact-wrapper .input-contents-text1 table tr.pattern1 td,
+  .contact-wrapper .input-contents-text1 table tr.pattern2 th,
+  .contact-wrapper .input-contents-text1 table tr.pattern2 td,
+  .contact-wrapper .input-contents-text1 table tr.pattern3 th,
+  .contact-wrapper .input-contents-text1 table tr.pattern3 td {
+    padding-left: 0;
+    text-align: center;
   }
 }
 
-.contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper {
-  width: 128px;
-}
-
-.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper {
-  width: 192px;
-}
-
-.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper {
-  width: 144px;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper {
-  padding: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.contact-wrapper .input-contents-text2 {
+  width: 90%;
   margin: 0 auto;
 }
 
-.contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper p.head {
-  margin: 0;
-  margin-top: 5px;
-  margin-right: 30px;
+.contact-wrapper .input-contents-text2 table {
+  width: 100%;
+  border: 2px solid grey;
+  background-color: #f0f0f0;
 }
 
-.contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper .required-box {
-  margin: 0;
+.contact-wrapper .input-contents-text2 table tr {
+  border-bottom: 1px solid #c8c8c8;
 }
 
-.contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper .optional-box {
-  margin: 0;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .head-wrapper {
-  width: 144px;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 284px;
-  margin: 0 auto;
-  padding-top: 10px;
+.contact-wrapper .input-contents-text2 table th {
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 500px) {
-  .contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number {
-    width: 255px;
-  }
+.contact-wrapper .input-contents-text2 table th p.itemText {
+  padding-bottom: 20px;
 }
 
-.contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number__button {
-  margin-left: 30px;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number__button input.searchAddress {
-  color: #fff;
-  background: #646464;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number__button input.searchAddress:focus {
-  outline: none;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number__button input.searchAddress:hover {
-  opacity: 0.8;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .prefecture-wrapper .head-wrapper {
-  width: 144px;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .prefecture-wrapper .prefecture {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .address-wrapper .head-wrapper {
-  width: 128px;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .address-wrapper .address-form {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.contact-wrapper form.sp table tr.pattern2 th.head4 .address-wrapper .address-form input {
-  width: 362px;
-}
-
-@media screen and (max-width: 450px) {
-  .contact-wrapper form.sp table tr.pattern2 th.head4 .address-wrapper .address-form input {
-    width: 90%;
-  }
-}
-
-.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper {
-  padding: 0;
-  padding-top: 10px;
+.contact-wrapper .input-contents-text2 table th p.postNumber {
   padding-bottom: 10px;
-  margin: 0 auto;
 }
 
-.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper p.head {
-  margin: 0;
-  margin-top: 5px;
-  margin-right: 30px;
+.contact-wrapper .input-contents-text2 table tr.pattern3 th.head5 {
+  height: 180px;
 }
 
-.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper .required-box {
-  margin: 0;
+.contact-wrapper .input-contents2-text2 {
+  display: none;
 }
 
-.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper .optional-box {
-  margin: 0;
+@media screen and (max-width: 400px) {
+  .contact-wrapper .input-contents2-text1 {
+    display: none;
+  }
+  .contact-wrapper .input-contents2-text2 {
+    display: block;
+  }
 }
 
-.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper {
-  width: 208px;
-}
-
-.contact-wrapper form.sp table tr.pattern3 textarea {
-  width: 90%;
-  height: 150px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.contact-wrapper .personalInfomation-form {
+.contact-wrapper .input-contents2-text1 {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 30px;
 }
 
-.contact-wrapper .personalInfomation-form textarea {
+.contact-wrapper .input-contents2-text1 table {
   width: 100%;
+  border: 2px solid grey;
+  background-color: #f0f0f0;
 }
 
-.contact-wrapper .agree-box-form {
+.contact-wrapper .input-contents2-text1 table tr th {
+  width: 338px;
+  padding: 20px 0 20px 40px;
+  text-align: left;
+  border-right: 1px solid #c8c8c8;
+}
+
+.contact-wrapper .input-contents2-text1 table tr td {
+  padding: 20px 0 20px 20px;
+}
+
+@media screen and (max-width: 670px) {
+  .contact-wrapper .input-contents2-text1 table tr th {
+    width: 30%;
+    padding-left: 0;
+  }
+  .contact-wrapper .input-contents2-text1 table tr th p {
+    text-align: center;
+  }
+  .contact-wrapper .input-contents2-text1 table tr td {
+    padding-left: 0;
+  }
+  .contact-wrapper .input-contents2-text1 table tr td p {
+    text-align: center;
+  }
+}
+
+.contact-wrapper .input-contents2-text2 {
   width: 90%;
   margin: 0 auto;
-  background-color: #f0f0f0;
-  border: 2px solid grey;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
-.contact-wrapper .agree-box-form__wrapper {
-  width: 330px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.contact-wrapper .input-contents2-text2 table {
+  width: 100%;
+  border: 2px solid grey;
+  background-color: #f0f0f0;
+}
+
+.contact-wrapper .input-contents2-text2 table tr th {
+  width: 338px;
+  padding: 20px 0 20px 40px;
+  text-align: left;
+  border-right: 1px solid #c8c8c8;
+}
+
+@media screen and (max-width: 400px) {
+  .contact-wrapper .input-contents2-text2 table tr th {
+    padding-left: 0;
+  }
+  .contact-wrapper .input-contents2-text2 table tr th p {
+    text-align: center;
+  }
+  .contact-wrapper .input-contents2-text2 table tr th p.itemText {
+    padding-bottom: 10px;
+  }
+}
+
+.contact-wrapper .pageBack {
+  width: 90%;
   margin: 0 auto;
 }
 
-.contact-wrapper .agree-box-form__wrapper .required-box {
-  margin: 0;
-  margin-top: 3px;
+.contact-wrapper .pageBack a {
+  text-decoration: none;
+  color: purple;
 }
 
-.contact-wrapper .agree-box-form__wrapper .checkBox-wrapper {
-  margin-top: 3px;
-  margin-left: 10px;
-  font-weight: normal;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contact-wrapper .agree-box-form__wrapper .checkBox-wrapper input.checkBox {
-  width: 25px;
-  height: 25px;
-}
-
-.contact-wrapper .agree-box-form__wrapper .checkBox-wrapper input.checkBox:focus {
-  outline: none;
-}
-
-.contact-wrapper .agree-box-form__wrapper .checkBox-wrapper p.text {
-  padding-top: 5px;
-  padding-left: 10px;
-}
-
-@media screen and (max-width: 500px) {
-  .contact-wrapper .agree-box-form__wrapper {
-    width: 280px;
-  }
-  .contact-wrapper .agree-box-form__wrapper .required-box {
-    width: 40px;
-  }
-  .contact-wrapper .agree-box-form__wrapper .checkBox-wrapper {
-    margin-left: 5px;
-  }
-  .contact-wrapper .agree-box-form__wrapper .checkBox-wrapper p.text {
-    padding-left: 5px;
-  }
-}
-
-.contact-wrapper .agree-box-form p#error_msg {
-  margin-top: 10px;
-  margin-right: 0;
-  text-align: center;
-}
-
-.contact-wrapper .confirm-button-wrapper {
+.contact-wrapper .submit-button-wrapper {
   width: 250px;
   margin: 0 auto;
   margin-top: 20px;
@@ -954,12 +716,12 @@ main {
 }
 
 @media screen and (max-width: 400px) {
-  .contact-wrapper .confirm-button-wrapper {
+  .contact-wrapper .submit-button-wrapper {
     width: 220px;
   }
 }
 
-.contact-wrapper .confirm-button-wrapper input.button {
+.contact-wrapper .submit-button-wrapper input.button {
   width: 100%;
   color: #fff;
   background: #00aa0c;
@@ -970,7 +732,7 @@ main {
   border: none;
 }
 
-.contact-wrapper .confirm-button-wrapper input.button:hover {
+.contact-wrapper .submit-button-wrapper input.button:hover {
   opacity: 0.8;
 }
 
@@ -1256,4 +1018,4 @@ nav.hamburgermenu {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-/*# sourceMappingURL=contact-step1_sp.css.map */
+/*# sourceMappingURL=contact-step2_sp.css.map */
