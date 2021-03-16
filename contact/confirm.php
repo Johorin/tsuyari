@@ -19,25 +19,31 @@ if (!isset($_SESSION['form'])) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // メールを送信する
-    $to = 'hhoyuak2145@gmail.com';
-    $from = $post['mail-address'];
-    $subject = 'お問い合わせが届きました';
-    $body = <<<EOT
+    if ($_SESSION['token'] !== $_POST['token']) {
+        $post = [];
+        header('Location: form.php');
+        exit();
+    } else {
+        // メールを送信する
+        $to = 'hhoyuak2145@gmail.com';
+        $from = $post['mail-address'];
+        $subject = 'お問い合わせが届きました';
+        $body = <<<EOT
 名前： {$post['name']}
 メールアドレス： {$post['mail-address']}
 内容：
 {$post['contact-content']}
 EOT;
-    mb_language("ja");
-    mb_internal_encoding("UTF-8");
-    mb_send_mail($from, "お問い合わせありがとうございます。", $body, "From: {$from}");
-    mb_send_mail($to, $subject, $body, "From: {$from}");
+        mb_language("ja");
+        mb_internal_encoding("UTF-8");
+        mb_send_mail($from, "お問い合わせありがとうございます。", $body, "From: {$from}");
+        mb_send_mail($to, $subject, $body, "From: {$from}");
 
-    // セッションを消してお礼画面へ
-    unset($_SESSION['form']);
-    header('Location: thanks.html');
-    exit();
+        // セッションを消してお礼画面へ
+        unset($_SESSION['form']);
+        header('Location: thanks.html');
+        exit();
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -60,14 +66,16 @@ EOT;
 <div class="header-wrapper">
     <div class="header-wrapper__logo">
         <div class="header-wrapper__logo--wrapper">
-            <h1 class="logo"><img src="../logo.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></h1>
+            <h1 class="logo">
+                <a href="../index.html"><img src="../logo.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></a>
+            </h1>
         </div>
     </div>
     <div class="header-wrapper__nav">
         <ul class="list-header-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">導入講習</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../kosyu/index.html">導入講習</a></li>
+            <li><a href="./form.php">お問い合わせ</a></li>
         </ul>
     </div>
     <!--ハンバーガーメニューの実装がうまくいかなかったので後ほど別の方法で作ります-->
@@ -82,6 +90,7 @@ EOT;
 </header>
 <main>
 <form action="" method="post">
+    <input type="hidden" name="token" value="<?php echo $_SESSION['token'] ?>">
     <div class="contact-wrapper">
         <div class="title">
             <h2>お問い合わせフォーム</h2>
@@ -252,9 +261,9 @@ EOT;
 <div class="footer-wrapper1">
     <div class="footer-wrapper1__nav">
         <ul class="list-header-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">導入講習</a></li>
-            <li><a href="#" class="last">お問い合わせ</a></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../kosyu/index.html">導入講習</a></li>
+            <li><a href="./form.php" class="last">お問い合わせ</a></li>
         </ul>
     </div>
 </div>
@@ -266,7 +275,9 @@ EOT;
         </div>
     </div>
     <div class="footer-wrapper2__logo">
-        <h1 class="logo"><img src="../logo-foot.png" alt="Total Esthetic Salon Luire"></h1>
+        <h1 class="logo">
+            <a href="../index.html"><img src="../logo-foot.png" alt="Total Esthetic Salon Luire"></a>
+        </h1>
     </div>
     <div class="footer-wrapper2__address">
         <p>美肌・脱毛サロン メディカルエステLecura</p>
@@ -280,9 +291,9 @@ EOT;
 <nav class="hamburgermenu">
     <ul class="nav">
         <li class="menuText"><h2>-MENU-</h2></li>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">導入講習</a></li>
-        <li><a href="#" class="last">お問い合わせ</a></li>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../kosyu/index.html">導入講習</a></li>
+        <li><a href="./form.php" class="last">お問い合わせ</a></li>
     </ul>
 </nav>
 </footer>

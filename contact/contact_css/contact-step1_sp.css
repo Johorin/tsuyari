@@ -1191,10 +1191,10 @@ main {
 /*ハンバーガーメニュー*/
 .hamburgermenu {
   background: #fff;
-  width: 150px;
+  width: 50vw;
   position: fixed;
   top: 0;
-  right: -150px;
+  right: -50vw;
   height: 100%;
   z-index: 20;
   -webkit-transition: -webkit-transform 0.3s;
@@ -1206,7 +1206,8 @@ main {
 .hamburgermenu ul.nav li {
   margin-bottom: 40px;
   list-style: none;
-  text-align: center;
+  text-align: left;
+  margin-left: 50px;
 }
 
 .hamburgermenu ul.nav li:last-of-type {
@@ -1230,19 +1231,20 @@ main {
 .hamburgermenu ul.nav li.menuText {
   margin-top: 30px;
   margin-bottom: 40px;
+  margin-left: 30px;
 }
 
 .hamburgermenu ul.nav li.menuText h2 {
   font-size: 20px;
   color: #000;
   opacity: 0.9;
-  text-align: center;
+  text-align: left;
 }
 
 /*ハンバーガーメニューのドロワーが開かれた時のスタイル*/
 .slide {
-  -webkit-transform: translate3d(-150px, 0, 0);
-          transform: translate3d(-150px, 0, 0);
+  -webkit-transform: translate3d(-50vw, 0, 0);
+          transform: translate3d(-50vw, 0, 0);
 }
 
 /*全体のアニメーション*/

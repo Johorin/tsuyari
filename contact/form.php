@@ -42,6 +42,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //error配列の成分数を数え、0であればerrorなしとみなせる。
     if (count($error) === 0) {
+        //トークン生成
+        $token = bin2hex(random_bytes(32));   // php7以降
+        $_SESSION['token']  = $token;
         // エラーがないので確認画面に移動
         //セッションにpost変数の内容を保存しておく。
         $_SESSION['form'] = $post;
@@ -77,14 +80,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="header-wrapper">
     <div class="header-wrapper__logo">
         <div class="header-wrapper__logo--wrapper">
-            <h1 class="logo"><img src="../logo.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></h1>
+            <h1 class="logo">
+                <a href="../index.html"><img src="../logo.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></a>
+            </h1>
         </div>
     </div>
     <div class="header-wrapper__nav">
         <ul class="list-header-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">導入講習</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../kosyu/index.html">導入講習</a></li>
+            <li><a href="./form.php">お問い合わせ</a></li>
         </ul>
     </div>
     <div class="header-wrapper__hamburger-menu">
@@ -518,9 +523,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="footer-wrapper1">
     <div class="footer-wrapper1__nav">
         <ul class="list-header-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">導入講習</a></li>
-            <li><a href="#" class="last">お問い合わせ</a></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../kosyu/index.html">導入講習</a></li>
+            <li><a href="./form.php" class="last">お問い合わせ</a></li>
         </ul>
     </div>
 </div>
@@ -532,7 +537,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
     <div class="footer-wrapper2__logo">
-        <h1 class="logo"><img src="../logo-foot.png" alt="Total Esthetic Salon Luire"></h1>
+        <h1 class="logo">
+            <a href="../index.html"><img src="../logo-foot.png" alt="Total Esthetic Salon Luire"></a>
+        </h1>
     </div>
     <div class="footer-wrapper2__address">
         <p>美肌・脱毛サロン メディカルエステLecura</p>
@@ -546,9 +553,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <nav class="hamburgermenu">
     <ul class="nav">
         <li class="menuText"><h2>-MENU-</h2></li>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">導入講習</a></li>
-        <li><a href="#" class="last">お問い合わせ</a></li>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../kosyu/index.html">導入講習</a></li>
+        <li><a href="./form.php" class="last">お問い合わせ</a></li>
     </ul>
 </nav>
 </footer>
