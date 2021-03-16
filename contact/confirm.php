@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     } else {
         // メールを送信する
-        $to = 'hhoyuak2145@gmail.com';
+        $to = '';
         $from = $post['mail-address'];
         $subject = 'お問い合わせが届きました';
         $body = <<<EOT
