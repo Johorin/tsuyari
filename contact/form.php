@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //error配列の成分数を数え、0であればerrorなしとみなせる。
     if (count($error) === 0) {
-        //トークン生成
+        //セキュリティ向上のためのトークンを生成
         $token = bin2hex(random_bytes(32));   // php7以降
         $_SESSION['token']  = $token;
         // エラーがないので確認画面に移動

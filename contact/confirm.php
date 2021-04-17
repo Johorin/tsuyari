@@ -19,13 +19,14 @@ if (!isset($_SESSION['form'])) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    //postされたトークンとサーバー上（セッション上）に保存したトークンが一致すれば次のページへ
     if ($_SESSION['token'] !== $_POST['token']) {
         $post = [];
         header('Location: form.php');
         exit();
     } else {
         // メールを送信する
-        $to = '';
+        $to = 'info@tsuyari.luire.salon';
         $from = $post['mail-address'];
         $subject = 'お問い合わせが届きました';
         $body = <<<EOT
