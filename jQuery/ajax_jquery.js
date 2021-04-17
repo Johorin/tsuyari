@@ -7,6 +7,24 @@ $.ajax({url: '/data/instagram.json', dataType: 'json'})
     //var img = document.getElementById('instagram');
     //img.setAttribute('src', data.media.data[0].media_url);
 
+    /* BOMの改行コードを正規表現(/\s+/g)で検索し全て<br>に置き換える */
+    var str1 = data.media.data[0].caption;
+    var str2 = data.media.data[1].caption;
+    var str3 = data.media.data[2].caption;
+    var str4 = data.media.data[3].caption;
+    var str5 = data.media.data[4].caption;
+    var str6 = data.media.data[5].caption;
+    var str7 = data.media.data[6].caption;
+    var str8 = data.media.data[7].caption;
+    var result1 = str1.replace(/\s+/g, '<br>');
+    var result2 = str2.replace(/\s+/g, '<br>');
+    var result3 = str3.replace(/\s+/g, '<br>');
+    var result4 = str4.replace(/\s+/g, '<br>');
+    var result5 = str5.replace(/\s+/g, '<br>');
+    var result6 = str6.replace(/\s+/g, '<br>');
+    var result7 = str7.replace(/\s+/g, '<br>');
+    var result8 = str8.replace(/\s+/g, '<br>');
+
     /* Instagramの投稿画像 */
     var post1 = document.getElementById('posting1');
     var post2 = document.getElementById('posting2');
@@ -52,14 +70,14 @@ $.ajax({url: '/data/instagram.json', dataType: 'json'})
     var caption6 = document.getElementById('posting6-text');
     var caption7 = document.getElementById('posting7-text');
     var caption8 = document.getElementById('posting8-text');
-    caption1.innerHTML = "<p>" + data.media.data[0].caption + "</p>";
-    caption2.innerHTML = "<p>" + data.media.data[1].caption + "</p>";
-    caption3.innerHTML = "<p>" + data.media.data[2].caption + "</p>";
-    caption4.innerHTML = "<p>" + data.media.data[3].caption + "</p>";
-    caption5.innerHTML = "<p>" + data.media.data[4].caption + "</p>";
-    caption6.innerHTML = "<p>" + data.media.data[5].caption + "</p>";
-    caption7.innerHTML = "<p>" + data.media.data[6].caption + "</p>";
-    caption8.innerHTML = "<p>" + data.media.data[7].caption + "</p>";
+    caption1.innerHTML = "<p>" + result1 + "</p>";
+    caption2.innerHTML = "<p>" + result2 + "</p>";
+    caption3.innerHTML = "<p>" + result3 + "</p>";
+    caption4.innerHTML = "<p>" + result4 + "</p>";
+    caption5.innerHTML = "<p>" + result5 + "</p>";
+    caption6.innerHTML = "<p>" + result6 + "</p>";
+    caption7.innerHTML = "<p>" + result7 + "</p>";
+    caption8.innerHTML = "<p>" + result8 + "</p>";
 
     /* Instagramの投稿へのリンク */
     var postLink1 = document.getElementById('post-link1');
