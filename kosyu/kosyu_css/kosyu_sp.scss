@@ -224,8 +224,8 @@ h2.headline {
     font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
     //font-size: 4vw; //画面幅1400pxで文字サイズ56px
     font-size: 5vw;
-    @media screen and (max-width:650px) {
-        font-size: 16px;
+    @media screen and (max-width:450px) {
+        font-size: 5.5vw;
     }
     font-weight: 550;
     color: #841d08;
@@ -243,19 +243,15 @@ h2.headline {
     /*共通部分の設計*/
     .title-wrapper {
         display: flex;
-        height: calc(59 / 1400 * 100vw);
+        align-items: center;
+        justify-content: center;
+        height: calc(100 / 1400 * 100vw);
         margin: 0 auto;
         @media screen and (max-width:650px) {
             margin-bottom: 10px;
         }
-        .leftShape {
-            margin-right: calc(22 / 1400 * 100vw);
-            width: calc(27 / 1400 * 100vw);
-            img {
-                height: 100%;
-            }
-        }
         &__text {
+            width: 65%;
             padding-top: calc(8 / 1400 * 100vw);
             h2.titleText {
                 font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
@@ -263,43 +259,68 @@ h2.headline {
                 color: #64533d;
                 font-weight: 550;
                 white-space: nowrap;
+                text-align: center;
+                @media screen and (max-width:600px) {
+                    font-size: 4vw;
+                }
+                @media screen and (max-width:400px) {
+                    font-size: 4.5vw;
+                }
             }
         }
+        .leftShape,
         .rightShape {
-            margin-left: calc(22 / 1400 * 100vw);
-            width: calc(27 / 1400 * 100vw);
+            height: 80%;
             img {
                 height: 100%;
             }
         }
-        @media screen and (max-width:650px) {
-            height: 34px;
-            .leftShape {
-                margin-right: 10.5px;
-                width: 12.6px;
-                img {
-                    height: 100%;
-                }
-            }
-            &__text {
-                padding-top: 7px;
-                h2.titleText {
-                    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-                    font-size: 21.5px;
-                    color: #64533d;
-                    font-weight: 550;
-                    text-align: center;
-                    white-space: nowrap;
-                }
-            }
-            .rightShape {
-                margin-left: 6.5px;
-                width: 12.6px;
-                img {
-                    height: 100%;
-                }
-            }
-        }
+        // .leftShape {
+        //     //margin-right: calc(22 / 1400 * 100vw);
+        //     //width: calc(27 / 1400 * 100vw);
+        //     margin-right: 17px;
+        //     width: 13px;
+        //     img {
+        //         height: 100%;
+        //     }
+        // }
+        // .rightShape {
+        //     // margin-left: calc(22 / 1400 * 100vw);
+        //     // width: calc(27 / 1400 * 100vw);
+        //     margin-left: 10.5px;
+        //     width: 13px;
+        //     img {
+        //         height: 100%;
+        //     }
+        // }
+        // @media screen and (max-width:650px) {
+        //     height: 34px;
+        //     .leftShape {
+        //         margin-right: 10.5px;
+        //         width: 12.6px;
+        //         img {
+        //             height: 100%;
+        //         }
+        //     }
+        //     &__text {
+        //         padding-top: 7px;
+        //         h2.titleText {
+        //             font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+        //             font-size: 21.5px;
+        //             color: #64533d;
+        //             font-weight: 550;
+        //             text-align: center;
+        //             white-space: nowrap;
+        //         }
+        //     }
+        //     .rightShape {
+        //         margin-left: 6.5px;
+        //         width: 12.6px;
+        //         img {
+        //             height: 100%;
+        //         }
+        //     }
+        // }
     }
     .caution {
         //font-size: calc(80% + 0.01vw);  //フォントサイズが小さすぎる時は% + vwで。
@@ -418,7 +439,8 @@ h2.headline {
     .donyu {
         width: 100%;
         .title-wrapper {
-            max-width: calc(300 / 1400 * 100vw);
+            //max-width: calc(300 / 1400 * 100vw);
+            width: 30vw;
             @media screen and (max-width:650px) {
                 min-width: 139.5px;
             }
@@ -779,7 +801,8 @@ h2.headline {
         //margin-top: calc(73 / 1400 * 100vw);
         margin-top: calc(140 / 1400 * 100vw);
         .title-wrapper {
-            max-width: calc(340 / 1400 * 100vw);
+            //max-width: calc(340 / 1400 * 100vw);
+            width: 35vw;
             @media screen and (max-width:650px) {
                 min-width: 160px;
             }
@@ -1011,7 +1034,8 @@ h2.headline {
         //margin-top: calc(73 / 1400 * 100vw);
         margin-top: calc(140 / 1400 * 100vw);
         .title-wrapper {
-            max-width: calc(400 / 1400 * 100vw);
+            //max-width: calc(400 / 1400 * 100vw);
+            width: 45vw;
             @media screen and (max-width:650px) {
                 min-width: 185.7px;
             }
@@ -1217,10 +1241,17 @@ h2.headline {
         //margin-top: calc(73 / 1400 * 100vw);
         margin-top: calc(140 / 1400 * 100vw);
         .title-wrapper {
-            max-width: calc(490 / 1400 * 100vw);
-            @media screen and (max-width:650px) {
-                min-width: 230px;
+            //max-width: calc(490 / 1400 * 100vw);
+            width: 55vw;
+            @media screen and (max-width:600px) {
+                width: 65vw;
             }
+            @media screen and (max-width:450px) {
+                width: 70vw;
+            }
+            // @media screen and (max-width:650px) {
+            //     min-width: 230px;
+            // }
         }
         .pattern {
             width: calc(810 / 1000 * 100vw);
@@ -1436,15 +1467,22 @@ h2.headline {
             }
         }
     }
-    /*初回導入セット*/
+    /*初回限定導入セット*/
     .initialDeployment {
         //margin-top: calc(72 / 1400 * 100vw);
         margin-top: calc(140 / 1400 * 100vw);
         .title-wrapper {
-            max-width: calc(540 / 1400 * 100vw);
-            @media screen and (max-width:650px) {
-                min-width: 255px;
+            //max-width: calc(540 / 1400 * 100vw);
+            width: 60vw;
+            @media screen and (max-width:600px) {
+                width: 70vw;
             }
+            @media screen and (max-width:450px) {
+                width: 75vw;
+            }
+            // @media screen and (max-width:650px) {
+            //     min-width: 255px;
+            // }
         }
         .pattern {
             width: calc(664 / 1000 * 100vw);
@@ -1542,10 +1580,20 @@ h2.headline {
         //margin-top: calc(72 / 1400 * 100vw);
         margin-top: calc(140 / 1400 * 100vw);
         .title-wrapper {
-            max-width: calc(630 / 1400 * 100vw);
-            @media screen and (max-width:650px) {
-                min-width: 305px;
+            // max-width: calc(630 / 1400 * 100vw);
+            width: 70vw;
+            @media screen and (max-width:600px) {
+                width: 80vw;
             }
+            @media screen and (max-width:450px) {
+                width: 85vw;
+            }
+            @media screen and (max-width:400px) {
+                width: 90vw;
+            }
+            // @media screen and (max-width:650px) {
+            //     min-width: 305px;
+            // }
         }
         .pattern {
             width: calc(852 / 1000 * 100vw);

@@ -343,9 +343,9 @@ h2.headline {
   text-align: center;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 450px) {
   h2.headline {
-    font-size: 16px;
+    font-size: 5.5vw;
   }
 }
 
@@ -357,7 +357,7 @@ h2.headline {
   /*セット講習*/
   /*パーツ別講習*/
   /*他社切り替え講習*/
-  /*初回導入セット*/
+  /*初回限定導入セット*/
   /*サロンスタッフ技術講習*/
 }
 
@@ -370,7 +370,13 @@ h2.headline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: calc(59 / 1400 * 100vw);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100 / 1400 * 100vw);
   margin: 0 auto;
 }
 
@@ -380,16 +386,8 @@ h2.headline {
   }
 }
 
-.main-wrapper .title-wrapper .leftShape {
-  margin-right: calc(22 / 1400 * 100vw);
-  width: calc(27 / 1400 * 100vw);
-}
-
-.main-wrapper .title-wrapper .leftShape img {
-  height: 100%;
-}
-
 .main-wrapper .title-wrapper__text {
+  width: 65%;
   padding-top: calc(8 / 1400 * 100vw);
 }
 
@@ -399,46 +397,29 @@ h2.headline {
   color: #64533d;
   font-weight: 550;
   white-space: nowrap;
+  text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .main-wrapper .title-wrapper__text h2.titleText {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-wrapper .title-wrapper__text h2.titleText {
+    font-size: 4.5vw;
+  }
+}
+
+.main-wrapper .title-wrapper .leftShape,
 .main-wrapper .title-wrapper .rightShape {
-  margin-left: calc(22 / 1400 * 100vw);
-  width: calc(27 / 1400 * 100vw);
+  height: 80%;
 }
 
+.main-wrapper .title-wrapper .leftShape img,
 .main-wrapper .title-wrapper .rightShape img {
   height: 100%;
-}
-
-@media screen and (max-width: 650px) {
-  .main-wrapper .title-wrapper {
-    height: 34px;
-  }
-  .main-wrapper .title-wrapper .leftShape {
-    margin-right: 10.5px;
-    width: 12.6px;
-  }
-  .main-wrapper .title-wrapper .leftShape img {
-    height: 100%;
-  }
-  .main-wrapper .title-wrapper__text {
-    padding-top: 7px;
-  }
-  .main-wrapper .title-wrapper__text h2.titleText {
-    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
-    font-size: 21.5px;
-    color: #64533d;
-    font-weight: 550;
-    text-align: center;
-    white-space: nowrap;
-  }
-  .main-wrapper .title-wrapper .rightShape {
-    margin-left: 6.5px;
-    width: 12.6px;
-  }
-  .main-wrapper .title-wrapper .rightShape img {
-    height: 100%;
-  }
 }
 
 .main-wrapper .caution {
@@ -589,7 +570,7 @@ h2.headline {
 }
 
 .main-wrapper .donyu .title-wrapper {
-  max-width: calc(300 / 1400 * 100vw);
+  width: 30vw;
 }
 
 @media screen and (max-width: 650px) {
@@ -990,7 +971,7 @@ h2.headline {
 }
 
 .main-wrapper .set .title-wrapper {
-  max-width: calc(340 / 1400 * 100vw);
+  width: 35vw;
 }
 
 @media screen and (max-width: 650px) {
@@ -1237,7 +1218,7 @@ h2.headline {
 }
 
 .main-wrapper .byPart .title-wrapper {
-  max-width: calc(400 / 1400 * 100vw);
+  width: 45vw;
 }
 
 @media screen and (max-width: 650px) {
@@ -1458,12 +1439,18 @@ h2.headline {
 }
 
 .main-wrapper .switchCompany .title-wrapper {
-  max-width: calc(490 / 1400 * 100vw);
+  width: 55vw;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .main-wrapper .switchCompany .title-wrapper {
-    min-width: 230px;
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-wrapper .switchCompany .title-wrapper {
+    width: 70vw;
   }
 }
 
@@ -1708,12 +1695,18 @@ h2.headline {
 }
 
 .main-wrapper .initialDeployment .title-wrapper {
-  max-width: calc(540 / 1400 * 100vw);
+  width: 60vw;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .main-wrapper .initialDeployment .title-wrapper {
-    min-width: 255px;
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-wrapper .initialDeployment .title-wrapper {
+    width: 75vw;
   }
 }
 
@@ -1820,12 +1813,24 @@ h2.headline {
 }
 
 .main-wrapper .staffTec .title-wrapper {
-  max-width: calc(630 / 1400 * 100vw);
+  width: 70vw;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .main-wrapper .staffTec .title-wrapper {
-    min-width: 305px;
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-wrapper .staffTec .title-wrapper {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-wrapper .staffTec .title-wrapper {
+    width: 90vw;
   }
 }
 
