@@ -68,7 +68,7 @@ input,select{vertical-align:middle}
 /*main部分*/
 /*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
 main {
-    background-color: rgb(250, 250, 250);
+    background: url('../../home_image/background_main.png') center center / cover no-repeat;
 }
 .contact-wrapper {
     padding-top: 80px;
@@ -137,7 +137,8 @@ main {
         table {
             width: 100%;
             border: 2px solid grey;
-            background-color: rgb(240, 240, 240);
+            //background-color: rgb(240, 240, 240);
+            background-color: rgba(255, 255, 255, 0.5);
             th {
                 border-right: 1px solid rgb(200, 200, 200);
             }
@@ -182,7 +183,7 @@ main {
         table {
             width: 100%;
             border: 2px solid grey;
-            background-color: rgb(240, 240, 240);
+            background-color: rgba(255, 255, 255, 0.5);
             tr {
                 th {
                     width: 338px;

@@ -285,7 +285,7 @@ input, select {
 /*main部分*/
 /*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
 main {
-  background-color: #fafafa;
+  background: url("../../home_image/background_main.png") center center/cover no-repeat;
   width: 100%;
 }
 
@@ -528,7 +528,7 @@ main {
 .contact-wrapper .input-contents-text1 table {
   width: 100%;
   border: 2px solid grey;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .contact-wrapper .input-contents-text1 table th {
@@ -590,7 +590,7 @@ main {
 .contact-wrapper .input-contents-text2 table {
   width: 100%;
   border: 2px solid grey;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .contact-wrapper .input-contents-text2 table tr {
@@ -635,7 +635,7 @@ main {
 .contact-wrapper .input-contents2-text1 table {
   width: 100%;
   border: 2px solid grey;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .contact-wrapper .input-contents2-text1 table tr th {
@@ -673,7 +673,7 @@ main {
 .contact-wrapper .input-contents2-text2 table {
   width: 100%;
   border: 2px solid grey;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .contact-wrapper .input-contents2-text2 table tr th {

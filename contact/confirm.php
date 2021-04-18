@@ -25,8 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: form.php');
         exit();
     } else {
-        // メールを送信する
-        $to = 'info@tsuyari.luire.salon';
+        // メールを送信する。※本番環境のサーバーからじゃないと送られない。
+        //$to = 'info@tsuyari.luire.salon';
+        $to = 'hhoyuak2145@gmail.com';
         $from = $post['mail-address'];
         $subject = 'お問い合わせが届きました';
         $body = <<<EOT

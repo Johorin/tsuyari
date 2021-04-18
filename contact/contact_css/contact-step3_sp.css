@@ -279,7 +279,7 @@ input, select {
 /*main部分*/
 /*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
 main {
-  background-color: #fafafa;
+  background: url("../../home_image/background_main.png") center center/cover no-repeat;
   width: 100%;
   padding-bottom: 20px;
 }
@@ -531,6 +531,10 @@ main {
   .contact-wrapper .close-button {
     width: 170px;
   }
+}
+
+.contact-wrapper .close-button a {
+  width: 100%;
 }
 
 .contact-wrapper .close-button input.button {

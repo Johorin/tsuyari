@@ -143,7 +143,7 @@ input, select {
 /*main部分*/
 /*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
 main {
-  background-color: #fafafa;
+  background: url("../../home_image/background_main.png") center center/cover no-repeat;
   padding-bottom: 20px;
 }
 

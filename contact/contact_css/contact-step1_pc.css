@@ -93,7 +93,7 @@ input, select {
 
 /*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
 main {
-  background-color: #fafafa;
+  background: url("../../home_image/background_main.png") center center/cover no-repeat;
 }
 
 /*header部分*/
@@ -293,7 +293,7 @@ main {
 .contact-wrapper form table {
   width: 100%;
   border: 2px solid grey;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.5);
   /*tr.pattern1 {
                 td {
                     padding-left: 20px;
@@ -386,7 +386,7 @@ main {
 }
 
 .contact-wrapper .agree-box-form {
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 2px solid grey;
   padding-top: 10px;
   padding-bottom: 10px;

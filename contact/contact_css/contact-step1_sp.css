@@ -291,7 +291,7 @@ input, select {
 
 /*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
 main {
-  background-color: #fafafa;
+  background: url("../../home_image/background_main.png") center center/cover no-repeat;
   width: 100%;
 }
 
@@ -589,7 +589,7 @@ main {
 .contact-wrapper form.pc table {
   width: 100%;
   border: 2px solid grey;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.5);
   /*tr.pattern1 {
                 td {
                     padding-left: 20px;
@@ -681,7 +681,7 @@ main {
 .contact-wrapper form.sp table {
   width: 100%;
   border: 2px solid grey;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .contact-wrapper form.sp table tr {
@@ -698,7 +698,7 @@ main {
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 0 auto;
+  margin-left: 10%;
 }
 
 .contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper p.head,
@@ -706,19 +706,16 @@ main {
 .contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper p.head {
   margin: 0;
   margin-top: 5px;
-  margin-right: 30px;
 }
 
 .contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper .required-box,
-.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper .required-box,
-.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper .required-box {
-  margin: 0;
-}
-
 .contact-wrapper form.sp table tr.pattern1 th.head1 .head-wrapper .optional-box,
+.contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper .required-box,
 .contact-wrapper form.sp table tr.pattern1 th.head2 .head-wrapper .optional-box,
+.contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper .required-box,
 .contact-wrapper form.sp table tr.pattern1 th.head3 .head-wrapper .optional-box {
   margin: 0;
+  margin-right: 15px;
 }
 
 .contact-wrapper form.sp table tr.pattern1 th.head1 input,
@@ -727,6 +724,9 @@ main {
   margin-top: 10px;
   margin-bottom: 20px;
   width: 362px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 @media screen and (max-width: 450px) {
@@ -753,21 +753,18 @@ main {
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 0 auto;
+  margin-left: 10%;
 }
 
 .contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper p.head {
   margin: 0;
   margin-top: 5px;
-  margin-right: 30px;
 }
 
-.contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper .required-box {
-  margin: 0;
-}
-
+.contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper .required-box,
 .contact-wrapper form.sp table tr.pattern2 th.head4 .head-wrapper .optional-box {
   margin: 0;
+  margin-right: 15px;
 }
 
 .contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .head-wrapper {
@@ -778,15 +775,18 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 284px;
+  width: 362px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   .contact-wrapper form.sp table tr.pattern2 th.head4 .post-number-wrapper .post-number {
-    width: 255px;
+    width: 90%;
   }
 }
 
@@ -812,8 +812,17 @@ main {
 }
 
 .contact-wrapper form.sp table tr.pattern2 th.head4 .prefecture-wrapper .prefecture {
+  text-align: left;
+  margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 20px;
+  width: 362px;
+}
+
+@media screen and (max-width: 450px) {
+  .contact-wrapper form.sp table tr.pattern2 th.head4 .prefecture-wrapper .prefecture {
+    width: 90%;
+  }
 }
 
 .contact-wrapper form.sp table tr.pattern2 th.head4 .address-wrapper .head-wrapper {
@@ -839,21 +848,18 @@ main {
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 0 auto;
+  margin-left: 10%;
 }
 
 .contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper p.head {
   margin: 0;
   margin-top: 5px;
-  margin-right: 30px;
 }
 
-.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper .required-box {
-  margin: 0;
-}
-
+.contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper .required-box,
 .contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper .optional-box {
   margin: 0;
+  margin-right: 15px;
 }
 
 .contact-wrapper form.sp table tr.pattern3 th.head5 .head-wrapper {
@@ -861,14 +867,20 @@ main {
 }
 
 .contact-wrapper form.sp table tr.pattern3 textarea {
-  width: 90%;
+  width: 362px;
   height: 150px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 450px) {
+  .contact-wrapper form.sp table tr.pattern3 textarea {
+    width: 90%;
+  }
+}
+
 .contact-wrapper .personalInfomation-form {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -878,9 +890,9 @@ main {
 }
 
 .contact-wrapper .agree-box-form {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 2px solid grey;
   padding-top: 10px;
   padding-bottom: 10px;

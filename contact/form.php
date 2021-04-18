@@ -329,10 +329,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <tr class="pattern1">
                 <th class="head1">
                     <div class="head-wrapper">
-                        <p class="head">お名前</p>
                         <div class="required-box">
                             <p>必須</p>
                         </div>
+                        <p class="head">お名前</p>
                     </div>
                     <!--valueの中身はconfirm.phpから戻ってきた時（post変数に情報が格納されている時）postからname="name"を受け取り、受け取る文字列が安全かどうかチェックしてからデフォルトで入力済みの内容を入れておく記述をしている。requiredは必須項目であることを示している。-->
                     <input type="text" name="name" class="name" size="43" placeholder="お名前を記入してください。" value="<?php echo htmlspecialchars($post['name']); ?>" required>
@@ -348,10 +348,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <tr class="pattern1">
                 <th class="head2">
                     <div class="head-wrapper">
-                        <p class="head">メールアドレス</p>
                         <div class="required-box">
                             <p>必須</p>
                         </div>
+                        <p class="head">メールアドレス</p>
                     </div>
                     <input type="text" name="mail-address" size="43" placeholder="例)aaa@example.com" value="<?php echo htmlspecialchars($post['mail-address']); ?>" required>
                     <?php if ($error['mail-address'] === 'blank') : ?>
@@ -365,10 +365,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <tr class="pattern1">
                 <th class="head3">
                     <div class="head-wrapper">
-                        <p class="head">電話番号</p>
                         <div class="optional-box">
                             <p>任意</p>
                         </div>
+                        <p class="head">電話番号</p>
                     </div>
                     <input type="text" name="phone-number" size="43" placeholder="例)12345678910" value="<?php echo htmlspecialchars($post['phone-number']) ?>">
                 </th>
@@ -377,10 +377,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <th class="head4">
                     <div class="post-number-wrapper">
                         <div class="head-wrapper">
-                            <p class="head">郵便番号</p>
                             <div class="optional-box">
                                 <p>任意</p>
                             </div>
+                            <p class="head">郵便番号</p>
                         </div>
                         <div class="post-number">
                             <div class="post-number__form">
@@ -393,10 +393,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     <div class="prefecture-wrapper">
                         <div class="head-wrapper">
-                            <p class="head">都道府県</p>
                             <div class="optional-box">
                                 <p>任意</p>
                             </div>
+                            <p class="head">都道府県</p>
                         </div>
                         <div class="prefecture">
                             <!--<select class="prefectureSelect pref" name="pref_name pref">
@@ -462,10 +462,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     <div class="address-wrapper">
                         <div class="head-wrapper head-wrapper-address">
-                            <p class="head">ご住所</p>
                             <div class="optional-box">
                                 <p>任意</p>
                             </div>
+                            <p class="head">ご住所</p>
                         </div>
                         <div class="address-form">
                             <input type="text" name="address" value="<?php echo htmlspecialchars($post['address']) ?>">
@@ -476,10 +476,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <tr class="pattern3">
                 <th class="head5">
                     <div class="head-wrapper">
-                        <p class="head">お問い合わせ内容</p>
                         <div class="required-box">
                             <p>必須</p>
                         </div>
+                        <p class="head">お問い合わせ内容</p>
                     </div>
                     <textarea name="contact-content" id="" placeholder="お問い合わせの内容を記入してください。" required><?php echo htmlspecialchars($post['contact-content']) ?></textarea>
                     <?php if ($error['contact-content'] === 'blank') : ?>

@@ -68,7 +68,7 @@ input,select{vertical-align:middle}
 /*main部分*/
 /*フッターのナビゲーションの色が被るので背景を若干グレーにしている*/
 main {
-    background-color: rgb(250, 250, 250);
+    background: url('../../home_image/background_main.png') center center / cover no-repeat;
     padding-bottom: 20px;
 }
 .contact-wrapper {
