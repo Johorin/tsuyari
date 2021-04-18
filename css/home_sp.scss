@@ -1732,6 +1732,154 @@ body {
         }
     }
 }
+section.instagram-wrapper {
+    //height: 800px;
+    background: url('../home_image/background_main.png') center center / cover no-repeat;
+    h1 {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img.Instagram-logo {
+            width: 7vw;
+            height: 7vw;
+        }
+        svg.Instagram-font {
+            width: 37vw;
+            height: 10vw;
+        }
+        @media screen and (max-width:500px) {
+            img.Instagram-logo {
+                width: 10vw;
+                height: 10vw;
+            }
+            svg.Instagram-font {
+                width: 55vw;
+                height: 15vw;
+            }
+        }
+    }
+    .posting-wrapper {
+        //width: 1048px;
+        width: 90vw;
+        height: 41.5vw;
+        margin: 0 auto;
+        //padding-bottom: 150px;
+        padding-bottom: 75px;
+        display: flex;
+        //並べたアイテムを折り返す用の記述
+        flex-wrap: wrap;
+        //flexboxで並べたアイテムの左右の余白は次のように指定しないと空かない
+        justify-content: space-between;
+        .posting {
+            //width: 250px;
+            //height: 250px;
+            width: 23.5%;
+            height: 50%;
+            a {
+                text-decoration: none;
+            }
+            /* いいねの横のハートマークを作る */
+            .like-count-wrapper {
+                display: flex;
+                position: absolute;
+                bottom: 15px;
+                left: 15px;
+                @media screen and (max-width:550px) {
+                    bottom: 10px;
+                    left: 10px;
+                }
+                @media screen and (max-width:450px) {
+                    bottom: 5px;
+                    left: 5px;
+                }
+                .heart-icon {
+                    .heart-solid.icon {
+                        display: inline-block;
+                        color: red;
+                        margin-top: 6px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        width: 9px;
+                        height: 9px;
+                        border-left: solid 1px red;
+                        border-bottom: solid 1px red;
+                        background-color: currentColor;
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                    }
+                    .heart-solid.icon:before {
+                        content: '';
+                        position: absolute;
+                        top: -5px;
+                        left: -1px;
+                        width: 8px;
+                        height: 5px;
+                        border-radius: 5px 5px 0 0;
+                        border-top: solid 1px red;
+                        border-left: solid 1px red;
+                        border-right: solid 1px red;
+                        background-color: red;
+                    }
+                    .heart-solid.icon:after {
+                        content: '';
+                        position: absolute;
+                        top: 0px;
+                        left: 8px;
+                        width: 5px;
+                        height: 8px;
+                        border-radius: 0 5px 5px 0;
+                        border-top: solid 1px red;
+                        border-right: solid 1px red;
+                        border-bottom: solid 1px red;
+                        background-color: red;
+                    }
+                }
+                p.like-count {
+                    font-weight: 800;
+                    color: red;
+                    padding-top: 2px;
+                    font-size: 16px;
+                }
+            }
+            .posting1,
+            .posting2,
+            .posting3,
+            .posting4,
+            .posting5,
+            .posting6,
+            .posting7,
+            .posting8 {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                overflow: hidden;
+                .caption {
+                    display: none;
+                    // background: orange;
+                    // width: 100%;
+                    // height: 100%;
+                    // padding: 10px;
+                    // box-sizing: border-box;
+                    // position: relative;
+                    // bottom: -100%;
+                    // transition: bottom 0.3s;
+                }
+            }
+            .posting5,
+            .posting6,
+            .posting7,
+            .posting8 {
+                margin-top: 16px;
+            }
+        }
+    }
+}
 .footer-wrapper1 {
     height: 140px;
     @media screen and (max-width:500px) {
