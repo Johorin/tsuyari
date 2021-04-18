@@ -1495,21 +1495,30 @@ section.instagram-wrapper h1 {
 
 section.instagram-wrapper h1 a {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.instagram-wrapper h1 img.Instagram-logo {
-  width: 7vw;
-  height: 7vw;
-  margin-right: 20px;
+  width: 5vw;
+  height: 5vw;
 }
 
 section.instagram-wrapper h1 svg.Instagram-font {
-  width: 30vw;
-  height: 10vw;
+  width: 28vw;
+  height: 7vw;
 }
 
 section.instagram-wrapper .posting-wrapper {
-  width: 1048px;
+  width: 75vw;
+  height: 35vw;
   margin: 0 auto;
   padding-bottom: 150px;
   display: -webkit-box;
@@ -1523,8 +1532,8 @@ section.instagram-wrapper .posting-wrapper {
 }
 
 section.instagram-wrapper .posting-wrapper .posting {
-  width: 250px;
-  height: 250px;
+  width: 23.5%;
+  height: 50%;
   /* いいねの横のハートマークを作る */
 }
 
@@ -1539,8 +1548,33 @@ section.instagram-wrapper .posting-wrapper .posting p.posting-text {
   /* はみ出したテキストを3点リーダー表示 */
   display: -webkit-box;
   overflow: hidden;
-  -webkit-line-clamp: 11;
+  -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 1283px) {
+  section.instagram-wrapper .posting-wrapper .posting p.posting-text {
+    -webkit-line-clamp: 8;
+  }
+}
+
+@media screen and (max-width: 1243px) {
+  section.instagram-wrapper .posting-wrapper .posting p.posting-text {
+    -webkit-line-clamp: 7;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section.instagram-wrapper .posting-wrapper .posting p.posting-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  section.instagram-wrapper .posting-wrapper .posting p.posting-text {
+    -webkit-line-clamp: 6;
+    font-size: 10px;
+  }
 }
 
 section.instagram-wrapper .posting-wrapper .posting .like-count-wrapper {
@@ -1610,8 +1644,8 @@ section.instagram-wrapper .posting-wrapper .posting .posting5,
 section.instagram-wrapper .posting-wrapper .posting .posting6,
 section.instagram-wrapper .posting-wrapper .posting .posting7,
 section.instagram-wrapper .posting-wrapper .posting .posting8 {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -1625,15 +1659,28 @@ section.instagram-wrapper .posting-wrapper .posting .posting6 .caption,
 section.instagram-wrapper .posting-wrapper .posting .posting7 .caption,
 section.instagram-wrapper .posting-wrapper .posting .posting8 .caption {
   background: orange;
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  bottom: -250px;
+  bottom: -100%;
   -webkit-transition: bottom 0.3s;
   transition: bottom 0.3s;
+}
+
+@media screen and (max-width: 1130px) {
+  section.instagram-wrapper .posting-wrapper .posting .posting1 .caption,
+  section.instagram-wrapper .posting-wrapper .posting .posting2 .caption,
+  section.instagram-wrapper .posting-wrapper .posting .posting3 .caption,
+  section.instagram-wrapper .posting-wrapper .posting .posting4 .caption,
+  section.instagram-wrapper .posting-wrapper .posting .posting5 .caption,
+  section.instagram-wrapper .posting-wrapper .posting .posting6 .caption,
+  section.instagram-wrapper .posting-wrapper .posting .posting7 .caption,
+  section.instagram-wrapper .posting-wrapper .posting .posting8 .caption {
+    padding: 10px;
+  }
 }
 
 section.instagram-wrapper .posting-wrapper .posting .posting1:hover .caption,
