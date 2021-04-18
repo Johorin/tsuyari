@@ -26,8 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     } else {
         // メールを送信する。※本番環境のサーバーからじゃないと送られない。
-        //$to = 'info@tsuyari.luire.salon';
-        $to = 'hhoyuak2145@gmail.com';
+        $to = 'info@tsuyari.luire.salon';
         $from = $post['mail-address'];
         $subject = 'お問い合わせが届きました';
         $body = <<<EOT
@@ -38,7 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 EOT;
         mb_language("ja");
         mb_internal_encoding("UTF-8");
+        /* 自動返信メール */
         mb_send_mail($from, "お問い合わせありがとうございます。", $body, "From: {$from}");
+        /* お問い合わせ内容を送信 */
         mb_send_mail($to, $subject, $body, "From: {$from}");
 
         // セッションを消してお礼画面へ
