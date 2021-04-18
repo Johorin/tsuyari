@@ -88,14 +88,14 @@
     <div class="header-wrapper__logo">
         <div class="header-wrapper__logo--wrapper">
             <h1 class="logo">
-                <a href="./index.html"><img src="../logo.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></a>
+                <a href="./index.php"><img src="../logo.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></a>
             </h1>
         </div>
     </div>
     <div class="header-wrapper__nav">
         <ul class="list-header-nav">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./kosyu/index.html">導入講習</a></li>
+            <li><a href="./index.php">HOME</a></li>
+            <li><a href="./kosyu/index.php">導入講習</a></li>
             <li><a href="./contact/form.php">お問い合わせ</a></li>
         </ul>
     </div>
@@ -514,7 +514,7 @@
             </p>
         </div>
         <div class="about-donyuKosyu__btn">
-            <a href="./kosyu/index.html">導入講習について</a>
+            <a href="./kosyu/index.php">導入講習について</a>
         </div>
     </div>
     <div class="tsuyari-hope simple-fadeIn show1">
@@ -691,8 +691,8 @@
 <div class="footer-wrapper1">
     <div class="footer-wrapper1__nav">
         <ul class="list-header-nav">
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./kosyu/index.html">導入講習</a></li>
+            <li><a href="./index.php">HOME</a></li>
+            <li><a href="./kosyu/index.php">導入講習</a></li>
             <li><a href="./contact/form.php" class="last">お問い合わせ</a></li>
         </ul>
     </div>
@@ -706,7 +706,7 @@
     </div>
     <div class="footer-wrapper2__logo">
         <h1 class="logo">
-            <a href="./index.html"><img src="./logo-foot.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></a>
+            <a href="./index.php"><img src="./logo-foot.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></a>
         </h1>
     </div>
     <div class="footer-wrapper2__address">
@@ -721,8 +721,8 @@
 <nav class="hamburgermenu">
     <ul class="nav">
         <li class="menuText"><h2>-MENU-</h2></li>
-        <li><a href="./index.html">HOME</a></li>
-        <li><a href="./kosyu/index.html">導入講習</a></li>
+        <li><a href="./index.php">HOME</a></li>
+        <li><a href="./kosyu/index.php">導入講習</a></li>
         <li><a href="./contact/form.php" class="last">お問い合わせ</a></li>
     </ul>
 </nav>

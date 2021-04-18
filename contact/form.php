@@ -81,14 +81,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="header-wrapper__logo">
         <div class="header-wrapper__logo--wrapper">
             <h1 class="logo">
-                <a href="../index.html"><img src="../logo.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></a>
+                <a href="../index.php"><img src="../logo.png" alt="Total Esthetic SALON LUIRE" id="logoImage"></a>
             </h1>
         </div>
     </div>
     <div class="header-wrapper__nav">
         <ul class="list-header-nav">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="../kosyu/index.html">導入講習</a></li>
+            <li><a href="../index.php">HOME</a></li>
+            <li><a href="../kosyu/index.php">導入講習</a></li>
             <li><a href="./form.php">お問い合わせ</a></li>
         </ul>
     </div>
@@ -523,8 +523,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="footer-wrapper1">
     <div class="footer-wrapper1__nav">
         <ul class="list-header-nav">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="../kosyu/index.html">導入講習</a></li>
+            <li><a href="../index.php">HOME</a></li>
+            <li><a href="../kosyu/index.php">導入講習</a></li>
             <li><a href="./form.php" class="last">お問い合わせ</a></li>
         </ul>
     </div>
@@ -538,7 +538,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <div class="footer-wrapper2__logo">
         <h1 class="logo">
-            <a href="../index.html"><img src="../logo-foot.png" alt="Total Esthetic Salon Luire"></a>
+            <a href="../index.php"><img src="../logo-foot.png" alt="Total Esthetic Salon Luire"></a>
         </h1>
     </div>
     <div class="footer-wrapper2__address">
@@ -553,8 +553,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <nav class="hamburgermenu">
     <ul class="nav">
         <li class="menuText"><h2>-MENU-</h2></li>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="../kosyu/index.html">導入講習</a></li>
+        <li><a href="../index.php">HOME</a></li>
+        <li><a href="../kosyu/index.php">導入講習</a></li>
         <li><a href="./form.php" class="last">お問い合わせ</a></li>
     </ul>
 </nav>
