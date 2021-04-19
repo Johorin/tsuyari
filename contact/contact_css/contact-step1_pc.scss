@@ -197,6 +197,7 @@ main {
             }
             th {
                 border-right: 1px solid rgb(200, 200, 200);
+                width: 276px;
             }
             td {
                 padding-left: 20px;
@@ -220,12 +221,14 @@ main {
                         &__form {
                             input {
                                 width: 150px;
+                                height: 32px;
                             }
                         }
                         &__button {
                             margin-left: 20px;
                             input {
                                 width: 100px;
+                                height: 32px;
                             }
                             input.searchAddress {
                                 color: #fff;
@@ -251,7 +254,16 @@ main {
                     }
                     .prefecture,
                     .address-form {
+                        //SafariとChromeで幅が違う
                         margin-top: 38px;
+                        select,
+                        input {
+                            height: 32px;
+                        }
+                        option {
+                            height: 32px;
+                            padding: 5px;
+                        }
                     }
                 }
             }

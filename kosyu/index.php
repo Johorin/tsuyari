@@ -1219,9 +1219,10 @@
         </h1>
     </div>
     <div class="footer-wrapper2__address">
-        <p>美肌・脱毛サロン メディカルエステLecura</p>
-        <p>〒323-0034 栃木県小山市西城南3-15-5 清風館店舗105</p>
-        <p>050-3503-7195</p>
+        <p>Salon Luire</p>
+        <p>〒323-0034 栃木県小山市神鳥谷5-18-29 2F</p>
+        <p>TEL.050-3503-7195</p>
+        <p>E-mail　info@luiresalon</p>
     </div>
     <div class="footer-wrapper2__copyright">
         <p>Copyright © SalonLuire All Right Reserved.</p>

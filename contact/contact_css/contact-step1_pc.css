@@ -307,6 +307,7 @@ main {
 
 .contact-wrapper form table th {
   border-right: 1px solid #c8c8c8;
+  width: 276px;
 }
 
 .contact-wrapper form table td {
@@ -340,6 +341,7 @@ main {
 
 .contact-wrapper form table tr.pattern2 td.data4 .post-number__form input {
   width: 150px;
+  height: 32px;
 }
 
 .contact-wrapper form table tr.pattern2 td.data4 .post-number__button {
@@ -348,6 +350,7 @@ main {
 
 .contact-wrapper form table tr.pattern2 td.data4 .post-number__button input {
   width: 100px;
+  height: 32px;
 }
 
 .contact-wrapper form table tr.pattern2 td.data4 .post-number__button input.searchAddress {
@@ -366,6 +369,19 @@ main {
 .contact-wrapper form table tr.pattern2 td.data4 .prefecture,
 .contact-wrapper form table tr.pattern2 td.data4 .address-form {
   margin-top: 38px;
+}
+
+.contact-wrapper form table tr.pattern2 td.data4 .prefecture select,
+.contact-wrapper form table tr.pattern2 td.data4 .prefecture input,
+.contact-wrapper form table tr.pattern2 td.data4 .address-form select,
+.contact-wrapper form table tr.pattern2 td.data4 .address-form input {
+  height: 32px;
+}
+
+.contact-wrapper form table tr.pattern2 td.data4 .prefecture option,
+.contact-wrapper form table tr.pattern2 td.data4 .address-form option {
+  height: 32px;
+  padding: 5px;
 }
 
 .contact-wrapper form table tr.pattern3 th {
