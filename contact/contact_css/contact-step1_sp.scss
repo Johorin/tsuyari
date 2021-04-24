@@ -456,6 +456,7 @@ main {
                         &__form {
                             input {
                                 width: 150px;
+                                height: 32px;
                             }
                         }
                         &__button {
@@ -488,6 +489,16 @@ main {
                     .prefecture,
                     .address-form {
                         margin-top: 38px;
+                        select,
+                        input {
+                            height: 32px;
+                        }
+                        option {
+                            height: 32px;
+                            padding: 5px;
+                            //vertical-align: middle;
+                            //line-height: 32px;
+                        }
                     }
                 }
             }

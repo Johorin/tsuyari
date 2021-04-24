@@ -2,8 +2,8 @@
 
 $.ajax({url: '/data/instagram.json', dataType: 'json'})
 .done(function(data){
-    //console.log(data);
-    //console.log(data.media.data[0].media_url);
+    console.log(data);
+    console.log(data.media.data[4].thumbnail_url);
     //var img = document.getElementById('instagram');
     //img.setAttribute('src', data.media.data[0].media_url);
 
@@ -34,14 +34,24 @@ $.ajax({url: '/data/instagram.json', dataType: 'json'})
     var post6 = document.getElementById('posting6');
     var post7 = document.getElementById('posting7');
     var post8 = document.getElementById('posting8');
-    post1.style.background = "url(" + data.media.data[0].media_url + ") center center / cover no-repeat";
-    post2.style.background = "url(" + data.media.data[1].media_url + ") center center / cover no-repeat";
-    post3.style.background = "url(" + data.media.data[2].media_url + ") center center / cover no-repeat";
-    post4.style.background = "url(" + data.media.data[3].media_url + ") center center / cover no-repeat";
-    post5.style.background = "url(" + data.media.data[4].media_url + ") center center / cover no-repeat";
-    post6.style.background = "url(" + data.media.data[5].media_url + ") center center / cover no-repeat";
-    post7.style.background = "url(" + data.media.data[6].media_url + ") center center / cover no-repeat";
-    post8.style.background = "url(" + data.media.data[7].media_url + ") center center / cover no-repeat";
+    // post1.style.background = "url(" + data.media.data[0].media_url + ") center center / cover no-repeat";
+    // post2.style.background = "url(" + data.media.data[1].media_url + ") center center / cover no-repeat";
+    // post3.style.background = "url(" + data.media.data[2].media_url + ") center center / cover no-repeat";
+    // post4.style.background = "url(" + data.media.data[3].media_url + ") center center / cover no-repeat";
+    // post5.style.background = "url(" + data.media.data[4].media_url + ") center center / cover no-repeat";
+    // post6.style.background = "url(" + data.media.data[5].media_url + ") center center / cover no-repeat";
+    // post7.style.background = "url(" + data.media.data[6].media_url + ") center center / cover no-repeat";
+    // post8.style.background = "url(" + data.media.data[7].media_url + ") center center / cover no-repeat";
+
+    /* Instagramの投稿画像（投稿が動画の場合も考慮） */
+    var post = [post1, post2, post3, post4, post5, post6, post7, post8];
+    for(let i=0; i<8; i++) {
+        if(data.media.data[i].media_url) {
+            post[i].style.background = "url(" + data.media.data[i].media_url + ") center center / cover no-repeat";
+        } else {
+            post[i].style.background = "url(" + data.media.data[i].thumbnail_url + ") center center / cover no-repeat";
+        }
+    }
 
     /* Instagramの投稿に対するいいね数 */
     var like_count1 = document.getElementById('like-count1');

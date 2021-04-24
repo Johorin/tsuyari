@@ -49,7 +49,7 @@
     // jsonファイルが存在しない、もしくはjsonファイルが古い場合
     if ($is_file === false) {
         // InstagramグラフAPIを参照する
-        $instagram_request_url = 'https://graph.facebook.com/v10.0/17841420321058726?fields=name,media.limit(8){id,ig_id,media_type,permalink,media_url,like_count,caption}&access_token=EAAQPQmZCh2d8BACJKmAAZBAdKe1QcNGcZAbDVqz3ZBuDulcZCg7dZBHlsUlEVZCL0VvRD50PlkfQ0V8tm4sbZCZCZAdDwKEMQzyitZBCZA5ArM4ktZAEndEZCvqn1ft7j8ZCoZC72ZCGwz3VCxZAI4263WAseaNblP2xBNAZC3NGjOIh3nMWQhiMsySGfyCx4FJ7hY6HDajo9IZD';
+        $instagram_request_url = 'https://graph.facebook.com/v10.0/17841420321058726?fields=name,media.limit(8){id,ig_id,media_type,permalink,media_url,like_count,caption,thumbnail_url}&access_token=EAAQPQmZCh2d8BACJKmAAZBAdKe1QcNGcZAbDVqz3ZBuDulcZCg7dZBHlsUlEVZCL0VvRD50PlkfQ0V8tm4sbZCZCZAdDwKEMQzyitZBCZA5ArM4ktZAEndEZCvqn1ft7j8ZCoZC72ZCGwz3VCxZAI4263WAseaNblP2xBNAZC3NGjOIh3nMWQhiMsySGfyCx4FJ7hY6HDajo9IZD';
         
         // InstagramグラフAPIのデータを取得する
         $instagram_api_data = file_get_contents($instagram_request_url);

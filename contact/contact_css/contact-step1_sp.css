@@ -636,6 +636,7 @@ main {
 
 .contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__form input {
   width: 150px;
+  height: 32px;
 }
 
 .contact-wrapper form.pc table tr.pattern2 td.data4 .post-number__button {
@@ -662,6 +663,19 @@ main {
 .contact-wrapper form.pc table tr.pattern2 td.data4 .prefecture,
 .contact-wrapper form.pc table tr.pattern2 td.data4 .address-form {
   margin-top: 38px;
+}
+
+.contact-wrapper form.pc table tr.pattern2 td.data4 .prefecture select,
+.contact-wrapper form.pc table tr.pattern2 td.data4 .prefecture input,
+.contact-wrapper form.pc table tr.pattern2 td.data4 .address-form select,
+.contact-wrapper form.pc table tr.pattern2 td.data4 .address-form input {
+  height: 32px;
+}
+
+.contact-wrapper form.pc table tr.pattern2 td.data4 .prefecture option,
+.contact-wrapper form.pc table tr.pattern2 td.data4 .address-form option {
+  height: 32px;
+  padding: 5px;
 }
 
 .contact-wrapper form.pc table tr.pattern3 th {
